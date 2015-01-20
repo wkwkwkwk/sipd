@@ -1,0 +1,821 @@
+2014/11/26 11:53:39 [error] [php] include(koneksi.php): failed to open stream: No such file or directory (C:\xampp\htdocs\rencanaKP\protected\views\layouts\homepage.php:151)
+Stack trace:
+#0 C:\xampp\htdocs\rencanaKP\framework\web\CBaseController.php(95): PageController->renderInternal()
+#1 C:\xampp\htdocs\rencanaKP\framework\web\CController.php(784): PageController->renderFile()
+#2 C:\xampp\htdocs\rencanaKP\protected\controllers\PageController.php(12): PageController->render()
+#3 C:\xampp\htdocs\rencanaKP\framework\web\actions\CInlineAction.php(49): PageController->actionIndex()
+#4 C:\xampp\htdocs\rencanaKP\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\xampp\htdocs\rencanaKP\framework\web\CController.php(286): PageController->runAction()
+#6 C:\xampp\htdocs\rencanaKP\framework\web\CController.php(265): PageController->runActionWithFilters()
+#7 C:\xampp\htdocs\rencanaKP\framework\web\CWebApplication.php(282): PageController->run()
+#8 C:\xampp\htdocs\rencanaKP\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\xampp\htdocs\rencanaKP\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\rencanaKP\index.php(13): CWebApplication->run()
+REQUEST_URI=/rencanaKP/?r=page
+in C:\xampp\htdocs\rencanaKP\protected\views\layouts\homepage.php (151)
+in C:\xampp\htdocs\rencanaKP\protected\views\layouts\homepage.php (151)
+in C:\xampp\htdocs\rencanaKP\protected\controllers\PageController.php (12)
+2014/11/26 11:55:19 [error] [php] include(koneksi.php): failed to open stream: No such file or directory (C:\xampp\htdocs\rencanaKP\protected\views\layouts\homepage.php:151)
+Stack trace:
+#0 C:\xampp\htdocs\rencanaKP\framework\web\CBaseController.php(95): PageController->renderInternal()
+#1 C:\xampp\htdocs\rencanaKP\framework\web\CController.php(784): PageController->renderFile()
+#2 C:\xampp\htdocs\rencanaKP\protected\controllers\PageController.php(12): PageController->render()
+#3 C:\xampp\htdocs\rencanaKP\framework\web\actions\CInlineAction.php(49): PageController->actionIndex()
+#4 C:\xampp\htdocs\rencanaKP\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\xampp\htdocs\rencanaKP\framework\web\CController.php(286): PageController->runAction()
+#6 C:\xampp\htdocs\rencanaKP\framework\web\CController.php(265): PageController->runActionWithFilters()
+#7 C:\xampp\htdocs\rencanaKP\framework\web\CWebApplication.php(282): PageController->run()
+#8 C:\xampp\htdocs\rencanaKP\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\xampp\htdocs\rencanaKP\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\rencanaKP\index.php(13): CWebApplication->run()
+REQUEST_URI=/rencanaKP/?r=page
+in C:\xampp\htdocs\rencanaKP\protected\views\layouts\homepage.php (151)
+in C:\xampp\htdocs\rencanaKP\protected\views\layouts\homepage.php (151)
+in C:\xampp\htdocs\rencanaKP\protected\controllers\PageController.php (12)
+2014/11/26 11:55:32 [error] [php] include(koneksi.php): failed to open stream: No such file or directory (C:\xampp\htdocs\rencanaKP\protected\views\layouts\homepage.php:151)
+Stack trace:
+#0 C:\xampp\htdocs\rencanaKP\framework\web\CBaseController.php(95): PageController->renderInternal()
+#1 C:\xampp\htdocs\rencanaKP\framework\web\CController.php(784): PageController->renderFile()
+#2 C:\xampp\htdocs\rencanaKP\protected\controllers\PageController.php(12): PageController->render()
+#3 C:\xampp\htdocs\rencanaKP\framework\web\actions\CInlineAction.php(49): PageController->actionIndex()
+#4 C:\xampp\htdocs\rencanaKP\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\xampp\htdocs\rencanaKP\framework\web\CController.php(286): PageController->runAction()
+#6 C:\xampp\htdocs\rencanaKP\framework\web\CController.php(265): PageController->runActionWithFilters()
+#7 C:\xampp\htdocs\rencanaKP\framework\web\CWebApplication.php(282): PageController->run()
+#8 C:\xampp\htdocs\rencanaKP\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\xampp\htdocs\rencanaKP\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\rencanaKP\index.php(13): CWebApplication->run()
+REQUEST_URI=/rencanaKP/?r=page
+in C:\xampp\htdocs\rencanaKP\protected\views\layouts\homepage.php (151)
+in C:\xampp\htdocs\rencanaKP\protected\views\layouts\homepage.php (151)
+in C:\xampp\htdocs\rencanaKP\protected\controllers\PageController.php (12)
+2014/11/26 11:55:33 [error] [php] include(koneksi.php): failed to open stream: No such file or directory (C:\xampp\htdocs\rencanaKP\protected\views\layouts\homepage.php:151)
+Stack trace:
+#0 C:\xampp\htdocs\rencanaKP\framework\web\CBaseController.php(95): PageController->renderInternal()
+#1 C:\xampp\htdocs\rencanaKP\framework\web\CController.php(784): PageController->renderFile()
+#2 C:\xampp\htdocs\rencanaKP\protected\controllers\PageController.php(12): PageController->render()
+#3 C:\xampp\htdocs\rencanaKP\framework\web\actions\CInlineAction.php(49): PageController->actionIndex()
+#4 C:\xampp\htdocs\rencanaKP\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\xampp\htdocs\rencanaKP\framework\web\CController.php(286): PageController->runAction()
+#6 C:\xampp\htdocs\rencanaKP\framework\web\CController.php(265): PageController->runActionWithFilters()
+#7 C:\xampp\htdocs\rencanaKP\framework\web\CWebApplication.php(282): PageController->run()
+#8 C:\xampp\htdocs\rencanaKP\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\xampp\htdocs\rencanaKP\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\rencanaKP\index.php(13): CWebApplication->run()
+REQUEST_URI=/rencanaKP/?r=page
+in C:\xampp\htdocs\rencanaKP\protected\views\layouts\homepage.php (151)
+in C:\xampp\htdocs\rencanaKP\protected\views\layouts\homepage.php (151)
+in C:\xampp\htdocs\rencanaKP\protected\controllers\PageController.php (12)
+2014/11/26 11:56:06 [error] [php] include(koneksi.php): failed to open stream: No such file or directory (C:\xampp\htdocs\rencanaKP\protected\views\layouts\homepage.php:151)
+Stack trace:
+#0 C:\xampp\htdocs\rencanaKP\framework\web\CBaseController.php(95): PageController->renderInternal()
+#1 C:\xampp\htdocs\rencanaKP\framework\web\CController.php(784): PageController->renderFile()
+#2 C:\xampp\htdocs\rencanaKP\protected\controllers\PageController.php(12): PageController->render()
+#3 C:\xampp\htdocs\rencanaKP\framework\web\actions\CInlineAction.php(49): PageController->actionIndex()
+#4 C:\xampp\htdocs\rencanaKP\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\xampp\htdocs\rencanaKP\framework\web\CController.php(286): PageController->runAction()
+#6 C:\xampp\htdocs\rencanaKP\framework\web\CController.php(265): PageController->runActionWithFilters()
+#7 C:\xampp\htdocs\rencanaKP\framework\web\CWebApplication.php(282): PageController->run()
+#8 C:\xampp\htdocs\rencanaKP\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\xampp\htdocs\rencanaKP\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\rencanaKP\index.php(13): CWebApplication->run()
+REQUEST_URI=/rencanaKP/index.php?r=page
+in C:\xampp\htdocs\rencanaKP\protected\views\layouts\homepage.php (151)
+in C:\xampp\htdocs\rencanaKP\protected\views\layouts\homepage.php (151)
+in C:\xampp\htdocs\rencanaKP\protected\controllers\PageController.php (12)
+2014/11/26 11:56:59 [error] [php] include(koneksi.php): failed to open stream: No such file or directory (C:\xampp\htdocs\rencanaKP\protected\views\layouts\homepage.php:151)
+Stack trace:
+#0 C:\xampp\htdocs\rencanaKP\framework\web\CBaseController.php(95): PageController->renderInternal()
+#1 C:\xampp\htdocs\rencanaKP\framework\web\CController.php(784): PageController->renderFile()
+#2 C:\xampp\htdocs\rencanaKP\protected\controllers\PageController.php(12): PageController->render()
+#3 C:\xampp\htdocs\rencanaKP\framework\web\actions\CInlineAction.php(49): PageController->actionIndex()
+#4 C:\xampp\htdocs\rencanaKP\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\xampp\htdocs\rencanaKP\framework\web\CController.php(286): PageController->runAction()
+#6 C:\xampp\htdocs\rencanaKP\framework\web\CController.php(265): PageController->runActionWithFilters()
+#7 C:\xampp\htdocs\rencanaKP\framework\web\CWebApplication.php(282): PageController->run()
+#8 C:\xampp\htdocs\rencanaKP\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\xampp\htdocs\rencanaKP\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\rencanaKP\index.php(13): CWebApplication->run()
+REQUEST_URI=/rencanaKP/index.php?r=page
+in C:\xampp\htdocs\rencanaKP\protected\views\layouts\homepage.php (151)
+in C:\xampp\htdocs\rencanaKP\protected\views\layouts\homepage.php (151)
+in C:\xampp\htdocs\rencanaKP\protected\controllers\PageController.php (12)
+2014/12/07 04:49:33 [error] [php] Undefined variable: model (C:\xampp\htdocs\rencanaKP\protected\views\layouts\homepage.php:75)
+Stack trace:
+#0 C:\xampp\htdocs\rencanaKP\framework\web\CController.php(784): PageController->renderFile()
+#1 C:\xampp\htdocs\rencanaKP\protected\controllers\PageController.php(12): PageController->render()
+#2 C:\xampp\htdocs\rencanaKP\framework\web\actions\CInlineAction.php(49): PageController->actionIndex()
+#3 C:\xampp\htdocs\rencanaKP\framework\web\CController.php(308): CInlineAction->runWithParams()
+#4 C:\xampp\htdocs\rencanaKP\framework\web\CController.php(286): PageController->runAction()
+#5 C:\xampp\htdocs\rencanaKP\framework\web\CController.php(265): PageController->runActionWithFilters()
+#6 C:\xampp\htdocs\rencanaKP\framework\web\CWebApplication.php(282): PageController->run()
+#7 C:\xampp\htdocs\rencanaKP\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#8 C:\xampp\htdocs\rencanaKP\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#9 C:\xampp\htdocs\rencanaKP\index.php(13): CWebApplication->run()
+REQUEST_URI=/rencanaKP/
+in C:\xampp\htdocs\rencanaKP\protected\views\layouts\homepage.php (75)
+in C:\xampp\htdocs\rencanaKP\protected\controllers\PageController.php (12)
+in C:\xampp\htdocs\rencanaKP\index.php (13)
+2014/12/11 13:41:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "login".' in C:\xampp\htdocs\rencanaKP\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\rencanaKP\framework\web\CController.php(270): CController->missingAction('login')
+#1 C:\xampp\htdocs\rencanaKP\framework\web\CWebApplication.php(282): CController->run('login')
+#2 C:\xampp\htdocs\rencanaKP\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/login')
+#3 C:\xampp\htdocs\rencanaKP\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\rencanaKP\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/rencanaKP/index.php/admin/login
+HTTP_REFERER=http://localhost/rencanaKP/
+---
+2014/12/11 13:45:12 [error] [exception.CException] exception 'CException' with message 'PageController cannot find the requested view "/admin/login".' in C:\xampp\htdocs\rencanaKP\framework\web\CController.php:878
+Stack trace:
+#0 C:\xampp\htdocs\rencanaKP\framework\web\CController.php(782): CController->renderPartial('/admin/login', NULL, true)
+#1 C:\xampp\htdocs\rencanaKP\protected\controllers\PageController.php(17): CController->render('/admin/login')
+#2 C:\xampp\htdocs\rencanaKP\framework\web\actions\CInlineAction.php(49): PageController->actionLogin()
+#3 C:\xampp\htdocs\rencanaKP\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 C:\xampp\htdocs\rencanaKP\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 C:\xampp\htdocs\rencanaKP\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 C:\xampp\htdocs\rencanaKP\framework\web\CWebApplication.php(282): CController->run('login')
+#7 C:\xampp\htdocs\rencanaKP\framework\web\CWebApplication.php(141): CWebApplication->runController('page/login')
+#8 C:\xampp\htdocs\rencanaKP\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#9 C:\xampp\htdocs\rencanaKP\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/rencanaKP/index.php/page/login
+HTTP_REFERER=http://localhost/rencanaKP/
+---
+2014/12/11 14:23:09 [error] [exception.CException] exception 'CException' with message 'Property "CActiveForm.class" is not defined.' in C:\xampp\htdocs\rencanaKP\framework\base\CComponent.php:173
+Stack trace:
+#0 C:\xampp\htdocs\rencanaKP\framework\web\CWidgetFactory.php(161): CComponent->__set('class', 'form-signin')
+#1 C:\xampp\htdocs\rencanaKP\framework\web\CBaseController.php(146): CWidgetFactory->createWidget(Object(PageController), 'CActiveForm', Array)
+#2 C:\xampp\htdocs\rencanaKP\framework\web\CBaseController.php(189): CBaseController->createWidget('CActiveForm', Array)
+#3 C:\xampp\htdocs\rencanaKP\protected\views\page\login.php(34): CBaseController->beginWidget('CActiveForm', Array)
+#4 C:\xampp\htdocs\rencanaKP\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\rencanaKP\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', NULL, true)
+#6 C:\xampp\htdocs\rencanaKP\framework\web\CController.php(869): CBaseController->renderFile('C:\\xampp\\htdocs...', NULL, true)
+#7 C:\xampp\htdocs\rencanaKP\framework\web\CController.php(782): CController->renderPartial('login', NULL, true)
+#8 C:\xampp\htdocs\rencanaKP\protected\controllers\PageController.php(17): CController->render('login')
+#9 C:\xampp\htdocs\rencanaKP\framework\web\actions\CInlineAction.php(49): PageController->actionLogin()
+#10 C:\xampp\htdocs\rencanaKP\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#11 C:\xampp\htdocs\rencanaKP\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#12 C:\xampp\htdocs\rencanaKP\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 C:\xampp\htdocs\rencanaKP\framework\web\CWebApplication.php(282): CController->run('login')
+#14 C:\xampp\htdocs\rencanaKP\framework\web\CWebApplication.php(141): CWebApplication->runController('page/login')
+#15 C:\xampp\htdocs\rencanaKP\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#16 C:\xampp\htdocs\rencanaKP\index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/rencanaKP/index.php/page/login
+HTTP_REFERER=http://localhost/rencanaKP/
+---
+2014/12/11 14:27:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "page".' in C:\xampp\htdocs\rencanaKP\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\rencanaKP\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#1 C:\xampp\htdocs\rencanaKP\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\rencanaKP\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/rencanaKP/
+---
+2014/12/11 14:27:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "page/login".' in C:\xampp\htdocs\rencanaKP\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\rencanaKP\framework\web\CWebApplication.php(141): CWebApplication->runController('page/login')
+#1 C:\xampp\htdocs\rencanaKP\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\rencanaKP\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/rencanaKP/page/login
+HTTP_REFERER=http://localhost/rencanaKP/
+---
+2014/12/11 14:31:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "login".' in C:\xampp\htdocs\rencanaKP\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\rencanaKP\framework\web\CWebApplication.php(141): CWebApplication->runController('login')
+#1 C:\xampp\htdocs\rencanaKP\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\rencanaKP\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/rencanaKP/login
+HTTP_REFERER=http://localhost/rencanaKP/
+---
+2014/12/11 14:53:57 [error] [exception.CException] exception 'CException' with message 'Property "CActiveForm.class" is not defined.' in C:\xampp\htdocs\rencanaKP\framework\base\CComponent.php:173
+Stack trace:
+#0 C:\xampp\htdocs\rencanaKP\framework\web\CWidgetFactory.php(161): CComponent->__set('class', 'form-signin')
+#1 C:\xampp\htdocs\rencanaKP\framework\web\CBaseController.php(146): CWidgetFactory->createWidget(Object(LoginController), 'CActiveForm', Array)
+#2 C:\xampp\htdocs\rencanaKP\framework\web\CBaseController.php(189): CBaseController->createWidget('CActiveForm', Array)
+#3 C:\xampp\htdocs\rencanaKP\protected\views\login\index.php(9): CBaseController->beginWidget('CActiveForm', Array)
+#4 C:\xampp\htdocs\rencanaKP\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\rencanaKP\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#6 C:\xampp\htdocs\rencanaKP\framework\web\CController.php(869): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#7 C:\xampp\htdocs\rencanaKP\framework\web\CController.php(782): CController->renderPartial('index', Array, true)
+#8 C:\xampp\htdocs\rencanaKP\protected\controllers\LoginController.php(34): CController->render('index', Array)
+#9 C:\xampp\htdocs\rencanaKP\framework\web\actions\CInlineAction.php(49): LoginController->actionIndex()
+#10 C:\xampp\htdocs\rencanaKP\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#11 C:\xampp\htdocs\rencanaKP\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#12 C:\xampp\htdocs\rencanaKP\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 C:\xampp\htdocs\rencanaKP\framework\web\CWebApplication.php(282): CController->run('')
+#14 C:\xampp\htdocs\rencanaKP\framework\web\CWebApplication.php(141): CWebApplication->runController('login')
+#15 C:\xampp\htdocs\rencanaKP\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#16 C:\xampp\htdocs\rencanaKP\index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/rencanaKP/login
+HTTP_REFERER=http://localhost/rencanaKP/
+---
+2014/12/11 14:54:37 [error] [exception.CException] exception 'CException' with message 'Property "CActiveForm.enableClientVAlidation" is not defined.' in C:\xampp\htdocs\rencanaKP\framework\base\CComponent.php:173
+Stack trace:
+#0 C:\xampp\htdocs\rencanaKP\framework\web\CWidgetFactory.php(161): CComponent->__set('enableClientVAl...', true)
+#1 C:\xampp\htdocs\rencanaKP\framework\web\CBaseController.php(146): CWidgetFactory->createWidget(Object(LoginController), 'CActiveForm', Array)
+#2 C:\xampp\htdocs\rencanaKP\framework\web\CBaseController.php(189): CBaseController->createWidget('CActiveForm', Array)
+#3 C:\xampp\htdocs\rencanaKP\protected\views\login\index.php(9): CBaseController->beginWidget('CActiveForm', Array)
+#4 C:\xampp\htdocs\rencanaKP\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\rencanaKP\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#6 C:\xampp\htdocs\rencanaKP\framework\web\CController.php(869): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#7 C:\xampp\htdocs\rencanaKP\framework\web\CController.php(782): CController->renderPartial('index', Array, true)
+#8 C:\xampp\htdocs\rencanaKP\protected\controllers\LoginController.php(34): CController->render('index', Array)
+#9 C:\xampp\htdocs\rencanaKP\framework\web\actions\CInlineAction.php(49): LoginController->actionIndex()
+#10 C:\xampp\htdocs\rencanaKP\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#11 C:\xampp\htdocs\rencanaKP\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#12 C:\xampp\htdocs\rencanaKP\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 C:\xampp\htdocs\rencanaKP\framework\web\CWebApplication.php(282): CController->run('')
+#14 C:\xampp\htdocs\rencanaKP\framework\web\CWebApplication.php(141): CWebApplication->runController('login')
+#15 C:\xampp\htdocs\rencanaKP\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#16 C:\xampp\htdocs\rencanaKP\index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/rencanaKP/login
+HTTP_REFERER=http://localhost/rencanaKP/
+---
+2014/12/11 15:04:16 [error] [exception.CException] exception 'CException' with message 'Property "CActiveForm.enableClientVAlidation" is not defined.' in C:\xampp\htdocs\rencanaKP\framework\base\CComponent.php:173
+Stack trace:
+#0 C:\xampp\htdocs\rencanaKP\framework\web\CWidgetFactory.php(161): CComponent->__set('enableClientVAl...', true)
+#1 C:\xampp\htdocs\rencanaKP\framework\web\CBaseController.php(146): CWidgetFactory->createWidget(Object(LoginController), 'CActiveForm', Array)
+#2 C:\xampp\htdocs\rencanaKP\framework\web\CBaseController.php(189): CBaseController->createWidget('CActiveForm', Array)
+#3 C:\xampp\htdocs\rencanaKP\protected\views\login\index.php(9): CBaseController->beginWidget('CActiveForm', Array)
+#4 C:\xampp\htdocs\rencanaKP\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\rencanaKP\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#6 C:\xampp\htdocs\rencanaKP\framework\web\CController.php(869): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#7 C:\xampp\htdocs\rencanaKP\framework\web\CController.php(782): CController->renderPartial('index', Array, true)
+#8 C:\xampp\htdocs\rencanaKP\protected\controllers\LoginController.php(34): CController->render('index', Array)
+#9 C:\xampp\htdocs\rencanaKP\framework\web\actions\CInlineAction.php(49): LoginController->actionIndex()
+#10 C:\xampp\htdocs\rencanaKP\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#11 C:\xampp\htdocs\rencanaKP\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#12 C:\xampp\htdocs\rencanaKP\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 C:\xampp\htdocs\rencanaKP\framework\web\CWebApplication.php(282): CController->run('')
+#14 C:\xampp\htdocs\rencanaKP\framework\web\CWebApplication.php(141): CWebApplication->runController('login')
+#15 C:\xampp\htdocs\rencanaKP\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#16 C:\xampp\htdocs\rencanaKP\index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/rencanaKP/login
+HTTP_REFERER=http://localhost/rencanaKP/
+---
+2014/12/11 15:04:46 [error] [exception.CException] exception 'CException' with message 'Property "CActiveForm.class" is not defined.' in C:\xampp\htdocs\rencanaKP\framework\base\CComponent.php:173
+Stack trace:
+#0 C:\xampp\htdocs\rencanaKP\framework\web\CWidgetFactory.php(161): CComponent->__set('class', 'form-signin')
+#1 C:\xampp\htdocs\rencanaKP\framework\web\CBaseController.php(146): CWidgetFactory->createWidget(Object(LoginController), 'CActiveForm', Array)
+#2 C:\xampp\htdocs\rencanaKP\framework\web\CBaseController.php(189): CBaseController->createWidget('CActiveForm', Array)
+#3 C:\xampp\htdocs\rencanaKP\protected\views\login\index.php(9): CBaseController->beginWidget('CActiveForm', Array)
+#4 C:\xampp\htdocs\rencanaKP\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\rencanaKP\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#6 C:\xampp\htdocs\rencanaKP\framework\web\CController.php(869): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#7 C:\xampp\htdocs\rencanaKP\framework\web\CController.php(782): CController->renderPartial('index', Array, true)
+#8 C:\xampp\htdocs\rencanaKP\protected\controllers\LoginController.php(34): CController->render('index', Array)
+#9 C:\xampp\htdocs\rencanaKP\framework\web\actions\CInlineAction.php(49): LoginController->actionIndex()
+#10 C:\xampp\htdocs\rencanaKP\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#11 C:\xampp\htdocs\rencanaKP\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#12 C:\xampp\htdocs\rencanaKP\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 C:\xampp\htdocs\rencanaKP\framework\web\CWebApplication.php(282): CController->run('')
+#14 C:\xampp\htdocs\rencanaKP\framework\web\CWebApplication.php(141): CWebApplication->runController('login')
+#15 C:\xampp\htdocs\rencanaKP\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#16 C:\xampp\htdocs\rencanaKP\index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/rencanaKP/login
+HTTP_REFERER=http://localhost/rencanaKP/
+---
+2014/12/11 15:28:02 [error] [php] include(Admin.php): failed to open stream: No such file or directory (C:\xampp\htdocs\rencanaKP\framework\YiiBase.php:427)
+Stack trace:
+#0 C:\xampp\htdocs\rencanaKP\protected\components\AdminLogin.php(15): spl_autoload_call()
+#1 C:\xampp\htdocs\rencanaKP\protected\models\AdminLoginSection.php(32): AdminLogin->authenticate()
+#2 C:\xampp\htdocs\rencanaKP\framework\validators\CInlineValidator.php(42): AdminLoginSection->authenticate()
+#3 C:\xampp\htdocs\rencanaKP\framework\validators\CValidator.php(213): CInlineValidator->validateAttribute()
+#4 C:\xampp\htdocs\rencanaKP\framework\base\CModel.php(159): CInlineValidator->validate()
+#5 C:\xampp\htdocs\rencanaKP\protected\controllers\LoginController.php(27): AdminLoginSection->validate()
+#6 C:\xampp\htdocs\rencanaKP\framework\web\actions\CInlineAction.php(49): LoginController->actionIndex()
+#7 C:\xampp\htdocs\rencanaKP\framework\web\CController.php(308): CInlineAction->runWithParams()
+#8 C:\xampp\htdocs\rencanaKP\framework\web\CController.php(286): LoginController->runAction()
+#9 C:\xampp\htdocs\rencanaKP\framework\web\CController.php(265): LoginController->runActionWithFilters()
+#10 C:\xampp\htdocs\rencanaKP\framework\web\CWebApplication.php(282): LoginController->run()
+#11 C:\xampp\htdocs\rencanaKP\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#12 C:\xampp\htdocs\rencanaKP\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#13 C:\xampp\htdocs\rencanaKP\index.php(13): CWebApplication->run()
+REQUEST_URI=/rencanaKP/login
+in C:\xampp\htdocs\rencanaKP\protected\components\AdminLogin.php (15)
+in C:\xampp\htdocs\rencanaKP\protected\models\AdminLoginSection.php (32)
+in C:\xampp\htdocs\rencanaKP\protected\controllers\LoginController.php (27)
+2014/12/11 15:29:46 [error] [php] include(Admin.php): failed to open stream: No such file or directory (C:\xampp\htdocs\rencanaKP\framework\YiiBase.php:427)
+Stack trace:
+#0 C:\xampp\htdocs\rencanaKP\protected\components\AdminLogin.php(15): spl_autoload_call()
+#1 C:\xampp\htdocs\rencanaKP\protected\models\AdminLoginSection.php(32): AdminLogin->authenticate()
+#2 C:\xampp\htdocs\rencanaKP\framework\validators\CInlineValidator.php(42): AdminLoginSection->authenticate()
+#3 C:\xampp\htdocs\rencanaKP\framework\validators\CValidator.php(213): CInlineValidator->validateAttribute()
+#4 C:\xampp\htdocs\rencanaKP\framework\base\CModel.php(159): CInlineValidator->validate()
+#5 C:\xampp\htdocs\rencanaKP\protected\controllers\LoginController.php(27): AdminLoginSection->validate()
+#6 C:\xampp\htdocs\rencanaKP\framework\web\actions\CInlineAction.php(49): LoginController->actionIndex()
+#7 C:\xampp\htdocs\rencanaKP\framework\web\CController.php(308): CInlineAction->runWithParams()
+#8 C:\xampp\htdocs\rencanaKP\framework\web\CController.php(286): LoginController->runAction()
+#9 C:\xampp\htdocs\rencanaKP\framework\web\CController.php(265): LoginController->runActionWithFilters()
+#10 C:\xampp\htdocs\rencanaKP\framework\web\CWebApplication.php(282): LoginController->run()
+#11 C:\xampp\htdocs\rencanaKP\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#12 C:\xampp\htdocs\rencanaKP\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#13 C:\xampp\htdocs\rencanaKP\index.php(13): CWebApplication->run()
+REQUEST_URI=/rencanaKP/login
+in C:\xampp\htdocs\rencanaKP\protected\components\AdminLogin.php (15)
+in C:\xampp\htdocs\rencanaKP\protected\models\AdminLoginSection.php (32)
+in C:\xampp\htdocs\rencanaKP\protected\controllers\LoginController.php (27)
+2014/12/11 15:31:36 [error] [php] include(Admin.php): failed to open stream: No such file or directory (C:\xampp\htdocs\rencanaKP\framework\YiiBase.php:427)
+Stack trace:
+#0 C:\xampp\htdocs\rencanaKP\protected\models\AdminLoginSection.php(62): spl_autoload_call()
+#1 C:\xampp\htdocs\rencanaKP\protected\controllers\LoginController.php(27): AdminLoginSection->login()
+#2 C:\xampp\htdocs\rencanaKP\framework\web\actions\CInlineAction.php(49): LoginController->actionIndex()
+#3 C:\xampp\htdocs\rencanaKP\framework\web\CController.php(308): CInlineAction->runWithParams()
+#4 C:\xampp\htdocs\rencanaKP\framework\web\CController.php(286): LoginController->runAction()
+#5 C:\xampp\htdocs\rencanaKP\framework\web\CController.php(265): LoginController->runActionWithFilters()
+#6 C:\xampp\htdocs\rencanaKP\framework\web\CWebApplication.php(282): LoginController->run()
+#7 C:\xampp\htdocs\rencanaKP\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#8 C:\xampp\htdocs\rencanaKP\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#9 C:\xampp\htdocs\rencanaKP\index.php(13): CWebApplication->run()
+REQUEST_URI=/rencanaKP/login
+in C:\xampp\htdocs\rencanaKP\protected\models\AdminLoginSection.php (62)
+in C:\xampp\htdocs\rencanaKP\protected\controllers\LoginController.php (27)
+in C:\xampp\htdocs\rencanaKP\index.php (13)
+2014/12/11 15:33:49 [error] [php] include(Admin.php): failed to open stream: No such file or directory (C:\xampp\htdocs\rencanaKP\framework\YiiBase.php:427)
+Stack trace:
+#0 C:\xampp\htdocs\rencanaKP\protected\models\AdminLoginSection.php(62): spl_autoload_call()
+#1 C:\xampp\htdocs\rencanaKP\protected\controllers\LoginController.php(27): AdminLoginSection->login()
+#2 C:\xampp\htdocs\rencanaKP\framework\web\actions\CInlineAction.php(49): LoginController->actionIndex()
+#3 C:\xampp\htdocs\rencanaKP\framework\web\CController.php(308): CInlineAction->runWithParams()
+#4 C:\xampp\htdocs\rencanaKP\framework\web\CController.php(286): LoginController->runAction()
+#5 C:\xampp\htdocs\rencanaKP\framework\web\CController.php(265): LoginController->runActionWithFilters()
+#6 C:\xampp\htdocs\rencanaKP\framework\web\CWebApplication.php(282): LoginController->run()
+#7 C:\xampp\htdocs\rencanaKP\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#8 C:\xampp\htdocs\rencanaKP\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#9 C:\xampp\htdocs\rencanaKP\index.php(13): CWebApplication->run()
+REQUEST_URI=/rencanaKP/login
+in C:\xampp\htdocs\rencanaKP\protected\models\AdminLoginSection.php (62)
+in C:\xampp\htdocs\rencanaKP\protected\controllers\LoginController.php (27)
+in C:\xampp\htdocs\rencanaKP\index.php (13)
+2014/12/11 15:40:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "logout".' in C:\xampp\htdocs\rencanaKP\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\rencanaKP\framework\web\CController.php(270): CController->missingAction('logout')
+#1 C:\xampp\htdocs\rencanaKP\framework\web\CWebApplication.php(282): CController->run('logout')
+#2 C:\xampp\htdocs\rencanaKP\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/logout')
+#3 C:\xampp\htdocs\rencanaKP\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\rencanaKP\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/rencanaKP/admin/logout
+HTTP_REFERER=http://localhost/rencanaKP/admin/index
+---
+2014/12/11 15:58:05 [error] [php] strpos() expects parameter 1 to be string, array given (C:\xampp\htdocs\rencanaKP\framework\web\helpers\CHtml.php:2477)
+Stack trace:
+#0 C:\xampp\htdocs\rencanaKP\framework\web\helpers\CHtml.php(2166): activeName()
+#1 C:\xampp\htdocs\rencanaKP\framework\web\widgets\CActiveForm.php(457): activeId()
+#2 C:\xampp\htdocs\rencanaKP\protected\views\login\index.php(17): CActiveForm->error()
+#3 C:\xampp\htdocs\rencanaKP\framework\web\CBaseController.php(126): require()
+#4 C:\xampp\htdocs\rencanaKP\framework\web\CBaseController.php(95): LoginController->renderInternal()
+#5 C:\xampp\htdocs\rencanaKP\framework\web\CController.php(869): LoginController->renderFile()
+#6 C:\xampp\htdocs\rencanaKP\framework\web\CController.php(782): LoginController->renderPartial()
+#7 C:\xampp\htdocs\rencanaKP\protected\controllers\LoginController.php(34): LoginController->render()
+#8 C:\xampp\htdocs\rencanaKP\framework\web\actions\CInlineAction.php(49): LoginController->actionIndex()
+#9 C:\xampp\htdocs\rencanaKP\framework\web\CController.php(308): CInlineAction->runWithParams()
+#10 C:\xampp\htdocs\rencanaKP\framework\web\CController.php(286): LoginController->runAction()
+#11 C:\xampp\htdocs\rencanaKP\framework\web\CController.php(265): LoginController->runActionWithFilters()
+#12 C:\xampp\htdocs\rencanaKP\framework\web\CWebApplication.php(282): LoginController->run()
+#13 C:\xampp\htdocs\rencanaKP\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#14 C:\xampp\htdocs\rencanaKP\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#15 C:\xampp\htdocs\rencanaKP\index.php(13): CWebApplication->run()
+REQUEST_URI=/rencanaKP/login
+in C:\xampp\htdocs\rencanaKP\protected\views\login\index.php (17)
+in C:\xampp\htdocs\rencanaKP\protected\controllers\LoginController.php (34)
+in C:\xampp\htdocs\rencanaKP\index.php (13)
+2014/12/12 01:58:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "0[class]".' in C:\xampp\htdocs\rencanaKP\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\rencanaKP\framework\web\CController.php(270): CController->missingAction('0[class]')
+#1 C:\xampp\htdocs\rencanaKP\framework\web\CWebApplication.php(282): CController->run('0[class]')
+#2 C:\xampp\htdocs\rencanaKP\framework\web\CWebApplication.php(141): CWebApplication->runController('index/0[class]/...')
+#3 C:\xampp\htdocs\rencanaKP\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\rencanaKP\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/rencanaKP/index/0%5Bclass%5D/navbar-brand+page-scroll
+HTTP_REFERER=http://localhost/rencanaKP/login
+---
+2014/12/12 05:15:09 [error] [exception.CException] exception 'CException' with message 'Properti "CWebUser.username" tidak didefinisikan.' in C:\xampp\htdocs\rencanaKP\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\xampp\htdocs\rencanaKP\framework\web\auth\CWebUser.php(146): CComponent->__get('username')
+#1 C:\xampp\htdocs\rencanaKP\protected\views\layouts\adminpage.php(134): CWebUser->__get('username')
+#2 C:\xampp\htdocs\rencanaKP\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\rencanaKP\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#4 C:\xampp\htdocs\rencanaKP\framework\web\CController.php(784): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#5 C:\xampp\htdocs\rencanaKP\protected\controllers\AdminController.php(9): CController->render('index')
+#6 C:\xampp\htdocs\rencanaKP\framework\web\actions\CInlineAction.php(49): AdminController->actionIndex()
+#7 C:\xampp\htdocs\rencanaKP\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#8 C:\xampp\htdocs\rencanaKP\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#9 C:\xampp\htdocs\rencanaKP\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 C:\xampp\htdocs\rencanaKP\framework\web\CWebApplication.php(282): CController->run('index')
+#11 C:\xampp\htdocs\rencanaKP\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/index')
+#12 C:\xampp\htdocs\rencanaKP\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#13 C:\xampp\htdocs\rencanaKP\index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/rencanaKP/admin/index
+---
+2014/12/12 05:17:29 [error] [exception.CException] exception 'CException' with message 'Properti "CWebUser.username" tidak didefinisikan.' in C:\xampp\htdocs\rencanaKP\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\xampp\htdocs\rencanaKP\framework\web\auth\CWebUser.php(146): CComponent->__get('username')
+#1 C:\xampp\htdocs\rencanaKP\protected\views\layouts\adminpage.php(134): CWebUser->__get('username')
+#2 C:\xampp\htdocs\rencanaKP\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\rencanaKP\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#4 C:\xampp\htdocs\rencanaKP\framework\web\CController.php(784): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#5 C:\xampp\htdocs\rencanaKP\protected\controllers\AdminController.php(9): CController->render('index')
+#6 C:\xampp\htdocs\rencanaKP\framework\web\actions\CInlineAction.php(49): AdminController->actionIndex()
+#7 C:\xampp\htdocs\rencanaKP\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#8 C:\xampp\htdocs\rencanaKP\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#9 C:\xampp\htdocs\rencanaKP\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 C:\xampp\htdocs\rencanaKP\framework\web\CWebApplication.php(282): CController->run('index')
+#11 C:\xampp\htdocs\rencanaKP\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/index')
+#12 C:\xampp\htdocs\rencanaKP\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#13 C:\xampp\htdocs\rencanaKP\index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/rencanaKP/admin/index
+---
+2014/12/14 03:13:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Tidak bisa mengurai request "logout"' in C:\xampp\htdocs\rencanaKP\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\rencanaKP\framework\web\CWebApplication.php(141): CWebApplication->runController('logout')
+#1 C:\xampp\htdocs\rencanaKP\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\rencanaKP\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/rencanaKP/logout
+---
+2014/12/14 11:04:41 [error] [php] htmlspecialchars() expects parameter 1 to be string, array given (C:\xampp\htdocs\rencanaKP\framework\web\helpers\CHtml.php:103)
+Stack trace:
+#0 C:\xampp\htdocs\rencanaKP\framework\web\helpers\CHtml.php(158): renderAttributes()
+#1 C:\xampp\htdocs\rencanaKP\framework\web\helpers\CHtml.php(465): tag()
+#2 C:\xampp\htdocs\rencanaKP\protected\views\login\index.php(17): button()
+#3 C:\xampp\htdocs\rencanaKP\framework\web\CBaseController.php(126): require()
+#4 C:\xampp\htdocs\rencanaKP\framework\web\CBaseController.php(95): LoginController->renderInternal()
+#5 C:\xampp\htdocs\rencanaKP\framework\web\CController.php(869): LoginController->renderFile()
+#6 C:\xampp\htdocs\rencanaKP\framework\web\CController.php(782): LoginController->renderPartial()
+#7 C:\xampp\htdocs\rencanaKP\protected\controllers\LoginController.php(34): LoginController->render()
+#8 C:\xampp\htdocs\rencanaKP\framework\web\actions\CInlineAction.php(49): LoginController->actionIndex()
+#9 C:\xampp\htdocs\rencanaKP\framework\web\CController.php(308): CInlineAction->runWithParams()
+#10 C:\xampp\htdocs\rencanaKP\framework\web\CController.php(286): LoginController->runAction()
+#11 C:\xampp\htdocs\rencanaKP\framework\web\CController.php(265): LoginController->runActionWithFilters()
+#12 C:\xampp\htdocs\rencanaKP\framework\web\CWebApplication.php(282): LoginController->run()
+#13 C:\xampp\htdocs\rencanaKP\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#14 C:\xampp\htdocs\rencanaKP\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#15 C:\xampp\htdocs\rencanaKP\index.php(13): CWebApplication->run()
+REQUEST_URI=/rencanaKP/login
+in C:\xampp\htdocs\rencanaKP\protected\views\login\index.php (17)
+in C:\xampp\htdocs\rencanaKP\protected\controllers\LoginController.php (34)
+in C:\xampp\htdocs\rencanaKP\index.php (13)
+2014/12/14 11:06:46 [error] [exception.CException] exception 'CException' with message 'Properti "CWebUser.username" tidak didefinisikan.' in C:\xampp\htdocs\rencanaKP\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\xampp\htdocs\rencanaKP\framework\web\auth\CWebUser.php(146): CComponent->__get('username')
+#1 C:\xampp\htdocs\rencanaKP\protected\views\layouts\adminpage.php(134): CWebUser->__get('username')
+#2 C:\xampp\htdocs\rencanaKP\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\rencanaKP\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#4 C:\xampp\htdocs\rencanaKP\framework\web\CController.php(784): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#5 C:\xampp\htdocs\rencanaKP\protected\controllers\AdminController.php(10): CController->render('index')
+#6 C:\xampp\htdocs\rencanaKP\framework\web\actions\CInlineAction.php(49): AdminController->actionIndex()
+#7 C:\xampp\htdocs\rencanaKP\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#8 C:\xampp\htdocs\rencanaKP\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#9 C:\xampp\htdocs\rencanaKP\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 C:\xampp\htdocs\rencanaKP\framework\web\CWebApplication.php(282): CController->run('index')
+#11 C:\xampp\htdocs\rencanaKP\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/index')
+#12 C:\xampp\htdocs\rencanaKP\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#13 C:\xampp\htdocs\rencanaKP\index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/rencanaKP/admin/index
+---
+2014/12/14 11:54:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Sistem tidak bisa menemukan action "login" seperti yang diminta.' in C:\xampp\htdocs\rencanaKP\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\rencanaKP\framework\web\CController.php(270): CController->missingAction('login')
+#1 C:\xampp\htdocs\rencanaKP\framework\web\CWebApplication.php(282): CController->run('login')
+#2 C:\xampp\htdocs\rencanaKP\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/login')
+#3 C:\xampp\htdocs\rencanaKP\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\rencanaKP\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/rencanaKP/admin/login
+---
+2014/12/15 06:18:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Sistem tidak bisa menemukan action "css" seperti yang diminta.' in C:\xampp\htdocs\rencanaKP\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\rencanaKP\framework\web\CController.php(270): CController->missingAction('css')
+#1 C:\xampp\htdocs\rencanaKP\framework\web\CWebApplication.php(282): CController->run('css')
+#2 C:\xampp\htdocs\rencanaKP\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/css/chari...')
+#3 C:\xampp\htdocs\rencanaKP\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\rencanaKP\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/rencanaKP/admin/css/charisma-app.css
+HTTP_REFERER=http://localhost/rencanaKP/admin/index
+---
+2014/12/15 06:18:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Sistem tidak bisa menemukan action "css" seperti yang diminta.' in C:\xampp\htdocs\rencanaKP\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\rencanaKP\framework\web\CController.php(270): CController->missingAction('css')
+#1 C:\xampp\htdocs\rencanaKP\framework\web\CWebApplication.php(282): CController->run('css')
+#2 C:\xampp\htdocs\rencanaKP\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/css/boots...')
+#3 C:\xampp\htdocs\rencanaKP\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\rencanaKP\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/rencanaKP/admin/css/bootstrap-cerulean.min.css
+HTTP_REFERER=http://localhost/rencanaKP/admin/index
+---
+2014/12/15 06:18:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Sistem tidak bisa menemukan action "css" seperti yang diminta.' in C:\xampp\htdocs\rencanaKP\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\rencanaKP\framework\web\CController.php(270): CController->missingAction('css')
+#1 C:\xampp\htdocs\rencanaKP\framework\web\CWebApplication.php(282): CController->run('css')
+#2 C:\xampp\htdocs\rencanaKP\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/css/chari...')
+#3 C:\xampp\htdocs\rencanaKP\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\rencanaKP\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/rencanaKP/admin/css/charisma-app.css
+HTTP_REFERER=http://localhost/rencanaKP/admin/index
+---
+2014/12/15 06:18:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Sistem tidak bisa menemukan action "css" seperti yang diminta.' in C:\xampp\htdocs\rencanaKP\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\rencanaKP\framework\web\CController.php(270): CController->missingAction('css')
+#1 C:\xampp\htdocs\rencanaKP\framework\web\CWebApplication.php(282): CController->run('css')
+#2 C:\xampp\htdocs\rencanaKP\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/css/boots...')
+#3 C:\xampp\htdocs\rencanaKP\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\rencanaKP\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/rencanaKP/admin/css/bootstrap-cerulean.min.css
+HTTP_REFERER=http://localhost/rencanaKP/admin/index
+---
+2014/12/15 06:18:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Sistem tidak bisa menemukan action "css" seperti yang diminta.' in C:\xampp\htdocs\rencanaKP\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\rencanaKP\framework\web\CController.php(270): CController->missingAction('css')
+#1 C:\xampp\htdocs\rencanaKP\framework\web\CWebApplication.php(282): CController->run('css')
+#2 C:\xampp\htdocs\rencanaKP\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/css/boots...')
+#3 C:\xampp\htdocs\rencanaKP\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\rencanaKP\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/rencanaKP/admin/css/bootstrap-cerulean.min.css
+HTTP_REFERER=http://localhost/rencanaKP/admin/index
+---
+2014/12/15 06:18:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Sistem tidak bisa menemukan action "css" seperti yang diminta.' in C:\xampp\htdocs\rencanaKP\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\rencanaKP\framework\web\CController.php(270): CController->missingAction('css')
+#1 C:\xampp\htdocs\rencanaKP\framework\web\CWebApplication.php(282): CController->run('css')
+#2 C:\xampp\htdocs\rencanaKP\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/css/chari...')
+#3 C:\xampp\htdocs\rencanaKP\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\rencanaKP\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/rencanaKP/admin/css/charisma-app.css
+HTTP_REFERER=http://localhost/rencanaKP/admin/index
+---
+2015/01/01 04:23:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Sistem tidak bisa menemukan action "js" seperti yang diminta.' in C:\xampp\htdocs\rencanaKP\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\rencanaKP\framework\web\CController.php(270): CController->missingAction('js')
+#1 C:\xampp\htdocs\rencanaKP\framework\web\CWebApplication.php(282): CController->run('js')
+#2 C:\xampp\htdocs\rencanaKP\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/js/plugin...')
+#3 C:\xampp\htdocs\rencanaKP\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\rencanaKP\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/rencanaKP/admin/js/plugins/morris/morris.min.js
+HTTP_REFERER=http://localhost/rencanaKP/admin/index
+---
+2015/01/01 04:23:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Sistem tidak bisa menemukan action "js" seperti yang diminta.' in C:\xampp\htdocs\rencanaKP\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\rencanaKP\framework\web\CController.php(270): CController->missingAction('js')
+#1 C:\xampp\htdocs\rencanaKP\framework\web\CWebApplication.php(282): CController->run('js')
+#2 C:\xampp\htdocs\rencanaKP\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/js/plugin...')
+#3 C:\xampp\htdocs\rencanaKP\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\rencanaKP\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/rencanaKP/admin/js/plugins/morris/morris-data.js
+HTTP_REFERER=http://localhost/rencanaKP/admin/index
+---
+2015/01/01 04:23:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Sistem tidak bisa menemukan action "js" seperti yang diminta.' in C:\xampp\htdocs\rencanaKP\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\rencanaKP\framework\web\CController.php(270): CController->missingAction('js')
+#1 C:\xampp\htdocs\rencanaKP\framework\web\CWebApplication.php(282): CController->run('js')
+#2 C:\xampp\htdocs\rencanaKP\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/js/plugin...')
+#3 C:\xampp\htdocs\rencanaKP\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\rencanaKP\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/rencanaKP/admin/js/plugins/morris/raphael.min.js
+HTTP_REFERER=http://localhost/rencanaKP/admin/index
+---
+2015/01/07 14:46:05 [error] [exception.CException] exception 'CException' with message 'AdminController tidak bisa menemukan view "admin/subdataumum" yang di-request.' in C:\xampp\htdocs\rencanaKP\framework\web\CController.php:878
+Stack trace:
+#0 C:\xampp\htdocs\rencanaKP\framework\web\CController.php(782): CController->renderPartial('admin/subdataum...', NULL, true)
+#1 C:\xampp\htdocs\rencanaKP\protected\controllers\AdminController.php(22): CController->render('admin/subdataum...')
+#2 C:\xampp\htdocs\rencanaKP\framework\web\actions\CInlineAction.php(49): AdminController->actionSubDataUmum()
+#3 C:\xampp\htdocs\rencanaKP\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 C:\xampp\htdocs\rencanaKP\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 C:\xampp\htdocs\rencanaKP\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 C:\xampp\htdocs\rencanaKP\framework\web\CWebApplication.php(282): CController->run('subdataumum')
+#7 C:\xampp\htdocs\rencanaKP\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/subdataum...')
+#8 C:\xampp\htdocs\rencanaKP\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#9 C:\xampp\htdocs\rencanaKP\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/rencanaKP/admin/subdataumum
+HTTP_REFERER=http://localhost/rencanaKP/admin/index/
+---
+2015/01/13 11:24:55 [error] [exception.CException] exception 'CException' with message 'AdminController tidak bisa menemukan view "subdataekonomi" yang di-request.' in C:\xampp\htdocs\rencanaKP\framework\web\CController.php:878
+Stack trace:
+#0 C:\xampp\htdocs\rencanaKP\framework\web\CController.php(782): CController->renderPartial('subdataekonomi', NULL, true)
+#1 C:\xampp\htdocs\rencanaKP\protected\controllers\AdminController.php(31): CController->render('subdataekonomi')
+#2 C:\xampp\htdocs\rencanaKP\framework\web\actions\CInlineAction.php(49): AdminController->actionSubDataEkonomi()
+#3 C:\xampp\htdocs\rencanaKP\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 C:\xampp\htdocs\rencanaKP\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 C:\xampp\htdocs\rencanaKP\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 C:\xampp\htdocs\rencanaKP\framework\web\CWebApplication.php(282): CController->run('subdataekonomi')
+#7 C:\xampp\htdocs\rencanaKP\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/subdataek...')
+#8 C:\xampp\htdocs\rencanaKP\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#9 C:\xampp\htdocs\rencanaKP\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/rencanaKP/admin/subdataekonomi
+HTTP_REFERER=http://localhost/rencanaKP/admin/
+---
+2015/01/13 11:26:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Sistem tidak bisa menemukan action "subekonomi" seperti yang diminta.' in C:\xampp\htdocs\rencanaKP\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\rencanaKP\framework\web\CController.php(270): CController->missingAction('subekonomi')
+#1 C:\xampp\htdocs\rencanaKP\framework\web\CWebApplication.php(282): CController->run('subekonomi')
+#2 C:\xampp\htdocs\rencanaKP\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/subekonom...')
+#3 C:\xampp\htdocs\rencanaKP\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\rencanaKP\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/rencanaKP/admin/subekonomi
+HTTP_REFERER=http://localhost/rencanaKP/admin
+---
+2015/01/13 11:26:31 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Sistem tidak bisa menemukan action "subekonomi" seperti yang diminta.' in C:\xampp\htdocs\rencanaKP\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\rencanaKP\framework\web\CController.php(270): CController->missingAction('subekonomi')
+#1 C:\xampp\htdocs\rencanaKP\framework\web\CWebApplication.php(282): CController->run('subekonomi')
+#2 C:\xampp\htdocs\rencanaKP\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/subekonom...')
+#3 C:\xampp\htdocs\rencanaKP\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\rencanaKP\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/rencanaKP/admin/subekonomi
+HTTP_REFERER=http://localhost/rencanaKP/admin/
+---
+2015/01/13 11:27:31 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Sistem tidak bisa menemukan action "subkeamanan" seperti yang diminta.' in C:\xampp\htdocs\rencanaKP\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\rencanaKP\framework\web\CController.php(270): CController->missingAction('subkeamanan')
+#1 C:\xampp\htdocs\rencanaKP\framework\web\CWebApplication.php(282): CController->run('subkeamanan')
+#2 C:\xampp\htdocs\rencanaKP\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/subkeaman...')
+#3 C:\xampp\htdocs\rencanaKP\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\rencanaKP\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/rencanaKP/admin/subkeamanan
+---
+2015/01/13 11:31:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Sistem tidak bisa menemukan action "subekonomi" seperti yang diminta.' in C:\xampp\htdocs\rencanaKP\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\rencanaKP\framework\web\CController.php(270): CController->missingAction('subekonomi')
+#1 C:\xampp\htdocs\rencanaKP\framework\web\CWebApplication.php(282): CController->run('subekonomi')
+#2 C:\xampp\htdocs\rencanaKP\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/subekonom...')
+#3 C:\xampp\htdocs\rencanaKP\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\rencanaKP\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/rencanaKP/admin/subekonomi
+HTTP_REFERER=http://localhost/rencanaKP/admin/index
+---
+2015/01/13 11:31:53 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Sistem tidak bisa menemukan action "subekonomi" seperti yang diminta.' in C:\xampp\htdocs\rencanaKP\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\rencanaKP\framework\web\CController.php(270): CController->missingAction('subekonomi')
+#1 C:\xampp\htdocs\rencanaKP\framework\web\CWebApplication.php(282): CController->run('subekonomi')
+#2 C:\xampp\htdocs\rencanaKP\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/subekonom...')
+#3 C:\xampp\htdocs\rencanaKP\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\rencanaKP\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/rencanaKP/admin/subekonomi
+---
+2015/01/15 01:24:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Tidak bisa mengurai request "assets/temaAdmin1/css/bootstrap.css.map"' in C:\xampp\htdocs\rencanaKP\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\rencanaKP\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/temaAdmi...')
+#1 C:\xampp\htdocs\rencanaKP\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\rencanaKP\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/rencanaKP/assets/temaAdmin1/css/bootstrap.css.map
+HTTP_REFERER=http://localhost/rencanaKP/admin/subdataumum
+---
+2015/01/15 01:52:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Sistem tidak bisa menemukan action "simpan" seperti yang diminta.' in C:\xampp\htdocs\rencanaKP\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\rencanaKP\framework\web\CController.php(270): CController->missingAction('simpan')
+#1 C:\xampp\htdocs\rencanaKP\framework\web\CWebApplication.php(282): CController->run('simpan')
+#2 C:\xampp\htdocs\rencanaKP\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/simpan')
+#3 C:\xampp\htdocs\rencanaKP\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\rencanaKP\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/rencanaKP/admin/simpan
+HTTP_REFERER=http://localhost/rencanaKP/admin/subdataumum
+---
+2015/01/15 01:54:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Sistem tidak bisa menemukan action "simpan" seperti yang diminta.' in C:\xampp\htdocs\rencanaKP\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\rencanaKP\framework\web\CController.php(270): CController->missingAction('simpan')
+#1 C:\xampp\htdocs\rencanaKP\framework\web\CWebApplication.php(282): CController->run('simpan')
+#2 C:\xampp\htdocs\rencanaKP\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/simpan')
+#3 C:\xampp\htdocs\rencanaKP\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\rencanaKP\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/rencanaKP/admin/simpan
+HTTP_REFERER=http://localhost/rencanaKP/admin/subdataumum
+---
+2015/01/15 01:54:45 [error] [php] Undefined index: darat (C:\xampp\htdocs\rencanaKP\protected\controllers\AdminController.php:48)
+Stack trace:
+#0 C:\xampp\htdocs\rencanaKP\framework\web\CController.php(286): AdminController->runAction()
+#1 C:\xampp\htdocs\rencanaKP\framework\web\CController.php(265): AdminController->runActionWithFilters()
+#2 C:\xampp\htdocs\rencanaKP\framework\web\CWebApplication.php(282): AdminController->run()
+#3 C:\xampp\htdocs\rencanaKP\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 C:\xampp\htdocs\rencanaKP\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#5 C:\xampp\htdocs\rencanaKP\index.php(13): CWebApplication->run()
+REQUEST_URI=/rencanaKP/admin/simpan
+in C:\xampp\htdocs\rencanaKP\protected\controllers\AdminController.php (48)
+in C:\xampp\htdocs\rencanaKP\index.php (13)
+2015/01/19 08:11:05 [error] [php] mysql_fetch_array() expects parameter 1 to be resource, boolean given (C:\xampp\htdocs\rencanaKP\protected\views\admin\subdataumum.php:2184)
+Stack trace:
+#0 C:\xampp\htdocs\rencanaKP\framework\web\CBaseController.php(95): AdminController->renderInternal()
+#1 C:\xampp\htdocs\rencanaKP\framework\web\CController.php(869): AdminController->renderFile()
+#2 C:\xampp\htdocs\rencanaKP\framework\web\CController.php(782): AdminController->renderPartial()
+#3 C:\xampp\htdocs\rencanaKP\protected\controllers\AdminController.php(22): AdminController->render()
+#4 C:\xampp\htdocs\rencanaKP\framework\web\actions\CInlineAction.php(49): AdminController->actionSubDataUmum()
+#5 C:\xampp\htdocs\rencanaKP\framework\web\CController.php(308): CInlineAction->runWithParams()
+#6 C:\xampp\htdocs\rencanaKP\framework\web\CController.php(286): AdminController->runAction()
+#7 C:\xampp\htdocs\rencanaKP\framework\web\CController.php(265): AdminController->runActionWithFilters()
+#8 C:\xampp\htdocs\rencanaKP\framework\web\CWebApplication.php(282): AdminController->run()
+#9 C:\xampp\htdocs\rencanaKP\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#10 C:\xampp\htdocs\rencanaKP\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#11 C:\xampp\htdocs\rencanaKP\index.php(13): CWebApplication->run()
+REQUEST_URI=/rencanaKP/admin/subdataumum
+in C:\xampp\htdocs\rencanaKP\protected\views\admin\subdataumum.php (2184)
+in C:\xampp\htdocs\rencanaKP\protected\controllers\AdminController.php (22)
+in C:\xampp\htdocs\rencanaKP\index.php (13)
+2015/01/19 08:13:36 [error] [system.db.CDbCommand] CDbCommand::fetchAll() gagal: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'rencanakp.tbl' doesn't exist. Statement SQL yang dijalankan: SELECT * FROM tbl.
+in C:\xampp\htdocs\rencanaKP\protected\views\admin\subdataumum.php (2181)
+in C:\xampp\htdocs\rencanaKP\protected\controllers\AdminController.php (22)
+in C:\xampp\htdocs\rencanaKP\index.php (13)
+2015/01/19 08:13:36 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand gagal menjalankan statementSQL: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'rencanakp.tbl' doesn't exist. The SQL statement executed was: SELECT * FROM tbl' in C:\xampp\htdocs\rencanaKP\framework\db\CDbCommand.php:543
+Stack trace:
+#0 C:\xampp\htdocs\rencanaKP\framework\db\CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 C:\xampp\htdocs\rencanaKP\protected\views\admin\subdataumum.php(2181): CDbCommand->queryAll()
+#2 C:\xampp\htdocs\rencanaKP\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\rencanaKP\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', NULL, true)
+#4 C:\xampp\htdocs\rencanaKP\framework\web\CController.php(869): CBaseController->renderFile('C:\\xampp\\htdocs...', NULL, true)
+#5 C:\xampp\htdocs\rencanaKP\framework\web\CController.php(782): CController->renderPartial('subdataumum', NULL, true)
+#6 C:\xampp\htdocs\rencanaKP\protected\controllers\AdminController.php(22): CController->render('subdataumum')
+#7 C:\xampp\htdocs\rencanaKP\framework\web\actions\CInlineAction.php(49): AdminController->actionSubDataUmum()
+#8 C:\xampp\htdocs\rencanaKP\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 C:\xampp\htdocs\rencanaKP\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#10 C:\xampp\htdocs\rencanaKP\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 C:\xampp\htdocs\rencanaKP\framework\web\CWebApplication.php(282): CController->run('subdataumum')
+#12 C:\xampp\htdocs\rencanaKP\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/subdataum...')
+#13 C:\xampp\htdocs\rencanaKP\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#14 C:\xampp\htdocs\rencanaKP\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/rencanaKP/admin/subdataumum
+---
+2015/01/19 16:05:52 [error] [php] Undefined variable: dataProvider (C:\xampp\htdocs\sipd\protected\views\admin\tampilgeolswil.php:2)
+Stack trace:
+#0 C:\xampp\htdocs\sipd\framework\web\CBaseController.php(95): AdminController->renderInternal()
+#1 C:\xampp\htdocs\sipd\framework\web\CController.php(869): AdminController->renderFile()
+#2 C:\xampp\htdocs\sipd\framework\web\CController.php(782): AdminController->renderPartial()
+#3 C:\xampp\htdocs\sipd\protected\controllers\AdminController.php(22): AdminController->render()
+#4 C:\xampp\htdocs\sipd\framework\web\actions\CInlineAction.php(49): AdminController->actionSubDataUmum()
+#5 C:\xampp\htdocs\sipd\framework\web\CController.php(308): CInlineAction->runWithParams()
+#6 C:\xampp\htdocs\sipd\framework\web\CController.php(286): AdminController->runAction()
+#7 C:\xampp\htdocs\sipd\framework\web\CController.php(265): AdminController->runActionWithFilters()
+#8 C:\xampp\htdocs\sipd\framework\web\CWebApplication.php(282): AdminController->run()
+#9 C:\xampp\htdocs\sipd\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#10 C:\xampp\htdocs\sipd\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#11 C:\xampp\htdocs\sipd\index.php(13): CWebApplication->run()
+REQUEST_URI=/sipd/admin/subdataumum
+in C:\xampp\htdocs\sipd\protected\views\admin\tampilgeolswil.php (2)
+in C:\xampp\htdocs\sipd\protected\views\admin\subdataumum.php (2197)
+in C:\xampp\htdocs\sipd\protected\controllers\AdminController.php (22)
+2015/01/19 16:12:37 [error] [php] Undefined variable: dataProvider (C:\xampp\htdocs\sipd\protected\views\admin\tampilgeolswil.php:2)
+Stack trace:
+#0 C:\xampp\htdocs\sipd\framework\web\CBaseController.php(95): AdminController->renderInternal()
+#1 C:\xampp\htdocs\sipd\framework\web\CController.php(869): AdminController->renderFile()
+#2 C:\xampp\htdocs\sipd\framework\web\CController.php(782): AdminController->renderPartial()
+#3 C:\xampp\htdocs\sipd\protected\controllers\AdminController.php(29): AdminController->render()
+#4 C:\xampp\htdocs\sipd\framework\web\actions\CInlineAction.php(49): AdminController->actionSubDataUmum()
+#5 C:\xampp\htdocs\sipd\framework\web\CController.php(308): CInlineAction->runWithParams()
+#6 C:\xampp\htdocs\sipd\framework\web\CController.php(286): AdminController->runAction()
+#7 C:\xampp\htdocs\sipd\framework\web\CController.php(265): AdminController->runActionWithFilters()
+#8 C:\xampp\htdocs\sipd\framework\web\CWebApplication.php(282): AdminController->run()
+#9 C:\xampp\htdocs\sipd\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#10 C:\xampp\htdocs\sipd\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#11 C:\xampp\htdocs\sipd\index.php(13): CWebApplication->run()
+REQUEST_URI=/sipd/admin/subdataumum
+in C:\xampp\htdocs\sipd\protected\views\admin\tampilgeolswil.php (2)
+in C:\xampp\htdocs\sipd\protected\views\admin\subdataumum.php (2197)
+in C:\xampp\htdocs\sipd\protected\controllers\AdminController.php (29)
+2015/01/19 16:16:00 [error] [php] Undefined variable: dataProvider (C:\xampp\htdocs\sipd\protected\views\admin\tampilgeolswil.php:2)
+Stack trace:
+#0 C:\xampp\htdocs\sipd\framework\web\CBaseController.php(95): AdminController->renderInternal()
+#1 C:\xampp\htdocs\sipd\framework\web\CController.php(869): AdminController->renderFile()
+#2 C:\xampp\htdocs\sipd\framework\web\CController.php(782): AdminController->renderPartial()
+#3 C:\xampp\htdocs\sipd\protected\controllers\AdminController.php(29): AdminController->render()
+#4 C:\xampp\htdocs\sipd\framework\web\actions\CInlineAction.php(49): AdminController->actionSubDataUmum()
+#5 C:\xampp\htdocs\sipd\framework\web\CController.php(308): CInlineAction->runWithParams()
+#6 C:\xampp\htdocs\sipd\framework\web\CController.php(286): AdminController->runAction()
+#7 C:\xampp\htdocs\sipd\framework\web\CController.php(265): AdminController->runActionWithFilters()
+#8 C:\xampp\htdocs\sipd\framework\web\CWebApplication.php(282): AdminController->run()
+#9 C:\xampp\htdocs\sipd\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#10 C:\xampp\htdocs\sipd\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#11 C:\xampp\htdocs\sipd\index.php(13): CWebApplication->run()
+REQUEST_URI=/sipd/admin/subdataumum
+in C:\xampp\htdocs\sipd\protected\views\admin\tampilgeolswil.php (2)
+in C:\xampp\htdocs\sipd\protected\views\admin\subdataumum.php (2197)
+in C:\xampp\htdocs\sipd\protected\controllers\AdminController.php (29)
