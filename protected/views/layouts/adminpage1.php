@@ -37,12 +37,16 @@
         }
         td.a{
             padding-left: 30px;
+
         }
         td.b{
             padding-left: 60px;
         }
         td.c{
             padding-left: 45px;
+        }
+        td.d{
+            padding-left: 65px;
         }
     </style>
 
@@ -78,7 +82,10 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="<?php echo Yii::app()->request->baseUrl; ?>/admin/index">SIPD Purbalingga</a>
+
+                <a class="navbar-brand" href="<?php echo Yii::app()->request->baseUrl; ?>/admin/index">
+                <img class="img-responsive img-rounded" src="<?php echo Yii::app()->request->baseUrl; ?>/assets/temaHome/img/Logo_Pbg.png" alt="SIPD" width="20px" />
+                <span>SIPD Purbalingga</span></a>
             </div>
             <!-- Top Menu Items -->
             <ul class="nav navbar-right top-nav">
@@ -113,22 +120,36 @@
                         <a href="<?php echo Yii::app()->request->baseUrl; ?>/admin/index"><i class="fa fa-fw fa-dashboard"></i> Dashboard</a>
                     </li>
                     <li>
-                        <a href="<?php echo Yii::app()->request->baseUrl; ?>/assets/temaAdmin1/forms.html"><i class="fa fa-fw fa-edit"></i> Forms</a>
-                    </li>
-                    <li>
-                        <a href="<?php echo Yii::app()->request->baseUrl; ?>/assets/temaAdmin1/bootstrap-elements.html"><i class="fa fa-fw fa-desktop"></i> Bootstrap Elements</a>
-                    </li>
-                    <li>
-                        <a href="javascript:;" data-toggle="collapse" data-target="#demo"><i class="fa fa-fw fa-arrows-v"></i> Isi Data <i class="fa fa-fw fa-caret-down"></i></a>
+                        <a href="javascript:;" data-toggle="collapse" data-target="#demo"><i class="fa fa-fw fa-list-alt"></i> Sub Data Umum<i class="fa fa-fw fa-caret-down"></i></a>
                         <ul id="demo" class="collapse">
                             <li>
-                                <?php echo CHtml::link('Sub Data Umum',array('admin/subdataumum')); ?>
+                                <?php echo CHtml::link('Data Umum',array('admin/dataumum')); ?>
                             </li>
                             <li>
-                                <?php echo CHtml::link('Sub Ekonomi',array('admin/subekonomi')); ?>
+                                <?php echo CHtml::link('Sosial Budaya',array('admin/sosbud')); ?>
+                            </li>
+                        </ul>
+
+                        <a href="javascript:;" data-toggle="collapse" data-target="#demo1"><i class="fa fa-fw fa-list-alt"></i> Sub Ekonomi<i class="fa fa-fw fa-caret-down"></i></a>
+                        <ul id="demo1" class="collapse">
+                            <li>
+                                <?php echo CHtml::link('Ekonomi',array('admin/ekonomi')); ?>
                             </li>
                             <li>
-                                <?php echo CHtml::link('Sub Keamanan',array('admin/subkeamanan')); ?>
+                                <?php echo CHtml::link('Infrastruktur',array('admin/infrastruktur')); ?>
+                            </li>
+                            <li>
+                                <?php echo CHtml::link('Sumber Daya Alam',array('admin/sda')); ?>
+                            </li>
+                        </ul>
+
+                        <a href="javascript:;" data-toggle="collapse" data-target="#demo2"><i class="fa fa-fw fa-list-alt"></i> Sub Keamanan<i class="fa fa-fw fa-caret-down"></i></a>
+                        <ul id="demo2" class="collapse">
+                            <li>
+                                <?php echo CHtml::link('Polhukam',array('admin/polhukam')); ?>
+                            </li>
+                            <li>
+                                <?php echo CHtml::link('Insidensial',array('admin/insidensial')); ?>
                             </li>
                         </ul>
                     </li>
