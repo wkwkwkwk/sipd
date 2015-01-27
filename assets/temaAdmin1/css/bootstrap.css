@@ -2356,7 +2356,7 @@ output {
 .form-control {
   display: block;
   width: 90%;
-  height: 22px;
+  height: 26px;
   padding: 6px 12px;
   font-size: 14px;
   line-height: 1.42857143;
@@ -3981,13 +3981,18 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   padding: 15px 15px;
   font-size: 18px;
   line-height: 20px;
+  width: 500px;
 }
 .navbar-brand:hover,
 .navbar-brand:focus {
   text-decoration: none;
 }
 .navbar-brand > img {
-  display: block;
+  /* display: block; */
+  float: left;
+  height: 20px;
+  width: 20px;
+  margin-right: 5px;
 }
 @media (min-width: 768px) {
   .navbar > .container .navbar-brand,

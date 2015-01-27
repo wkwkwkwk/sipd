@@ -19,6 +19,7 @@ return array(
 	'import'=>array(
 		'application.models.*',
 		'application.components.*',
+		'application.extensions.phpexcelreader.*',
 	),
 
 	'modules'=>array(
@@ -35,6 +36,16 @@ return array(
 
 	// application components
 	'components'=>array(
+		/*'Smtpmail' => array(
+			'class' => 'application.extensions.smtpmail.PHPMailer',//panggil extension phpmailer
+			'Host' => "smtp.gmail.com",//host smtp google
+			'Username' => 'emailgmailanda',//email gmail anda
+			'Password' => 'passwornanda',//password gmail anda
+			'Mailer' => 'smtp',//gunakan smtp
+			'SMTPSecure'=>'tls',//gunakan tls secure
+			'Port' => 587,//gunakan port ini untuk kirim email dengan smtp google
+			'SMTPAuth' => true,
+		),*/
 		'user'=>array(
 			// enable cookie-based authentication
 			'allowAutoLogin'=>true,

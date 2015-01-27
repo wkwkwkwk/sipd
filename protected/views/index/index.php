@@ -17,9 +17,9 @@
                     <li class="hidden">
                         <a href="#page-top"></a>
                     </li>
-                    <li>
+                    <!-- <li>
                         <a class="page-scroll" href="#contact">CONTACT</a>
-                    </li>
+                    </li> -->
                     <li>
                         <?php
                           if (!Yii::app()->user->isGuest){
@@ -30,42 +30,6 @@
                           }
                         ?>
                     </li>
-                   <!--  <li class="dropdown">
-                       <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">LOGIN <span class="caret"></span></a>
-                       <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">Login <span class="caret"></span></a>
-                                             <ul class="dropdown-menu" role="menu" style="padding:17px;">
-                                               <form class="form" method="post" name="frmlogin">
-                           <?php 
-                           
-                               /*$form=$this->beginWidget('CActiveForm',array('id'=>'frmlogin',
-                                   'enableClientValidation'=>true,
-                                   'clientOptions'=>array('validateOnSubmit'=>true,
-                                       ),
-                                   ));*/
-                           
-                           ?>
-                               <div class="row control-group">
-                                   <div class="form-group col-xs-12 floating-label-form-group controls">
-                                       <input class="form-control" style="width:200px" type="text" placeholder="Username" name="username" />
-                                       <?php /*echo $form -> error($model,'username');*/ ?>
-                                   </div>
-                               </div>
-                               <div class="row control-group">
-                                   <div class="form-group col-xs-12 floating-label-form-group controls">
-                                       <input class="form-control" type="password" placeholder="Password" name="password" />
-                                       <?php /*echo $form -> error($model,'password');*/ ?>
-                                   </div>
-                               </div>
-                              <div class="checkbox">
-                                  <label>
-                                      <input type="checkbox" name="remember-me" value="1" />Remember Me
-                                  </label>
-                              </div>
-                               <input class="btn btn-info btn-block" type="submit" name="btnlogin" value="Log In" />
-                               <?php /*$this -> endWidget(); */?>
-                           </form>
-                                             </ul>
-                   </li> -->
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
@@ -82,7 +46,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-3 col-lg-3 col-xs-5">
-                        <center><img class="img-responsive img-rounded" src="<?php echo Yii::app()->request->baseUrl; ?>/assets/temaHome/img/Logo_Pbg.png" alt="SIPD" width="100px" /></center><br />
+                        <center><img class="img-responsive img-rounded" src="<?php echo Yii::app()->request->baseUrl; ?>/assets/temaHome/img/bappeda.jpg" alt="Bappeda" width="150px" /></center><br />
                         
                             <table class="table">
                                 <tr>
@@ -126,11 +90,11 @@
     </header>    
 
     <!-- Contact Section -->
-    <section id="contact" class="container content-section">
+    <!-- <section id="contact" class="container content-section">
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2">
                 <h2>Kontak</h2>
-                <p>Jika Anda ingin berkomunikasi lebih lanjut mengenai website, dapat menghubungi developer dari website ini.</p>
+                <p>Jika Anda ingin berkomunikasi lebih lanjut dengan pihak Bappeda, Anda dapat menghubungi kami dari website ini dengan mengisi form kontak di bawah ini.</p>
                 <form name="sentMessage" id="contactForm" novalidate>
                         <div class="row control-group">
                             <div class="form-group col-xs-12 floating-label-form-group controls">
@@ -167,7 +131,7 @@
                                 <a href="mailto:carakawedhatama@gmail.com"><input type="submit" class="btn btn-default btn-lg" value="Kirim"></a>
                             </div>
                         </div>
-                    </form>
+                    </form> -->
                 <!-- <p><a href="mailto:feedback@startbootstrap.com">feedback@startbootstrap.com</a>
                 </p>
                 <ul class="list-inline banner-social-buttons">

@@ -5,6 +5,8 @@ class SiteController extends Controller
 	/**
 	 * Declares class-based actions.
 	 */
+	
+	$data = new Spreadsheet_Excel_Reader("SIPD Kabupaten Purbalingga prh th 2014.xls");
 	public function actions()
 	{
 		return array(

@@ -723,55 +723,502 @@ Stack trace:
 REQUEST_URI=/rencanaKP/admin/simpan
 in C:\xampp\htdocs\rencanaKP\protected\controllers\AdminController.php (48)
 in C:\xampp\htdocs\rencanaKP\index.php (13)
-2015/01/19 08:11:05 [error] [php] mysql_fetch_array() expects parameter 1 to be resource, boolean given (C:\xampp\htdocs\rencanaKP\protected\views\admin\subdataumum.php:2184)
-Stack trace:
-#0 C:\xampp\htdocs\rencanaKP\framework\web\CBaseController.php(95): AdminController->renderInternal()
-#1 C:\xampp\htdocs\rencanaKP\framework\web\CController.php(869): AdminController->renderFile()
-#2 C:\xampp\htdocs\rencanaKP\framework\web\CController.php(782): AdminController->renderPartial()
-#3 C:\xampp\htdocs\rencanaKP\protected\controllers\AdminController.php(22): AdminController->render()
-#4 C:\xampp\htdocs\rencanaKP\framework\web\actions\CInlineAction.php(49): AdminController->actionSubDataUmum()
-#5 C:\xampp\htdocs\rencanaKP\framework\web\CController.php(308): CInlineAction->runWithParams()
-#6 C:\xampp\htdocs\rencanaKP\framework\web\CController.php(286): AdminController->runAction()
-#7 C:\xampp\htdocs\rencanaKP\framework\web\CController.php(265): AdminController->runActionWithFilters()
-#8 C:\xampp\htdocs\rencanaKP\framework\web\CWebApplication.php(282): AdminController->run()
-#9 C:\xampp\htdocs\rencanaKP\framework\web\CWebApplication.php(141): CWebApplication->runController()
-#10 C:\xampp\htdocs\rencanaKP\framework\base\CApplication.php(180): CWebApplication->processRequest()
-#11 C:\xampp\htdocs\rencanaKP\index.php(13): CWebApplication->run()
-REQUEST_URI=/rencanaKP/admin/subdataumum
-in C:\xampp\htdocs\rencanaKP\protected\views\admin\subdataumum.php (2184)
-in C:\xampp\htdocs\rencanaKP\protected\controllers\AdminController.php (22)
+2015/01/17 01:18:12 [error] [system.db.CDbCommand] CDbCommand::execute() gagal: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 's','as'dasdw','sdqwdq'qasd','asdq'asdq','asdasd'asdasd')' at line 2. Statement SQL yang dijalankan: INSERT INTO geo_topografi(datar,bergelombang,curam,sgtcuram,tinggidpl)
+				VALUES('a's','as'dasdw','sdqwdq'qasd','asdq'asdq','asdasd'asdasd').
+in C:\xampp\htdocs\rencanaKP\protected\controllers\AdminController.php (72)
 in C:\xampp\htdocs\rencanaKP\index.php (13)
-2015/01/19 08:13:36 [error] [system.db.CDbCommand] CDbCommand::fetchAll() gagal: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'rencanakp.tbl' doesn't exist. Statement SQL yang dijalankan: SELECT * FROM tbl.
-in C:\xampp\htdocs\rencanaKP\protected\views\admin\subdataumum.php (2181)
-in C:\xampp\htdocs\rencanaKP\protected\controllers\AdminController.php (22)
-in C:\xampp\htdocs\rencanaKP\index.php (13)
-2015/01/19 08:13:36 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand gagal menjalankan statementSQL: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'rencanakp.tbl' doesn't exist. The SQL statement executed was: SELECT * FROM tbl' in C:\xampp\htdocs\rencanaKP\framework\db\CDbCommand.php:543
+2015/01/17 01:18:12 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand gagal menjalankan statementSQL: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 's','as'dasdw','sdqwdq'qasd','asdq'asdq','asdasd'asdasd')' at line 2. The SQL statement executed was: INSERT INTO geo_topografi(datar,bergelombang,curam,sgtcuram,tinggidpl)
+				VALUES('a's','as'dasdw','sdqwdq'qasd','asdq'asdq','asdasd'asdasd')' in C:\xampp\htdocs\rencanaKP\framework\db\CDbCommand.php:358
 Stack trace:
-#0 C:\xampp\htdocs\rencanaKP\framework\db\CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
-#1 C:\xampp\htdocs\rencanaKP\protected\views\admin\subdataumum.php(2181): CDbCommand->queryAll()
-#2 C:\xampp\htdocs\rencanaKP\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
-#3 C:\xampp\htdocs\rencanaKP\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', NULL, true)
-#4 C:\xampp\htdocs\rencanaKP\framework\web\CController.php(869): CBaseController->renderFile('C:\\xampp\\htdocs...', NULL, true)
-#5 C:\xampp\htdocs\rencanaKP\framework\web\CController.php(782): CController->renderPartial('subdataumum', NULL, true)
-#6 C:\xampp\htdocs\rencanaKP\protected\controllers\AdminController.php(22): CController->render('subdataumum')
-#7 C:\xampp\htdocs\rencanaKP\framework\web\actions\CInlineAction.php(49): AdminController->actionSubDataUmum()
-#8 C:\xampp\htdocs\rencanaKP\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
-#9 C:\xampp\htdocs\rencanaKP\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
-#10 C:\xampp\htdocs\rencanaKP\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
-#11 C:\xampp\htdocs\rencanaKP\framework\web\CWebApplication.php(282): CController->run('subdataumum')
-#12 C:\xampp\htdocs\rencanaKP\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/subdataum...')
-#13 C:\xampp\htdocs\rencanaKP\framework\base\CApplication.php(180): CWebApplication->processRequest()
-#14 C:\xampp\htdocs\rencanaKP\index.php(13): CApplication->run()
-#15 {main}
-REQUEST_URI=/rencanaKP/admin/subdataumum
+#0 C:\xampp\htdocs\rencanaKP\protected\controllers\AdminController.php(72): CDbCommand->execute()
+#1 C:\xampp\htdocs\rencanaKP\framework\web\actions\CInlineAction.php(49): AdminController->actionSimpan()
+#2 C:\xampp\htdocs\rencanaKP\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#3 C:\xampp\htdocs\rencanaKP\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#4 C:\xampp\htdocs\rencanaKP\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#5 C:\xampp\htdocs\rencanaKP\framework\web\CWebApplication.php(282): CController->run('simpan')
+#6 C:\xampp\htdocs\rencanaKP\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/simpan')
+#7 C:\xampp\htdocs\rencanaKP\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#8 C:\xampp\htdocs\rencanaKP\index.php(13): CApplication->run()
+#9 {main}
+REQUEST_URI=/rencanaKP/admin/simpan
+HTTP_REFERER=http://localhost/rencanaKP/admin/subdataumum
 ---
-2015/01/19 16:05:52 [error] [php] Undefined variable: dataProvider (C:\xampp\htdocs\sipd\protected\views\admin\tampilgeolswil.php:2)
+2015/01/17 01:21:05 [error] [system.db.CDbCommand] CDbCommand::execute() gagal: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 's','asas'a','','','')' at line 2. Statement SQL yang dijalankan: INSERT INTO geo_topografi(datar,bergelombang,curam,sgtcuram,tinggidpl)
+				VALUES('a's','asas'a','','','').
+in C:\xampp\htdocs\rencanaKP\protected\controllers\AdminController.php (76)
+in C:\xampp\htdocs\rencanaKP\index.php (13)
+2015/01/17 01:21:05 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand gagal menjalankan statementSQL: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 's','asas'a','','','')' at line 2. The SQL statement executed was: INSERT INTO geo_topografi(datar,bergelombang,curam,sgtcuram,tinggidpl)
+				VALUES('a's','asas'a','','','')' in C:\xampp\htdocs\rencanaKP\framework\db\CDbCommand.php:358
 Stack trace:
-#0 C:\xampp\htdocs\sipd\framework\web\CBaseController.php(95): AdminController->renderInternal()
-#1 C:\xampp\htdocs\sipd\framework\web\CController.php(869): AdminController->renderFile()
-#2 C:\xampp\htdocs\sipd\framework\web\CController.php(782): AdminController->renderPartial()
-#3 C:\xampp\htdocs\sipd\protected\controllers\AdminController.php(22): AdminController->render()
-#4 C:\xampp\htdocs\sipd\framework\web\actions\CInlineAction.php(49): AdminController->actionSubDataUmum()
+#0 C:\xampp\htdocs\rencanaKP\protected\controllers\AdminController.php(76): CDbCommand->execute()
+#1 C:\xampp\htdocs\rencanaKP\framework\web\actions\CInlineAction.php(49): AdminController->actionSimpan()
+#2 C:\xampp\htdocs\rencanaKP\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#3 C:\xampp\htdocs\rencanaKP\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#4 C:\xampp\htdocs\rencanaKP\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#5 C:\xampp\htdocs\rencanaKP\framework\web\CWebApplication.php(282): CController->run('simpan')
+#6 C:\xampp\htdocs\rencanaKP\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/simpan')
+#7 C:\xampp\htdocs\rencanaKP\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#8 C:\xampp\htdocs\rencanaKP\index.php(13): CApplication->run()
+#9 {main}
+REQUEST_URI=/rencanaKP/admin/simpan
+HTTP_REFERER=http://localhost/rencanaKP/admin/subdataumum
+---
+2015/01/19 02:25:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Sistem tidak bisa menemukan action "subdataumum" seperti yang diminta.' in C:\xampp\htdocs\sipd\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\sipd\framework\web\CController.php(270): CController->missingAction('subdataumum')
+#1 C:\xampp\htdocs\sipd\framework\web\CWebApplication.php(282): CController->run('subdataumum')
+#2 C:\xampp\htdocs\sipd\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/subdataum...')
+#3 C:\xampp\htdocs\sipd\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\sipd\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/sipd/admin/subdataumum
+HTTP_REFERER=http://localhost/sipd/admin
+---
+2015/01/19 03:11:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Sistem tidak bisa menemukan action "sda" seperti yang diminta.' in C:\xampp\htdocs\sipd\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\sipd\framework\web\CController.php(270): CController->missingAction('sda')
+#1 C:\xampp\htdocs\sipd\framework\web\CWebApplication.php(282): CController->run('sda')
+#2 C:\xampp\htdocs\sipd\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/sda')
+#3 C:\xampp\htdocs\sipd\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\sipd\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/sipd/admin/sda
+HTTP_REFERER=http://localhost/sipd/admin/infrastruktur
+---
+2015/01/19 03:20:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Sistem tidak bisa menemukan action "sda" seperti yang diminta.' in C:\xampp\htdocs\sipd\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\sipd\framework\web\CController.php(270): CController->missingAction('sda')
+#1 C:\xampp\htdocs\sipd\framework\web\CWebApplication.php(282): CController->run('sda')
+#2 C:\xampp\htdocs\sipd\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/sda')
+#3 C:\xampp\htdocs\sipd\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\sipd\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/sipd/admin/sda
+---
+2015/01/19 03:20:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Sistem tidak bisa menemukan action "sda" seperti yang diminta.' in C:\xampp\htdocs\sipd\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\sipd\framework\web\CController.php(270): CController->missingAction('sda')
+#1 C:\xampp\htdocs\sipd\framework\web\CWebApplication.php(282): CController->run('sda')
+#2 C:\xampp\htdocs\sipd\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/sda')
+#3 C:\xampp\htdocs\sipd\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\sipd\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/sipd/admin/sda
+---
+2015/01/19 03:20:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Sistem tidak bisa menemukan action "sda" seperti yang diminta.' in C:\xampp\htdocs\sipd\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\sipd\framework\web\CController.php(270): CController->missingAction('sda')
+#1 C:\xampp\htdocs\sipd\framework\web\CWebApplication.php(282): CController->run('sda')
+#2 C:\xampp\htdocs\sipd\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/sda')
+#3 C:\xampp\htdocs\sipd\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\sipd\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/sipd/admin/sda
+HTTP_REFERER=http://localhost/sipd/admin/
+---
+2015/01/19 03:24:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Sistem tidak bisa menemukan action "polhukam" seperti yang diminta.' in C:\xampp\htdocs\sipd\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\sipd\framework\web\CController.php(270): CController->missingAction('polhukam')
+#1 C:\xampp\htdocs\sipd\framework\web\CWebApplication.php(282): CController->run('polhukam')
+#2 C:\xampp\htdocs\sipd\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/polhukam')
+#3 C:\xampp\htdocs\sipd\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\sipd\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/sipd/admin/polhukam
+HTTP_REFERER=http://localhost/sipd/admin/sda
+---
+2015/01/20 02:35:57 [error] [system.db.CDbCommand] CDbCommand::fetchAll() gagal: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'sipd.geo_luas_wil' doesn't exist. Statement SQL yang dijalankan: SELECT*FROM geo_luas_wil.
+in C:\xampp\htdocs\sipd\protected\controllers\AdminController.php (25)
+in C:\xampp\htdocs\sipd\index.php (13)
+2015/01/20 02:35:57 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand gagal menjalankan statementSQL: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'sipd.geo_luas_wil' doesn't exist. The SQL statement executed was: SELECT*FROM geo_luas_wil' in C:\xampp\htdocs\sipd\framework\db\CDbCommand.php:543
+Stack trace:
+#0 C:\xampp\htdocs\sipd\framework\db\CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 C:\xampp\htdocs\sipd\protected\controllers\AdminController.php(25): CDbCommand->queryAll()
+#2 C:\xampp\htdocs\sipd\framework\web\actions\CInlineAction.php(49): AdminController->actionDataUmum()
+#3 C:\xampp\htdocs\sipd\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 C:\xampp\htdocs\sipd\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 C:\xampp\htdocs\sipd\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 C:\xampp\htdocs\sipd\framework\web\CWebApplication.php(282): CController->run('dataumum')
+#7 C:\xampp\htdocs\sipd\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/dataumum')
+#8 C:\xampp\htdocs\sipd\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#9 C:\xampp\htdocs\sipd\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/sipd/admin/dataumum
+HTTP_REFERER=http://localhost/sipd/admin/index
+---
+2015/01/20 03:20:45 [error] [php] Undefined variable: dataProvider2 (C:\xampp\htdocs\sipd\protected\views\admin\dataumum.php:2202)
+Stack trace:
+#0 C:\xampp\htdocs\sipd\framework\web\CController.php(869): AdminController->renderFile()
+#1 C:\xampp\htdocs\sipd\framework\web\CController.php(782): AdminController->renderPartial()
+#2 C:\xampp\htdocs\sipd\protected\controllers\AdminController.php(33): AdminController->render()
+#3 C:\xampp\htdocs\sipd\framework\web\actions\CInlineAction.php(49): AdminController->actionDataUmum()
+#4 C:\xampp\htdocs\sipd\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\xampp\htdocs\sipd\framework\web\CController.php(286): AdminController->runAction()
+#6 C:\xampp\htdocs\sipd\framework\web\CController.php(265): AdminController->runActionWithFilters()
+#7 C:\xampp\htdocs\sipd\framework\web\CWebApplication.php(282): AdminController->run()
+#8 C:\xampp\htdocs\sipd\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\xampp\htdocs\sipd\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\sipd\index.php(13): CWebApplication->run()
+REQUEST_URI=/sipd/admin/dataumum
+in C:\xampp\htdocs\sipd\protected\views\admin\dataumum.php (2202)
+in C:\xampp\htdocs\sipd\protected\controllers\AdminController.php (33)
+in C:\xampp\htdocs\sipd\index.php (13)
+2015/01/20 03:21:56 [error] [php] Undefined variable: dataProvider1 (C:\xampp\htdocs\sipd\protected\views\admin\dataumum.php:2165)
+Stack trace:
+#0 C:\xampp\htdocs\sipd\framework\web\CController.php(869): AdminController->renderFile()
+#1 C:\xampp\htdocs\sipd\framework\web\CController.php(782): AdminController->renderPartial()
+#2 C:\xampp\htdocs\sipd\protected\controllers\AdminController.php(33): AdminController->render()
+#3 C:\xampp\htdocs\sipd\framework\web\actions\CInlineAction.php(49): AdminController->actionDataUmum()
+#4 C:\xampp\htdocs\sipd\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\xampp\htdocs\sipd\framework\web\CController.php(286): AdminController->runAction()
+#6 C:\xampp\htdocs\sipd\framework\web\CController.php(265): AdminController->runActionWithFilters()
+#7 C:\xampp\htdocs\sipd\framework\web\CWebApplication.php(282): AdminController->run()
+#8 C:\xampp\htdocs\sipd\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\xampp\htdocs\sipd\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\sipd\index.php(13): CWebApplication->run()
+REQUEST_URI=/sipd/admin/dataumum
+in C:\xampp\htdocs\sipd\protected\views\admin\dataumum.php (2165)
+in C:\xampp\htdocs\sipd\protected\controllers\AdminController.php (33)
+in C:\xampp\htdocs\sipd\index.php (13)
+2015/01/20 03:22:59 [error] [php] Undefined variable: dataProvider1 (C:\xampp\htdocs\sipd\protected\views\admin\dataumum.php:2165)
+Stack trace:
+#0 C:\xampp\htdocs\sipd\framework\web\CController.php(869): AdminController->renderFile()
+#1 C:\xampp\htdocs\sipd\framework\web\CController.php(782): AdminController->renderPartial()
+#2 C:\xampp\htdocs\sipd\protected\controllers\AdminController.php(33): AdminController->render()
+#3 C:\xampp\htdocs\sipd\framework\web\actions\CInlineAction.php(49): AdminController->actionDataUmum()
+#4 C:\xampp\htdocs\sipd\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\xampp\htdocs\sipd\framework\web\CController.php(286): AdminController->runAction()
+#6 C:\xampp\htdocs\sipd\framework\web\CController.php(265): AdminController->runActionWithFilters()
+#7 C:\xampp\htdocs\sipd\framework\web\CWebApplication.php(282): AdminController->run()
+#8 C:\xampp\htdocs\sipd\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\xampp\htdocs\sipd\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\sipd\index.php(13): CWebApplication->run()
+REQUEST_URI=/sipd/admin/dataumum
+in C:\xampp\htdocs\sipd\protected\views\admin\dataumum.php (2165)
+in C:\xampp\htdocs\sipd\protected\controllers\AdminController.php (33)
+in C:\xampp\htdocs\sipd\index.php (13)
+2015/01/20 05:38:10 [error] [exception.CException] exception 'CException' with message 'CDbConnection dan behaviornya tidak memiliki method ataupun closure bernama "createcm"' in C:\xampp\htdocs\sipd\framework\base\CComponent.php:266
+Stack trace:
+#0 C:\xampp\htdocs\sipd\protected\controllers\AdminController.php(26): CComponent->__call('createcm', Array)
+#1 C:\xampp\htdocs\sipd\protected\controllers\AdminController.php(26): CDbConnection->createcm('SELECT*FROM geo...')
+#2 C:\xampp\htdocs\sipd\framework\web\actions\CInlineAction.php(49): AdminController->actionDataUmum()
+#3 C:\xampp\htdocs\sipd\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 C:\xampp\htdocs\sipd\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 C:\xampp\htdocs\sipd\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 C:\xampp\htdocs\sipd\framework\web\CWebApplication.php(282): CController->run('dataumum')
+#7 C:\xampp\htdocs\sipd\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/dataumum')
+#8 C:\xampp\htdocs\sipd\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#9 C:\xampp\htdocs\sipd\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/sipd/admin/dataumum
+---
+2015/01/20 06:07:42 [error] [php] Undefined variable: dataProvider4 (C:\xampp\htdocs\sipd\protected\views\admin\dataumum.php:137)
+Stack trace:
+#0 C:\xampp\htdocs\sipd\framework\web\CController.php(869): AdminController->renderFile()
+#1 C:\xampp\htdocs\sipd\framework\web\CController.php(782): AdminController->renderPartial()
+#2 C:\xampp\htdocs\sipd\protected\controllers\AdminController.php(35): AdminController->render()
+#3 C:\xampp\htdocs\sipd\framework\web\actions\CInlineAction.php(49): AdminController->actionDataUmum()
+#4 C:\xampp\htdocs\sipd\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\xampp\htdocs\sipd\framework\web\CController.php(286): AdminController->runAction()
+#6 C:\xampp\htdocs\sipd\framework\web\CController.php(265): AdminController->runActionWithFilters()
+#7 C:\xampp\htdocs\sipd\framework\web\CWebApplication.php(282): AdminController->run()
+#8 C:\xampp\htdocs\sipd\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\xampp\htdocs\sipd\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\sipd\index.php(13): CWebApplication->run()
+REQUEST_URI=/sipd/admin/dataumum
+in C:\xampp\htdocs\sipd\protected\views\admin\dataumum.php (137)
+in C:\xampp\htdocs\sipd\protected\controllers\AdminController.php (35)
+in C:\xampp\htdocs\sipd\index.php (13)
+2015/01/20 08:03:11 [error] [php] Undefined variable: dataProvider5 (C:\xampp\htdocs\sipd\protected\views\admin\dataumum.php:432)
+Stack trace:
+#0 C:\xampp\htdocs\sipd\framework\web\CController.php(869): AdminController->renderFile()
+#1 C:\xampp\htdocs\sipd\framework\web\CController.php(782): AdminController->renderPartial()
+#2 C:\xampp\htdocs\sipd\protected\controllers\AdminController.php(35): AdminController->render()
+#3 C:\xampp\htdocs\sipd\framework\web\actions\CInlineAction.php(49): AdminController->actionDataUmum()
+#4 C:\xampp\htdocs\sipd\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\xampp\htdocs\sipd\framework\web\CController.php(286): AdminController->runAction()
+#6 C:\xampp\htdocs\sipd\framework\web\CController.php(265): AdminController->runActionWithFilters()
+#7 C:\xampp\htdocs\sipd\framework\web\CWebApplication.php(282): AdminController->run()
+#8 C:\xampp\htdocs\sipd\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\xampp\htdocs\sipd\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\sipd\index.php(13): CWebApplication->run()
+REQUEST_URI=/sipd/admin/dataumum
+in C:\xampp\htdocs\sipd\protected\views\admin\dataumum.php (432)
+in C:\xampp\htdocs\sipd\protected\controllers\AdminController.php (35)
+in C:\xampp\htdocs\sipd\index.php (13)
+2015/01/20 08:51:32 [error] [system.db.CDbCommand] CDbCommand::fetchAll() gagal: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'sipd.pmr_adminpmr' doesn't exist. Statement SQL yang dijalankan: SELECT*FROM pmr_adminpmr.
+in C:\xampp\htdocs\sipd\protected\controllers\AdminController.php (42)
+in C:\xampp\htdocs\sipd\index.php (13)
+2015/01/20 08:51:32 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand gagal menjalankan statementSQL: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'sipd.pmr_adminpmr' doesn't exist. The SQL statement executed was: SELECT*FROM pmr_adminpmr' in C:\xampp\htdocs\sipd\framework\db\CDbCommand.php:543
+Stack trace:
+#0 C:\xampp\htdocs\sipd\framework\db\CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 C:\xampp\htdocs\sipd\protected\controllers\AdminController.php(42): CDbCommand->queryAll()
+#2 C:\xampp\htdocs\sipd\framework\web\actions\CInlineAction.php(49): AdminController->actionDataUmum()
+#3 C:\xampp\htdocs\sipd\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 C:\xampp\htdocs\sipd\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 C:\xampp\htdocs\sipd\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 C:\xampp\htdocs\sipd\framework\web\CWebApplication.php(282): CController->run('dataumum')
+#7 C:\xampp\htdocs\sipd\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/dataumum')
+#8 C:\xampp\htdocs\sipd\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#9 C:\xampp\htdocs\sipd\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/sipd/admin/dataumum
+---
+2015/01/21 01:58:15 [error] [php] require_once(excel_reader2.php): failed to open stream: No such file or directory (C:\xampp\htdocs\sipd\protected\controllers\AdminController.php:118)
+Stack trace:
+#0 C:\xampp\htdocs\sipd\framework\web\CController.php(308): CInlineAction->runWithParams()
+#1 C:\xampp\htdocs\sipd\framework\web\CController.php(286): AdminController->runAction()
+#2 C:\xampp\htdocs\sipd\framework\web\CController.php(265): AdminController->runActionWithFilters()
+#3 C:\xampp\htdocs\sipd\framework\web\CWebApplication.php(282): AdminController->run()
+#4 C:\xampp\htdocs\sipd\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#5 C:\xampp\htdocs\sipd\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#6 C:\xampp\htdocs\sipd\index.php(13): CWebApplication->run()
+REQUEST_URI=/sipd/admin/tampilkandata
+in C:\xampp\htdocs\sipd\protected\controllers\AdminController.php (118)
+in C:\xampp\htdocs\sipd\protected\controllers\AdminController.php (118)
+in C:\xampp\htdocs\sipd\index.php (13)
+2015/01/21 01:59:30 [error] [php] require_once(../protected/extensions/excel_reader2.php): failed to open stream: No such file or directory (C:\xampp\htdocs\sipd\protected\controllers\AdminController.php:118)
+Stack trace:
+#0 C:\xampp\htdocs\sipd\framework\web\CController.php(308): CInlineAction->runWithParams()
+#1 C:\xampp\htdocs\sipd\framework\web\CController.php(286): AdminController->runAction()
+#2 C:\xampp\htdocs\sipd\framework\web\CController.php(265): AdminController->runActionWithFilters()
+#3 C:\xampp\htdocs\sipd\framework\web\CWebApplication.php(282): AdminController->run()
+#4 C:\xampp\htdocs\sipd\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#5 C:\xampp\htdocs\sipd\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#6 C:\xampp\htdocs\sipd\index.php(13): CWebApplication->run()
+REQUEST_URI=/sipd/admin/tampilkandata
+in C:\xampp\htdocs\sipd\protected\controllers\AdminController.php (118)
+in C:\xampp\htdocs\sipd\protected\controllers\AdminController.php (118)
+in C:\xampp\htdocs\sipd\index.php (13)
+2015/01/21 02:03:37 [error] [php] require_once(&lt;?php echo Yii::app()-&gt;request-&gt;baseUrl; ?&gt;/protected/extensions/excel_reader2.php): failed to open stream: No error (C:\xampp\htdocs\sipd\protected\controllers\AdminController.php:118)
+Stack trace:
+#0 C:\xampp\htdocs\sipd\framework\web\CController.php(308): CInlineAction->runWithParams()
+#1 C:\xampp\htdocs\sipd\framework\web\CController.php(286): AdminController->runAction()
+#2 C:\xampp\htdocs\sipd\framework\web\CController.php(265): AdminController->runActionWithFilters()
+#3 C:\xampp\htdocs\sipd\framework\web\CWebApplication.php(282): AdminController->run()
+#4 C:\xampp\htdocs\sipd\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#5 C:\xampp\htdocs\sipd\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#6 C:\xampp\htdocs\sipd\index.php(13): CWebApplication->run()
+REQUEST_URI=/sipd/admin/tampilkandata
+in C:\xampp\htdocs\sipd\protected\controllers\AdminController.php (118)
+in C:\xampp\htdocs\sipd\protected\controllers\AdminController.php (118)
+in C:\xampp\htdocs\sipd\index.php (13)
+2015/01/21 02:05:14 [error] [php] include(Spreadsheet_Excel_Reader.php): failed to open stream: No such file or directory (C:\xampp\htdocs\sipd\framework\YiiBase.php:427)
+Stack trace:
+#0 C:\xampp\htdocs\sipd\protected\controllers\AdminController.php(119): spl_autoload_call()
+#1 C:\xampp\htdocs\sipd\framework\web\actions\CInlineAction.php(49): AdminController->actionTampilkanData()
+#2 C:\xampp\htdocs\sipd\framework\web\CController.php(308): CInlineAction->runWithParams()
+#3 C:\xampp\htdocs\sipd\framework\web\CController.php(286): AdminController->runAction()
+#4 C:\xampp\htdocs\sipd\framework\web\CController.php(265): AdminController->runActionWithFilters()
+#5 C:\xampp\htdocs\sipd\framework\web\CWebApplication.php(282): AdminController->run()
+#6 C:\xampp\htdocs\sipd\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#7 C:\xampp\htdocs\sipd\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#8 C:\xampp\htdocs\sipd\index.php(13): CWebApplication->run()
+REQUEST_URI=/sipd/admin/tampilkandata
+in C:\xampp\htdocs\sipd\protected\controllers\AdminController.php (119)
+in C:\xampp\htdocs\sipd\index.php (13)
+2015/01/21 02:16:20 [error] [php] require_once(extensions/excel_reader2.php): failed to open stream: No such file or directory (C:\xampp\htdocs\sipd\protected\controllers\AdminController.php:118)
+Stack trace:
+#0 C:\xampp\htdocs\sipd\framework\web\CController.php(308): CInlineAction->runWithParams()
+#1 C:\xampp\htdocs\sipd\framework\web\CController.php(286): AdminController->runAction()
+#2 C:\xampp\htdocs\sipd\framework\web\CController.php(265): AdminController->runActionWithFilters()
+#3 C:\xampp\htdocs\sipd\framework\web\CWebApplication.php(282): AdminController->run()
+#4 C:\xampp\htdocs\sipd\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#5 C:\xampp\htdocs\sipd\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#6 C:\xampp\htdocs\sipd\index.php(13): CWebApplication->run()
+REQUEST_URI=/sipd/admin/tampilkandata
+in C:\xampp\htdocs\sipd\protected\controllers\AdminController.php (118)
+in C:\xampp\htdocs\sipd\protected\controllers\AdminController.php (118)
+in C:\xampp\htdocs\sipd\index.php (13)
+2015/01/21 02:19:28 [error] [php] include(C:\xampp\htdocs\sipd\protected\extensions\phpexcelreader\JPhpExcelReader.php): failed to open stream: No such file or directory (C:\xampp\htdocs\sipd\framework\YiiBase.php:401)
+Stack trace:
+#0 C:\xampp\htdocs\sipd\protected\controllers\AdminController.php(119): spl_autoload_call()
+#1 C:\xampp\htdocs\sipd\framework\web\actions\CInlineAction.php(49): AdminController->actionTampilkanData()
+#2 C:\xampp\htdocs\sipd\framework\web\CController.php(308): CInlineAction->runWithParams()
+#3 C:\xampp\htdocs\sipd\framework\web\CController.php(286): AdminController->runAction()
+#4 C:\xampp\htdocs\sipd\framework\web\CController.php(265): AdminController->runActionWithFilters()
+#5 C:\xampp\htdocs\sipd\framework\web\CWebApplication.php(282): AdminController->run()
+#6 C:\xampp\htdocs\sipd\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#7 C:\xampp\htdocs\sipd\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#8 C:\xampp\htdocs\sipd\index.php(13): CWebApplication->run()
+REQUEST_URI=/sipd/admin/tampilkandata
+in C:\xampp\htdocs\sipd\protected\controllers\AdminController.php (119)
+in C:\xampp\htdocs\sipd\index.php (13)
+2015/01/21 02:21:52 [error] [php] include(C:\xampp\htdocs\sipd\protected\extensions\phpexcelreader\JPhpExcelReader.php): failed to open stream: No such file or directory (C:\xampp\htdocs\sipd\framework\YiiBase.php:401)
+Stack trace:
+#0 C:\xampp\htdocs\sipd\protected\controllers\AdminController.php(119): spl_autoload_call()
+#1 C:\xampp\htdocs\sipd\framework\web\actions\CInlineAction.php(49): AdminController->actionTampilkanData()
+#2 C:\xampp\htdocs\sipd\framework\web\CController.php(308): CInlineAction->runWithParams()
+#3 C:\xampp\htdocs\sipd\framework\web\CController.php(286): AdminController->runAction()
+#4 C:\xampp\htdocs\sipd\framework\web\CController.php(265): AdminController->runActionWithFilters()
+#5 C:\xampp\htdocs\sipd\framework\web\CWebApplication.php(282): AdminController->run()
+#6 C:\xampp\htdocs\sipd\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#7 C:\xampp\htdocs\sipd\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#8 C:\xampp\htdocs\sipd\index.php(13): CWebApplication->run()
+REQUEST_URI=/sipd/admin/tampilkandata
+in C:\xampp\htdocs\sipd\protected\controllers\AdminController.php (119)
+in C:\xampp\htdocs\sipd\index.php (13)
+2015/01/21 02:23:28 [error] [php] include(Spreadsheet_Excel_Reader.php): failed to open stream: No such file or directory (C:\xampp\htdocs\sipd\framework\YiiBase.php:427)
+Stack trace:
+#0 C:\xampp\htdocs\sipd\protected\controllers\AdminController.php(119): spl_autoload_call()
+#1 C:\xampp\htdocs\sipd\framework\web\actions\CInlineAction.php(49): AdminController->actionTampilkanData()
+#2 C:\xampp\htdocs\sipd\framework\web\CController.php(308): CInlineAction->runWithParams()
+#3 C:\xampp\htdocs\sipd\framework\web\CController.php(286): AdminController->runAction()
+#4 C:\xampp\htdocs\sipd\framework\web\CController.php(265): AdminController->runActionWithFilters()
+#5 C:\xampp\htdocs\sipd\framework\web\CWebApplication.php(282): AdminController->run()
+#6 C:\xampp\htdocs\sipd\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#7 C:\xampp\htdocs\sipd\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#8 C:\xampp\htdocs\sipd\index.php(13): CWebApplication->run()
+REQUEST_URI=/sipd/admin/tampilkandata
+in C:\xampp\htdocs\sipd\protected\controllers\AdminController.php (119)
+in C:\xampp\htdocs\sipd\index.php (13)
+2015/01/21 02:31:06 [error] [php] require_once(excel_reader2.php): failed to open stream: No such file or directory (C:\xampp\htdocs\sipd\protected\controllers\AdminController.php:114)
+Stack trace:
+#0 C:\xampp\htdocs\sipd\framework\web\CController.php(308): CInlineAction->runWithParams()
+#1 C:\xampp\htdocs\sipd\framework\web\CController.php(286): AdminController->runAction()
+#2 C:\xampp\htdocs\sipd\framework\web\CController.php(265): AdminController->runActionWithFilters()
+#3 C:\xampp\htdocs\sipd\framework\web\CWebApplication.php(282): AdminController->run()
+#4 C:\xampp\htdocs\sipd\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#5 C:\xampp\htdocs\sipd\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#6 C:\xampp\htdocs\sipd\index.php(13): CWebApplication->run()
+REQUEST_URI=/sipd/admin/tampilkandata
+in C:\xampp\htdocs\sipd\protected\controllers\AdminController.php (114)
+in C:\xampp\htdocs\sipd\protected\controllers\AdminController.php (114)
+in C:\xampp\htdocs\sipd\index.php (13)
+2015/01/21 02:31:23 [error] [php] require_once(ext.excel_reader2.php): failed to open stream: No such file or directory (C:\xampp\htdocs\sipd\protected\controllers\AdminController.php:114)
+Stack trace:
+#0 C:\xampp\htdocs\sipd\framework\web\CController.php(308): CInlineAction->runWithParams()
+#1 C:\xampp\htdocs\sipd\framework\web\CController.php(286): AdminController->runAction()
+#2 C:\xampp\htdocs\sipd\framework\web\CController.php(265): AdminController->runActionWithFilters()
+#3 C:\xampp\htdocs\sipd\framework\web\CWebApplication.php(282): AdminController->run()
+#4 C:\xampp\htdocs\sipd\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#5 C:\xampp\htdocs\sipd\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#6 C:\xampp\htdocs\sipd\index.php(13): CWebApplication->run()
+REQUEST_URI=/sipd/admin/tampilkandata
+in C:\xampp\htdocs\sipd\protected\controllers\AdminController.php (114)
+in C:\xampp\htdocs\sipd\protected\controllers\AdminController.php (114)
+in C:\xampp\htdocs\sipd\index.php (13)
+2015/01/21 02:31:43 [error] [php] require_once(./extensions/excel_reader2.php): failed to open stream: No such file or directory (C:\xampp\htdocs\sipd\protected\controllers\AdminController.php:114)
+Stack trace:
+#0 C:\xampp\htdocs\sipd\framework\web\CController.php(308): CInlineAction->runWithParams()
+#1 C:\xampp\htdocs\sipd\framework\web\CController.php(286): AdminController->runAction()
+#2 C:\xampp\htdocs\sipd\framework\web\CController.php(265): AdminController->runActionWithFilters()
+#3 C:\xampp\htdocs\sipd\framework\web\CWebApplication.php(282): AdminController->run()
+#4 C:\xampp\htdocs\sipd\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#5 C:\xampp\htdocs\sipd\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#6 C:\xampp\htdocs\sipd\index.php(13): CWebApplication->run()
+REQUEST_URI=/sipd/admin/tampilkandata
+in C:\xampp\htdocs\sipd\protected\controllers\AdminController.php (114)
+in C:\xampp\htdocs\sipd\protected\controllers\AdminController.php (114)
+in C:\xampp\htdocs\sipd\index.php (13)
+2015/01/21 02:31:48 [error] [php] require_once(../extensions/excel_reader2.php): failed to open stream: No such file or directory (C:\xampp\htdocs\sipd\protected\controllers\AdminController.php:114)
+Stack trace:
+#0 C:\xampp\htdocs\sipd\framework\web\CController.php(308): CInlineAction->runWithParams()
+#1 C:\xampp\htdocs\sipd\framework\web\CController.php(286): AdminController->runAction()
+#2 C:\xampp\htdocs\sipd\framework\web\CController.php(265): AdminController->runActionWithFilters()
+#3 C:\xampp\htdocs\sipd\framework\web\CWebApplication.php(282): AdminController->run()
+#4 C:\xampp\htdocs\sipd\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#5 C:\xampp\htdocs\sipd\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#6 C:\xampp\htdocs\sipd\index.php(13): CWebApplication->run()
+REQUEST_URI=/sipd/admin/tampilkandata
+in C:\xampp\htdocs\sipd\protected\controllers\AdminController.php (114)
+in C:\xampp\htdocs\sipd\protected\controllers\AdminController.php (114)
+in C:\xampp\htdocs\sipd\index.php (13)
+2015/01/21 04:31:34 [error] [php] require_once(excel_reader2.php): failed to open stream: No such file or directory (C:\xampp\htdocs\sipd\protected\controllers\AdminController.php:3)
+Stack trace:
+#0 C:\xampp\htdocs\sipd\framework\web\CWebApplication.php(276): CWebApplication->createController()
+#1 C:\xampp\htdocs\sipd\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#2 C:\xampp\htdocs\sipd\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#3 C:\xampp\htdocs\sipd\index.php(13): CWebApplication->run()
+REQUEST_URI=/sipd/admin/tampilkandata
+in C:\xampp\htdocs\sipd\protected\controllers\AdminController.php (3)
+in C:\xampp\htdocs\sipd\protected\controllers\AdminController.php (3)
+in C:\xampp\htdocs\sipd\index.php (13)
+2015/01/21 04:33:13 [error] [php] include(Spreadsheet_Excel_Reader.php): failed to open stream: No such file or directory (C:\xampp\htdocs\sipd\framework\YiiBase.php:427)
+Stack trace:
+#0 C:\xampp\htdocs\sipd\protected\controllers\AdminController.php(119): spl_autoload_call()
+#1 C:\xampp\htdocs\sipd\framework\web\actions\CInlineAction.php(49): AdminController->actionTampilkanData()
+#2 C:\xampp\htdocs\sipd\framework\web\CController.php(308): CInlineAction->runWithParams()
+#3 C:\xampp\htdocs\sipd\framework\web\CController.php(286): AdminController->runAction()
+#4 C:\xampp\htdocs\sipd\framework\web\CController.php(265): AdminController->runActionWithFilters()
+#5 C:\xampp\htdocs\sipd\framework\web\CWebApplication.php(282): AdminController->run()
+#6 C:\xampp\htdocs\sipd\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#7 C:\xampp\htdocs\sipd\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#8 C:\xampp\htdocs\sipd\index.php(13): CWebApplication->run()
+REQUEST_URI=/sipd/admin/tampilkandata
+in C:\xampp\htdocs\sipd\protected\controllers\AdminController.php (119)
+in C:\xampp\htdocs\sipd\index.php (13)
+2015/01/21 04:45:54 [error] [php] include(Spreadsheet_Excel_Reader.php): failed to open stream: No such file or directory (C:\xampp\htdocs\sipd\framework\YiiBase.php:427)
+Stack trace:
+#0 C:\xampp\htdocs\sipd\protected\controllers\AdminController.php(119): spl_autoload_call()
+#1 C:\xampp\htdocs\sipd\framework\web\actions\CInlineAction.php(49): AdminController->actionTampilkanData()
+#2 C:\xampp\htdocs\sipd\framework\web\CController.php(308): CInlineAction->runWithParams()
+#3 C:\xampp\htdocs\sipd\framework\web\CController.php(286): AdminController->runAction()
+#4 C:\xampp\htdocs\sipd\framework\web\CController.php(265): AdminController->runActionWithFilters()
+#5 C:\xampp\htdocs\sipd\framework\web\CWebApplication.php(282): AdminController->run()
+#6 C:\xampp\htdocs\sipd\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#7 C:\xampp\htdocs\sipd\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#8 C:\xampp\htdocs\sipd\index.php(13): CWebApplication->run()
+REQUEST_URI=/sipd/admin/tampilkandata
+in C:\xampp\htdocs\sipd\protected\controllers\AdminController.php (119)
+in C:\xampp\htdocs\sipd\index.php (13)
+2015/01/21 04:48:09 [error] [php] Undefined variable: data (C:\xampp\htdocs\sipd\protected\controllers\AdminController.php:120)
+Stack trace:
+#0 C:\xampp\htdocs\sipd\framework\web\CController.php(286): AdminController->runAction()
+#1 C:\xampp\htdocs\sipd\framework\web\CController.php(265): AdminController->runActionWithFilters()
+#2 C:\xampp\htdocs\sipd\framework\web\CWebApplication.php(282): AdminController->run()
+#3 C:\xampp\htdocs\sipd\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 C:\xampp\htdocs\sipd\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#5 C:\xampp\htdocs\sipd\index.php(13): CWebApplication->run()
+REQUEST_URI=/sipd/admin/tampilkandata
+in C:\xampp\htdocs\sipd\protected\controllers\AdminController.php (120)
+in C:\xampp\htdocs\sipd\index.php (13)
+2015/01/21 04:53:34 [error] [php] include(Spreadsheet_Excel_Reader.php): failed to open stream: No such file or directory (C:\xampp\htdocs\sipd\framework\YiiBase.php:427)
+Stack trace:
+#0 C:\xampp\htdocs\sipd\protected\controllers\AdminController.php(120): spl_autoload_call()
+#1 C:\xampp\htdocs\sipd\framework\web\actions\CInlineAction.php(49): AdminController->actionTampilkanData()
+#2 C:\xampp\htdocs\sipd\framework\web\CController.php(308): CInlineAction->runWithParams()
+#3 C:\xampp\htdocs\sipd\framework\web\CController.php(286): AdminController->runAction()
+#4 C:\xampp\htdocs\sipd\framework\web\CController.php(265): AdminController->runActionWithFilters()
+#5 C:\xampp\htdocs\sipd\framework\web\CWebApplication.php(282): AdminController->run()
+#6 C:\xampp\htdocs\sipd\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#7 C:\xampp\htdocs\sipd\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#8 C:\xampp\htdocs\sipd\index.php(13): CWebApplication->run()
+REQUEST_URI=/sipd/admin/tampilkandata
+in C:\xampp\htdocs\sipd\protected\controllers\AdminController.php (120)
+in C:\xampp\htdocs\sipd\index.php (13)
+2015/01/21 04:56:50 [error] [php] Undefined variable: data (C:\xampp\htdocs\sipd\protected\controllers\AdminController.php:119)
+Stack trace:
+#0 C:\xampp\htdocs\sipd\framework\web\CController.php(286): AdminController->runAction()
+#1 C:\xampp\htdocs\sipd\framework\web\CController.php(265): AdminController->runActionWithFilters()
+#2 C:\xampp\htdocs\sipd\framework\web\CWebApplication.php(282): AdminController->run()
+#3 C:\xampp\htdocs\sipd\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 C:\xampp\htdocs\sipd\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#5 C:\xampp\htdocs\sipd\index.php(13): CWebApplication->run()
+REQUEST_URI=/sipd/admin/tampilkandata
+in C:\xampp\htdocs\sipd\protected\controllers\AdminController.php (119)
+in C:\xampp\htdocs\sipd\index.php (13)
+2015/01/21 05:43:49 [error] [php] include(Spreadsheet_Excel_Reader.php): failed to open stream: No such file or directory (C:\xampp\htdocs\sipd\framework\YiiBase.php:427)
+Stack trace:
+#0 C:\xampp\htdocs\sipd\protected\controllers\AdminController.php(123): spl_autoload_call()
+#1 C:\xampp\htdocs\sipd\framework\web\actions\CInlineAction.php(49): AdminController->actionTampilkanData()
+#2 C:\xampp\htdocs\sipd\framework\web\CController.php(308): CInlineAction->runWithParams()
+#3 C:\xampp\htdocs\sipd\framework\web\CController.php(286): AdminController->runAction()
+#4 C:\xampp\htdocs\sipd\framework\web\CController.php(265): AdminController->runActionWithFilters()
+#5 C:\xampp\htdocs\sipd\framework\web\CWebApplication.php(282): AdminController->run()
+#6 C:\xampp\htdocs\sipd\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#7 C:\xampp\htdocs\sipd\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#8 C:\xampp\htdocs\sipd\index.php(13): CWebApplication->run()
+REQUEST_URI=/sipd/admin/tampilkandata
+in C:\xampp\htdocs\sipd\protected\controllers\AdminController.php (123)
+in C:\xampp\htdocs\sipd\index.php (13)
+2015/01/21 05:56:58 [error] [php] include(Excel_Reader2.php): failed to open stream: No such file or directory (C:\xampp\htdocs\sipd\framework\YiiBase.php:427)
+Stack trace:
+#0 C:\xampp\htdocs\sipd\protected\components\ExcelReader.php(6): spl_autoload_call()
+#1 C:\xampp\htdocs\sipd\framework\YiiBase.php(427): include()
+#2 unknown(0): autoload()
+#3 C:\xampp\htdocs\sipd\protected\controllers\AdminController.php(123): spl_autoload_call()
+#4 C:\xampp\htdocs\sipd\framework\web\actions\CInlineAction.php(49): AdminController->actionTampilkanData()
 #5 C:\xampp\htdocs\sipd\framework\web\CController.php(308): CInlineAction->runWithParams()
 #6 C:\xampp\htdocs\sipd\framework\web\CController.php(286): AdminController->runAction()
 #7 C:\xampp\htdocs\sipd\framework\web\CController.php(265): AdminController->runActionWithFilters()
@@ -779,17 +1226,17 @@ Stack trace:
 #9 C:\xampp\htdocs\sipd\framework\web\CWebApplication.php(141): CWebApplication->runController()
 #10 C:\xampp\htdocs\sipd\framework\base\CApplication.php(180): CWebApplication->processRequest()
 #11 C:\xampp\htdocs\sipd\index.php(13): CWebApplication->run()
-REQUEST_URI=/sipd/admin/subdataumum
-in C:\xampp\htdocs\sipd\protected\views\admin\tampilgeolswil.php (2)
-in C:\xampp\htdocs\sipd\protected\views\admin\subdataumum.php (2197)
-in C:\xampp\htdocs\sipd\protected\controllers\AdminController.php (22)
-2015/01/19 16:12:37 [error] [php] Undefined variable: dataProvider (C:\xampp\htdocs\sipd\protected\views\admin\tampilgeolswil.php:2)
+REQUEST_URI=/sipd/admin/tampilkandata
+in C:\xampp\htdocs\sipd\protected\components\ExcelReader.php (6)
+in C:\xampp\htdocs\sipd\protected\controllers\AdminController.php (123)
+in C:\xampp\htdocs\sipd\index.php (13)
+2015/01/21 05:57:57 [error] [php] include(Excel_Reader2.php): failed to open stream: No such file or directory (C:\xampp\htdocs\sipd\framework\YiiBase.php:427)
 Stack trace:
-#0 C:\xampp\htdocs\sipd\framework\web\CBaseController.php(95): AdminController->renderInternal()
-#1 C:\xampp\htdocs\sipd\framework\web\CController.php(869): AdminController->renderFile()
-#2 C:\xampp\htdocs\sipd\framework\web\CController.php(782): AdminController->renderPartial()
-#3 C:\xampp\htdocs\sipd\protected\controllers\AdminController.php(29): AdminController->render()
-#4 C:\xampp\htdocs\sipd\framework\web\actions\CInlineAction.php(49): AdminController->actionSubDataUmum()
+#0 C:\xampp\htdocs\sipd\protected\components\ExcelReader.php(6): spl_autoload_call()
+#1 C:\xampp\htdocs\sipd\framework\YiiBase.php(427): include()
+#2 unknown(0): autoload()
+#3 C:\xampp\htdocs\sipd\protected\controllers\AdminController.php(123): spl_autoload_call()
+#4 C:\xampp\htdocs\sipd\framework\web\actions\CInlineAction.php(49): AdminController->actionTampilkanData()
 #5 C:\xampp\htdocs\sipd\framework\web\CController.php(308): CInlineAction->runWithParams()
 #6 C:\xampp\htdocs\sipd\framework\web\CController.php(286): AdminController->runAction()
 #7 C:\xampp\htdocs\sipd\framework\web\CController.php(265): AdminController->runActionWithFilters()
@@ -797,17 +1244,31 @@ Stack trace:
 #9 C:\xampp\htdocs\sipd\framework\web\CWebApplication.php(141): CWebApplication->runController()
 #10 C:\xampp\htdocs\sipd\framework\base\CApplication.php(180): CWebApplication->processRequest()
 #11 C:\xampp\htdocs\sipd\index.php(13): CWebApplication->run()
-REQUEST_URI=/sipd/admin/subdataumum
-in C:\xampp\htdocs\sipd\protected\views\admin\tampilgeolswil.php (2)
-in C:\xampp\htdocs\sipd\protected\views\admin\subdataumum.php (2197)
-in C:\xampp\htdocs\sipd\protected\controllers\AdminController.php (29)
-2015/01/19 16:16:00 [error] [php] Undefined variable: dataProvider (C:\xampp\htdocs\sipd\protected\views\admin\tampilgeolswil.php:2)
+REQUEST_URI=/sipd/admin/tampilkandata
+in C:\xampp\htdocs\sipd\protected\components\ExcelReader.php (6)
+in C:\xampp\htdocs\sipd\protected\controllers\AdminController.php (123)
+in C:\xampp\htdocs\sipd\index.php (13)
+2015/01/21 05:59:10 [error] [php] include(Excel_Reader2.php): failed to open stream: No such file or directory (C:\xampp\htdocs\sipd\framework\YiiBase.php:427)
 Stack trace:
-#0 C:\xampp\htdocs\sipd\framework\web\CBaseController.php(95): AdminController->renderInternal()
-#1 C:\xampp\htdocs\sipd\framework\web\CController.php(869): AdminController->renderFile()
-#2 C:\xampp\htdocs\sipd\framework\web\CController.php(782): AdminController->renderPartial()
-#3 C:\xampp\htdocs\sipd\protected\controllers\AdminController.php(29): AdminController->render()
-#4 C:\xampp\htdocs\sipd\framework\web\actions\CInlineAction.php(49): AdminController->actionSubDataUmum()
+#0 C:\xampp\htdocs\sipd\protected\controllers\AdminController.php(123): spl_autoload_call()
+#1 C:\xampp\htdocs\sipd\framework\web\actions\CInlineAction.php(49): AdminController->actionTampilkanData()
+#2 C:\xampp\htdocs\sipd\framework\web\CController.php(308): CInlineAction->runWithParams()
+#3 C:\xampp\htdocs\sipd\framework\web\CController.php(286): AdminController->runAction()
+#4 C:\xampp\htdocs\sipd\framework\web\CController.php(265): AdminController->runActionWithFilters()
+#5 C:\xampp\htdocs\sipd\framework\web\CWebApplication.php(282): AdminController->run()
+#6 C:\xampp\htdocs\sipd\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#7 C:\xampp\htdocs\sipd\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#8 C:\xampp\htdocs\sipd\index.php(13): CWebApplication->run()
+REQUEST_URI=/sipd/admin/tampilkandata
+in C:\xampp\htdocs\sipd\protected\controllers\AdminController.php (123)
+in C:\xampp\htdocs\sipd\index.php (13)
+2015/01/21 06:15:28 [error] [php] include(Excel_Reader2.php): failed to open stream: No such file or directory (C:\xampp\htdocs\sipd\framework\YiiBase.php:427)
+Stack trace:
+#0 C:\xampp\htdocs\sipd\protected\components\ExcelReader.php(6): spl_autoload_call()
+#1 C:\xampp\htdocs\sipd\framework\YiiBase.php(427): include()
+#2 unknown(0): autoload()
+#3 C:\xampp\htdocs\sipd\protected\controllers\AdminController.php(123): spl_autoload_call()
+#4 C:\xampp\htdocs\sipd\framework\web\actions\CInlineAction.php(49): AdminController->actionTampilkanData()
 #5 C:\xampp\htdocs\sipd\framework\web\CController.php(308): CInlineAction->runWithParams()
 #6 C:\xampp\htdocs\sipd\framework\web\CController.php(286): AdminController->runAction()
 #7 C:\xampp\htdocs\sipd\framework\web\CController.php(265): AdminController->runActionWithFilters()
@@ -815,7 +1276,601 @@ Stack trace:
 #9 C:\xampp\htdocs\sipd\framework\web\CWebApplication.php(141): CWebApplication->runController()
 #10 C:\xampp\htdocs\sipd\framework\base\CApplication.php(180): CWebApplication->processRequest()
 #11 C:\xampp\htdocs\sipd\index.php(13): CWebApplication->run()
-REQUEST_URI=/sipd/admin/subdataumum
-in C:\xampp\htdocs\sipd\protected\views\admin\tampilgeolswil.php (2)
-in C:\xampp\htdocs\sipd\protected\views\admin\subdataumum.php (2197)
-in C:\xampp\htdocs\sipd\protected\controllers\AdminController.php (29)
+REQUEST_URI=/sipd/admin/tampilkandata
+in C:\xampp\htdocs\sipd\protected\components\ExcelReader.php (6)
+in C:\xampp\htdocs\sipd\protected\controllers\AdminController.php (123)
+in C:\xampp\htdocs\sipd\index.php (13)
+2015/01/21 06:16:21 [error] [php] Undefined variable: data (C:\xampp\htdocs\sipd\protected\controllers\AdminController.php:124)
+Stack trace:
+#0 C:\xampp\htdocs\sipd\framework\web\CController.php(286): AdminController->runAction()
+#1 C:\xampp\htdocs\sipd\framework\web\CController.php(265): AdminController->runActionWithFilters()
+#2 C:\xampp\htdocs\sipd\framework\web\CWebApplication.php(282): AdminController->run()
+#3 C:\xampp\htdocs\sipd\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 C:\xampp\htdocs\sipd\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#5 C:\xampp\htdocs\sipd\index.php(13): CWebApplication->run()
+REQUEST_URI=/sipd/admin/tampilkandata
+in C:\xampp\htdocs\sipd\protected\controllers\AdminController.php (124)
+in C:\xampp\htdocs\sipd\index.php (13)
+2015/01/21 06:17:41 [error] [php] include(Excel_Reader2.php): failed to open stream: No such file or directory (C:\xampp\htdocs\sipd\framework\YiiBase.php:427)
+Stack trace:
+#0 C:\xampp\htdocs\sipd\protected\components\ExcelReader.php(6): spl_autoload_call()
+#1 C:\xampp\htdocs\sipd\framework\YiiBase.php(427): include()
+#2 unknown(0): autoload()
+#3 C:\xampp\htdocs\sipd\protected\controllers\AdminController.php(123): spl_autoload_call()
+#4 C:\xampp\htdocs\sipd\framework\web\actions\CInlineAction.php(49): AdminController->actionTampilkanData()
+#5 C:\xampp\htdocs\sipd\framework\web\CController.php(308): CInlineAction->runWithParams()
+#6 C:\xampp\htdocs\sipd\framework\web\CController.php(286): AdminController->runAction()
+#7 C:\xampp\htdocs\sipd\framework\web\CController.php(265): AdminController->runActionWithFilters()
+#8 C:\xampp\htdocs\sipd\framework\web\CWebApplication.php(282): AdminController->run()
+#9 C:\xampp\htdocs\sipd\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#10 C:\xampp\htdocs\sipd\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#11 C:\xampp\htdocs\sipd\index.php(13): CWebApplication->run()
+REQUEST_URI=/sipd/admin/tampilkandata
+in C:\xampp\htdocs\sipd\protected\components\ExcelReader.php (6)
+in C:\xampp\htdocs\sipd\protected\controllers\AdminController.php (123)
+in C:\xampp\htdocs\sipd\index.php (13)
+2015/01/21 06:18:12 [error] [php] include(excel_reader2.php): failed to open stream: No such file or directory (C:\xampp\htdocs\sipd\framework\YiiBase.php:427)
+Stack trace:
+#0 C:\xampp\htdocs\sipd\protected\components\ExcelReader.php(6): spl_autoload_call()
+#1 C:\xampp\htdocs\sipd\framework\YiiBase.php(427): include()
+#2 unknown(0): autoload()
+#3 C:\xampp\htdocs\sipd\protected\controllers\AdminController.php(123): spl_autoload_call()
+#4 C:\xampp\htdocs\sipd\framework\web\actions\CInlineAction.php(49): AdminController->actionTampilkanData()
+#5 C:\xampp\htdocs\sipd\framework\web\CController.php(308): CInlineAction->runWithParams()
+#6 C:\xampp\htdocs\sipd\framework\web\CController.php(286): AdminController->runAction()
+#7 C:\xampp\htdocs\sipd\framework\web\CController.php(265): AdminController->runActionWithFilters()
+#8 C:\xampp\htdocs\sipd\framework\web\CWebApplication.php(282): AdminController->run()
+#9 C:\xampp\htdocs\sipd\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#10 C:\xampp\htdocs\sipd\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#11 C:\xampp\htdocs\sipd\index.php(13): CWebApplication->run()
+REQUEST_URI=/sipd/admin/tampilkandata
+in C:\xampp\htdocs\sipd\protected\components\ExcelReader.php (6)
+in C:\xampp\htdocs\sipd\protected\controllers\AdminController.php (123)
+in C:\xampp\htdocs\sipd\index.php (13)
+2015/01/21 06:18:47 [error] [php] include(Excel_Reader2.php): failed to open stream: No such file or directory (C:\xampp\htdocs\sipd\framework\YiiBase.php:427)
+Stack trace:
+#0 C:\xampp\htdocs\sipd\protected\components\ExcelReader.php(6): spl_autoload_call()
+#1 C:\xampp\htdocs\sipd\framework\YiiBase.php(427): include()
+#2 unknown(0): autoload()
+#3 C:\xampp\htdocs\sipd\protected\controllers\AdminController.php(123): spl_autoload_call()
+#4 C:\xampp\htdocs\sipd\framework\web\actions\CInlineAction.php(49): AdminController->actionTampilkanData()
+#5 C:\xampp\htdocs\sipd\framework\web\CController.php(308): CInlineAction->runWithParams()
+#6 C:\xampp\htdocs\sipd\framework\web\CController.php(286): AdminController->runAction()
+#7 C:\xampp\htdocs\sipd\framework\web\CController.php(265): AdminController->runActionWithFilters()
+#8 C:\xampp\htdocs\sipd\framework\web\CWebApplication.php(282): AdminController->run()
+#9 C:\xampp\htdocs\sipd\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#10 C:\xampp\htdocs\sipd\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#11 C:\xampp\htdocs\sipd\index.php(13): CWebApplication->run()
+REQUEST_URI=/sipd/admin/tampilkandata
+in C:\xampp\htdocs\sipd\protected\components\ExcelReader.php (6)
+in C:\xampp\htdocs\sipd\protected\controllers\AdminController.php (123)
+in C:\xampp\htdocs\sipd\index.php (13)
+2015/01/21 06:24:03 [error] [php] include(C:\xampp\htdocs\sipd\protected\extensions\phpexcelreader\JPhpExcelReader.php): failed to open stream: No such file or directory (C:\xampp\htdocs\sipd\framework\YiiBase.php:401)
+Stack trace:
+#0 C:\xampp\htdocs\sipd\protected\controllers\AdminController.php(124): spl_autoload_call()
+#1 C:\xampp\htdocs\sipd\framework\web\actions\CInlineAction.php(49): AdminController->actionTampilkanData()
+#2 C:\xampp\htdocs\sipd\framework\web\CController.php(308): CInlineAction->runWithParams()
+#3 C:\xampp\htdocs\sipd\framework\web\CController.php(286): AdminController->runAction()
+#4 C:\xampp\htdocs\sipd\framework\web\CController.php(265): AdminController->runActionWithFilters()
+#5 C:\xampp\htdocs\sipd\framework\web\CWebApplication.php(282): AdminController->run()
+#6 C:\xampp\htdocs\sipd\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#7 C:\xampp\htdocs\sipd\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#8 C:\xampp\htdocs\sipd\index.php(13): CWebApplication->run()
+REQUEST_URI=/sipd/admin/tampilkandata
+in C:\xampp\htdocs\sipd\protected\controllers\AdminController.php (124)
+in C:\xampp\htdocs\sipd\index.php (13)
+2015/01/21 06:27:53 [error] [php] include(Spreadsheet_Excel_Reader.php): failed to open stream: No such file or directory (C:\xampp\htdocs\sipd\framework\YiiBase.php:427)
+Stack trace:
+#0 C:\xampp\htdocs\sipd\protected\controllers\AdminController.php(124): spl_autoload_call()
+#1 C:\xampp\htdocs\sipd\framework\web\actions\CInlineAction.php(49): AdminController->actionTampilkanData()
+#2 C:\xampp\htdocs\sipd\framework\web\CController.php(308): CInlineAction->runWithParams()
+#3 C:\xampp\htdocs\sipd\framework\web\CController.php(286): AdminController->runAction()
+#4 C:\xampp\htdocs\sipd\framework\web\CController.php(265): AdminController->runActionWithFilters()
+#5 C:\xampp\htdocs\sipd\framework\web\CWebApplication.php(282): AdminController->run()
+#6 C:\xampp\htdocs\sipd\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#7 C:\xampp\htdocs\sipd\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#8 C:\xampp\htdocs\sipd\index.php(13): CWebApplication->run()
+REQUEST_URI=/sipd/admin/tampilkandata
+in C:\xampp\htdocs\sipd\protected\controllers\AdminController.php (124)
+in C:\xampp\htdocs\sipd\index.php (13)
+2015/01/21 06:28:21 [error] [php] require_once(Spreadsheet/Excel/Reader/OLERead.php): failed to open stream: No such file or directory (C:\xampp\htdocs\sipd\protected\extensions\Excel\reader.php:31)
+Stack trace:
+#0 unknown(0): autoload()
+#1 C:\xampp\htdocs\sipd\protected\controllers\AdminController.php(124): spl_autoload_call()
+#2 C:\xampp\htdocs\sipd\framework\web\actions\CInlineAction.php(49): AdminController->actionTampilkanData()
+#3 C:\xampp\htdocs\sipd\framework\web\CController.php(308): CInlineAction->runWithParams()
+#4 C:\xampp\htdocs\sipd\framework\web\CController.php(286): AdminController->runAction()
+#5 C:\xampp\htdocs\sipd\framework\web\CController.php(265): AdminController->runActionWithFilters()
+#6 C:\xampp\htdocs\sipd\framework\web\CWebApplication.php(282): AdminController->run()
+#7 C:\xampp\htdocs\sipd\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#8 C:\xampp\htdocs\sipd\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#9 C:\xampp\htdocs\sipd\index.php(13): CWebApplication->run()
+REQUEST_URI=/sipd/admin/tampilkandata
+in C:\xampp\htdocs\sipd\protected\extensions\Excel\reader.php (31)
+in C:\xampp\htdocs\sipd\protected\extensions\Excel\reader.php (31)
+in C:\xampp\htdocs\sipd\protected\controllers\AdminController.php (124)
+2015/01/21 06:29:49 [error] [php] require_once(Spreadsheet/Excel/Reader/OLERead.php): failed to open stream: No such file or directory (C:\xampp\htdocs\sipd\protected\extensions\Excel\reader.php:31)
+Stack trace:
+#0 unknown(0): autoload()
+#1 C:\xampp\htdocs\sipd\protected\controllers\AdminController.php(124): spl_autoload_call()
+#2 C:\xampp\htdocs\sipd\framework\web\actions\CInlineAction.php(49): AdminController->actionTampilkanData()
+#3 C:\xampp\htdocs\sipd\framework\web\CController.php(308): CInlineAction->runWithParams()
+#4 C:\xampp\htdocs\sipd\framework\web\CController.php(286): AdminController->runAction()
+#5 C:\xampp\htdocs\sipd\framework\web\CController.php(265): AdminController->runActionWithFilters()
+#6 C:\xampp\htdocs\sipd\framework\web\CWebApplication.php(282): AdminController->run()
+#7 C:\xampp\htdocs\sipd\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#8 C:\xampp\htdocs\sipd\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#9 C:\xampp\htdocs\sipd\index.php(13): CWebApplication->run()
+REQUEST_URI=/sipd/admin/tampilkandata
+in C:\xampp\htdocs\sipd\protected\extensions\Excel\reader.php (31)
+in C:\xampp\htdocs\sipd\protected\extensions\Excel\reader.php (31)
+in C:\xampp\htdocs\sipd\protected\controllers\AdminController.php (124)
+2015/01/21 07:02:21 [error] [php] require_once(Spreadsheet/Excel/Reader/OLERead.php): failed to open stream: No such file or directory (C:\xampp\htdocs\sipd\protected\extensions\Excel\reader.php:31)
+Stack trace:
+#0 unknown(0): autoload()
+#1 C:\xampp\htdocs\sipd\protected\controllers\AdminController.php(124): spl_autoload_call()
+#2 C:\xampp\htdocs\sipd\framework\web\actions\CInlineAction.php(49): AdminController->actionTampilkanData()
+#3 C:\xampp\htdocs\sipd\framework\web\CController.php(308): CInlineAction->runWithParams()
+#4 C:\xampp\htdocs\sipd\framework\web\CController.php(286): AdminController->runAction()
+#5 C:\xampp\htdocs\sipd\framework\web\CController.php(265): AdminController->runActionWithFilters()
+#6 C:\xampp\htdocs\sipd\framework\web\CWebApplication.php(282): AdminController->run()
+#7 C:\xampp\htdocs\sipd\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#8 C:\xampp\htdocs\sipd\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#9 C:\xampp\htdocs\sipd\index.php(13): CWebApplication->run()
+REQUEST_URI=/sipd/admin/tampilkandata
+in C:\xampp\htdocs\sipd\protected\extensions\Excel\reader.php (31)
+in C:\xampp\htdocs\sipd\protected\extensions\Excel\reader.php (31)
+in C:\xampp\htdocs\sipd\protected\controllers\AdminController.php (124)
+2015/01/21 07:06:25 [error] [php] include(reader.php): failed to open stream: No such file or directory (C:\xampp\htdocs\sipd\framework\YiiBase.php:427)
+Stack trace:
+#0 C:\xampp\htdocs\sipd\protected\controllers\AdminController.php(124): spl_autoload_call()
+#1 C:\xampp\htdocs\sipd\framework\web\actions\CInlineAction.php(49): AdminController->actionTampilkanData()
+#2 C:\xampp\htdocs\sipd\framework\web\CController.php(308): CInlineAction->runWithParams()
+#3 C:\xampp\htdocs\sipd\framework\web\CController.php(286): AdminController->runAction()
+#4 C:\xampp\htdocs\sipd\framework\web\CController.php(265): AdminController->runActionWithFilters()
+#5 C:\xampp\htdocs\sipd\framework\web\CWebApplication.php(282): AdminController->run()
+#6 C:\xampp\htdocs\sipd\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#7 C:\xampp\htdocs\sipd\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#8 C:\xampp\htdocs\sipd\index.php(13): CWebApplication->run()
+REQUEST_URI=/sipd/admin/tampilkandata
+in C:\xampp\htdocs\sipd\protected\controllers\AdminController.php (124)
+in C:\xampp\htdocs\sipd\index.php (13)
+2015/01/21 07:07:43 [error] [php] include(reader.php): failed to open stream: No such file or directory (C:\xampp\htdocs\sipd\framework\YiiBase.php:427)
+Stack trace:
+#0 C:\xampp\htdocs\sipd\protected\controllers\AdminController.php(124): spl_autoload_call()
+#1 C:\xampp\htdocs\sipd\framework\web\actions\CInlineAction.php(49): AdminController->actionTampilkanData()
+#2 C:\xampp\htdocs\sipd\framework\web\CController.php(308): CInlineAction->runWithParams()
+#3 C:\xampp\htdocs\sipd\framework\web\CController.php(286): AdminController->runAction()
+#4 C:\xampp\htdocs\sipd\framework\web\CController.php(265): AdminController->runActionWithFilters()
+#5 C:\xampp\htdocs\sipd\framework\web\CWebApplication.php(282): AdminController->run()
+#6 C:\xampp\htdocs\sipd\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#7 C:\xampp\htdocs\sipd\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#8 C:\xampp\htdocs\sipd\index.php(13): CWebApplication->run()
+REQUEST_URI=/sipd/admin/tampilkandata
+in C:\xampp\htdocs\sipd\protected\controllers\AdminController.php (124)
+in C:\xampp\htdocs\sipd\index.php (13)
+2015/01/21 07:08:08 [error] [php] include(Reader.php): failed to open stream: No such file or directory (C:\xampp\htdocs\sipd\framework\YiiBase.php:427)
+Stack trace:
+#0 C:\xampp\htdocs\sipd\protected\components\ExcelReader.php(7): spl_autoload_call()
+#1 C:\xampp\htdocs\sipd\framework\YiiBase.php(427): include()
+#2 unknown(0): autoload()
+#3 C:\xampp\htdocs\sipd\protected\controllers\AdminController.php(124): spl_autoload_call()
+#4 C:\xampp\htdocs\sipd\framework\web\actions\CInlineAction.php(49): AdminController->actionTampilkanData()
+#5 C:\xampp\htdocs\sipd\framework\web\CController.php(308): CInlineAction->runWithParams()
+#6 C:\xampp\htdocs\sipd\framework\web\CController.php(286): AdminController->runAction()
+#7 C:\xampp\htdocs\sipd\framework\web\CController.php(265): AdminController->runActionWithFilters()
+#8 C:\xampp\htdocs\sipd\framework\web\CWebApplication.php(282): AdminController->run()
+#9 C:\xampp\htdocs\sipd\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#10 C:\xampp\htdocs\sipd\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#11 C:\xampp\htdocs\sipd\index.php(13): CWebApplication->run()
+REQUEST_URI=/sipd/admin/tampilkandata
+in C:\xampp\htdocs\sipd\protected\components\ExcelReader.php (7)
+in C:\xampp\htdocs\sipd\protected\controllers\AdminController.php (124)
+in C:\xampp\htdocs\sipd\index.php (13)
+2015/01/21 07:09:21 [error] [php] include(Reader.php): failed to open stream: No such file or directory (C:\xampp\htdocs\sipd\framework\YiiBase.php:427)
+Stack trace:
+#0 C:\xampp\htdocs\sipd\protected\components\ExcelReader.php(7): spl_autoload_call()
+#1 C:\xampp\htdocs\sipd\framework\YiiBase.php(427): include()
+#2 unknown(0): autoload()
+#3 C:\xampp\htdocs\sipd\protected\controllers\AdminController.php(124): spl_autoload_call()
+#4 C:\xampp\htdocs\sipd\framework\web\actions\CInlineAction.php(49): AdminController->actionTampilkanData()
+#5 C:\xampp\htdocs\sipd\framework\web\CController.php(308): CInlineAction->runWithParams()
+#6 C:\xampp\htdocs\sipd\framework\web\CController.php(286): AdminController->runAction()
+#7 C:\xampp\htdocs\sipd\framework\web\CController.php(265): AdminController->runActionWithFilters()
+#8 C:\xampp\htdocs\sipd\framework\web\CWebApplication.php(282): AdminController->run()
+#9 C:\xampp\htdocs\sipd\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#10 C:\xampp\htdocs\sipd\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#11 C:\xampp\htdocs\sipd\index.php(13): CWebApplication->run()
+REQUEST_URI=/sipd/admin/tampilkandata
+in C:\xampp\htdocs\sipd\protected\components\ExcelReader.php (7)
+in C:\xampp\htdocs\sipd\protected\controllers\AdminController.php (124)
+in C:\xampp\htdocs\sipd\index.php (13)
+2015/01/21 07:09:24 [error] [php] include(Reader.php): failed to open stream: No such file or directory (C:\xampp\htdocs\sipd\framework\YiiBase.php:427)
+Stack trace:
+#0 C:\xampp\htdocs\sipd\protected\components\ExcelReader.php(7): spl_autoload_call()
+#1 C:\xampp\htdocs\sipd\framework\YiiBase.php(427): include()
+#2 unknown(0): autoload()
+#3 C:\xampp\htdocs\sipd\protected\controllers\AdminController.php(124): spl_autoload_call()
+#4 C:\xampp\htdocs\sipd\framework\web\actions\CInlineAction.php(49): AdminController->actionTampilkanData()
+#5 C:\xampp\htdocs\sipd\framework\web\CController.php(308): CInlineAction->runWithParams()
+#6 C:\xampp\htdocs\sipd\framework\web\CController.php(286): AdminController->runAction()
+#7 C:\xampp\htdocs\sipd\framework\web\CController.php(265): AdminController->runActionWithFilters()
+#8 C:\xampp\htdocs\sipd\framework\web\CWebApplication.php(282): AdminController->run()
+#9 C:\xampp\htdocs\sipd\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#10 C:\xampp\htdocs\sipd\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#11 C:\xampp\htdocs\sipd\index.php(13): CWebApplication->run()
+REQUEST_URI=/sipd/admin/tampilkandata
+in C:\xampp\htdocs\sipd\protected\components\ExcelReader.php (7)
+in C:\xampp\htdocs\sipd\protected\controllers\AdminController.php (124)
+in C:\xampp\htdocs\sipd\index.php (13)
+2015/01/21 08:37:53 [error] [system.db.CDbCommand] CDbCommand::fetchAll() gagal: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'sipd.dmg_orgusia' doesn't exist. Statement SQL yang dijalankan: SELECT*FROM dmg_orgusia.
+in C:\xampp\htdocs\sipd\protected\controllers\AdminController.php (64)
+in C:\xampp\htdocs\sipd\index.php (13)
+2015/01/21 08:37:53 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand gagal menjalankan statementSQL: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'sipd.dmg_orgusia' doesn't exist. The SQL statement executed was: SELECT*FROM dmg_orgusia' in C:\xampp\htdocs\sipd\framework\db\CDbCommand.php:543
+Stack trace:
+#0 C:\xampp\htdocs\sipd\framework\db\CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 C:\xampp\htdocs\sipd\protected\controllers\AdminController.php(64): CDbCommand->queryAll()
+#2 C:\xampp\htdocs\sipd\framework\web\actions\CInlineAction.php(49): AdminController->actionDataUmum()
+#3 C:\xampp\htdocs\sipd\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 C:\xampp\htdocs\sipd\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 C:\xampp\htdocs\sipd\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 C:\xampp\htdocs\sipd\framework\web\CWebApplication.php(282): CController->run('dataumum')
+#7 C:\xampp\htdocs\sipd\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/dataumum')
+#8 C:\xampp\htdocs\sipd\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#9 C:\xampp\htdocs\sipd\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/sipd/admin/dataumum
+---
+2015/01/21 08:38:54 [error] [php] Undefined variable: dataProvider13 (C:\xampp\htdocs\sipd\protected\views\admin\dataumum.php:774)
+Stack trace:
+#0 C:\xampp\htdocs\sipd\framework\web\CController.php(869): AdminController->renderFile()
+#1 C:\xampp\htdocs\sipd\framework\web\CController.php(782): AdminController->renderPartial()
+#2 C:\xampp\htdocs\sipd\protected\controllers\AdminController.php(79): AdminController->render()
+#3 C:\xampp\htdocs\sipd\framework\web\actions\CInlineAction.php(49): AdminController->actionDataUmum()
+#4 C:\xampp\htdocs\sipd\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\xampp\htdocs\sipd\framework\web\CController.php(286): AdminController->runAction()
+#6 C:\xampp\htdocs\sipd\framework\web\CController.php(265): AdminController->runActionWithFilters()
+#7 C:\xampp\htdocs\sipd\framework\web\CWebApplication.php(282): AdminController->run()
+#8 C:\xampp\htdocs\sipd\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\xampp\htdocs\sipd\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\sipd\index.php(13): CWebApplication->run()
+REQUEST_URI=/sipd/admin/dataumum
+in C:\xampp\htdocs\sipd\protected\views\admin\dataumum.php (774)
+in C:\xampp\htdocs\sipd\protected\controllers\AdminController.php (79)
+in C:\xampp\htdocs\sipd\index.php (13)
+2015/01/22 04:34:53 [error] [system.db.CDbCommand] CDbCommand::fetchAll() gagal: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'sipd.dmg_jmlrumtang' doesn't exist. Statement SQL yang dijalankan: SELECT*FROM dmg_jmlrumtang.
+in C:\xampp\htdocs\sipd\protected\controllers\AdminController.php (98)
+in C:\xampp\htdocs\sipd\index.php (13)
+2015/01/22 04:34:53 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand gagal menjalankan statementSQL: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'sipd.dmg_jmlrumtang' doesn't exist. The SQL statement executed was: SELECT*FROM dmg_jmlrumtang' in C:\xampp\htdocs\sipd\framework\db\CDbCommand.php:543
+Stack trace:
+#0 C:\xampp\htdocs\sipd\framework\db\CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 C:\xampp\htdocs\sipd\protected\controllers\AdminController.php(98): CDbCommand->queryAll()
+#2 C:\xampp\htdocs\sipd\framework\web\actions\CInlineAction.php(49): AdminController->actionDataUmum()
+#3 C:\xampp\htdocs\sipd\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 C:\xampp\htdocs\sipd\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 C:\xampp\htdocs\sipd\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 C:\xampp\htdocs\sipd\framework\web\CWebApplication.php(282): CController->run('dataumum')
+#7 C:\xampp\htdocs\sipd\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/dataumum')
+#8 C:\xampp\htdocs\sipd\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#9 C:\xampp\htdocs\sipd\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/sipd/admin/dataumum
+---
+2015/01/22 07:45:38 [error] [system.db.CDbCommand] CDbCommand::fetchAll() gagal: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'sipd.kes_pppp' doesn't exist. Statement SQL yang dijalankan: SELECT*FROM kes_pppp.
+in C:\xampp\htdocs\sipd\protected\controllers\AdminController.php (157)
+in C:\xampp\htdocs\sipd\index.php (13)
+2015/01/22 07:45:38 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand gagal menjalankan statementSQL: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'sipd.kes_pppp' doesn't exist. The SQL statement executed was: SELECT*FROM kes_pppp' in C:\xampp\htdocs\sipd\framework\db\CDbCommand.php:543
+Stack trace:
+#0 C:\xampp\htdocs\sipd\framework\db\CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 C:\xampp\htdocs\sipd\protected\controllers\AdminController.php(157): CDbCommand->queryAll()
+#2 C:\xampp\htdocs\sipd\framework\web\actions\CInlineAction.php(49): AdminController->actionSosbud()
+#3 C:\xampp\htdocs\sipd\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 C:\xampp\htdocs\sipd\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 C:\xampp\htdocs\sipd\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 C:\xampp\htdocs\sipd\framework\web\CWebApplication.php(282): CController->run('sosbud')
+#7 C:\xampp\htdocs\sipd\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/sosbud')
+#8 C:\xampp\htdocs\sipd\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#9 C:\xampp\htdocs\sipd\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/sipd/admin/sosbud
+HTTP_REFERER=http://localhost/sipd/admin/sosbud
+---
+2015/01/22 07:46:01 [error] [system.db.CDbCommand] CDbCommand::fetchAll() gagal: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'sipd.kes_pppp' doesn't exist. Statement SQL yang dijalankan: SELECT*FROM kes_pppp.
+in C:\xampp\htdocs\sipd\protected\controllers\AdminController.php (157)
+in C:\xampp\htdocs\sipd\index.php (13)
+2015/01/22 07:46:01 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand gagal menjalankan statementSQL: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'sipd.kes_pppp' doesn't exist. The SQL statement executed was: SELECT*FROM kes_pppp' in C:\xampp\htdocs\sipd\framework\db\CDbCommand.php:543
+Stack trace:
+#0 C:\xampp\htdocs\sipd\framework\db\CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 C:\xampp\htdocs\sipd\protected\controllers\AdminController.php(157): CDbCommand->queryAll()
+#2 C:\xampp\htdocs\sipd\framework\web\actions\CInlineAction.php(49): AdminController->actionSosbud()
+#3 C:\xampp\htdocs\sipd\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 C:\xampp\htdocs\sipd\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 C:\xampp\htdocs\sipd\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 C:\xampp\htdocs\sipd\framework\web\CWebApplication.php(282): CController->run('sosbud')
+#7 C:\xampp\htdocs\sipd\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/sosbud')
+#8 C:\xampp\htdocs\sipd\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#9 C:\xampp\htdocs\sipd\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/sipd/admin/sosbud
+HTTP_REFERER=http://localhost/sipd/admin/
+---
+2015/01/22 07:47:48 [error] [system.db.CDbCommand] CDbCommand::fetchAll() gagal: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'sipd.kes_pppp' doesn't exist. Statement SQL yang dijalankan: SELECT*FROM kes_pppp.
+in C:\xampp\htdocs\sipd\protected\controllers\AdminController.php (157)
+in C:\xampp\htdocs\sipd\index.php (13)
+2015/01/22 07:47:48 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand gagal menjalankan statementSQL: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'sipd.kes_pppp' doesn't exist. The SQL statement executed was: SELECT*FROM kes_pppp' in C:\xampp\htdocs\sipd\framework\db\CDbCommand.php:543
+Stack trace:
+#0 C:\xampp\htdocs\sipd\framework\db\CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 C:\xampp\htdocs\sipd\protected\controllers\AdminController.php(157): CDbCommand->queryAll()
+#2 C:\xampp\htdocs\sipd\framework\web\actions\CInlineAction.php(49): AdminController->actionSosbud()
+#3 C:\xampp\htdocs\sipd\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 C:\xampp\htdocs\sipd\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 C:\xampp\htdocs\sipd\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 C:\xampp\htdocs\sipd\framework\web\CWebApplication.php(282): CController->run('sosbud')
+#7 C:\xampp\htdocs\sipd\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/sosbud')
+#8 C:\xampp\htdocs\sipd\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#9 C:\xampp\htdocs\sipd\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/sipd/admin/sosbud
+HTTP_REFERER=http://localhost/sipd/admin/
+---
+2015/01/22 08:42:39 [error] [php] Undefined variable: sql11 (C:\xampp\htdocs\sipd\protected\controllers\AdminController.php:159)
+Stack trace:
+#0 C:\xampp\htdocs\sipd\framework\web\CController.php(286): AdminController->runAction()
+#1 C:\xampp\htdocs\sipd\framework\web\CController.php(265): AdminController->runActionWithFilters()
+#2 C:\xampp\htdocs\sipd\framework\web\CWebApplication.php(282): AdminController->run()
+#3 C:\xampp\htdocs\sipd\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 C:\xampp\htdocs\sipd\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#5 C:\xampp\htdocs\sipd\index.php(13): CWebApplication->run()
+REQUEST_URI=/sipd/admin/sosbud
+in C:\xampp\htdocs\sipd\protected\controllers\AdminController.php (159)
+in C:\xampp\htdocs\sipd\index.php (13)
+2015/01/23 03:30:15 [error] [system.db.CDbCommand] CDbCommand::fetchAll() gagal: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'sipd.kes_kpbps' doesn't exist. Statement SQL yang dijalankan: SELECT*FROM kes_kpbps.
+in C:\xampp\htdocs\sipd\protected\controllers\AdminController.php (204)
+in C:\xampp\htdocs\sipd\index.php (13)
+2015/01/23 03:30:15 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand gagal menjalankan statementSQL: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'sipd.kes_kpbps' doesn't exist. The SQL statement executed was: SELECT*FROM kes_kpbps' in C:\xampp\htdocs\sipd\framework\db\CDbCommand.php:543
+Stack trace:
+#0 C:\xampp\htdocs\sipd\framework\db\CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 C:\xampp\htdocs\sipd\protected\controllers\AdminController.php(204): CDbCommand->queryAll()
+#2 C:\xampp\htdocs\sipd\framework\web\actions\CInlineAction.php(49): AdminController->actionSosbud()
+#3 C:\xampp\htdocs\sipd\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 C:\xampp\htdocs\sipd\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 C:\xampp\htdocs\sipd\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 C:\xampp\htdocs\sipd\framework\web\CWebApplication.php(282): CController->run('sosbud')
+#7 C:\xampp\htdocs\sipd\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/sosbud')
+#8 C:\xampp\htdocs\sipd\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#9 C:\xampp\htdocs\sipd\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/sipd/admin/sosbud
+---
+2015/01/23 03:59:14 [error] [php] Undefined variable: sql256 (C:\xampp\htdocs\sipd\protected\controllers\AdminController.php:196)
+Stack trace:
+#0 C:\xampp\htdocs\sipd\framework\web\CController.php(286): AdminController->runAction()
+#1 C:\xampp\htdocs\sipd\framework\web\CController.php(265): AdminController->runActionWithFilters()
+#2 C:\xampp\htdocs\sipd\framework\web\CWebApplication.php(282): AdminController->run()
+#3 C:\xampp\htdocs\sipd\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 C:\xampp\htdocs\sipd\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#5 C:\xampp\htdocs\sipd\index.php(13): CWebApplication->run()
+REQUEST_URI=/sipd/admin/sosbud
+in C:\xampp\htdocs\sipd\protected\controllers\AdminController.php (196)
+in C:\xampp\htdocs\sipd\index.php (13)
+2015/01/23 03:59:27 [error] [php] Undefined variable: dataProvider26 (C:\xampp\htdocs\sipd\protected\views\admin\sosbud.php:936)
+Stack trace:
+#0 C:\xampp\htdocs\sipd\framework\web\CController.php(869): AdminController->renderFile()
+#1 C:\xampp\htdocs\sipd\framework\web\CController.php(782): AdminController->renderPartial()
+#2 C:\xampp\htdocs\sipd\protected\controllers\AdminController.php(249): AdminController->render()
+#3 C:\xampp\htdocs\sipd\framework\web\actions\CInlineAction.php(49): AdminController->actionSosbud()
+#4 C:\xampp\htdocs\sipd\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\xampp\htdocs\sipd\framework\web\CController.php(286): AdminController->runAction()
+#6 C:\xampp\htdocs\sipd\framework\web\CController.php(265): AdminController->runActionWithFilters()
+#7 C:\xampp\htdocs\sipd\framework\web\CWebApplication.php(282): AdminController->run()
+#8 C:\xampp\htdocs\sipd\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\xampp\htdocs\sipd\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\sipd\index.php(13): CWebApplication->run()
+REQUEST_URI=/sipd/admin/sosbud
+in C:\xampp\htdocs\sipd\protected\views\admin\sosbud.php (936)
+in C:\xampp\htdocs\sipd\protected\controllers\AdminController.php (249)
+in C:\xampp\htdocs\sipd\index.php (13)
+2015/01/23 04:29:20 [error] [system.db.CDbCommand] CDbCommand::fetchAll() gagal: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'sipd.ben_jlp' doesn't exist. Statement SQL yang dijalankan: SELECT*FROM ben_jlp.
+in C:\xampp\htdocs\sipd\protected\controllers\AdminController.php (340)
+in C:\xampp\htdocs\sipd\index.php (13)
+2015/01/23 04:29:20 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand gagal menjalankan statementSQL: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'sipd.ben_jlp' doesn't exist. The SQL statement executed was: SELECT*FROM ben_jlp' in C:\xampp\htdocs\sipd\framework\db\CDbCommand.php:543
+Stack trace:
+#0 C:\xampp\htdocs\sipd\framework\db\CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 C:\xampp\htdocs\sipd\protected\controllers\AdminController.php(340): CDbCommand->queryAll()
+#2 C:\xampp\htdocs\sipd\framework\web\actions\CInlineAction.php(49): AdminController->actionInsidensial()
+#3 C:\xampp\htdocs\sipd\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 C:\xampp\htdocs\sipd\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 C:\xampp\htdocs\sipd\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 C:\xampp\htdocs\sipd\framework\web\CWebApplication.php(282): CController->run('insidensial')
+#7 C:\xampp\htdocs\sipd\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/insidensi...')
+#8 C:\xampp\htdocs\sipd\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#9 C:\xampp\htdocs\sipd\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/sipd/admin/insidensial
+---
+2015/01/23 04:39:35 [error] [system.db.CDbCommand] CDbCommand::fetchAll() gagal: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'sipd.kesos_ipm' doesn't exist. Statement SQL yang dijalankan: SELECT*FROM kesos_ipm.
+in C:\xampp\htdocs\sipd\protected\controllers\AdminController.php (228)
+in C:\xampp\htdocs\sipd\index.php (13)
+2015/01/23 04:39:35 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand gagal menjalankan statementSQL: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'sipd.kesos_ipm' doesn't exist. The SQL statement executed was: SELECT*FROM kesos_ipm' in C:\xampp\htdocs\sipd\framework\db\CDbCommand.php:543
+Stack trace:
+#0 C:\xampp\htdocs\sipd\framework\db\CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 C:\xampp\htdocs\sipd\protected\controllers\AdminController.php(228): CDbCommand->queryAll()
+#2 C:\xampp\htdocs\sipd\framework\web\actions\CInlineAction.php(49): AdminController->actionSosbud()
+#3 C:\xampp\htdocs\sipd\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 C:\xampp\htdocs\sipd\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 C:\xampp\htdocs\sipd\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 C:\xampp\htdocs\sipd\framework\web\CWebApplication.php(282): CController->run('sosbud')
+#7 C:\xampp\htdocs\sipd\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/sosbud')
+#8 C:\xampp\htdocs\sipd\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#9 C:\xampp\htdocs\sipd\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/sipd/admin/sosbud
+HTTP_REFERER=http://localhost/sipd/admin/insidensial
+---
+2015/01/23 07:24:04 [error] [php] Undefined variable: sql (C:\xampp\htdocs\sipd\protected\controllers\AdminController.php:179)
+Stack trace:
+#0 C:\xampp\htdocs\sipd\framework\web\CController.php(286): AdminController->runAction()
+#1 C:\xampp\htdocs\sipd\framework\web\CController.php(265): AdminController->runActionWithFilters()
+#2 C:\xampp\htdocs\sipd\framework\web\CWebApplication.php(282): AdminController->run()
+#3 C:\xampp\htdocs\sipd\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 C:\xampp\htdocs\sipd\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#5 C:\xampp\htdocs\sipd\index.php(13): CWebApplication->run()
+REQUEST_URI=/sipd/admin/sosbud
+in C:\xampp\htdocs\sipd\protected\controllers\AdminController.php (179)
+in C:\xampp\htdocs\sipd\index.php (13)
+2015/01/23 07:25:20 [error] [php] Undefined variable: sql (C:\xampp\htdocs\sipd\protected\controllers\AdminController.php:179)
+Stack trace:
+#0 C:\xampp\htdocs\sipd\framework\web\CController.php(286): AdminController->runAction()
+#1 C:\xampp\htdocs\sipd\framework\web\CController.php(265): AdminController->runActionWithFilters()
+#2 C:\xampp\htdocs\sipd\framework\web\CWebApplication.php(282): AdminController->run()
+#3 C:\xampp\htdocs\sipd\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 C:\xampp\htdocs\sipd\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#5 C:\xampp\htdocs\sipd\index.php(13): CWebApplication->run()
+REQUEST_URI=/sipd/admin/sosbud
+in C:\xampp\htdocs\sipd\protected\controllers\AdminController.php (179)
+in C:\xampp\htdocs\sipd\index.php (13)
+2015/01/23 07:25:43 [error] [php] Undefined variable: sql (C:\xampp\htdocs\sipd\protected\controllers\AdminController.php:180)
+Stack trace:
+#0 C:\xampp\htdocs\sipd\framework\web\CController.php(286): AdminController->runAction()
+#1 C:\xampp\htdocs\sipd\framework\web\CController.php(265): AdminController->runActionWithFilters()
+#2 C:\xampp\htdocs\sipd\framework\web\CWebApplication.php(282): AdminController->run()
+#3 C:\xampp\htdocs\sipd\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 C:\xampp\htdocs\sipd\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#5 C:\xampp\htdocs\sipd\index.php(13): CWebApplication->run()
+REQUEST_URI=/sipd/admin/sosbud
+in C:\xampp\htdocs\sipd\protected\controllers\AdminController.php (180)
+in C:\xampp\htdocs\sipd\index.php (13)
+2015/01/23 07:31:04 [error] [php] Undefined variable: dataProvider (C:\xampp\htdocs\sipd\protected\views\admin\sosbud.php:1034)
+Stack trace:
+#0 C:\xampp\htdocs\sipd\framework\web\CController.php(869): AdminController->renderFile()
+#1 C:\xampp\htdocs\sipd\framework\web\CController.php(782): AdminController->renderPartial()
+#2 C:\xampp\htdocs\sipd\protected\controllers\AdminController.php(277): AdminController->render()
+#3 C:\xampp\htdocs\sipd\framework\web\actions\CInlineAction.php(49): AdminController->actionSosbud()
+#4 C:\xampp\htdocs\sipd\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\xampp\htdocs\sipd\framework\web\CController.php(286): AdminController->runAction()
+#6 C:\xampp\htdocs\sipd\framework\web\CController.php(265): AdminController->runActionWithFilters()
+#7 C:\xampp\htdocs\sipd\framework\web\CWebApplication.php(282): AdminController->run()
+#8 C:\xampp\htdocs\sipd\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\xampp\htdocs\sipd\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\sipd\index.php(13): CWebApplication->run()
+REQUEST_URI=/sipd/admin/sosbud
+in C:\xampp\htdocs\sipd\protected\views\admin\sosbud.php (1034)
+in C:\xampp\htdocs\sipd\protected\controllers\AdminController.php (277)
+in C:\xampp\htdocs\sipd\index.php (13)
+2015/01/24 13:31:57 [error] [php] Undefined variable: dataProvider1 (C:\xampp\htdocs\sipd\protected\views\admin\polhukam.php:26)
+Stack trace:
+#0 C:\xampp\htdocs\sipd\framework\web\CController.php(869): AdminController->renderFile()
+#1 C:\xampp\htdocs\sipd\framework\web\CController.php(782): AdminController->renderPartial()
+#2 C:\xampp\htdocs\sipd\protected\controllers\AdminController.php(404): AdminController->render()
+#3 C:\xampp\htdocs\sipd\framework\web\actions\CInlineAction.php(49): AdminController->actionPolhukam()
+#4 C:\xampp\htdocs\sipd\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\xampp\htdocs\sipd\framework\web\CController.php(286): AdminController->runAction()
+#6 C:\xampp\htdocs\sipd\framework\web\CController.php(265): AdminController->runActionWithFilters()
+#7 C:\xampp\htdocs\sipd\framework\web\CWebApplication.php(282): AdminController->run()
+#8 C:\xampp\htdocs\sipd\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\xampp\htdocs\sipd\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\sipd\index.php(13): CWebApplication->run()
+REQUEST_URI=/sipd/admin/polhukam
+in C:\xampp\htdocs\sipd\protected\views\admin\polhukam.php (26)
+in C:\xampp\htdocs\sipd\protected\controllers\AdminController.php (404)
+in C:\xampp\htdocs\sipd\index.php (13)
+2015/01/24 13:35:01 [error] [php] Undefined variable: dataProvider1 (C:\xampp\htdocs\sipd\protected\views\admin\polhukam.php:28)
+Stack trace:
+#0 C:\xampp\htdocs\sipd\framework\web\CController.php(869): AdminController->renderFile()
+#1 C:\xampp\htdocs\sipd\framework\web\CController.php(782): AdminController->renderPartial()
+#2 C:\xampp\htdocs\sipd\protected\controllers\AdminController.php(404): AdminController->render()
+#3 C:\xampp\htdocs\sipd\framework\web\actions\CInlineAction.php(49): AdminController->actionPolhukam()
+#4 C:\xampp\htdocs\sipd\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\xampp\htdocs\sipd\framework\web\CController.php(286): AdminController->runAction()
+#6 C:\xampp\htdocs\sipd\framework\web\CController.php(265): AdminController->runActionWithFilters()
+#7 C:\xampp\htdocs\sipd\framework\web\CWebApplication.php(282): AdminController->run()
+#8 C:\xampp\htdocs\sipd\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\xampp\htdocs\sipd\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\sipd\index.php(13): CWebApplication->run()
+REQUEST_URI=/sipd/admin/polhukam
+in C:\xampp\htdocs\sipd\protected\views\admin\polhukam.php (28)
+in C:\xampp\htdocs\sipd\protected\controllers\AdminController.php (404)
+in C:\xampp\htdocs\sipd\index.php (13)
+2015/01/24 13:35:24 [error] [php] Undefined variable: dataProvider (C:\xampp\htdocs\sipd\protected\views\admin\polhukam.php:28)
+Stack trace:
+#0 C:\xampp\htdocs\sipd\framework\web\CController.php(869): AdminController->renderFile()
+#1 C:\xampp\htdocs\sipd\framework\web\CController.php(782): AdminController->renderPartial()
+#2 C:\xampp\htdocs\sipd\protected\controllers\AdminController.php(404): AdminController->render()
+#3 C:\xampp\htdocs\sipd\framework\web\actions\CInlineAction.php(49): AdminController->actionPolhukam()
+#4 C:\xampp\htdocs\sipd\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\xampp\htdocs\sipd\framework\web\CController.php(286): AdminController->runAction()
+#6 C:\xampp\htdocs\sipd\framework\web\CController.php(265): AdminController->runActionWithFilters()
+#7 C:\xampp\htdocs\sipd\framework\web\CWebApplication.php(282): AdminController->run()
+#8 C:\xampp\htdocs\sipd\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\xampp\htdocs\sipd\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\sipd\index.php(13): CWebApplication->run()
+REQUEST_URI=/sipd/admin/polhukam
+in C:\xampp\htdocs\sipd\protected\views\admin\polhukam.php (28)
+in C:\xampp\htdocs\sipd\protected\controllers\AdminController.php (404)
+in C:\xampp\htdocs\sipd\index.php (13)
+2015/01/25 04:51:04 [error] [php] Undefined variable: dataProvider (C:\xampp\htdocs\sipd\protected\views\admin\polhukam.php:28)
+Stack trace:
+#0 C:\xampp\htdocs\sipd\framework\web\CController.php(869): AdminController->renderFile()
+#1 C:\xampp\htdocs\sipd\framework\web\CController.php(782): AdminController->renderPartial()
+#2 C:\xampp\htdocs\sipd\protected\controllers\AdminController.php(404): AdminController->render()
+#3 C:\xampp\htdocs\sipd\framework\web\actions\CInlineAction.php(49): AdminController->actionPolhukam()
+#4 C:\xampp\htdocs\sipd\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\xampp\htdocs\sipd\framework\web\CController.php(286): AdminController->runAction()
+#6 C:\xampp\htdocs\sipd\framework\web\CController.php(265): AdminController->runActionWithFilters()
+#7 C:\xampp\htdocs\sipd\framework\web\CWebApplication.php(282): AdminController->run()
+#8 C:\xampp\htdocs\sipd\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\xampp\htdocs\sipd\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\sipd\index.php(13): CWebApplication->run()
+REQUEST_URI=/sipd/admin/polhukam
+in C:\xampp\htdocs\sipd\protected\views\admin\polhukam.php (28)
+in C:\xampp\htdocs\sipd\protected\controllers\AdminController.php (404)
+in C:\xampp\htdocs\sipd\index.php (13)
+2015/01/26 01:35:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Tidak bisa mengurai request "assets/temaHome/css/bootstrap.css.map"' in C:\xampp\htdocs\sipd\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\sipd\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/temaHome...')
+#1 C:\xampp\htdocs\sipd\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\sipd\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/sipd/assets/temaHome/css/bootstrap.css.map
+---
+2015/01/26 01:35:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Tidak bisa mengurai request "assets/temaHome/css/bootstrap.css.map"' in C:\xampp\htdocs\sipd\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\sipd\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/temaHome...')
+#1 C:\xampp\htdocs\sipd\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\sipd\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/sipd/assets/temaHome/css/bootstrap.css.map
+---
+2015/01/26 01:35:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Tidak bisa mengurai request "assets/temaHome/css/bootstrap.css.map"' in C:\xampp\htdocs\sipd\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\sipd\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/temaHome...')
+#1 C:\xampp\htdocs\sipd\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\sipd\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/sipd/assets/temaHome/css/bootstrap.css.map
+---
+2015/01/26 01:35:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Tidak bisa mengurai request "assets/temaHome/css/bootstrap.css.map"' in C:\xampp\htdocs\sipd\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\sipd\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/temaHome...')
+#1 C:\xampp\htdocs\sipd\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\sipd\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/sipd/assets/temaHome/css/bootstrap.css.map
+---
+2015/01/26 02:42:33 [error] [php] Undefined variable: dataProvider (C:\xampp\htdocs\sipd\protected\views\admin\polhukam.php:28)
+Stack trace:
+#0 C:\xampp\htdocs\sipd\framework\web\CController.php(869): AdminController->renderFile()
+#1 C:\xampp\htdocs\sipd\framework\web\CController.php(782): AdminController->renderPartial()
+#2 C:\xampp\htdocs\sipd\protected\controllers\AdminController.php(404): AdminController->render()
+#3 C:\xampp\htdocs\sipd\framework\web\actions\CInlineAction.php(49): AdminController->actionPolhukam()
+#4 C:\xampp\htdocs\sipd\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\xampp\htdocs\sipd\framework\web\CController.php(286): AdminController->runAction()
+#6 C:\xampp\htdocs\sipd\framework\web\CController.php(265): AdminController->runActionWithFilters()
+#7 C:\xampp\htdocs\sipd\framework\web\CWebApplication.php(282): AdminController->run()
+#8 C:\xampp\htdocs\sipd\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\xampp\htdocs\sipd\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\sipd\index.php(13): CWebApplication->run()
+REQUEST_URI=/sipd/admin/polhukam
+in C:\xampp\htdocs\sipd\protected\views\admin\polhukam.php (28)
+in C:\xampp\htdocs\sipd\protected\controllers\AdminController.php (404)
+in C:\xampp\htdocs\sipd\index.php (13)
