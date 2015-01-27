@@ -348,76 +348,7 @@
 			if(Yii::app()->user->isGuest){
 		        $this->redirect(array('/login'));
 		    } else {
-		    	$sql1 = "SELECT*FROM eko_industri";
-		    	$sql2 = "SELECT*FROM eko_perdagangan";
-		    	$sql3 = "SELECT*FROM eko_usahanas";
-		    	$sql4 = "SELECT*FROM eko_einonmigas";
-		    	$sql5 = "SELECT*FROM eko_ioindustri";
-		    	$sql6 = "SELECT*FROM eko_perijinan";
-		    	$sql7 = "SELECT*FROM eko_indsubsektor";
-		    	$sql8 = "SELECT*FROM eko_pma";
-		    	$sql9 = "SELECT*FROM eko_pmdn";
-		    	$sql10 = "SELECT*FROM eko_bpr";
-		    	$sql11 = "SELECT*FROM eko_bankumum";
-		    	$sql12 = "SELECT*FROM eko_asrugi";
-		    	$sql13 = "SELECT*FROM eko_asjiwa";
-		    	$sql14 = "SELECT*FROM eko_invnas";
-		    	$sql15 = "SELECT*FROM eko_jasauang";
-		    	$sql16 = "SELECT*FROM eko_ukmnon";
-		    	$sql17 = "SELECT*FROM eko_perbankan";
-		    	$connection = Yii::app()->db;
-		    	$command1 = $connection->createCommand($sql1);
-		    	$command2 = $connection->createCommand($sql2);
-				$command3 = $connection->createCommand($sql3);
-				$command4 = $connection->createCommand($sql4);
-				$command5 = $connection->createCommand($sql5);
-				$command6 = $connection->createCommand($sql6);
-				$command7 = $connection->createCommand($sql7);
-				$command8 = $connection->createCommand($sql8);
-				$command9 = $connection->createCommand($sql9);
-				$command10 = $connection->createCommand($sql10);
-				$command11 = $connection->createCommand($sql11);
-				$command12 = $connection->createCommand($sql12);
-				$command13 = $connection->createCommand($sql13);
-				$command14 = $connection->createCommand($sql14);
-				$command15 = $connection->createCommand($sql15);
-				$command16 = $connection->createCommand($sql16);
-				$command17 = $connection->createCommand($sql17);
-				$r1 = $command1->queryAll();
-				$r2 = $command2->queryAll();
-				$r3 = $command3->queryAll();
-				$r4 = $command4->queryAll();
-				$r5 = $command5->queryAll();
-				$r6 = $command6->queryAll();
-				$r7 = $command7->queryAll();
-				$r8 = $command8->queryAll();
-				$r9 = $command9->queryAll();
-				$r10 = $command10->queryAll();
-				$r11 = $command11->queryAll();
-				$r12 = $command12->queryAll();
-				$r13 = $command13->queryAll();
-				$r14 = $command14->queryAll();
-				$r15 = $command15->queryAll();
-				$r16 = $command16->queryAll();
-				$r17 = $command17->queryAll();
-				$this->render('ekonomi',array(
-					'dataProvider1' => $r1,
-					'dataProvider2' => $r2,
-					'dataProvider3' => $r3,
-					'dataProvider4' => $r4,
-					'dataProvider5' => $r5,
-					'dataProvider6' => $r6,
-					'dataProvider7' => $r7,
-					'dataProvider8' => $r8,
-					'dataProvider9' => $r9,
-					'dataProvider10' => $r10,
-					'dataProvider11' => $r11,
-					'dataProvider12' => $r12,
-					'dataProvider13' => $r13,
-					'dataProvider14' => $r14,
-					'dataProvider15' => $r15,
-					'dataProvider16' => $r16,
-					'dataProvider17' => $r17));
+				$this->render('ekonomi');
 			}
 		}
 
@@ -426,148 +357,7 @@
 			if(Yii::app()->user->isGuest){
 		        $this->redirect(array('/login'));
 		    } else {
-		    	$sql1 = "SELECT*FROM infra_perumahan";
-		    	$sql2 = "SELECT*FROM infra_jmlrmh";
-		    	$sql3 = "SELECT*FROM infra_lsrmh";
-		    	$sql4 = "SELECT*FROM infra_arealmukim";
-		    	$sql5 = "SELECT*FROM infra_jmlbangun";
-		    	$sql6 = "SELECT*FROM infra_kumuh";
-		    	$sql7 = "SELECT*FROM infra_ilegal";
-		    	$sql8 = "SELECT*FROM infra_bantaran";
-		    	$sql9 = "SELECT*FROM infra_sutet";
-		    	$sql10 = "SELECT*FROM infra_rpublik";
-		    	$sql11 = "SELECT*FROM infra_rmhsanitasi";
-		    	$sql12 = "SELECT*FROM infra_pjjln";
-		    	$sql13 = "SELECT*FROM infra_kondisijln";
-		    	$sql14 = "SELECT*FROM infra_pjkondisi";
-		    	$sql15 = "SELECT*FROM infra_penghubung";
-		    	$sql16 = "SELECT*FROM infra_jembatan";
-		    	$sql17 = "SELECT*FROM infra_pjfungsi";
-		    	$sql18 = "SELECT*FROM infra_pemakaman";
-		    	$sql19 = "SELECT*FROM infra_pengairan";
-		    	$sql20 = "SELECT*FROM infra_pjmilik";
-		    	$sql21 = "SELECT*FROM infra_sempadan";
-		    	$sql22 = "SELECT*FROM infra_drainase";
-		    	$sql23 = "SELECT*FROM infra_turap";
-		    	$sql24 = "SELECT*FROM infra_sam";
-		    	$sql25 = "SELECT*FROM infra_mutuair";
-		    	$sql26 = "SELECT*FROM infra_dayamakam";
-		    	$sql27 = "SELECT*FROM infra_pariwisata";
-		    	$sql28 = "SELECT*FROM infra_telekomunikasi";
-		    	$sql29 = "SELECT*FROM infra_srtkabar";
-		    	$sql30 = "SELECT*FROM infra_penyiaran";
-		    	$sql31 = "SELECT*FROM infra_sip";
-		    	$sql32 = "SELECT*FROM infra_perhubungan";
-		    	$sql33 = "SELECT*FROM infra_angkum";
-		    	$sql34 = "SELECT*FROM infra_transportasi";
-		    	$sql35 = "SELECT*FROM infra_bermotor";
-		    	$connection = Yii::app()->db;
-				$command1 = $connection->createCommand($sql1);
-				$command2 = $connection->createCommand($sql2);
-				$command3 = $connection->createCommand($sql3);
-				$command4 = $connection->createCommand($sql4);
-				$command5 = $connection->createCommand($sql5);
-				$command6 = $connection->createCommand($sql6);
-				$command7 = $connection->createCommand($sql7);
-				$command8 = $connection->createCommand($sql8);
-				$command9 = $connection->createCommand($sql9);
-				$command10 = $connection->createCommand($sql10);
-				$command11 = $connection->createCommand($sql11);
-				$command12 = $connection->createCommand($sql12);
-				$command13 = $connection->createCommand($sql13);
-				$command14 = $connection->createCommand($sql14);
-				$command15 = $connection->createCommand($sql15);
-				$command16 = $connection->createCommand($sql16);
-				$command17 = $connection->createCommand($sql17);
-				$command18 = $connection->createCommand($sql18);
-				$command19 = $connection->createCommand($sql19);
-				$command20 = $connection->createCommand($sql20);
-				$command21 = $connection->createCommand($sql21);
-				$command22 = $connection->createCommand($sql22);
-				$command23 = $connection->createCommand($sql23);
-				$command24 = $connection->createCommand($sql24);
-				$command25 = $connection->createCommand($sql25);
-				$command26 = $connection->createCommand($sql26);
-				$command27 = $connection->createCommand($sql27);
-				$command28 = $connection->createCommand($sql28);
-				$command29 = $connection->createCommand($sql29);
-				$command30 = $connection->createCommand($sql30);
-				$command31 = $connection->createCommand($sql31);
-				$command32 = $connection->createCommand($sql32);
-				$command33 = $connection->createCommand($sql33);
-				$command34 = $connection->createCommand($sql34);
-				$command35 = $connection->createCommand($sql35);
-				$r1 = $command1->queryAll();
-				$r2 = $command2->queryAll();
-				$r3 = $command3->queryAll();
-				$r4 = $command4->queryAll();
-				$r5 = $command5->queryAll();
-				$r6 = $command6->queryAll();
-				$r7 = $command7->queryAll();
-				$r8 = $command8->queryAll();
-				$r9 = $command9->queryAll();
-				$r10 = $command10->queryAll();
-				$r11 = $command11->queryAll();
-				$r12 = $command12->queryAll();
-				$r13 = $command13->queryAll();
-				$r14 = $command14->queryAll();
-				$r15 = $command15->queryAll();
-				$r16 = $command16->queryAll();
-				$r17 = $command17->queryAll();
-				$r18 = $command18->queryAll();
-				$r19 = $command19->queryAll();
-				$r20 = $command20->queryAll();
-				$r21 = $command21->queryAll();
-				$r22 = $command22->queryAll();
-				$r23 = $command23->queryAll();
-				$r24 = $command24->queryAll();
-				$r25 = $command25->queryAll();
-				$r26 = $command26->queryAll();
-				$r27 = $command27->queryAll();
-				$r28 = $command28->queryAll();
-				$r29 = $command29->queryAll();
-				$r30 = $command30->queryAll();
-				$r31 = $command31->queryAll();
-				$r32 = $command32->queryAll();
-				$r33 = $command33->queryAll();
-				$r34 = $command34->queryAll();
-				$r35 = $command35->queryAll();
-				$this->render('infrastruktur',array(
-					'dataProvider1' => $r1,
-					'dataProvider2' => $r2,
-					'dataProvider3' => $r3,
-					'dataProvider4' => $r4,
-					'dataProvider5' => $r5,
-					'dataProvider6' => $r6,
-					'dataProvider7' => $r7,
-					'dataProvider8' => $r8,
-					'dataProvider9' => $r9,
-					'dataProvider10' => $r10,
-					'dataProvider11' => $r11,
-					'dataProvider12' => $r12,
-					'dataProvider13' => $r13,
-					'dataProvider14' => $r14,
-					'dataProvider15' => $r15,
-					'dataProvider16' => $r16,
-					'dataProvider17' => $r17,
-					'dataProvider18' => $r18,
-					'dataProvider19' => $r19,
-					'dataProvider20' => $r20,
-					'dataProvider21' => $r21,
-					'dataProvider22' => $r22,
-					'dataProvider23' => $r23,
-					'dataProvider24' => $r24,
-					'dataProvider25' => $r25,
-					'dataProvider26' => $r26,
-					'dataProvider27' => $r27,
-					'dataProvider28' => $r28,
-					'dataProvider29' => $r29,
-					'dataProvider30' => $r30,
-					'dataProvider31' => $r31,
-					'dataProvider32' => $r32,
-					'dataProvider33' => $r33,
-					'dataProvider34' => $r34,
-					'dataProvider35' => $r35));
+				$this->render('infrastruktur');
 			}
 		}
 
@@ -576,76 +366,7 @@
 			if(Yii::app()->user->isGuest){
 		        $this->redirect(array('/login'));
 		    } else {
-		    	$sql1 = "SELECT*FROM sda_pertanian";
-		    	$sql2 = "SELECT*FROM sda_hortikultura";
-		    	$sql3 = "SELECT*FROM sda_perkebunan";
-		    	$sql4 = "SELECT*FROM sda_peternakan";
-		    	$sql5 = "SELECT*FROM sda_laut_ikan";
-		    	$sql6 = "SELECT*FROM sda_kehutanan";
-		    	$sql7 = "SELECT*FROM sda_kel_sos";
-		    	$sql8 = "SELECT*FROM sda_pertambangan";
-		    	$sql9 = "SELECT*FROM sda_energi";
-		    	$sql10 = "SELECT*FROM sda_linkhidup";
-		    	$sql11 = "SELECT*FROM sda_rusaklinkhidup";
-		    	$sql12 = "SELECT*FROM sda_pelestarianlink";
-		    	$sql13 = "SELECT*FROM sda_tataruang";
-		    	$sql14 = "SELECT*FROM sda_pertanahan";
-		    	$sql15 = "SELECT*FROM sda_kendalilink";
-		    	$sql16 = "SELECT*FROM sda_sampah";
-		    	$sql17 = "SELECT*FROM sda_air_limbah";
-		    	$connection = Yii::app()->db;
-		    	$command1 = $connection->createCommand($sql1);
-		    	$command2 = $connection->createCommand($sql2);
-				$command3 = $connection->createCommand($sql3);
-				$command4 = $connection->createCommand($sql4);
-				$command5 = $connection->createCommand($sql5);
-				$command6 = $connection->createCommand($sql6);
-				$command7 = $connection->createCommand($sql7);
-				$command8 = $connection->createCommand($sql8);
-				$command9 = $connection->createCommand($sql9);
-				$command10 = $connection->createCommand($sql10);
-				$command11 = $connection->createCommand($sql11);
-				$command12 = $connection->createCommand($sql12);
-				$command13 = $connection->createCommand($sql13);
-				$command14 = $connection->createCommand($sql14);
-				$command15 = $connection->createCommand($sql15);
-				$command16 = $connection->createCommand($sql16);
-				$command17 = $connection->createCommand($sql17);
-				$r1 = $command1->queryAll();
-				$r2 = $command2->queryAll();
-				$r3 = $command3->queryAll();
-				$r4 = $command4->queryAll();
-				$r5 = $command5->queryAll();
-				$r6 = $command6->queryAll();
-				$r7 = $command7->queryAll();
-				$r8 = $command8->queryAll();
-				$r9 = $command9->queryAll();
-				$r10 = $command10->queryAll();
-				$r11 = $command11->queryAll();
-				$r12 = $command12->queryAll();
-				$r13 = $command13->queryAll();
-				$r14 = $command14->queryAll();
-				$r15 = $command15->queryAll();
-				$r16 = $command16->queryAll();
-				$r17 = $command17->queryAll();
-				$this->render('sda',array(
-					'dataProvider1' => $r1,
-					'dataProvider2' => $r2,
-					'dataProvider3' => $r3,
-					'dataProvider4' => $r4,
-					'dataProvider5' => $r5,
-					'dataProvider6' => $r6,
-					'dataProvider7' => $r7,
-					'dataProvider8' => $r8,
-					'dataProvider9' => $r9,
-					'dataProvider10' => $r10,
-					'dataProvider11' => $r11,
-					'dataProvider12' => $r12,
-					'dataProvider13' => $r13,
-					'dataProvider14' => $r14,
-					'dataProvider15' => $r15,
-					'dataProvider16' => $r16,
-					'dataProvider17' => $r17));
+				$this->render('sda');
 			}
 		}
 
@@ -654,34 +375,92 @@
 			if(Yii::app()->user->isGuest){
 		        $this->redirect(array('/login'));
 		    } else {
-				for ($angkahukam=1; $angkahukam < 22 ; $angkahukam++) { 
-					$sql[1] = "SELECT*FROM pdnp_jad";
-					$sql[2] = "SELECT*FROM pdnp_kadbjk";
-					$sql[3] = "SELECT*FROM pdnp_jfd";
-					$sql[4] = "SELECT*FROM pdnp_parpol";
-					$sql[5] = "SELECT*FROM pdnp_kpm";
-					$sql[6] = "SELECT*FROM pdnp_tpp";
-					$sql[7] = "SELECT*FROM pdnp_ormas";
-					$sql[8] = "SELECT*FROM pdnp_jlpm";
-					$sql[9] = "SELECT*FROM pdnp_jppm";
-					$sql[10] = "SELECT*FROM pdnp_jsmm";
-					$sql[11] = "SELECT*FROM pdnp_jppmd";
-					$sql[12] = "SELECT*FROM pdnp_lswm";
-					$sql[13] = "SELECT*FROM pdnp_jkppd";
-					$sql[14] = "SELECT*FROM huk_ph";
-					$sql[15] = "SELECT*FROM huk_jktd";
-					$sql[16] = "SELECT*FROM huk_jktd";
-					$sql[17] = "SELECT*FROM huk_jkyt";
-					$sql[18] = "SELECT*FROM huk_kel";
-					$sql[19] = "SELECT*FROM huk_jtk";
-					$sql[20] = "SELECT*FROM huk_jtkd";
-					$sql[21] = "SELECT*FROM kkm_kkm";
+					$sql1 = "SELECT*FROM pdnp_jad";
+					$sql2 = "SELECT*FROM pdnp_kadbjk";
+					$sql3 = "SELECT*FROM pdnp_jfd";
+					$sql4 = "SELECT*FROM pdnp_parpol";
+					$sql5 = "SELECT*FROM pdnp_kpm";
+					$sql6 = "SELECT*FROM pdnp_tpp";
+					$sql7 = "SELECT*FROM pdnp_ormas";
+					$sql8 = "SELECT*FROM pdnp_jlpm";
+					$sql9 = "SELECT*FROM pdnp_jppm";
+					$sql10 = "SELECT*FROM pdnp_jsmm";
+					$sql11 = "SELECT*FROM pdnp_jppmd";
+					$sql12 = "SELECT*FROM pdnp_lswm";
+					$sql13 = "SELECT*FROM pdnp_jkppd";
+					$sql14 = "SELECT*FROM huk_ph";
+					$sql15 = "SELECT*FROM huk_jktd";
+					$sql16 = "SELECT*FROM huk_jktd";
+					$sql17 = "SELECT*FROM huk_jkyt";
+					$sql18 = "SELECT*FROM huk_kel";
+					$sql19 = "SELECT*FROM huk_jtk";
+					$sql20 = "SELECT*FROM huk_jtkd";
+					$sql21 = "SELECT*FROM kkm_kkm";
 					$connection = Yii::app()->db;
-					$command[$angkahukam] = $connection->createCommand($sql[$angkahukam]);
-					$r[$angkahukam] = $command[$angkahukam]->queryAll();
+					$command1 = $connection->createCommand($sql1);
+					$command2 = $connection->createCommand($sql2);
+					$command3 = $connection->createCommand($sql3);
+					$command4 = $connection->createCommand($sql4);
+					$command5 = $connection->createCommand($sql5);
+					$command6 = $connection->createCommand($sql6);
+					$command7 = $connection->createCommand($sql7);
+					$command8 = $connection->createCommand($sql8);
+					$command9 = $connection->createCommand($sql9);
+					$command10 = $connection->createCommand($sql10);
+					$command11 = $connection->createCommand($sql11);
+					$command12 = $connection->createCommand($sql12);
+					$command13 = $connection->createCommand($sql13);
+					$command14 = $connection->createCommand($sql14);
+					$command15 = $connection->createCommand($sql15);
+					$command16 = $connection->createCommand($sql16);
+					$command17 = $connection->createCommand($sql17);
+					$command18 = $connection->createCommand($sql18);
+					$command19 = $connection->createCommand($sql19);
+					$command20 = $connection->createCommand($sql20);
+					$command21 = $connection->createCommand($sql21);
+					$r1 = $command1->queryAll();
+					$r2 = $command2->queryAll();
+					$r3 = $command3->queryAll();
+					$r4 = $command4->queryAll();
+					$r5 = $command5->queryAll();
+					$r6 = $command6->queryAll();
+					$r7 = $command7->queryAll();
+					$r8 = $command8->queryAll();
+					$r9 = $command9->queryAll();
+					$r10 = $command10->queryAll();
+					$r11 = $command11->queryAll();
+					$r12 = $command12->queryAll();
+					$r13 = $command13->queryAll();
+					$r14 = $command14->queryAll();
+					$r15 = $command15->queryAll();
+					$r16 = $command16->queryAll();
+					$r17 = $command17->queryAll();
+					$r18 = $command18->queryAll();
+					$r19 = $command19->queryAll();
+					$r20 = $command20->queryAll();
+					$r21 = $command21->queryAll();
 					$this->render('polhukam',array(
-						'dataProvider[$angkahukam]' => $r[$angkahukam]));
-				}
+						'dataProvider1' => $r1,
+						'dataProvider2' => $r2,
+						'dataProvider3' => $r3,
+						'dataProvider4' => $r4,
+						'dataProvider5' => $r5,
+						'dataProvider6' => $r6,
+						'dataProvider7' => $r7,
+						'dataProvider8' => $r8,
+						'dataProvider9' => $r9,
+						'dataProvider10' => $r10,
+						'dataProvider11' => $r11,
+						'dataProvider12' => $r12,
+						'dataProvider13' => $r13,
+						'dataProvider14' => $r14,
+						'dataProvider15' => $r15,
+						'dataProvider16' => $r16,
+						'dataProvider17' => $r17,
+						'dataProvider18' => $r18,
+						'dataProvider19' => $r19,
+						'dataProvider20' => $r20,
+						'dataProvider21' => $r21));
 			}
 		}
 
@@ -798,32 +577,45 @@
 				);
 		}
 
-		public function actionSimpan()
+		public function actionSimpanDataUmum()
 		{
 			if ($_POST) {
 				//ambil dat adari masing-masing atribut
+				$tahunini=date("YYYY");
 				$datar=$_POST['datar'];
 				$bergelombang=$_POST['bergelombang'];
 				$curam=$_POST['curam'];
 				$sgtcuram=$_POST['sgtcuram'];
 				$tinggidpl=$_POST['tinggidpl'];
 
+				$user=Yii::app()->user->username;
+				$implod=array($datar,$bergelombang,$curam,$sgtcuram,$tinggidpl);
+
+				$masukisi=implode("#", $implod);
+
+				$i=0;
+				for ($i=0; $i < 5; $i++) { 
+					$n=$i+1;
+					$sql3="UPDATE geo_topografi SET '2015'=$implod[$i] WHERE id=$n";
+				}
+				
+				$sql2="INSERT INTO log VALUES('','geo_topografi','$user','$tahunini','$masukisi')";
 				//query simpan data
-				$sql2="INSERT INTO geo_topografi(datar,bergelombang,curam,sgtcuram,tinggidpl)
-				VALUES('$datar','$bergelombang','$curam','$sgtcuram','$tinggidpl')";
+				/*$sql2="INSERT INTO geo_topografi(datar,bergelombang,curam,sgtcuram,tinggidpl)
+				VALUES('$datar','$bergelombang','$curam','$sgtcuram','$tinggidpl')";*/
 				$conn=Yii::app()->db;
 
 				//eksekusi query simpan data
 				$command=$conn->createCommand($sql2);
 
 				//binding param untuk menangani karakter injection
-				$command->bindParam(":datar",$datar,PDO::PARAM_STR);
-				$command->bindParam(":bergelombang",$bergelombang,PDO::PARAM_STR);
+				/*$command->bindParam(":datar",$datar,PDO::PARAM_STR);
+				$command->bindParam(":bergelombang",$bergelombang,PDO::PARAM_STR);*/
 
 				//eksekusi query atau non-query
 				$command->execute();
 				$this->redirect(array(
-					'subdataumum'));
+					'dataumum'));
 			}
 		}
 
