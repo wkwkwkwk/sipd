@@ -114,21 +114,31 @@
                             $anu = "";
                             $ini = "";
                             $apa = "";
+                            $ana = "";
                         }else if($belakang == "dataumum" || $belakang == "sosbud"){
                             $anu = "active";
                             $itu = "";
                             $ini = "";
                             $apa = "";
+                            $ana = "";
                         }else if($belakang == "ekonomi" || $belakang == "infrastruktur" || $belakang == "sda"){
                             $ini = "active";
                             $anu = "";
                             $itu = "";
                             $apa = "";
+                            $ana = "";
                         }else if($belakang == "polhukam" || $belakang == "insidensial"){
                             $apa = "active";
                             $anu = "";
                             $itu = "";
                             $ini = "";
+                            $ana = "";
+                        }else if($belakang == "tampilkandata"){
+                            $ana = "active";
+                            $anu = "";
+                            $itu = "";
+                            $ini = "";
+                            $apa = "";
                         }                        
                     ?>
                     <li class="<?php echo $itu; ?>">
@@ -172,7 +182,7 @@
                         </ul>
                     </li>
                     <?php } ?>
-                    <li>
+                    <li class="<?php echo $ana; ?>">
                         <?php echo CHtml::link('Tampilkan Data',array('admin/tampilkandata')); ?>
                     </li>
                 </ul>
