@@ -1,4 +1,4 @@
-<form role="form" method="post" action="simpan">
+<form role="form" method="post" action="simpandataumum">
 <div class="row">
     <div class="col-lg-12">
         <h1 class="page-header">

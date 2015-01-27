@@ -519,15 +519,18 @@
 				);
 		}
 
-		public function actionSimpan()
+		public function actionSimpanDataUmum()
 		{
 			if ($_POST) {
 				//ambil dat adari masing-masing atribut
+				$tahunini=date("YYYY");
 				$datar=$_POST['datar'];
 				$bergelombang=$_POST['bergelombang'];
 				$curam=$_POST['curam'];
 				$sgtcuram=$_POST['sgtcuram'];
 				$tinggidpl=$_POST['tinggidpl'];
+
+				$implod=array('datar');
 
 				//query simpan data
 				$sql2="INSERT INTO geo_topografi(datar,bergelombang,curam,sgtcuram,tinggidpl)
