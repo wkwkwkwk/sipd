@@ -110,7 +110,10 @@
 
                         //kalo yang diakses bukan halaman dashboard, li nggak active. tapi kalo pas di dashboard, li class=active
                         $URL_halaman_ini = apache_getenv("HTTP_HOST") . apache_getenv("REQUEST_URI");
-                        if($URL_halaman_ini == "localhost/sipd/admin/index"){
+                        $eks = explode("/", $URL_halaman_ini);
+                        $belakang = $eks[3];
+                        /*echo $belakang;*/
+                        if($belakang == "index"){
                             $itu = "active";
                         }else{
                             $itu = "";
