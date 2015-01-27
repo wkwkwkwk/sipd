@@ -50,9 +50,6 @@
         td.d{
             padding-left: 65px;
         }
-        .apa{
-            color: white;
-        }
     </style>
 
 </head>
@@ -106,8 +103,7 @@
             <!-- Sidebar Menu Items - These collapse to the responsive navigation menu on small screens -->
             <div class="collapse navbar-collapse navbar-ex1-collapse">
                 <ul class="nav navbar-nav side-nav">
-                    <?php 
-
+                    <?php
                         //kalo yang diakses bukan halaman dashboard, li nggak active. tapi kalo pas di dashboard, li class=active
                         $URL_halaman_ini = apache_getenv("HTTP_HOST") . apache_getenv("REQUEST_URI");
                         $eks = explode("/", $URL_halaman_ini);
@@ -115,48 +111,65 @@
                         /*echo $belakang;*/
                         if($belakang == "index"){
                             $itu = "active";
-                        }else{
+                            $anu = "";
+                            $ini = "";
+                            $apa = "";
+                        }else if($belakang == "dataumum" || $belakang == "sosbud"){
+                            $anu = "active";
                             $itu = "";
-                        }
-                        
+                            $ini = "";
+                            $apa = "";
+                        }else if($belakang == "ekonomi" || $belakang == "infrastruktur" || $belakang == "sda"){
+                            $ini = "active";
+                            $anu = "";
+                            $itu = "";
+                            $apa = "";
+                        }else if($belakang == "polhukam" || $belakang == "insidensial"){
+                            $apa = "active";
+                            $anu = "";
+                            $itu = "";
+                            $ini = "";
+                        }                        
                     ?>
                     <li class="<?php echo $itu; ?>">
                         <a href="<?php echo Yii::app()->request->baseUrl; ?>/admin/index"><i class="fa fa-fw fa-dashboard"></i> Dashboard</a>
                     </li>
                     <?php if (Yii::app()->user->username!='bappeda') { ?>
-                    <li>
+                    <li class="<?php echo $anu; ?>">
                         <a href="javascript:;" data-toggle="collapse" data-target="#demo"><i class="fa fa-fw fa-list-alt"></i> Sub Data Umum<i class="fa fa-fw fa-caret-down"></i></a>
                         <ul id="demo" class="collapse">
-                        <li>
-                        <?php echo CHtml::link('Data Umum',array('admin/dataumum')); ?>
+                            <li>
+                                <?php echo CHtml::link('Data Umum',array('admin/dataumum')); ?>
+                            </li>
+                            <li>
+                                <?php echo CHtml::link('Sosial Budaya',array('admin/sosbud')); ?>
+                            </li>
+                        </ul>
                     </li>
-                    <li>
-                        <?php echo CHtml::link('Sosial Budaya',array('admin/sosbud')); ?>
+                    <li class="<?php echo $ini; ?>">
+                        <a href="javascript:;" data-toggle="collapse" data-target="#demo1"><i class="fa fa-fw fa-list-alt"></i> Sub Ekonomi<i class="fa fa-fw fa-caret-down"></i></a>
+                        <ul id="demo1" class="collapse">
+                            <li>
+                                <?php echo CHtml::link('Ekonomi',array('admin/ekonomi')); ?>
+                            </li>
+                            <li>
+                                <?php echo CHtml::link('Infrastruktur',array('admin/infrastruktur')); ?>
+                            </li>
+                            <li>
+                                <?php echo CHtml::link('Sumber Daya Alam',array('admin/sda')); ?>
+                            </li>
+                        </ul>
                     </li>
-                    </ul>
-
-                    <a href="javascript:;" data-toggle="collapse" data-target="#demo1"><i class="fa fa-fw fa-list-alt"></i> Sub Ekonomi<i class="fa fa-fw fa-caret-down"></i></a>
-                    <ul id="demo1" class="collapse">
-                    <li>
-                    <?php echo CHtml::link('Ekonomi',array('admin/ekonomi')); ?>
-                    </li>
-                    <li>
-                    <?php echo CHtml::link('Infrastruktur',array('admin/infrastruktur')); ?>
-                    </li>
-                    <li>
-                    <?php echo CHtml::link('Sumber Daya Alam',array('admin/sda')); ?>
-                    </li>
-                    </ul>
-
-                    <a href="javascript:;" data-toggle="collapse" data-target="#demo2"><i class="fa fa-fw fa-list-alt"></i> Sub Keamanan<i class="fa fa-fw fa-caret-down"></i></a>
-                    <ul id="demo2" class="collapse">
-                    <li>
-                    <?php echo CHtml::link('Polhukam',array('admin/polhukam')); ?>
-                    </li>
-                    <li>
-                    <?php echo CHtml::link('Insidensial',array('admin/insidensial')); ?>
-                    </li>
-                    </ul>
+                    <li class="<?php echo $apa; ?>">
+                        <a href="javascript:;" data-toggle="collapse" data-target="#demo2"><i class="fa fa-fw fa-list-alt"></i> Sub Keamanan<i class="fa fa-fw fa-caret-down"></i></a>
+                        <ul id="demo2" class="collapse">
+                            <li>
+                                <?php echo CHtml::link('Polhukam',array('admin/polhukam')); ?>
+                            </li>
+                            <li>
+                                <?php echo CHtml::link('Insidensial',array('admin/insidensial')); ?>
+                            </li>
+                        </ul>
                     </li>
                     <?php } ?>
                     <li>
