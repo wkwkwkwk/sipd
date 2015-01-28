@@ -28,43 +28,25 @@
     <div class="col-lg-6">
         <div class="panel panel-default">
             <div class="panel-heading">
-                <h3 class="panel-title"><i class="fa fa-clock-o fa-fw"></i> Daftar Kecamatan (Di list dari database)</h3>
+                <h3 class="panel-title"><i class="fa fa-clock-o fa-fw"></i> Daftar Kecamatan</h3>
             </div>
             <div class="panel-body">
             	<!-- di looping dari database nama kecamatannya -->
                 <div class="list-group">
-                    <a href="#" class="list-group-item">
-                        
-                        <i class="fa fa-fw fa-calendar"></i> Calendar updated
-                    </a>
-                    <a href="#" class="list-group-item">
-                        
-                        <i class="fa fa-fw fa-comment"></i> Commented on a post
-                    </a>
-                    <a href="#" class="list-group-item">
-                        
-                        <i class="fa fa-fw fa-truck"></i> Order 392 shipped
-                    </a>
-                    <a href="#" class="list-group-item">
-                        
-                        <i class="fa fa-fw fa-money"></i> Invoice 653 has been paid
-                    </a>
-                    <a href="#" class="list-group-item">
-                        
-                        <i class="fa fa-fw fa-user"></i> A new user has been added
-                    </a>
-                    <a href="#" class="list-group-item">
-                        
-                        <i class="fa fa-fw fa-check"></i> Completed task: "pick up dry cleaning"
-                    </a>
-                    <a href="#" class="list-group-item">
-                        
-                        <i class="fa fa-fw fa-globe"></i> Saved the world
-                    </a>
-                    <a href="#" class="list-group-item">
-                        
-                        <i class="fa fa-fw fa-check"></i> Completed task: "fix error on sales page"
-                    </a>
+                    <table class="table table-bordered table-hover">
+                        <thead>
+                            <th><center>No.</center></th>
+                            <th><center>Nama Kecamatan</center></th>
+                        </thead>
+                        <tbody>
+                            <?php foreach ($dataKecamatan as $kec): ?>
+                            <tr>
+                                <td><center><?php echo $kec['idkecamatan']; ?>.</center></td>
+                                <td><?php echo $kec['namakecamatan']; ?></td>
+                            </tr>
+                            <?php endforeach; ?>
+                        </tbody>
+                    </table>
                 </div>
                 
             </div>
@@ -81,8 +63,8 @@
                         <thead>
                             <tr>
                                 
-                                <th>User</th>
-                                <th>Terakhir Mengakses</th>
+                                <th><center>User</center></th>
+                                <th><center>Terakhir Mengakses</center></th>
                                 
                             </tr>
                         </thead>
@@ -102,7 +84,7 @@
                                             $hasil = array($gabung, $pisah[1]);
                                             $tampil = implode(" ", $hasil);
                                         ?>
-                                    <td><?php echo $tampil; ?></td>
+                                    <td><center><?php echo $tampil; ?></center></td>
                                 </tr>
                             <?php  endforeach; ?>
 

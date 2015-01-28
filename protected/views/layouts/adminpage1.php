@@ -36,6 +36,7 @@
     <style>
         td{
             padding-bottom: 10px;
+            text-transform: capitalize;
         }
         td.a{
             padding-left: 30px;
