@@ -10,7 +10,11 @@
 			if(Yii::app()->user->isGuest){
 		        $this->redirect(array('/login'));
 		    } else {
-				$this->render('index');
+				$aktiv="SELECT * FROM admin WHERE admin.rule='kecamatan' ORDER BY terakhir_masuk DESC";
+				$connection = Yii::app()->db;
+				$command = $connection->createCommand($aktiv);
+				$r = $command->queryAll();
+				$this->render('index',array('dataAktivitas'=>$r,));
 			}
 		}
 
@@ -839,12 +843,25 @@
 			if(Yii::app()->user->isGuest){
 		        $this->redirect(array('/login'));
 		    } else {
-				
-				$data = new ExcelReader();
-				$data->Spreadsheet_Excel_Reader('SIPD Kabupaten Purbalingga prh th 2014.xls');
-				//$data->Spreadsheet_Excel_Reader("SIPD Kabupaten Purbalingga prh th 2014.xls");
-				echo $data->dump(true,true);
-				$this->render('tampilkandata');
+				$model = new Topografi();
+			    $this->widget('ext.EExcelView', array(
+			        'grid_mode'=>'export',
+			        'title' => 'Topografi',
+				'dataProvider' => $model->search(),
+				'filter' => $model,
+				'columns' => array(
+					'properti',
+					'nama',
+					'2010',
+					'2011',
+					'2012',
+					'2013',
+					'2014',
+					'satuan',
+					'ketersediaan',
+					'sumber_data',
+				),
+				));
 			}
 		}
 
