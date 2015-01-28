@@ -111,10 +111,15 @@
                             $belakang = $eks[3];
                         }else{
                             $belakang = $eks[2];
+                            $anu = "";
+                            $ini = "";
+                            $apa = "";
+                            $ana = "";
+                            $itu = "active";
                         }
                         
                         /*echo $belakang;*/
-                        if($belakang == "index"){
+                        if($belakang == "index" && $eks[2] == "admin"){
                             $itu = "active";
                             $anu = "";
                             $ini = "";
@@ -139,6 +144,12 @@
                             $ini = "";
                             $ana = "";
                         }else if($belakang == "tampilkandata" || $belakang == "export"){
+                            $ana = "active";
+                            $anu = "";
+                            $itu = "";
+                            $ini = "";
+                            $apa = "";
+                        }else if($belakang == "index" && $eks[2] == "export"){
                             $ana = "active";
                             $anu = "";
                             $itu = "";
@@ -188,7 +199,7 @@
                     </li>
                     <?php } ?>
                     <li class="<?php echo $ana; ?>">
-                        <?php echo CHtml::link('Tampilkan Data',array('admin/tampilkandata')); ?>
+                        <?php echo CHtml::link('Tampilkan Data',array('export/index')); ?>
                     </li>
                 </ul>
             </div>
