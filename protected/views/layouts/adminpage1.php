@@ -107,7 +107,12 @@
                         //kalo yang diakses bukan halaman dashboard, li nggak active. tapi kalo pas di dashboard, li class=active
                         $URL_halaman_ini = apache_getenv("HTTP_HOST") . apache_getenv("REQUEST_URI");
                         $eks = explode("/", $URL_halaman_ini);
-                        $belakang = $eks[3];
+                        if($eks[3] != NULL){
+                            $belakang = $eks[3];
+                        }else{
+                            $belakang = $eks[2];
+                        }
+                        
                         /*echo $belakang;*/
                         if($belakang == "index"){
                             $itu = "active";
@@ -133,13 +138,13 @@
                             $itu = "";
                             $ini = "";
                             $ana = "";
-                        }else if($belakang == "tampilkandata"){
+                        }else if($belakang == "tampilkandata" || $belakang == "export"){
                             $ana = "active";
                             $anu = "";
                             $itu = "";
                             $ini = "";
                             $apa = "";
-                        }                        
+                        }                     
                     ?>
                     <li class="<?php echo $itu; ?>">
                         <a href="<?php echo Yii::app()->request->baseUrl; ?>/admin/index"><i class="fa fa-fw fa-dashboard"></i> Dashboard</a>
