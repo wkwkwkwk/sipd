@@ -10,14 +10,18 @@
 			if(Yii::app()->user->isGuest){
 		        $this->redirect(array('/login'));
 		    } else {
+				$user=Yii::app()->user->username;
+				$pilihkec="SELECT * FROM listkecamatan WHERE listkecamatan.namakecamatan='$user'";
 				$kecamatan="SELECT * FROM listkecamatan";
 				$aktiv="SELECT * FROM admin WHERE admin.rule='kecamatan' ORDER BY terakhir_masuk DESC";
 				$connection = Yii::app()->db;
 				$command1 = $connection->createCommand($aktiv);
 				$command2 = $connection->createCommand($kecamatan);
+				$command3 = $connection->createCommand($pilihkec);
 				$r = $command1->queryAll();
 				$ra = $command2->queryAll();
-				$this->render('index',array('dataAktivitas'=>$r,'dataKecamatan'=>$ra,));
+				$raw = $command3->queryAll();
+				$this->render('index',array('dataAktivitas'=>$r,'dataKecamatan'=>$ra,'dataMasuk'=>$raw,));
 			}
 		}
 

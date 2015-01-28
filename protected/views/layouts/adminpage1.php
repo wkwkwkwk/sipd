@@ -34,6 +34,9 @@
     <![endif]-->
 
     <style>
+        h3{
+            text-transform: capitalize;
+        }
         td{
             padding-bottom: 10px;
             text-transform: capitalize;

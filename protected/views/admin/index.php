@@ -4,11 +4,7 @@
         <h1 class="page-header">
 		    Dashboard <small>Statistics Overview</small>
         </h1>
-       	<ol class="breadcrumb">
-        	<li class="active">
-            	<i class="fa fa-dashboard"></i> Dashboard
-            </li>
-        </ol>
+       	
     </div>
 </div>
 <!-- /.row -->
@@ -17,21 +13,54 @@
 	<div class="col-lg-12">
     	<div class="alert alert-info alert-dismissable">
         	<button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
-            	<i class="fa fa-info-circle"></i>  <strong>Like SB Admin?</strong> Try out <a href="http://startbootstrap.com/template-overviews/sb-admin-2" class="alert-link">SB Admin 2</a> for additional features!
+            	<i class="fa fa-info-circle"></i>  Selamat datang di SIPD Kabupaten Purbalingga, user <strong><?php echo Yii::app()->user->username; ?></strong>. Silahkan jika ingin mengakses sistem ini, menu terdapat di sebelah kiri.
         </div>
     </div>
 </div>
 <!-- /.row -->
 
 <div class="row">
-    
-    <div class="col-lg-6">
+    <?php if (Yii::app()->user->username!='bappeda') { ?>
+        <div class="col-lg-12 col-xs-12">
+            <div class="box panel panel-default">
+                <div class="panel-heading">
+                      <h3 class="panel-title text-center"> Kecamatan <?php foreach ($dataMasuk as $key): ?>
+                          <?php echo $key['namakecamatan']; ?> - Kabupaten Purbalingga</h3>
+                          <div class="box-icon">
+                            
+                          </div>
+                </div>
+            <div class="box-content row">
+                <div class="col-lg-12 col-xs-12 col-lg-offset-3">
+                    <table width="100%">
+                        <tr>
+                            <td>Alamat</td>
+                            <td>:</td>
+                            <td><?php echo $key['alamat']; ?></td>
+                        </tr>
+                        <tr>
+                            <td>No Telp</td>
+                            <td>:</td>
+                            <td><?php echo $key['notelp']; ?></td>
+                        </tr>
+                        <tr>
+                            <td>Email</td>
+                            <td>:</td>
+                            <td><?php echo $key['email']; ?></td>
+                        </tr>
+                    </table>
+                    <?php endforeach; ?>
+                </div>
+            </div>
+        </div>
+    <?php }else{ ?>
+        <div class="col-lg-6">
         <div class="panel panel-default">
             <div class="panel-heading">
-                <h3 class="panel-title"><i class="fa fa-clock-o fa-fw"></i> Daftar Kecamatan</h3>
+                <h3 class="panel-title"><i class="fa fa-user fa-fw"></i> Daftar Kecamatan</h3>
             </div>
             <div class="panel-body">
-            	<!-- di looping dari database nama kecamatannya -->
+                <!-- di looping dari database nama kecamatannya -->
                 <div class="list-group">
                     <table class="table table-bordered table-hover">
                         <thead>
@@ -94,5 +123,6 @@
             </div>
         </div>
     </div>
+    <?php } ?>
 </div>
 <!-- /.row -->

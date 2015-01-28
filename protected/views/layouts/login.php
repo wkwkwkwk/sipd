@@ -10,9 +10,7 @@
     <meta name="author" content="">
 
     <title>SIPD Purbalingga</title>
-
     <link rel="shortcut icon" id="favicon" href="<?php echo Yii::app()->request->baseUrl; ?>/assets/temaHome/img/Logo_Pbg.png" alt="SIPD" />
-
     <!-- Bootstrap Core CSS -->
     <link href="<?php echo Yii::app()->request->baseUrl; ?>/assets/temaHome/css/bootstrap.css" rel="stylesheet">
 
@@ -104,7 +102,7 @@
     <hr />
     <footer>
         <div class="text-center">
-            Copyright &copy; 2015. Design by <a href="http://getbootstrap.com" target="_blank">Bootstrap.</a>&nbsp;|&nbsp; <a href="#" data-toggle="modal" data-target="#myModal">Developer Team</a>
+            Copyright &copy; <?php echo date("Y"); ?>. Design by <a href="http://getbootstrap.com" target="_blank">Bootstrap.</a>&nbsp;|&nbsp; <a href="#" data-toggle="modal" data-target="#myModal">Developer Team</a>
         </div>
     </footer>
 

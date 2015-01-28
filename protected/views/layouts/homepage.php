@@ -78,7 +78,7 @@
     <hr />
     <footer>
         <div class="text-center">
-            Copyright &copy; 2015. Design by <a href="http://getbootstrap.com" target="_blank">Bootstrap</a>&nbsp;|&nbsp; <a href="#" data-toggle="modal" data-target="#myModal">Developer Team</a>
+            Copyright &copy; <?php echo date("Y"); ?>. Design by <a href="http://getbootstrap.com" target="_blank">Bootstrap</a>&nbsp;|&nbsp; <a href="#" data-toggle="modal" data-target="#myModal">Developer Team</a>
         </div>
     </footer>
 

@@ -21,10 +21,12 @@
 		{
 			$this -> createExcel($fileName);
 			$topografi=Topografi::model()->findAll();
+			$tahunini=date("Y");
 
 			//render partial ke file index dengan membawa data $topografi dan akan ditampung oleh $dataExcel
 			$dataExcel=$this->renderPartial("report",array(
-				"dataTopografi"=>$topografi
+				"dataTopografi"=>$topografi,
+				"tahunini"=>$tahunini,
 				));
 
 			//echo dataExcel dan akan mendownload file excel
