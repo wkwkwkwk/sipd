@@ -1,4 +1,4 @@
-<form role="form" method="post" action="simpan">
+<form role="form" method="post" action="simpanindus">
 <div class="row">
     <div class="col-lg-12">
         <h1 class="page-header">
@@ -41,15 +41,16 @@
                                             <td width="45%"><input type="text" class="form-control" 
                                                 <?php
                                                       if($x['ketersediaan']=='Tidak Ada'){
-                                                            echo "readonly='readonly' ";
+                                                            echo "value='0' ";
                                                             echo "name='";
                                                             echo $x['nm_field'];
                                                             echo "'";
-                                                            echo " placeholder='Tidak Ada'";
+                                                            echo " placeholder=''";
                                                       }else{
                                                             echo "name='";
                                                             echo $x['nm_field'];
                                                             echo "'";
+                                                            echo "value='0' ";
                                                       }
                                                 ?> /></td>
                                                 <td width="5%"><?php echo $x['satuan']; ?></td>
@@ -73,15 +74,16 @@
                                             <td width="45%"><input type="text" class="form-control" 
                                                 <?php
                                                       if($x['ketersediaan']=='Tidak Ada'){
-                                                            echo "readonly='readonly' ";
+                                                            echo "value='0' ";
                                                             echo "name='";
                                                             echo $x['nm_field'];
                                                             echo "'";
-                                                            echo " placeholder='Tidak Ada'";
+                                                            echo " placeholder=''";
                                                       }else{
                                                             echo "name='";
                                                             echo $x['nm_field'];
                                                             echo "'";
+                                                            echo "value='0' ";
                                                       }
                                                 ?> /></td>
                                                 <td width="5%"><?php echo $x['satuan']; ?></td>
@@ -105,15 +107,16 @@
                                             <td width="45%"><input type="text" class="form-control" 
                                                 <?php
                                                       if($x['ketersediaan']=='Tidak Ada'){
-                                                            echo "readonly='readonly' ";
+                                                            echo "value='0' ";
                                                             echo "name='";
                                                             echo $x['nm_field'];
                                                             echo "'";
-                                                            echo " placeholder='Tidak Ada'";
+                                                            echo " placeholder=''";
                                                       }else{
                                                             echo "name='";
                                                             echo $x['nm_field'];
                                                             echo "'";
+                                                            echo "value='0' ";
                                                       }
                                                 ?> /></td>
                                                 <td width="5%"><?php echo $x['satuan']; ?></td>
@@ -137,15 +140,16 @@
                                             <td width="45%"><input type="text" class="form-control" 
                                                 <?php
                                                       if($x['ketersediaan']=='Tidak Ada'){
-                                                            echo "readonly='readonly' ";
+                                                            echo "value='0' ";
                                                             echo "name='";
                                                             echo $x['nm_field'];
                                                             echo "'";
-                                                            echo " placeholder='Tidak Ada'";
+                                                            echo " placeholder=''";
                                                       }else{
                                                             echo "name='";
                                                             echo $x['nm_field'];
                                                             echo "'";
+                                                            echo "value='0' ";
                                                       }
                                                 ?> /></td>
                                                 <td width="5%"><?php echo $x['satuan']; ?></td>
@@ -169,15 +173,16 @@
                                             <td width="45%"><input type="text" class="form-control" 
                                                 <?php
                                                       if($x['ketersediaan']=='Tidak Ada'){
-                                                            echo "readonly='readonly' ";
+                                                            echo "value='0' ";
                                                             echo "name='";
                                                             echo $x['nm_field'];
                                                             echo "'";
-                                                            echo " placeholder='Tidak Ada'";
+                                                            echo " placeholder=''";
                                                       }else{
                                                             echo "name='";
                                                             echo $x['nm_field'];
                                                             echo "'";
+                                                            echo "value='0' ";
                                                       }
                                                 ?> /></td>
                                                 <td width="5%"><?php echo $x['satuan']; ?></td>
@@ -201,15 +206,16 @@
                                             <td width="45%"><input type="text" class="form-control" 
                                                 <?php
                                                       if($x['ketersediaan']=='Tidak Ada'){
-                                                            echo "readonly='readonly' ";
+                                                            echo "value='0' ";
                                                             echo "name='";
                                                             echo $x['nm_field'];
                                                             echo "'";
-                                                            echo " placeholder='Tidak Ada'";
+                                                            echo " placeholder=''";
                                                       }else{
                                                             echo "name='";
                                                             echo $x['nm_field'];
                                                             echo "'";
+                                                            echo "value='0' ";
                                                       }
                                                 ?> /></td>
                                                 <td width="5%"><?php echo $x['satuan']; ?></td>
@@ -233,15 +239,16 @@
                                             <td width="45%"><input type="text" class="form-control" 
                                                 <?php
                                                       if($x['ketersediaan']=='Tidak Ada'){
-                                                            echo "readonly='readonly' ";
+                                                            echo "value='0' ";
                                                             echo "name='";
                                                             echo $x['nm_field'];
                                                             echo "'";
-                                                            echo " placeholder='Tidak Ada'";
+                                                            echo " placeholder=''";
                                                       }else{
                                                             echo "name='";
                                                             echo $x['nm_field'];
                                                             echo "'";
+                                                            echo "value='0' ";
                                                       }
                                                 ?> /></td>
                                                 <td width="5%"><?php echo $x['satuan']; ?></td>
@@ -254,9 +261,16 @@
             </div>
 
 		</div>
+        <br /><span class="pull-right">
+            <input type="reset" class="btn btn-danger" value="RESET" />
+            <input type="submit" class="btn btn-success" value="SIMPAN" />
+        </span>
+</form>
         <!-- End Industri, Perdagangan, Pengembangan Usaha Nasional, Lembaga Keuangan dan Koperasi -->
 
         <!-- BUMD, Perbankan Daerah dan Lembaga Keuangan Daerah -->
+        <br /><br />
+<form role="form" method="post" action="simpanbumd">
         <div class="box panel panel-primary">
             <div class="panel-heading">
                 <h3 class="panel-title"> BUMD, Perbankan Daerah dan Lembaga Keuangan Daerah</h3>
@@ -292,11 +306,12 @@
                                                             echo "name='";
                                                             echo $x['nm_field'];
                                                             echo "'";
-                                                            echo " placeholder='Tidak Ada'";
+                                                            echo " placeholder=''";
                                                       }else{
                                                             echo "name='";
                                                             echo $x['nm_field'];
                                                             echo "'";
+                                                            echo "value='0' ";
                                                       }
                                                 ?> /></td>
                                                 <td width="5%"><?php echo $x['satuan']; ?></td>
@@ -324,11 +339,12 @@
                                                             echo "name='";
                                                             echo $x['nm_field'];
                                                             echo "'";
-                                                            echo " placeholder='Tidak Ada'";
+                                                            echo " placeholder=''";
                                                       }else{
                                                             echo "name='";
                                                             echo $x['nm_field'];
                                                             echo "'";
+                                                            echo "value='0' ";
                                                       }
                                                 ?> /></td>
                                                 <td width="5%"><?php echo $x['satuan']; ?></td>
@@ -356,11 +372,12 @@
                                                             echo "name='";
                                                             echo $x['nm_field'];
                                                             echo "'";
-                                                            echo " placeholder='Tidak Ada'";
+                                                            echo " placeholder=''";
                                                       }else{
                                                             echo "name='";
                                                             echo $x['nm_field'];
                                                             echo "'";
+                                                            echo "value='0' ";
                                                       }
                                                 ?> /></td>
                                                 <td width="5%"><?php echo $x['satuan']; ?></td>
@@ -388,11 +405,12 @@
                                                             echo "name='";
                                                             echo $x['nm_field'];
                                                             echo "'";
-                                                            echo " placeholder='Tidak Ada'";
+                                                            echo " placeholder=''";
                                                       }else{
                                                             echo "name='";
                                                             echo $x['nm_field'];
                                                             echo "'";
+                                                            echo "value='0' ";
                                                       }
                                                 ?> /></td>
                                                 <td width="5%"><?php echo $x['satuan']; ?></td>
@@ -420,11 +438,12 @@
                                                             echo "name='";
                                                             echo $x['nm_field'];
                                                             echo "'";
-                                                            echo " placeholder='Tidak Ada'";
+                                                            echo " placeholder=''";
                                                       }else{
                                                             echo "name='";
                                                             echo $x['nm_field'];
                                                             echo "'";
+                                                            echo "value='0' ";
                                                       }
                                                 ?> /></td>
                                                 <td width="5%"><?php echo $x['satuan']; ?></td>
@@ -452,11 +471,12 @@
                                                             echo "name='";
                                                             echo $x['nm_field'];
                                                             echo "'";
-                                                            echo " placeholder='Tidak Ada'";
+                                                            echo " placeholder=''";
                                                       }else{
                                                             echo "name='";
                                                             echo $x['nm_field'];
                                                             echo "'";
+                                                            echo "value='0' ";
                                                       }
                                                 ?> /></td>
                                                 <td width="5%"><?php echo $x['satuan']; ?></td>
@@ -484,11 +504,12 @@
                                                             echo "name='";
                                                             echo $x['nm_field'];
                                                             echo "'";
-                                                            echo " placeholder='Tidak Ada'";
+                                                            echo " placeholder=''";
                                                       }else{
                                                             echo "name='";
                                                             echo $x['nm_field'];
                                                             echo "'";
+                                                            echo "value='0' ";
                                                       }
                                                 ?> /></td>
                                                 <td width="5%"><?php echo $x['satuan']; ?></td>
@@ -516,11 +537,12 @@
                                                             echo "name='";
                                                             echo $x['nm_field'];
                                                             echo "'";
-                                                            echo " placeholder='Tidak Ada'";
+                                                            echo " placeholder=''";
                                                       }else{
                                                             echo "name='";
                                                             echo $x['nm_field'];
                                                             echo "'";
+                                                            echo "value='0' ";
                                                       }
                                                 ?> /></td>
                                                 <td width="5%"><?php echo $x['satuan']; ?></td>
@@ -548,11 +570,12 @@
                                                             echo "name='";
                                                             echo $x['nm_field'];
                                                             echo "'";
-                                                            echo " placeholder='Tidak Ada'";
+                                                            echo " placeholder=''";
                                                       }else{
                                                             echo "name='";
                                                             echo $x['nm_field'];
                                                             echo "'";
+                                                            echo "value='0' ";
                                                       }
                                                 ?> /></td>
                                                 <td width="5%"><?php echo $x['satuan']; ?></td>
@@ -580,11 +603,12 @@
                                                             echo "name='";
                                                             echo $x['nm_field'];
                                                             echo "'";
-                                                            echo " placeholder='Tidak Ada'";
+                                                            echo " placeholder=''";
                                                       }else{
                                                             echo "name='";
                                                             echo $x['nm_field'];
                                                             echo "'";
+                                                            echo "value='0' ";
                                                       }
                                                 ?> /></td>
                                                 <td width="5%"><?php echo $x['satuan']; ?></td>

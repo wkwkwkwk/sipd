@@ -1,4 +1,4 @@
-<form role="form" method="post" action="simpan">
+<form role="form" method="post" action="simpantani">
 <div class="row">
     <div class="col-lg-12">
         <h1 class="page-header">
@@ -41,15 +41,16 @@
                                             <td width="45%"><input type="text" class="form-control" 
                                                 <?php
                                                       if($x['ketersediaan']=='Tidak Ada'){
-                                                            echo "readonly='readonly' ";
+                                                            echo "value='0' ";
                                                             echo "name='";
                                                             echo $x['nm_field'];
                                                             echo "'";
-                                                            echo " placeholder='Tidak Ada'";
+                                                            echo " placeholder=''";
                                                       }else{
                                                             echo "name='";
                                                             echo $x['nm_field'];
                                                             echo "'";
+                                                            echo "value='0' ";
                                                       }
                                                 ?> /></td>
                                                 <td width="5%"><?php echo $x['satuan']; ?></td>
@@ -73,7 +74,7 @@
                                             <td width="45%"><input type="text" class="form-control" 
                                                 <?php
                                                       if($x['ketersediaan']=='Tidak Ada'){
-                                                            echo "readonly='readonly' ";
+                                                            echo "value='0' ";
                                                             echo "name='";
                                                             echo $x['nm_field'];
                                                             echo "'";
@@ -82,6 +83,7 @@
                                                             echo "name='";
                                                             echo $x['nm_field'];
                                                             echo "'";
+                                                            echo "value='0' ";
                                                       }
                                                 ?> /></td>
                                                 <td width="5%"><?php echo $x['satuan']; ?></td>
@@ -105,7 +107,7 @@
                                             <td width="45%"><input type="text" class="form-control" 
                                                 <?php
                                                       if($x['ketersediaan']=='Tidak Ada'){
-                                                            echo "readonly='readonly' ";
+                                                            echo "value='0' ";
                                                             echo "name='";
                                                             echo $x['nm_field'];
                                                             echo "'";
@@ -114,6 +116,7 @@
                                                             echo "name='";
                                                             echo $x['nm_field'];
                                                             echo "'";
+                                                            echo "value='0' ";
                                                       }
                                                 ?> /></td>
                                                 <td width="5%"><?php echo $x['satuan']; ?></td>
@@ -137,7 +140,7 @@
                                             <td width="45%"><input type="text" class="form-control" 
                                                 <?php
                                                       if($x['ketersediaan']=='Tidak Ada'){
-                                                            echo "readonly='readonly' ";
+                                                            echo "value='0' ";
                                                             echo "name='";
                                                             echo $x['nm_field'];
                                                             echo "'";
@@ -146,6 +149,7 @@
                                                             echo "name='";
                                                             echo $x['nm_field'];
                                                             echo "'";
+                                                            echo "value='0' ";
                                                       }
                                                 ?> /></td>
                                                 <td width="5%"><?php echo $x['satuan']; ?></td>
@@ -170,6 +174,7 @@
                                                 <?php
                                                       if($x['ketersediaan']=='Tidak Ada'){
                                                             echo "readonly='readonly' ";
+                                                            echo "value='0' ";
                                                             echo "name='";
                                                             echo $x['nm_field'];
                                                             echo "'";
@@ -178,6 +183,7 @@
                                                             echo "name='";
                                                             echo $x['nm_field'];
                                                             echo "'";
+                                                            echo "value='0' ";
                                                       }
                                                 ?> /></td>
                                                 <td width="5%"><?php echo $x['satuan']; ?></td>
@@ -201,7 +207,7 @@
                                             <td width="45%"><input type="text" class="form-control" 
                                                 <?php
                                                       if($x['ketersediaan']=='Tidak Ada'){
-                                                            echo "readonly='readonly' ";
+                                                            echo "value='0' ";
                                                             echo "name='";
                                                             echo $x['nm_field'];
                                                             echo "'";
@@ -210,6 +216,7 @@
                                                             echo "name='";
                                                             echo $x['nm_field'];
                                                             echo "'";
+                                                            echo "value='0' ";
                                                       }
                                                 ?> /></td>
                                                 <td width="5%"><?php echo $x['satuan']; ?></td>
@@ -233,7 +240,7 @@
                                             <td width="45%"><input type="text" class="form-control" 
                                                 <?php
                                                       if($x['ketersediaan']=='Tidak Ada'){
-                                                            echo "readonly='readonly' ";
+                                                            echo "value='0' ";
                                                             echo "name='";
                                                             echo $x['nm_field'];
                                                             echo "'";
@@ -242,6 +249,7 @@
                                                             echo "name='";
                                                             echo $x['nm_field'];
                                                             echo "'";
+                                                            echo "value='0' ";
                                                       }
                                                 ?> /></td>
                                                 <td width="5%"><?php echo $x['satuan']; ?></td>
@@ -254,9 +262,17 @@
             </div>
 
 		</div>
+<br /><span class="pull-right">
+            <input type="reset" class="btn btn-danger" value="RESET" />
+            <input type="submit" class="btn btn-success" value="SIMPAN" />
+        </span>
+        </form>
         <!-- End Pertanian, Kehutanan, Kelautan, Perikanan, Peternakan, Perkebunan -->
 
         <!-- Pertambangan dan Energi -->
+<br />
+<br />
+        <form role="form" method="post" action="simpanenergi">
         <div class="box panel panel-primary">
             <div class="panel-heading">
                 <h3 class="panel-title"> Pertambangan dan Energi</h3>
@@ -289,6 +305,7 @@
                                                 <?php
                                                       if($x['ketersediaan']=='Tidak Ada'){
                                                             echo "readonly='readonly' ";
+                                                            echo "value='0' ";
                                                             echo "name='";
                                                             echo $x['nm_field'];
                                                             echo "'";
@@ -297,6 +314,7 @@
                                                             echo "name='";
                                                             echo $x['nm_field'];
                                                             echo "'";
+                                                            echo "value='0' ";
                                                       }
                                                 ?> /></td>
                                                 <td width="5%"><?php echo $x['satuan']; ?></td>
@@ -321,6 +339,7 @@
                                                 <?php
                                                       if($x['ketersediaan']=='Tidak Ada'){
                                                             echo "readonly='readonly' ";
+                                                            echo "value='0' ";
                                                             echo "name='";
                                                             echo $x['nm_field'];
                                                             echo "'";
@@ -329,6 +348,7 @@
                                                             echo "name='";
                                                             echo $x['nm_field'];
                                                             echo "'";
+                                                            echo "value='0' ";
                                                       }
                                                 ?> /></td>
                                                 <td width="5%"><?php echo $x['satuan']; ?></td>
@@ -341,9 +361,17 @@
             </div>
 
         </div>
+<br /><span class="pull-right">
+            <input type="reset" class="btn btn-danger" value="RESET" />
+            <input type="submit" class="btn btn-success" value="SIMPAN" />
+        </span>
+        </form>
         <!-- End Pertambangan dan Energi -->
 
         <!-- Lingkungan Hidup, Tata Ruang dan Pertanahan -->
+<br />
+<br />
+        <form role="form" method="post" action="simpantahidup">
         <div class="box panel panel-primary">
             <div class="panel-heading">
                 <h3 class="panel-title"> Lingkungan Hidup, Tata Ruang dan Pertanahan</h3>
@@ -375,7 +403,7 @@
                                             <td width="45%"><input type="text" class="form-control" 
                                                 <?php
                                                       if($x['ketersediaan']=='Tidak Ada'){
-                                                            echo "readonly='readonly' ";
+                                                            echo "value='0' ";
                                                             echo "name='";
                                                             echo $x['nm_field'];
                                                             echo "'";
@@ -384,6 +412,7 @@
                                                             echo "name='";
                                                             echo $x['nm_field'];
                                                             echo "'";
+                                                            echo "value='0' ";
                                                       }
                                                 ?> /></td>
                                                 <td width="5%"><?php echo $x['satuan']; ?></td>
@@ -407,7 +436,7 @@
                                             <td width="45%"><input type="text" class="form-control" 
                                                 <?php
                                                       if($x['ketersediaan']=='Tidak Ada'){
-                                                            echo "readonly='readonly' ";
+                                                            echo "value='0' ";
                                                             echo "name='";
                                                             echo $x['nm_field'];
                                                             echo "'";
@@ -416,6 +445,7 @@
                                                             echo "name='";
                                                             echo $x['nm_field'];
                                                             echo "'";
+                                                            echo "value='0' ";
                                                       }
                                                 ?> /></td>
                                                 <td width="5%"><?php echo $x['satuan']; ?></td>
@@ -439,7 +469,7 @@
                                             <td width="45%"><input type="text" class="form-control" 
                                                 <?php
                                                       if($x['ketersediaan']=='Tidak Ada'){
-                                                            echo "readonly='readonly' ";
+                                                            echo "value='0' ";
                                                             echo "name='";
                                                             echo $x['nm_field'];
                                                             echo "'";
@@ -448,6 +478,7 @@
                                                             echo "name='";
                                                             echo $x['nm_field'];
                                                             echo "'";
+                                                            echo "value='0' ";
                                                       }
                                                 ?> /></td>
                                                 <td width="5%"><?php echo $x['satuan']; ?></td>
@@ -471,7 +502,7 @@
                                             <td width="45%"><input type="text" class="form-control" 
                                                 <?php
                                                       if($x['ketersediaan']=='Tidak Ada'){
-                                                            echo "readonly='readonly' ";
+                                                            echo "value='0' ";
                                                             echo "name='";
                                                             echo $x['nm_field'];
                                                             echo "'";
@@ -480,6 +511,7 @@
                                                             echo "name='";
                                                             echo $x['nm_field'];
                                                             echo "'";
+                                                            echo "value='0' ";
                                                       }
                                                 ?> /></td>
                                                 <td width="5%"><?php echo $x['satuan']; ?></td>
@@ -503,7 +535,7 @@
                                             <td width="45%"><input type="text" class="form-control" 
                                                 <?php
                                                       if($x['ketersediaan']=='Tidak Ada'){
-                                                            echo "readonly='readonly' ";
+                                                            echo "value='0' ";
                                                             echo "name='";
                                                             echo $x['nm_field'];
                                                             echo "'";
@@ -512,6 +544,7 @@
                                                             echo "name='";
                                                             echo $x['nm_field'];
                                                             echo "'";
+                                                            echo "value='0' ";
                                                       }
                                                 ?> /></td>
                                                 <td width="5%"><?php echo $x['satuan']; ?></td>
@@ -535,7 +568,7 @@
                                             <td width="45%"><input type="text" class="form-control" 
                                                 <?php
                                                       if($x['ketersediaan']=='Tidak Ada'){
-                                                            echo "readonly='readonly' ";
+                                                            echo "value='0' ";
                                                             echo "name='";
                                                             echo $x['nm_field'];
                                                             echo "'";
@@ -544,6 +577,7 @@
                                                             echo "name='";
                                                             echo $x['nm_field'];
                                                             echo "'";
+                                                            echo "value='0' ";
                                                       }
                                                 ?> /></td>
                                                 <td width="5%"><?php echo $x['satuan']; ?></td>
@@ -567,7 +601,7 @@
                                             <td width="45%"><input type="text" class="form-control" 
                                                 <?php
                                                       if($x['ketersediaan']=='Tidak Ada'){
-                                                            echo "readonly='readonly' ";
+                                                            echo "value='0' ";
                                                             echo "name='";
                                                             echo $x['nm_field'];
                                                             echo "'";
@@ -576,6 +610,7 @@
                                                             echo "name='";
                                                             echo $x['nm_field'];
                                                             echo "'";
+                                                            echo "value='0' ";
                                                       }
                                                 ?> /></td>
                                                 <td width="5%"><?php echo $x['satuan']; ?></td>
@@ -599,7 +634,7 @@
                                             <td width="45%"><input type="text" class="form-control" 
                                                 <?php
                                                       if($x['ketersediaan']=='Tidak Ada'){
-                                                            echo "readonly='readonly' ";
+                                                            echo "value='0' ";
                                                             echo "name='";
                                                             echo $x['nm_field'];
                                                             echo "'";
@@ -608,6 +643,7 @@
                                                             echo "name='";
                                                             echo $x['nm_field'];
                                                             echo "'";
+                                                            echo "value='0' ";
                                                       }
                                                 ?> /></td>
                                                 <td width="5%"><?php echo $x['satuan']; ?></td>
