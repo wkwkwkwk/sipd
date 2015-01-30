@@ -4,9 +4,6 @@
 	class AdminController extends Controller
 	{
 		public $layout='adminpage1';
-		public $tahunini=date("YYYY");
-		public $waktuisi=date("Y-m-d");
-		public $user=Yii::app()->user->username;
 		
 		public function actionIndex()
 		{
@@ -903,7 +900,9 @@
 		{
 			if ($_POST) {
 				//ambil dat adari masing-masing atribut
-				
+				$tahunini=date("YYYY");
+				$waktuisi=date("Y-m-d");
+				$user=Yii::app()->user->username;
 				$luaswil=$_POST['ls_wil'];
 				$daratan=$_POST['daratan'];
 				$laut12mil=$_POST['laut_12mil'];
@@ -1115,7 +1114,9 @@
 		public function actionSimpanPemerintahan()
 		{
 			if ($_POST) {
-				
+				$tahunini=date("YYYY");
+				$waktuisi=date("Y-m-d");
+				$user=Yii::app()->user->username;
 				$adminpmr=$_POST['adminpmr'];
 				$jmlkec=$_POST['jmlkec'];
 				$jmlkel=$_POST['jmlkel'];
@@ -1372,8 +1373,9 @@
 		public function actionSimpanDemografi()
 		{
 			if ($_POST) {
-				
-				
+				$tahunini=date("YYYY");
+				$waktuisi=date("Y-m-d");
+				$user=Yii::app()->user->username;				
 				$capil=$_POST['capil'];
 				$jmlktp=$_POST['jmlktp'];
 				$jmlktpsex=$_POST['jmlktpsex'];
