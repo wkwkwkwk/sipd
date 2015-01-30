@@ -1,4 +1,4 @@
-<form role="form" method="post" action="simpan">
+
 <div class="row">
     <div class="col-lg-12">
         <h1 class="page-header">
@@ -10,6 +10,7 @@
 <div class="row">
 	<div class="col-lg-12 col-xs-12">
 		<!-- Kesehatan -->
+        <form role="form" method="post" action="simpankesehatan">
 		<div class="box panel panel-primary">
 			<div class="panel-heading">
                 <h3 class="panel-title"> Kesehatan</h3>
@@ -41,7 +42,7 @@
                                     <td width="45%"><input type="text" class="form-control" 
                                         <?php
                                             if($y['ketersediaan']=='Tidak Ada'){
-                                                echo "readonly='readonly' ";
+                                                echo "readonly='readonly' ";echo "value='0' ";
                                                 echo "name='";
                                                 echo $y['nm_field'];
                                                 echo "'";
@@ -49,7 +50,7 @@
                                             }else{
                                                 echo "name='";
                                                 echo $y['nm_field'];
-                                                echo "'";
+                                                echo "'";echo "value='0' ";
                                             }
                                         ?> /></td>
                                     <td width="0.5%"><?php echo $y['satuan']; ?></td>
@@ -73,7 +74,7 @@
                                     <td width="45%"><input type="text" class="form-control" 
                                         <?php
                                             if($y['ketersediaan']=='Tidak Ada'){
-                                                echo "readonly='readonly' ";
+                                                echo "readonly='readonly' ";echo "value='0' ";
                                                 echo "name='";
                                                 echo $y['nm_field'];
                                                 echo "'";
@@ -81,7 +82,7 @@
                                             }else{
                                                 echo "name='";
                                                 echo $y['nm_field'];
-                                                echo "'";
+                                                echo "'";echo "value='0' ";
                                             }
                                         ?> /></td>
                                     <td width="0.5%"><?php echo $y['satuan']; ?></td>
@@ -105,7 +106,7 @@
                                     <td width="45%"><input type="text" class="form-control" 
                                         <?php
                                             if($y['ketersediaan']=='Tidak Ada'){
-                                                echo "readonly='readonly' ";
+                                                echo "readonly='readonly' ";echo "value='0' ";echo "value='0' ";
                                                 echo "name='";
                                                 echo $y['nm_field'];
                                                 echo "'";
@@ -113,7 +114,7 @@
                                             }else{
                                                 echo "name='";
                                                 echo $y['nm_field'];
-                                                echo "'";
+                                                echo "'";echo "value='0' ";echo "value='0' ";
                                             }
                                         ?> /></td>
                                     <td width="0.5%"><?php echo $y['satuan']; ?></td>
@@ -137,7 +138,7 @@
                                     <td width="45%"><input type="text" class="form-control" 
                                         <?php
                                             if($y['ketersediaan']=='Tidak Ada'){
-                                                echo "readonly='readonly' ";
+                                                echo "readonly='readonly' ";echo "value='0' ";
                                                 echo "name='";
                                                 echo $y['nm_field'];
                                                 echo "'";
@@ -145,7 +146,7 @@
                                             }else{
                                                 echo "name='";
                                                 echo $y['nm_field'];
-                                                echo "'";
+                                                echo "'";echo "value='0' ";
                                             }
                                         ?> /></td>
                                     <td width="0.5%"><?php echo $y['satuan']; ?></td>
@@ -169,7 +170,7 @@
                                     <td width="45%"><input type="text" class="form-control" 
                                         <?php
                                             if($y['ketersediaan']=='Tidak Ada'){
-                                                echo "readonly='readonly' ";
+                                                echo "readonly='readonly' ";echo "value='0' ";
                                                 echo "name='";
                                                 echo $y['nm_field'];
                                                 echo "'";
@@ -177,7 +178,7 @@
                                             }else{
                                                 echo "name='";
                                                 echo $y['nm_field'];
-                                                echo "'";
+                                                echo "'";echo "value='0' ";
                                             }
                                         ?> /></td>
                                     <td width="0.5%"><?php echo $y['satuan']; ?></td>
@@ -201,7 +202,7 @@
                                     <td width="45%"><input type="text" class="form-control" 
                                         <?php
                                             if($y['ketersediaan']=='Tidak Ada'){
-                                                echo "readonly='readonly' ";
+                                                echo "readonly='readonly' ";echo "value='0' ";
                                                 echo "name='";
                                                 echo $y['nm_field'];
                                                 echo "'";
@@ -209,7 +210,7 @@
                                             }else{
                                                 echo "name='";
                                                 echo $y['nm_field'];
-                                                echo "'";
+                                                echo "'";echo "value='0' ";
                                             }
                                         ?> /></td>
                                     <td width="0.5%"><?php echo $y['satuan']; ?></td>
@@ -233,7 +234,7 @@
                                     <td width="45%"><input type="text" class="form-control" 
                                         <?php
                                             if($y['ketersediaan']=='Tidak Ada'){
-                                                echo "readonly='readonly' ";
+                                                echo "readonly='readonly' ";echo "value='0' ";
                                                 echo "name='";
                                                 echo $y['nm_field'];
                                                 echo "'";
@@ -241,7 +242,7 @@
                                             }else{
                                                 echo "name='";
                                                 echo $y['nm_field'];
-                                                echo "'";
+                                                echo "'";echo "value='0' ";
                                             }
                                         ?> /></td>
                                     <td width="0.5%"><?php echo $y['satuan']; ?></td>
@@ -265,7 +266,7 @@
                                     <td width="45%"><input type="text" class="form-control" 
                                         <?php
                                             if($y['ketersediaan']=='Tidak Ada'){
-                                                echo "readonly='readonly' ";
+                                                echo "readonly='readonly' ";echo "value='0' ";
                                                 echo "name='";
                                                 echo $y['nm_field'];
                                                 echo "'";
@@ -273,7 +274,7 @@
                                             }else{
                                                 echo "name='";
                                                 echo $y['nm_field'];
-                                                echo "'";
+                                                echo "'";echo "value='0' ";
                                             }
                                         ?> /></td>
                                     <td width="0.5%"><?php echo $y['satuan']; ?></td>
@@ -297,7 +298,7 @@
                                     <td width="45%"><input type="text" class="form-control" 
                                         <?php
                                             if($y['ketersediaan']=='Tidak Ada'){
-                                                echo "readonly='readonly' ";
+                                                echo "readonly='readonly' ";echo "value='0' ";
                                                 echo "name='";
                                                 echo $y['nm_field'];
                                                 echo "'";
@@ -305,7 +306,7 @@
                                             }else{
                                                 echo "name='";
                                                 echo $y['nm_field'];
-                                                echo "'";
+                                                echo "'";echo "value='0' ";
                                             }
                                         ?> /></td>
                                     <td width="0.5%"><?php echo $y['satuan']; ?></td>
@@ -329,7 +330,7 @@
                                     <td width="45%"><input type="text" class="form-control" 
                                         <?php
                                             if($y['ketersediaan']=='Tidak Ada'){
-                                                echo "readonly='readonly' ";
+                                                echo "readonly='readonly' ";echo "value='0' ";
                                                 echo "name='";
                                                 echo $y['nm_field'];
                                                 echo "'";
@@ -337,7 +338,7 @@
                                             }else{
                                                 echo "name='";
                                                 echo $y['nm_field'];
-                                                echo "'";
+                                                echo "'";echo "value='0' ";
                                             }
                                         ?> /></td>
                                     <td width="0.5%"><?php echo $y['satuan']; ?></td>
@@ -361,7 +362,7 @@
                                     <td width="45%"><input type="text" class="form-control" 
                                         <?php
                                             if($y['ketersediaan']=='Tidak Ada'){
-                                                echo "readonly='readonly' ";
+                                                echo "readonly='readonly' ";echo "value='0' ";
                                                 echo "name='";
                                                 echo $y['nm_field'];
                                                 echo "'";
@@ -369,7 +370,7 @@
                                             }else{
                                                 echo "name='";
                                                 echo $y['nm_field'];
-                                                echo "'";
+                                                echo "'";echo "value='0' ";
                                             }
                                         ?> /></td>
                                     <td width="0.5%"><?php echo $y['satuan']; ?></td>
@@ -393,7 +394,7 @@
                                     <td width="45%"><input type="text" class="form-control" 
                                         <?php
                                             if($y['ketersediaan']=='Tidak Ada'){
-                                                echo "readonly='readonly' ";
+                                                echo "readonly='readonly' ";echo "value='0' ";
                                                 echo "name='";
                                                 echo $y['nm_field'];
                                                 echo "'";
@@ -401,7 +402,7 @@
                                             }else{
                                                 echo "name='";
                                                 echo $y['nm_field'];
-                                                echo "'";
+                                                echo "'";echo "value='0' ";
                                             }
                                         ?> /></td>
                                     <td width="0.5%"><?php echo $y['satuan']; ?></td>
@@ -425,7 +426,7 @@
                                     <td width="45%"><input type="text" class="form-control" 
                                         <?php
                                             if($y['ketersediaan']=='Tidak Ada'){
-                                                echo "readonly='readonly' ";
+                                                echo "readonly='readonly' ";echo "value='0' ";
                                                 echo "name='";
                                                 echo $y['nm_field'];
                                                 echo "'";
@@ -433,7 +434,7 @@
                                             }else{
                                                 echo "name='";
                                                 echo $y['nm_field'];
-                                                echo "'";
+                                                echo "'";echo "value='0' ";
                                             }
                                         ?> /></td>
                                     <td width="0.5%"><?php echo $y['satuan']; ?></td>
@@ -446,8 +447,15 @@
 
         </div>
         <!-- End Kesehatan -->
+        <br /><span class="pull-right">
+        <input type="reset" class="btn btn-danger" value="RESET" />
+        <input type="submit" class="btn btn-success" value="SIMPAN" />
+        </span>
+        </form>
 
         <!-- Pendidikan, KNPO -->
+        <br /><br />
+        <form role="form" method="post" action="simpanpendidikan">
         <div class="box panel panel-primary">
             <div class="panel-heading">
                 <h3 class="panel-title"> Pendidikan, Kebudayaan Nasional Pemuda dan Olahraga</h3>
@@ -479,7 +487,7 @@
                                     <td width="45%"><input type="text" class="form-control" 
                                         <?php
                                             if($y['ketersediaan']=='Tidak Ada'){
-                                                echo "readonly='readonly' ";
+                                                echo "value='0' ";
                                                 echo "name='";
                                                 echo $y['nm_field'];
                                                 echo "'";
@@ -487,7 +495,7 @@
                                             }else{
                                                 echo "name='";
                                                 echo $y['nm_field'];
-                                                echo "'";
+                                                echo "'";echo "value='0' ";
                                             }
                                         ?> /></td>
                                     <td width="0.5%"><?php echo $y['satuan']; ?></td>
@@ -511,7 +519,7 @@
                                     <td width="45%"><input type="text" class="form-control" 
                                         <?php
                                             if($y['ketersediaan']=='Tidak Ada'){
-                                                echo "readonly='readonly' ";
+                                                echo "readonly='readonly' ";echo "value='0' ";
                                                 echo "name='";
                                                 echo $y['nm_field'];
                                                 echo "'";
@@ -519,7 +527,7 @@
                                             }else{
                                                 echo "name='";
                                                 echo $y['nm_field'];
-                                                echo "'";
+                                                echo "'";echo "value='0' ";
                                             }
                                         ?> /></td>
                                     <td width="0.5%"><?php echo $y['satuan']; ?></td>
@@ -543,7 +551,7 @@
                                     <td width="45%"><input type="text" class="form-control" 
                                         <?php
                                             if($y['ketersediaan']=='Tidak Ada'){
-                                                echo "readonly='readonly' ";
+                                                echo "readonly='readonly' ";echo "value='0' ";
                                                 echo "name='";
                                                 echo $y['nm_field'];
                                                 echo "'";
@@ -551,7 +559,7 @@
                                             }else{
                                                 echo "name='";
                                                 echo $y['nm_field'];
-                                                echo "'";
+                                                echo "'";echo "value='0' ";
                                             }
                                         ?> /></td>
                                     <td width="0.5%"><?php echo $y['satuan']; ?></td>
@@ -575,7 +583,7 @@
                                     <td width="45%"><input type="text" class="form-control" 
                                         <?php
                                             if($y['ketersediaan']=='Tidak Ada'){
-                                                echo "readonly='readonly' ";
+                                                echo "readonly='readonly' ";echo "value='0' ";
                                                 echo "name='";
                                                 echo $y['nm_field'];
                                                 echo "'";
@@ -583,7 +591,7 @@
                                             }else{
                                                 echo "name='";
                                                 echo $y['nm_field'];
-                                                echo "'";
+                                                echo "'";echo "value='0' ";
                                             }
                                         ?> /></td>
                                     <td width="0.5%"><?php echo $y['satuan']; ?></td>
@@ -607,7 +615,7 @@
                                     <td width="45%"><input type="text" class="form-control" 
                                         <?php
                                             if($y['ketersediaan']=='Tidak Ada'){
-                                                echo "readonly='readonly' ";
+                                                echo "readonly='readonly' ";echo "value='0' ";
                                                 echo "name='";
                                                 echo $y['nm_field'];
                                                 echo "'";
@@ -615,7 +623,7 @@
                                             }else{
                                                 echo "name='";
                                                 echo $y['nm_field'];
-                                                echo "'";
+                                                echo "'";echo "value='0' ";
                                             }
                                         ?> /></td>
                                     <td width="0.5%"><?php echo $y['satuan']; ?></td>
@@ -639,7 +647,7 @@
                                     <td width="45%"><input type="text" class="form-control" 
                                         <?php
                                             if($y['ketersediaan']=='Tidak Ada'){
-                                                echo "readonly='readonly' ";
+                                                echo "readonly='readonly' ";echo "value='0' ";
                                                 echo "name='";
                                                 echo $y['nm_field'];
                                                 echo "'";
@@ -647,7 +655,7 @@
                                             }else{
                                                 echo "name='";
                                                 echo $y['nm_field'];
-                                                echo "'";
+                                                echo "'";echo "value='0' ";
                                             }
                                         ?> /></td>
                                     <td width="0.5%"><?php echo $y['satuan']; ?></td>
@@ -671,7 +679,7 @@
                                     <td width="45%"><input type="text" class="form-control" 
                                         <?php
                                             if($y['ketersediaan']=='Tidak Ada'){
-                                                echo "readonly='readonly' ";
+                                                echo "readonly='readonly' ";echo "value='0' ";
                                                 echo "name='";
                                                 echo $y['nm_field'];
                                                 echo "'";
@@ -679,7 +687,7 @@
                                             }else{
                                                 echo "name='";
                                                 echo $y['nm_field'];
-                                                echo "'";
+                                                echo "'";echo "value='0' ";
                                             }
                                         ?> /></td>
                                     <td width="0.5%"><?php echo $y['satuan']; ?></td>
@@ -703,7 +711,7 @@
                                     <td width="45%"><input type="text" class="form-control" 
                                         <?php
                                             if($y['ketersediaan']=='Tidak Ada'){
-                                                echo "readonly='readonly' ";
+                                                echo "readonly='readonly' ";echo "value='0' ";
                                                 echo "name='";
                                                 echo $y['nm_field'];
                                                 echo "'";
@@ -711,7 +719,7 @@
                                             }else{
                                                 echo "name='";
                                                 echo $y['nm_field'];
-                                                echo "'";
+                                                echo "'";echo "value='0' ";
                                             }
                                         ?> /></td>
                                     <td width="0.5%"><?php echo $y['satuan']; ?></td>
@@ -735,7 +743,7 @@
                                     <td width="45%"><input type="text" class="form-control" 
                                         <?php
                                             if($y['ketersediaan']=='Tidak Ada'){
-                                                echo "readonly='readonly' ";
+                                                echo "readonly='readonly' ";echo "value='0' ";
                                                 echo "name='";
                                                 echo $y['nm_field'];
                                                 echo "'";
@@ -743,7 +751,7 @@
                                             }else{
                                                 echo "name='";
                                                 echo $y['nm_field'];
-                                                echo "'";
+                                                echo "'";echo "value='0' ";
                                             }
                                         ?> /></td>
                                     <td width="0.5%"><?php echo $y['satuan']; ?></td>
@@ -767,7 +775,7 @@
                                     <td width="45%"><input type="text" class="form-control" 
                                         <?php
                                             if($y['ketersediaan']=='Tidak Ada'){
-                                                echo "readonly='readonly' ";
+                                                echo "readonly='readonly' ";echo "value='0' ";
                                                 echo "name='";
                                                 echo $y['nm_field'];
                                                 echo "'";
@@ -775,7 +783,7 @@
                                             }else{
                                                 echo "name='";
                                                 echo $y['nm_field'];
-                                                echo "'";
+                                                echo "'";echo "value='0' ";
                                             }
                                         ?> /></td>
                                     <td width="0.5%"><?php echo $y['satuan']; ?></td>
@@ -799,7 +807,7 @@
                                     <td width="45%"><input type="text" class="form-control" 
                                         <?php
                                             if($y['ketersediaan']=='Tidak Ada'){
-                                                echo "readonly='readonly' ";
+                                                echo "readonly='readonly' ";echo "value='0' ";
                                                 echo "name='";
                                                 echo $y['nm_field'];
                                                 echo "'";
@@ -807,7 +815,7 @@
                                             }else{
                                                 echo "name='";
                                                 echo $y['nm_field'];
-                                                echo "'";
+                                                echo "'";echo "value='0' ";
                                             }
                                         ?> /></td>
                                     <td width="0.5%"><?php echo $y['satuan']; ?></td>
@@ -831,7 +839,7 @@
                                     <td width="45%"><input type="text" class="form-control" 
                                         <?php
                                             if($y['ketersediaan']=='Tidak Ada'){
-                                                echo "readonly='readonly' ";
+                                                echo "readonly='readonly' ";echo "value='0' ";
                                                 echo "name='";
                                                 echo $y['nm_field'];
                                                 echo "'";
@@ -839,7 +847,7 @@
                                             }else{
                                                 echo "name='";
                                                 echo $y['nm_field'];
-                                                echo "'";
+                                                echo "'";echo "value='0' ";
                                             }
                                         ?> /></td>
                                     <td width="0.5%"><?php echo $y['satuan']; ?></td>
@@ -863,7 +871,7 @@
                                     <td width="45%"><input type="text" class="form-control" 
                                         <?php
                                             if($y['ketersediaan']=='Tidak Ada'){
-                                                echo "readonly='readonly' ";
+                                                echo "readonly='readonly' ";echo "value='0' ";
                                                 echo "name='";
                                                 echo $y['nm_field'];
                                                 echo "'";
@@ -871,7 +879,7 @@
                                             }else{
                                                 echo "name='";
                                                 echo $y['nm_field'];
-                                                echo "'";
+                                                echo "'";echo "value='0' ";
                                             }
                                         ?> /></td>
                                     <td width="0.5%"><?php echo $y['satuan']; ?></td>
@@ -895,7 +903,7 @@
                                     <td width="45%"><input type="text" class="form-control" 
                                         <?php
                                             if($y['ketersediaan']=='Tidak Ada'){
-                                                echo "readonly='readonly' ";
+                                                echo "readonly='readonly' ";echo "value='0' ";
                                                 echo "name='";
                                                 echo $y['nm_field'];
                                                 echo "'";
@@ -903,7 +911,7 @@
                                             }else{
                                                 echo "name='";
                                                 echo $y['nm_field'];
-                                                echo "'";
+                                                echo "'";echo "value='0' ";
                                             }
                                         ?> /></td>
                                     <td width="0.5%"><?php echo $y['satuan']; ?></td>
@@ -916,8 +924,15 @@
 
         </div>
         <!-- End Pendidikan, KNPO -->
+        <br /><span class="pull-right">
+        <input type="reset" class="btn btn-danger" value="RESET" />
+        <input type="submit" class="btn btn-success" value="SIMPAN" />
+        </span>
+        </form>
 
         <!-- Kesejahteraan Sosial -->
+        <br /><br />
+        <form role="form" method="post" action="simpankesos">
         <div class="box panel panel-primary">
             <div class="panel-heading">
                 <h3 class="panel-title"> Kesejahteraan Sosial</h3>
@@ -949,7 +964,7 @@
                                     <td width="45%"><input type="text" class="form-control" 
                                         <?php
                                             if($y['ketersediaan']=='Tidak Ada'){
-                                                echo "readonly='readonly' ";
+                                                echo "readonly='readonly' ";echo "value='0' ";
                                                 echo "name='";
                                                 echo $y['nm_field'];
                                                 echo "'";
@@ -957,7 +972,7 @@
                                             }else{
                                                 echo "name='";
                                                 echo $y['nm_field'];
-                                                echo "'";
+                                                echo "'";echo "value='0' ";
                                             }
                                         ?> /></td>
                                     <td width="0.5%"><?php echo $y['satuan']; ?></td>
@@ -981,7 +996,7 @@
                                     <td width="45%"><input type="text" class="form-control" 
                                         <?php
                                             if($y['ketersediaan']=='Tidak Ada'){
-                                                echo "readonly='readonly' ";
+                                                echo "readonly='readonly' ";echo "value='0' ";
                                                 echo "name='";
                                                 echo $y['nm_field'];
                                                 echo "'";
@@ -989,7 +1004,7 @@
                                             }else{
                                                 echo "name='";
                                                 echo $y['nm_field'];
-                                                echo "'";
+                                                echo "'";echo "value='0' ";
                                             }
                                         ?> /></td>
                                     <td width="0.5%"><?php echo $y['satuan']; ?></td>
@@ -1013,7 +1028,7 @@
                                     <td width="45%"><input type="text" class="form-control" 
                                         <?php
                                             if($y['ketersediaan']=='Tidak Ada'){
-                                                echo "readonly='readonly' ";
+                                                echo "readonly='readonly' ";echo "value='0' ";
                                                 echo "name='";
                                                 echo $y['nm_field'];
                                                 echo "'";
@@ -1021,7 +1036,7 @@
                                             }else{
                                                 echo "name='";
                                                 echo $y['nm_field'];
-                                                echo "'";
+                                                echo "'";echo "value='0' ";
                                             }
                                         ?> /></td>
                                     <td width="0.5%"><?php echo $y['satuan']; ?></td>
@@ -1045,7 +1060,7 @@
                                     <td width="45%"><input type="text" class="form-control" 
                                         <?php
                                             if($y['ketersediaan']=='Tidak Ada'){
-                                                echo "readonly='readonly' ";
+                                                echo "readonly='readonly' ";echo "value='0' ";
                                                 echo "name='";
                                                 echo $y['nm_field'];
                                                 echo "'";
@@ -1053,7 +1068,7 @@
                                             }else{
                                                 echo "name='";
                                                 echo $y['nm_field'];
-                                                echo "'";
+                                                echo "'";echo "value='0' ";
                                             }
                                         ?> /></td>
                                     <td width="0.5%"><?php echo $y['satuan']; ?></td>
@@ -1077,7 +1092,7 @@
                                     <td width="45%"><input type="text" class="form-control" 
                                         <?php
                                             if($y['ketersediaan']=='Tidak Ada'){
-                                                echo "readonly='readonly' ";
+                                                echo "readonly='readonly' ";echo "value='0' ";
                                                 echo "name='";
                                                 echo $y['nm_field'];
                                                 echo "'";
@@ -1085,7 +1100,7 @@
                                             }else{
                                                 echo "name='";
                                                 echo $y['nm_field'];
-                                                echo "'";
+                                                echo "'";echo "value='0' ";
                                             }
                                         ?> /></td>
                                     <td width="0.5%"><?php echo $y['satuan']; ?></td>
@@ -1109,7 +1124,7 @@
                                     <td width="45%"><input type="text" class="form-control" 
                                         <?php
                                             if($y['ketersediaan']=='Tidak Ada'){
-                                                echo "readonly='readonly' ";
+                                                echo "readonly='readonly' ";echo "value='0' ";
                                                 echo "name='";
                                                 echo $y['nm_field'];
                                                 echo "'";
@@ -1117,7 +1132,7 @@
                                             }else{
                                                 echo "name='";
                                                 echo $y['nm_field'];
-                                                echo "'";
+                                                echo "'";echo "value='0' ";
                                             }
                                         ?> /></td>
                                     <td width="0.5%"><?php echo $y['satuan']; ?></td>
@@ -1141,7 +1156,7 @@
                                     <td width="45%"><input type="text" class="form-control" 
                                         <?php
                                             if($y['ketersediaan']=='Tidak Ada'){
-                                                echo "readonly='readonly' ";
+                                                echo "readonly='readonly' ";echo "value='0' ";
                                                 echo "name='";
                                                 echo $y['nm_field'];
                                                 echo "'";
@@ -1149,7 +1164,7 @@
                                             }else{
                                                 echo "name='";
                                                 echo $y['nm_field'];
-                                                echo "'";
+                                                echo "'";echo "value='0' ";
                                             }
                                         ?> /></td>
                                     <td width="0.5%"><?php echo $y['satuan']; ?></td>
@@ -1173,7 +1188,7 @@
                                     <td width="45%"><input type="text" class="form-control" 
                                         <?php
                                             if($y['ketersediaan']=='Tidak Ada'){
-                                                echo "readonly='readonly' ";
+                                                echo "readonly='readonly' ";echo "value='0' ";
                                                 echo "name='";
                                                 echo $y['nm_field'];
                                                 echo "'";
@@ -1181,7 +1196,7 @@
                                             }else{
                                                 echo "name='";
                                                 echo $y['nm_field'];
-                                                echo "'";
+                                                echo "'";echo "value='0' ";
                                             }
                                         ?> /></td>
                                     <td width="0.5%"><?php echo $y['satuan']; ?></td>
@@ -1205,7 +1220,7 @@
                                     <td width="45%"><input type="text" class="form-control" 
                                         <?php
                                             if($y['ketersediaan']=='Tidak Ada'){
-                                                echo "readonly='readonly' ";
+                                                echo "readonly='readonly' ";echo "value='0' ";
                                                 echo "name='";
                                                 echo $y['nm_field'];
                                                 echo "'";
@@ -1213,7 +1228,7 @@
                                             }else{
                                                 echo "name='";
                                                 echo $y['nm_field'];
-                                                echo "'";
+                                                echo "'";echo "value='0' ";
                                             }
                                         ?> /></td>
                                     <td width="0.5%"><?php echo $y['satuan']; ?></td>
@@ -1237,7 +1252,7 @@
                                     <td width="45%"><input type="text" class="form-control" 
                                         <?php
                                             if($y['ketersediaan']=='Tidak Ada'){
-                                                echo "readonly='readonly' ";
+                                                echo "readonly='readonly' ";echo "value='0' ";
                                                 echo "name='";
                                                 echo $y['nm_field'];
                                                 echo "'";
@@ -1245,7 +1260,7 @@
                                             }else{
                                                 echo "name='";
                                                 echo $y['nm_field'];
-                                                echo "'";
+                                                echo "'";echo "value='0' ";
                                             }
                                         ?> /></td>
                                     <td width="0.5%"><?php echo $y['satuan']; ?></td>
@@ -1269,7 +1284,7 @@
                                     <td width="45%"><input type="text" class="form-control" 
                                         <?php
                                             if($y['ketersediaan']=='Tidak Ada'){
-                                                echo "readonly='readonly' ";
+                                                echo "readonly='readonly' ";echo "value='0' ";
                                                 echo "name='";
                                                 echo $y['nm_field'];
                                                 echo "'";
@@ -1277,7 +1292,7 @@
                                             }else{
                                                 echo "name='";
                                                 echo $y['nm_field'];
-                                                echo "'";
+                                                echo "'";echo "value='0' ";
                                             }
                                         ?> /></td>
                                     <td width="0.5%"><?php echo $y['satuan']; ?></td>
@@ -1301,7 +1316,7 @@
                                     <td width="45%"><input type="text" class="form-control" 
                                         <?php
                                             if($y['ketersediaan']=='Tidak Ada'){
-                                                echo "readonly='readonly' ";
+                                                echo "readonly='readonly' ";echo "value='0' ";
                                                 echo "name='";
                                                 echo $y['nm_field'];
                                                 echo "'";
@@ -1309,7 +1324,7 @@
                                             }else{
                                                 echo "name='";
                                                 echo $y['nm_field'];
-                                                echo "'";
+                                                echo "'";echo "value='0' ";
                                             }
                                         ?> /></td>
                                     <td width="0.5%"><?php echo $y['satuan']; ?></td>
@@ -1333,7 +1348,7 @@
                                     <td width="45%"><input type="text" class="form-control" 
                                         <?php
                                             if($y['ketersediaan']=='Tidak Ada'){
-                                                echo "readonly='readonly' ";
+                                                echo "readonly='readonly' ";echo "value='0' ";
                                                 echo "name='";
                                                 echo $y['nm_field'];
                                                 echo "'";
@@ -1341,7 +1356,7 @@
                                             }else{
                                                 echo "name='";
                                                 echo $y['nm_field'];
-                                                echo "'";
+                                                echo "'";echo "value='0' ";
                                             }
                                         ?> /></td>
                                     <td width="0.5%"><?php echo $y['satuan']; ?></td>
@@ -1365,7 +1380,7 @@
                                     <td width="45%"><input type="text" class="form-control" 
                                         <?php
                                             if($y['ketersediaan']=='Tidak Ada'){
-                                                echo "readonly='readonly' ";
+                                                echo "readonly='readonly' ";echo "value='0' ";
                                                 echo "name='";
                                                 echo $y['nm_field'];
                                                 echo "'";
@@ -1373,7 +1388,7 @@
                                             }else{
                                                 echo "name='";
                                                 echo $y['nm_field'];
-                                                echo "'";
+                                                echo "'";echo "value='0' ";
                                             }
                                         ?> /></td>
                                     <td width="0.5%"><?php echo $y['satuan']; ?></td>
@@ -1397,7 +1412,7 @@
                                     <td width="45%"><input type="text" class="form-control" 
                                         <?php
                                             if($y['ketersediaan']=='Tidak Ada'){
-                                                echo "readonly='readonly' ";
+                                                echo "readonly='readonly' ";echo "value='0' ";
                                                 echo "name='";
                                                 echo $y['nm_field'];
                                                 echo "'";
@@ -1405,7 +1420,7 @@
                                             }else{
                                                 echo "name='";
                                                 echo $y['nm_field'];
-                                                echo "'";
+                                                echo "'";echo "value='0' ";
                                             }
                                         ?> /></td>
                                     <td width="0.5%"><?php echo $y['satuan']; ?></td>
@@ -1429,7 +1444,7 @@
                                     <td width="45%"><input type="text" class="form-control" 
                                         <?php
                                             if($y['ketersediaan']=='Tidak Ada'){
-                                                echo "readonly='readonly' ";
+                                                echo "readonly='readonly' ";echo "value='0' ";
                                                 echo "name='";
                                                 echo $y['nm_field'];
                                                 echo "'";
@@ -1437,7 +1452,7 @@
                                             }else{
                                                 echo "name='";
                                                 echo $y['nm_field'];
-                                                echo "'";
+                                                echo "'";echo "value='0' ";
                                             }
                                         ?> /></td>
                                     <td width="0.5%"><?php echo $y['satuan']; ?></td>
@@ -1450,8 +1465,15 @@
 
         </div>
         <!-- End Kesejahteraan Sosial -->
+        <br /><span class="pull-right">
+        <input type="reset" class="btn btn-danger" value="RESET" />
+        <input type="submit" class="btn btn-success" value="SIMPAN" />
+        </span>
+        </form>
 
         <!-- Agama -->
+        <br /><br />
+        <form role="form" method="post" action="simpanagama">
         <div class="box panel panel-primary">
             <div class="panel-heading">
                 <h3 class="panel-title"> Agama</h3>
@@ -1483,7 +1505,7 @@
                                     <td width="45%"><input type="text" class="form-control" 
                                         <?php
                                             if($y['ketersediaan']=='Tidak Ada'){
-                                                echo "readonly='readonly' ";
+                                                echo "readonly='readonly' ";echo "value='0' ";
                                                 echo "name='";
                                                 echo $y['nm_field'];
                                                 echo "'";
@@ -1491,7 +1513,7 @@
                                             }else{
                                                 echo "name='";
                                                 echo $y['nm_field'];
-                                                echo "'";
+                                                echo "'";echo "value='0' ";
                                             }
                                         ?> /></td>
                                     <td width="0.5%"><?php echo $y['satuan']; ?></td>
@@ -1515,7 +1537,7 @@
                                     <td width="45%"><input type="text" class="form-control" 
                                         <?php
                                             if($y['ketersediaan']=='Tidak Ada'){
-                                                echo "readonly='readonly' ";
+                                                echo "readonly='readonly' ";echo "value='0' ";
                                                 echo "name='";
                                                 echo $y['nm_field'];
                                                 echo "'";
@@ -1523,7 +1545,7 @@
                                             }else{
                                                 echo "name='";
                                                 echo $y['nm_field'];
-                                                echo "'";
+                                                echo "'";echo "value='0' ";
                                             }
                                         ?> /></td>
                                     <td width="0.5%"><?php echo $y['satuan']; ?></td>
@@ -1547,7 +1569,7 @@
                                     <td width="45%"><input type="text" class="form-control" 
                                         <?php
                                             if($y['ketersediaan']=='Tidak Ada'){
-                                                echo "readonly='readonly' ";
+                                                echo "readonly='readonly' ";echo "value='0' ";
                                                 echo "name='";
                                                 echo $y['nm_field'];
                                                 echo "'";
@@ -1555,7 +1577,7 @@
                                             }else{
                                                 echo "name='";
                                                 echo $y['nm_field'];
-                                                echo "'";
+                                                echo "'";echo "value='0' ";
                                             }
                                         ?> /></td>
                                     <td width="0.5%"><?php echo $y['satuan']; ?></td>
@@ -1579,7 +1601,7 @@
                                     <td width="45%"><input type="text" class="form-control" 
                                         <?php
                                             if($y['ketersediaan']=='Tidak Ada'){
-                                                echo "readonly='readonly' ";
+                                                echo "readonly='readonly' ";echo "value='0' ";
                                                 echo "name='";
                                                 echo $y['nm_field'];
                                                 echo "'";
@@ -1587,7 +1609,7 @@
                                             }else{
                                                 echo "name='";
                                                 echo $y['nm_field'];
-                                                echo "'";
+                                                echo "'";echo "value='0' ";
                                             }
                                         ?> /></td>
                                     <td width="0.5%"><?php echo $y['satuan']; ?></td>
@@ -1611,7 +1633,7 @@
                                     <td width="45%"><input type="text" class="form-control" 
                                         <?php
                                             if($y['ketersediaan']=='Tidak Ada'){
-                                                echo "readonly='readonly' ";
+                                                echo "readonly='readonly' ";echo "value='0' ";
                                                 echo "name='";
                                                 echo $y['nm_field'];
                                                 echo "'";
@@ -1619,7 +1641,7 @@
                                             }else{
                                                 echo "name='";
                                                 echo $y['nm_field'];
-                                                echo "'";
+                                                echo "'";echo "value='0' ";
                                             }
                                         ?> /></td>
                                     <td width="0.5%"><?php echo $y['satuan']; ?></td>
@@ -1643,7 +1665,7 @@
                                     <td width="45%"><input type="text" class="form-control" 
                                         <?php
                                             if($y['ketersediaan']=='Tidak Ada'){
-                                                echo "readonly='readonly' ";
+                                                echo "readonly='readonly' ";echo "value='0' ";
                                                 echo "name='";
                                                 echo $y['nm_field'];
                                                 echo "'";
@@ -1651,7 +1673,7 @@
                                             }else{
                                                 echo "name='";
                                                 echo $y['nm_field'];
-                                                echo "'";
+                                                echo "'";echo "value='0' ";
                                             }
                                         ?> /></td>
                                     <td width="0.5%"><?php echo $y['satuan']; ?></td>
