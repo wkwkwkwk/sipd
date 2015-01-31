@@ -696,7 +696,7 @@
 					$sql13 = "SELECT*FROM pdnp_jkppd";
 					$sql14 = "SELECT*FROM huk_ph";
 					$sql15 = "SELECT*FROM huk_jktd";
-					$sql16 = "SELECT*FROM huk_jktd";
+					
 					$sql17 = "SELECT*FROM huk_jkyt";
 					$sql18 = "SELECT*FROM huk_kel";
 					$sql19 = "SELECT*FROM huk_jtk";
@@ -718,7 +718,7 @@
 					$command13 = $connection->createCommand($sql13);
 					$command14 = $connection->createCommand($sql14);
 					$command15 = $connection->createCommand($sql15);
-					$command16 = $connection->createCommand($sql16);
+					
 					$command17 = $connection->createCommand($sql17);
 					$command18 = $connection->createCommand($sql18);
 					$command19 = $connection->createCommand($sql19);
@@ -739,7 +739,7 @@
 					$r13 = $command13->queryAll();
 					$r14 = $command14->queryAll();
 					$r15 = $command15->queryAll();
-					$r16 = $command16->queryAll();
+					
 					$r17 = $command17->queryAll();
 					$r18 = $command18->queryAll();
 					$r19 = $command19->queryAll();
@@ -761,7 +761,7 @@
 						'dataProvider13' => $r13,
 						'dataProvider14' => $r14,
 						'dataProvider15' => $r15,
-						'dataProvider16' => $r16,
+						
 						'dataProvider17' => $r17,
 						'dataProvider18' => $r18,
 						'dataProvider19' => $r19,
@@ -1342,7 +1342,7 @@
 				
 				$implod1=array($adminpmr,$jmlkec,$jmlkel,$jmldes,$klasdesa,$dswad,$dswak,$dswas,$dpes,$dhut,$indjas,$dkeb,$dlad,$dsaw,$dpertambang,$dpet,$dwis,$jmlrw,$jmlrt,$jmldusun);
 				$implod2=array($statusotonomi,$otobaru,$dinduk,$dmekar,$dnonmekar);
-				$implod3=array($perdaijin,$perdaterbit,$revisisjkterbit,$perdaout,$perdartrw,$imb,$ijinprinsip,$ijinusaha,$ijinusahakebun,$ijinusahahutan,$ijinusahatambang,$ijininvesPMA,$ijininvesPMDN,$RPJPDperda,$RPJMDperda,$perdaijin,$RKPDtahunini,$RPJMDtahunini,$ijinlokasi,$singmohonlokasi,$perdaiklimusah,$langgarperda,$tegakperda,$jmlperdaijin,$perdalalin,$perdataker);
+				$implod3=array($perdaijin,$perdaterbit,$revisisjkterbit,$perdaout,$perdartrw,$imb,$ijinprinsip,$ijinusaha,$ijinusahakebun,$ijinusahahutan,$ijinusahatambang,$ijininvesPMA,$ijininvesPMDN,$RPJPDperda,$RPJMDperda,$perdaijin,$RKPDtahunini,$RPJMDtahunini,$ijinlokasi,$singmohonlokasi,$perdaiklimusaha,$langgarperda,$tegakperda,$jmlperdaijin,$perdalalin,$perdataker);
 				$implod4=array($sarpras,$kbup,$ksetda,$jmlstaffdidik,$prasd,$tsd,$tsmp,$tsma,$takad,$ts1,$jmlPNSgol,$gol1,$gol2,$gol3,$gol4,$jmlpjbtstrukt,$ese1,$ese2,$ese3,$ese4,$jmlpjbtfung,$jmlexPNS,$exese1,$exese2,$exese3,$exese4,$kdprd,$kinsp,$jmlstaffdidik1,$prasd1,$tsd1,$tsmp1,$tsma1,$takad1,$ts11,$jmlPNSgol1,$gol11,$gol21,$gol31,$gol41,$jmlpjbtstrukt1,$ese11,$ese21,$ese31,$ese41,$jmlpjbtfung1,$jmlexPNS1,$exese11,$exese21,$exese31,$exese41,$kbap,$jmlstaffdidik2,$prasd2,$tsd2,$tsmp2,$tsma2,$takad2,$ts12,$jmlPNSgol2,$gol12,$gol22,$gol32,$gol42,$jmlpjbtstrukt2,$ese12,$ese22,$ese32,$ese42,$jmlpjbtfung2,$jmlexPNS2,$exese12,$exese22,$exese32,$exese42,$kdin,$jmlstaffdidik3,$prasd3,$tsd3,$tsmp3,$tsma3,$takad3,$ts13,$jmlPNSgol3,$gol13,$gol23,$gol33,$gol43,$jmlpjbtstrukt3,$ese13,$ese23,$ese33,$ese43,$jmlpjbtfung3,$jmlexPNS3,$exese13,$exese23,$exese33,$exese43,$kltek,$jmlstaffdidik4,$prasd4,$tsd4,$tsmp4,$tsma4,$takad4,$ts14,$jmlPNSgol4,$gol14,$gol24,$gol34,$gol44,$jmlpjbtstrukt4,$ese14,$ese24,$ese34,$ese44,$jmlpjbtfung4,$jmlexPNS4,$exese14,$exese24,$exese34,$exese44,$kpdes,$jmlstaffdidik5,$prasd5,$tsd5,$tsmp5,$tsma5,$takad5,$ts15,$kcam,$jmlstaffdidik6,$tsd6,$tsmp6,$tsma6,$takad6,$ts16,$klur,$jmlstaffdidik7,$prasd7,$tsd7,$tsmp7,$tsma7,$takad7,$ts17);
 				$implod5=array($konsarpras,$kdinrah,$ringan,$sedang,$berat,$kltek,$ringan1,$sedang1,$berat1,$kdes,$ringan2,$sedang2,$berat2,$kdin,$dewek,$sewa,$pinjam,$gabung,$kltek1,$dewek1,$sewa1,$pinjam1,$gabung1);
 
@@ -1609,6 +1609,1268 @@
 			}
 		}
 
+		public function actionSimpanKesehatan()
+		{
+			if ($_POST) {
+				$tahunini=date("YYYY");
+				$waktuisi=date("Y-m-d");
+				$user=Yii::app()->user->username;
+				$sarkes=$_POST['sarkes'];
+				$posyandu=$_POST['posyandu'];
+				$pbersama=$_POST['pbersama'];
+				$ptidakaktif=$_POST['ptidakaktif'];
+				$poskesdes=$_POST['poskesdes'];
+				$sarkespuskes=$_POST['sarkespuskes'];
+				$pusinduk=$_POST['pusinduk'];
+				$pusbantu=$_POST['pusbantu'];
+				$pusliling=$_POST['pusliling'];
+				$pusklinik=$_POST['pusklinik'];
+				$rsud=$_POST['rsud'];
+				$rsuda=$_POST['rsuda'];
+				$rsudb=$_POST['rsudb'];
+				$rsudc=$_POST['rsudc'];
+				$rsudd=$_POST['rsudd'];
+				$rsus=$_POST['rsus'];
+				$rsusa=$_POST['rsusa'];
+				$rsusb=$_POST['rsusb'];
+				$rsusc=$_POST['rsusc'];
+				$rsusd=$_POST['rsusd'];
+				$rsk=$_POST['rsk'];
+				$rsksalin=$_POST['rsksalin'];
+				$rskjiwa=$_POST['rskjiwa'];
+				$rskobat=$_POST['rskobat'];
+				$rskkusta=$_POST['rskkusta'];
+				$rskmata=$_POST['rskmata'];
+				$rskbedah=$_POST['rskbedah'];
+				$rskjantung=$_POST['rskjantung'];
+				$rskparu=$_POST['rskparu'];
+				$klidok=$_POST['klidok'];
+				$rsup=$_POST['rsup'];
+				$rst=$_POST['rst'];
+				$rstad=$_POST['rstad'];
+				$rstau=$_POST['rstau'];
+				$rstal=$_POST['rstal'];
+				$rstpolri=$_POST['rstpolri'];
+				$labersih=$_POST['labersih'];
+				$jmlrtlab=$_POST['jmlrtlab'];
+				$ledeng=$_POST['ledeng'];
+				$sumdung=$_POST['sumdung'];
+				$sumtakdung=$_POST['sumtakdung'];
+				$madung=$_POST['madung'];
+				$matakdung=$_POST['matakdung'];
+				$rtlabsungai=$_POST['rtlabsungai'];
+				$rtlabwaduk=$_POST['rtlabwaduk'];
+				$rtlabrain=$_POST['rtlabrain'];
+				$rtlabkemasan=$_POST['rtlabkemasan'];
+				$jmlrtaam=$_POST['jmlrtaam'];
+				$balkesmas=$_POST['balkesmas'];
+				$baltekkesling=$_POST['baltekkesling'];
+				$siif=$_POST['siif'];
+				$infarnar=$_POST['infarnar'];
+				$infarpot=$_POST['infarpot'];
+				$gudfar=$_POST['gudfar'];
+				$pedbesfar=$_POST['pedbesfar'];
+				$prodalkes=$_POST['prodalkes'];
+				$lurobkes=$_POST['lurobkes'];
+				$capak=$_POST['capak'];
+				$kesmas=$_POST['kesmas'];
+				$gila=$_POST['gila'];
+				$nark=$_POST['nark'];
+				$jmlbalita=$_POST['jmlbalita'];
+				$bkgizi=$_POST['bkgizi'];
+				$noltiga=$_POST['03'];
+				$kurgiz=$_POST['kurgiz'];
+				$jmlgizbuk=$_POST['jmlgizbuk'];
+				$gizbuk=$_POST['gizbuk'];
+				$sakitavg=$_POST['sakitavg'];
+				$matiwabahtot=$_POST['matiwabahtot'];
+				$muntaber=$_POST['muntaber'];
+				$mdbd=$_POST['mdbd'];
+				$ispa=$_POST['ispa'];
+				$campak=$_POST['campak'];
+				$malaria=$_POST['malaria'];
+				$wlainnya=$_POST['wlainnya'];
+				$hamilgizbuk=$_POST['hamilgizbuk'];
+				$kbaktif=$_POST['kbaktif'];
+				$kbaktifl=$_POST['kbaktifl'];
+				$kbaktifp=$_POST['kbaktifp'];
+				$kbaksep=$_POST['kbaksep'];
+				$kbaksepl=$_POST['kbaksepl'];
+				$kbaksepp=$_POST['kbaksepp'];
+				$pasbur=$_POST['pasbur'];
+				$pasburkb=$_POST['pasburkb'];
+				$jmlhamilk4=$_POST['jmlhamilk4'];
+				$cakhamilk4=$_POST['cakhamilk4'];
+				$layanbalita=$_POST['layanbalita'];
+				$asi624=$_POST['asi624'];
+				$nifas=$_POST['nifas'];
+				$neonatus=$_POST['neonatus'];
+				$jaringsd=$_POST['jaringsd'];
+				$gdlvl1=$_POST['gdlvl1'];
+				$dagkes=$_POST['dagkes'];
+				$apotek=$_POST['apotek'];
+				$tobat=$_POST['tobat'];
+				$tenkes=$_POST['tenkes'];
+				$dokum=$_POST['dokum'];
+				$dokspes=$_POST['dokspes'];
+				$dokgi=$_POST['dokgi'];
+				$nurse=$_POST['nurse'];
+				$tkbidan=$_POST['tkbidan'];
+				$apl=$_POST['apl'];
+				$sarfar=$_POST['sarfar'];
+				$ahzi=$_POST['ahzi'];
+				$anlab=$_POST['anlab'];
+				$ahron=$_POST['ahron'];
+				$bides=$_POST['bides'];
+				$asap=$_POST['asap'];
+				$pralk=$_POST['pralk'];
+				$bides1=$_POST['bides1'];
+				$epikes=$_POST['epikes'];
+				$entokes=$_POST['entokes'];
+				$sanit=$_POST['sanit'];
+				$adkes=$_POST['adkes'];
+				$pekemas=$_POST['pekemas'];
+				$pergi=$_POST['pergi'];
+				$nutri=$_POST['nutri'];
+				$rgraf=$_POST['rgraf'];
+				$kamdis=$_POST['kamdis'];
+				$tekek=$_POST['tekek'];
+				$kompbidan=$_POST['kompbidan'];
+				$jmlbidtang=$_POST['jmlbidtang'];
+				$bidtang=$_POST['bidtang'];
+				$ibukompbid=$_POST['ibukompbid'];
+				$salinbid=$_POST['salinbid'];
+				$ibugatan=$_POST['ibugatan'];
+				$totibusalin=$_POST['totibusalin'];
+				$uci=$_POST['uci'];
+				$pppp=$_POST['pppp'];
+				$tbcbta=$_POST['tbcbta'];
+				$tbctemuobat=$_POST['tbctemuobat'];
+				$tbckira=$_POST['tbckira'];
+				$dbd=$_POST['dbd'];
+				$dbdsop=$_POST['dbdsop'];
+				$dbdtemu=$_POST['dbdtemu'];
+				$afp=$_POST['afp'];
+				$afptemuobat=$_POST['afptemuobat'];
+				$afpkira=$_POST['afpkira'];
+				$plain=$_POST['plain'];
+				$plaintemuobat=$_POST['plaintemuobat'];
+				$plainkira=$_POST['plainkira'];
+				$pkrpmm=$_POST['pkrpmm'];
+				$jmlpmsks=$_POST['jmlpmsks'];
+				$pkdpmm=$_POST['pkdpmm'];
+				$kunbay=$_POST['kunbay'];
+				$bstan=$_POST['bstan'];
+				$bsama=$_POST['bsama'];
+				$klb=$_POST['klb'];
+				$siagaaktif=$_POST['siagaaktif'];
+
+				$implod1=array($sarkes,$posyandu,$pbersama,$ptidakaktif,$poskesdes,$sarkespuskes,$pusinduk,$pusbantu,$pusliling,$pusklinik,$rsud,$rsuda,$rsudb,$rsudc,$rsudd,$rsus,$rsusa,$rsusb,$rsusc,$rsusd,$rsk,$rsksalin,$rskjiwa,$rskobat,$rskkusta,$rskmata,$rskbedah,$rskjantung,$rskparu,$klidok,$rsup,$rst,$rstad,$rstau,$rstal,$rstpolri,$labersih,$jmlrtlab,$ledeng,$sumdung,$sumtakdung,$madung,$matakdung,$rtlabsungai,$rtlabwaduk,$rtlabrain,$rtlabkemasan,$jmlrtaam,$balkesmas,$baltekkesling);
+				$implod2=array($siif,$infarnar,$infarpot,$gudfar,$pedbesfar,$prodalkes,$lurobkes,$capak);
+				$implod3=array($kesmas,$gila,$nark,$jmlbalita,$bkgizi,$noltiga,$kurgiz,$jmlgizbuk,$gizbuk,$sakitavg,$matiwabahtot,$muntaber,$mdbd,$ispa,$campak,$malaria,$wlainnya,$hamilgizbuk,$kbaktif,$kbaktifl,$kbaktifp,$kbaksep,$kbaksepl,$kbaksepp,$pasbur,$pasburkb,$jmlhamilk4,$cakhamilk4,$layanbalita,$asi624,$nifas,$neonatus,$jaringsd,$gdlvl1);
+				$implod4=array($dagkes,$apotek,$tobat);
+				$implod5=array($tenkes,$dokum,$dokspes,$dokgi,$nurse,$tkbidan,$apl,$sarfar,$ahzi,$anlab,$ahron,$bides,$asap,$pralk,$bides1,$epikes,$entokes,$sanit,$adkes,$pekemas,$pergi,$nutri,$rgraf,$kamdis,$tekek);
+				$implod6=array($kompbidan,$jmlbidtang,$bidtang,$ibukompbid,$salinbid,$ibugatan,$totibusalin);
+				$implod7=array($uci);
+				$implod8=array($pppp,$tbcbta,$tbctemuobat,$tbckira,$dbd,$dbdsop,$dbdtemu,$afp,$afptemuobat,$afpkira,$plain,$plaintemuobat,$plainkira);
+				$implod9=array($pkrpmm,$jmlpmsks);
+				$implod10=array($pkdpmm);
+				$implod11=array($kunbay,$bstan,$bsama);
+				$implod12=array($klb);
+				$implod13=array($siagaaktif);
+
+				$masukisi1=implode("#", $implod1);
+				$masukisi2=implode("#", $implod2);
+				$masukisi3=implode("#", $implod3);
+				$masukisi4=implode("#", $implod4);
+				$masukisi5=implode("#", $implod5);
+				$masukisi6=implode("#", $implod6);
+				$masukisi7=implode("#", $implod7);
+				$masukisi8=implode("#", $implod8);
+				$masukisi9=implode("#", $implod9);
+				$masukisi10=implode("#", $implod10);
+				$masukisi11=implode("#", $implod11);
+				$masukisi12=implode("#", $implod12);
+				$masukisi13=implode("#", $implod13);
+
+				$sql1="INSERT INTO log VALUES('','kes_sarkes','$user','$tahunini','$masukisi1','$waktuisi')";
+				$sql2="INSERT INTO log VALUES('','kes_siif','$user','$tahunini','$masukisi2','$waktuisi')";
+				$sql3="INSERT INTO log VALUES('','kes_kesmas','$user','$tahunini','$masukisi3','$waktuisi')";
+				$sql4="INSERT INTO log VALUES('','kes_dagkes','$user','$tahunini','$masukisi4','$waktuisi')";
+				$sql5="INSERT INTO log VALUES('','kes_tenkes','$user','$tahunini','$masukisi5','$waktuisi')";
+				$sql6="INSERT INTO log VALUES('','kes_kompbidan','$user','$tahunini','$masukisi6','$waktuisi')";
+				$sql7="INSERT INTO log VALUES('','kes_uci','$user','$tahunini','$masukisi7','$waktuisi')";
+				$sql8="INSERT INTO log VALUES('','kes_pppp','$user','$tahunini','$masukisi8','$waktuisi')";
+				$sql9="INSERT INTO log VALUES('','kes_pkrpmm','$user','$tahunini','$masukisi9','$waktuisi')";
+				$sql10="INSERT INTO log VALUES('','kes_pkdpmm','$user','$tahunini','$masukisi10','$waktuisi')";
+				$sql11="INSERT INTO log VALUES('','kes_kunbay','$user','$tahunini','$masukisi11','$waktuisi')";
+				$sql12="INSERT INTO log VALUES('','kes_klb','$user','$tahunini','$masukisi12','$waktuisi')";
+				$sql13="INSERT INTO log VALUES('','kes_siagaaktif','$user','$tahunini','$masukisi13','$waktuisi')";
+				$conn=Yii::app()->db;
+				$command1=$conn->createCommand($sql1);
+				$command2=$conn->createCommand($sql2);
+				$command3=$conn->createCommand($sql3);
+				$command4=$conn->createCommand($sql4);
+				$command5=$conn->createCommand($sql5);
+				$command6=$conn->createCommand($sql6);
+				$command7=$conn->createCommand($sql7);
+				$command8=$conn->createCommand($sql8);
+				$command9=$conn->createCommand($sql9);
+				$command10=$conn->createCommand($sql10);
+				$command11=$conn->createCommand($sql11);
+				$command12=$conn->createCommand($sql12);
+				$command13=$conn->createCommand($sql13);
+				$command1->execute();$command2->execute();$command3->execute();$command4->execute();$command5->execute();$command6->execute();$command7->execute();$command8->execute();$command9->execute();$command10->execute();$command11->execute();$command12->execute();$command13->execute();
+				$this->redirect(array(
+					'sosbud'));
+			}
+		}
+
+		public function actionSimpanPendidikan()
+		{
+			if ($_POST) {
+				$tahunini=date("YYYY");
+				$waktuisi=date("Y-m-d");
+				$user=Yii::app()->user->username;
+				$didikumum=$_POST['didikumum'];
+				$jmlskul=$_POST['jmlskul'];
+				$skultk=$_POST['skultk'];
+				$tknegeri=$_POST['tknegeri'];
+				$tknbaik=$_POST['tknbaik'];
+				$tkntbaik=$_POST['tkntbaik'];
+				$tkswas=$_POST['tkswas'];
+				$tksbaik=$_POST['tksbaik'];
+				$tkstbaik=$_POST['tkstbaik'];
+				$skullb=$_POST['skullb'];
+				$slbnegeri=$_POST['slbnegeri'];
+				$slbnbaik=$_POST['slbnbaik'];
+				$slbntbaik=$_POST['slbntbaik'];
+				$slbswas=$_POST['slbswas'];
+				$slbsbaik=$_POST['slbsbaik'];
+				$slbstbaik=$_POST['slbstbaik'];
+				$skuld=$_POST['skuld'];
+				$sdnegeri=$_POST['sdnegeri'];
+				$sdnbaik=$_POST['sdnbaik'];
+				$sdntbaik=$_POST['sdntbaik'];
+				$sdswas=$_POST['sdswas'];
+				$sdsbaik=$_POST['sdsbaik'];
+				$sdstbaik=$_POST['sdstbaik'];
+				$skulmp=$_POST['skulmp'];
+				$smpnegeri=$_POST['smpnegeri'];
+				$smpnbaik=$_POST['smpnbaik'];
+				$smpntbaik=$_POST['smpntbaik'];
+				$smpswas=$_POST['smpswas'];
+				$smpsbaik=$_POST['smpsbaik'];
+				$smpstbaik=$_POST['smpstbaik'];
+				$skulma=$_POST['skulma'];
+				$smanegeri=$_POST['smanegeri'];
+				$smanbaik=$_POST['smanbaik'];
+				$smantbaik=$_POST['smantbaik'];
+				$smaswas=$_POST['smaswas'];
+				$smasbaik=$_POST['smasbaik'];
+				$smastbaik=$_POST['smastbaik'];
+				$skulmk=$_POST['skulmk'];
+				$smknegeri=$_POST['smknegeri'];
+				$smknbaik=$_POST['smknbaik'];
+				$smkntbaik=$_POST['smkntbaik'];
+				$smkswas=$_POST['smkswas'];
+				$smksbaik=$_POST['smksbaik'];
+				$smkstbaik=$_POST['smkstbaik'];
+				$pting=$_POST['pting'];
+				$ptingnegeri=$_POST['ptingnegeri'];
+				$ptingnbaik=$_POST['ptingnbaik'];
+				$ptingntbaik=$_POST['ptingntbaik'];
+				$ptingswas=$_POST['ptingswas'];
+				$ptingsbaik=$_POST['ptingsbaik'];
+				$ptingstbaik=$_POST['ptingstbaik'];
+				$lpket=$_POST['lpket'];
+				$sekmenjur=$_POST['sekmenjur'];
+				$akadiplo=$_POST['akadiplo'];
+				$jmlskulag=$_POST['jmlskulag'];
+				$madib=$_POST['madib'];
+				$madibnegeri=$_POST['madibnegeri'];
+				$madibnbaik=$_POST['madibnbaik'];
+				$madibntbaik=$_POST['madibntbaik'];
+				$madibswas=$_POST['madibswas'];
+				$madibsbaik=$_POST['madibsbaik'];
+				$madibstbaik=$_POST['madibstbaik'];
+				$madts=$_POST['madts'];
+				$madtsnegeri=$_POST['madtsnegeri'];
+				$madtsnbaik=$_POST['madtsnbaik'];
+				$madtsntbaik=$_POST['madtsntbaik'];
+				$madtsswas=$_POST['madtsswas'];
+				$madtssbaik=$_POST['madtssbaik'];
+				$madtsstbaik=$_POST['madtsstbaik'];
+				$madal=$_POST['madal'];
+				$madalnegeri=$_POST['madalnegeri'];
+				$madalnbaik=$_POST['madalnbaik'];
+				$madalntbaik=$_POST['madalntbaik'];
+				$madalswas=$_POST['madalswas'];
+				$madalsbaik=$_POST['madalsbaik'];
+				$madalstbaik=$_POST['madalstbaik'];
+				$ptai=$_POST['ptai'];
+				$ptainegeri=$_POST['ptainegeri'];
+				$ptainbaik=$_POST['ptainbaik'];
+				$ptaintbaik=$_POST['ptaintbaik'];
+				$ptaiswas=$_POST['ptaiswas'];
+				$ptaisbaik=$_POST['ptaisbaik'];
+				$ptaistbaik=$_POST['ptaistbaik'];
+				$ptaki=$_POST['ptaki'];
+				$ptakinegeri=$_POST['ptakinegeri'];
+				$ptakinbaik=$_POST['ptakinbaik'];
+				$ptakintbaik=$_POST['ptakintbaik'];
+				$ptakiswas=$_POST['ptakiswas'];
+				$ptakisbaik=$_POST['ptakisbaik'];
+				$ptakistbaik=$_POST['ptakistbaik'];
+				$ptako=$_POST['ptako'];
+				$ptakonegeri=$_POST['ptakonegeri'];
+				$ptakonbaik=$_POST['ptakonbaik'];
+				$ptakontbaik=$_POST['ptakontbaik'];
+				$ptakoswas=$_POST['ptakoswas'];
+				$ptakosbaik=$_POST['ptakosbaik'];
+				$ptakostbaik=$_POST['ptakostbaik'];
+				$ptahin=$_POST['ptahin'];
+				$ptahinnegeri=$_POST['ptahinnegeri'];
+				$ptahinnbaik=$_POST['ptahinnbaik'];
+				$ptahinntbaik=$_POST['ptahinntbaik'];
+				$ptahinswas=$_POST['ptahinswas'];
+				$ptahinsbaik=$_POST['ptahinsbaik'];
+				$ptahinstbaik=$_POST['ptahinstbaik'];
+				$jmlkelas=$_POST['jmlkelas'];
+				$jmltksej=$_POST['jmltksej'];
+				$jmlsdsej=$_POST['jmlsdsej'];
+				$jmlsmpsej=$_POST['jmlsmpsej'];
+				$jmlsmasej=$_POST['jmlsmasej'];
+				$jmlptsej=$_POST['jmlptsej'];
+				$jmllepeksej=$_POST['jmllepeksej'];
+				$jmlsmksej=$_POST['jmlsmksej'];
+				$jmlsismasiswa=$_POST['jmlsismasiswa'];
+				$tksis=$_POST['tksis'];
+				$tknsis=$_POST['tknsis'];
+				$tkssis=$_POST['tkssis'];
+				$tpasis=$_POST['tpasis'];
+				$tpansis=$_POST['tpansis'];
+				$tpassis=$_POST['tpassis'];
+				$slbsis=$_POST['slbsis'];
+				$slbnsis=$_POST['slbnsis'];
+				$slbssis=$_POST['slbssis'];
+				$sdsis=$_POST['sdsis'];
+				$sdnsis=$_POST['sdnsis'];
+				$sdssis=$_POST['sdssis'];
+				$smpsis=$_POST['smpsis'];
+				$smpnsis=$_POST['smpnsis'];
+				$smpssis=$_POST['smpssis'];
+				$smksis=$_POST['smksis'];
+				$smknsis=$_POST['smknsis'];
+				$smkssis=$_POST['smkssis'];
+				$smasis=$_POST['smasis'];
+				$smansis=$_POST['smansis'];
+				$smassis=$_POST['smassis'];
+				$ptingsis=$_POST['ptingsis'];
+				$ptingnsis=$_POST['ptingnsis'];
+				$ptingssis=$_POST['ptingssis'];
+				$lempeksis=$_POST['lempeksis'];
+				$jmlgurus1d4=$_POST['jmlgurus1d4'];
+				$gurus1d4sd=$_POST['gurus1d4sd'];
+				$gurus1d4smp=$_POST['gurus1d4smp'];
+				$gurus1d4sma=$_POST['gurus1d4sma'];
+				$jmlgurudosen=$_POST['jmlgurudosen'];
+				$tkgurdos=$_POST['tkgurdos'];
+				$tkngurdos=$_POST['tkngurdos'];
+				$tksgurdos=$_POST['tksgurdos'];
+				$slbgurdos=$_POST['slbgurdos'];
+				$slbngurdos=$_POST['slbngurdos'];
+				$slbsgurdos=$_POST['slbsgurdos'];
+				$sdgurdos=$_POST['sdgurdos'];
+				$sdngurdos=$_POST['sdngurdos'];
+				$sdsgurdos=$_POST['sdsgurdos'];
+				$smpgurdos=$_POST['smpgurdos'];
+				$smpngurdos=$_POST['smpngurdos'];
+				$smpsgurdos=$_POST['smpsgurdos'];
+				$smagurdos=$_POST['smagurdos'];
+				$smangurdos=$_POST['smangurdos'];
+				$smasgurdos=$_POST['smasgurdos'];
+				$smkgurdos=$_POST['smkgurdos'];
+				$smkngurdos=$_POST['smkngurdos'];
+				$smksgurdos=$_POST['smksgurdos'];
+				$ptinggurdos=$_POST['ptinggurdos'];
+				$ptingngurdos=$_POST['ptingngurdos'];
+				$ptingsgurdos=$_POST['ptingsgurdos'];
+				$lempekgurdos=$_POST['lempekgurdos'];
+				$gurupkl=$_POST['gurupkl'];
+				$tkgupkl=$_POST['tkgupkl'];
+				$tkngupkl=$_POST['tkngupkl'];
+				$tksgupkl=$_POST['tksgupkl'];
+				$slbgupkl=$_POST['slbgupkl'];
+				$slbngupkl=$_POST['slbngupkl'];
+				$slbsgupkl=$_POST['slbsgupkl'];
+				$sdgupkl=$_POST['sdgupkl'];
+				$sdngupkl=$_POST['sdngupkl'];
+				$sdsgupkl=$_POST['sdsgupkl'];
+				$smpgupkl=$_POST['smpgupkl'];
+				$smpngupkl=$_POST['smpngupkl'];
+				$smpsgupkl=$_POST['smpsgupkl'];
+				$smagupkl=$_POST['smagupkl'];
+				$smangupkl=$_POST['smangupkl'];
+				$smasgupkl=$_POST['smasgupkl'];
+				$smkgupkl=$_POST['smkgupkl'];
+				$smkngupkl=$_POST['smkngupkl'];
+				$smksgupkl=$_POST['smksgupkl'];
+				$madibgupkl=$_POST['madibgupkl'];
+				$madibngupkl=$_POST['madibngupkl'];
+				$madibsgupkl=$_POST['madibsgupkl'];
+				$madtsgupkl=$_POST['madtsgupkl'];
+				$madtsngupkl=$_POST['madtsngupkl'];
+				$madtssgupkl=$_POST['madtssgupkl'];
+				$madalgupkl=$_POST['madalgupkl'];
+				$madalngupkl=$_POST['madalngupkl'];
+				$madalsgupkl=$_POST['madalsgupkl'];
+				$jmlsisag=$_POST['jmlsisag'];
+				$rasisag=$_POST['rasisag'];
+				$ransisag=$_POST['ransisag'];
+				$rassisag=$_POST['rassisag'];
+				$madibsisag=$_POST['madibsisag'];
+				$madibnsisag=$_POST['madibnsisag'];
+				$madibssisag=$_POST['madibssisag'];
+				$madtssisag=$_POST['madtssisag'];
+				$madtsnsisag=$_POST['madtsnsisag'];
+				$madtsssisag=$_POST['madtsssisag'];
+				$madalsisag=$_POST['madalsisag'];
+				$madalnsisag=$_POST['madalnsisag'];
+				$madalssisag=$_POST['madalssisag'];
+				$ptaisisag=$_POST['ptaisisag'];
+				$ptainsisag=$_POST['ptainsisag'];
+				$ptaissisag=$_POST['ptaissisag'];
+				$ptakisisag=$_POST['ptakisisag'];
+				$ptakinsisag=$_POST['ptakinsisag'];
+				$ptakissisag=$_POST['ptakissisag'];
+				$ptakosisag=$_POST['ptakosisag'];
+				$ptakonsisag=$_POST['ptakonsisag'];
+				$ptakossisag=$_POST['ptakossisag'];
+				$ptahinsisag=$_POST['ptahinsisag'];
+				$ptahinnsisag=$_POST['ptahinnsisag'];
+				$ptahinssisag=$_POST['ptahinssisag'];
+				$jmlgusisag=$_POST['jmlgusisag'];
+				$madibgusisag=$_POST['madibgusisag'];
+				$madibngusisag=$_POST['madibngusisag'];
+				$madibsgusisag=$_POST['madibsgusisag'];
+				$madtsgusisag=$_POST['madtsgusisag'];
+				$madtsngusisag=$_POST['madtsngusisag'];
+				$madtsgussisag=$_POST['madtsgussisag'];
+				$madalgusisag=$_POST['madalgusisag'];
+				$madalngusisag=$_POST['madalngusisag'];
+				$madalsgusisag=$_POST['madalsgusisag'];
+				$ptaigusisag=$_POST['ptaigusisag'];
+				$ptaingusisag=$_POST['ptaingusisag'];
+				$ptaisgusisag=$_POST['ptaisgusisag'];
+				$ptakigusisag=$_POST['ptakigusisag'];
+				$ptakingusisag=$_POST['ptakingusisag'];
+				$ptakisgusisag=$_POST['ptakisgusisag'];
+				$ptakogusisag=$_POST['ptakogusisag'];
+				$ptakongusisag=$_POST['ptakongusisag'];
+				$ptakosgusisag=$_POST['ptakosgusisag'];
+				$ptabudgusisag=$_POST['ptabudgusisag'];
+				$ptabudngusisag=$_POST['ptabudngusisag'];
+				$ptabudsgusisag=$_POST['ptabudsgusisag'];
+				$ptahingusisag=$_POST['ptahingusisag'];
+				$ptahinngusisag=$_POST['ptahinngusisag'];
+				$ptahinsgusisag=$_POST['ptahinsgusisag'];
+				$parsekol=$_POST['parsekol'];
+				$piturolas=$_POST['712th'];
+				$lulasmalas=$_POST['1315th'];
+				$nemlaslulas=$_POST['1618th'];
+				$parsekol7=$_POST['parsekol7'];
+				$jenprasek=$_POST['jenprasek'];
+				$jensdmised=$_POST['jensdmised'];
+				$parkasar=$_POST['parkasar'];
+				$parkasarsd=$_POST['parkasarsd'];
+				$parkasarsmp=$_POST['parkasarsmp'];
+				$parmur=$_POST['parmur'];
+				$parmura=$_POST['parmura'];
+				$parmurb=$_POST['parmurb'];
+				$parmurc=$_POST['parmurc'];
+				$parmurpt=$_POST['parmurpt'];
+				$lamasekolavg=$_POST['lamasekolavg'];
+				$pusekol=$_POST['pusekol'];
+				$pusekolsd=$_POST['pusekolsd'];
+				$pusekolsdcapai=$_POST['pusekolsdcapai'];
+				$pusekolsdtot=$_POST['pusekolsdtot'];
+				$pusekolsmp=$_POST['pusekolsmp'];
+				$pusekolsmpcapai=$_POST['pusekolsmpcapai'];
+				$pusekolsmptot=$_POST['pusekolsmptot'];
+				$pusekolsma=$_POST['pusekolsma'];
+				$pusekolsmacapai=$_POST['pusekolsmacapai'];
+				$pusekolsmatot=$_POST['pusekolsmatot'];
+				$angkalulus=$_POST['angkalulus'];
+				$jmllulussd=$_POST['jmllulussd'];
+				$jmllulussmp=$_POST['jmllulussmp'];
+				$jmllulussma=$_POST['jmllulussma'];
+				$angkabh=$_POST['angkabh'];
+				$angkamh=$_POST['angkamh'];
+				$malasbacatulis=$_POST['15bacatulis'];
+				$capai15bacatulis=$_POST['capai15bacatulis'];
+				$prop15=$_POST['prop15'];
+				$prop15tk=$_POST['prop15tk'];
+				$prop15sd=$_POST['prop15sd'];
+				$prop15smp=$_POST['prop15smp'];
+				$prop15sma=$_POST['prop15sma'];
+				$prop15pt=$_POST['prop15pt'];
+				$proptasekol=$_POST['proptasekol'];
+				$tasekol6=$_POST['tasekol6'];
+				$tasekol7=$_POST['tasekol7'];
+				$tasekol10=$_POST['tasekol10'];
+				$tasekol15=$_POST['tasekol15'];
+				$tasekol24=$_POST['tasekol24'];
+				$tasekol25=$_POST['tasekol25'];
+				$tasekol45=$_POST['tasekol45'];
+				$angkanglanjut=$_POST['angkanglanjut'];
+				$sisbarsmp=$_POST['sisbarsmp'];
+				$sisbarsma=$_POST['sisbarsma'];
+				$sisbarpt=$_POST['sisbarpt'];
+				$jmlsiskin=$_POST['jmlsiskin'];
+				$jmlsiskinsd=$_POST['jmlsiskinsd'];
+				$jmlsiskinsmp=$_POST['jmlsiskinsmp'];
+				$jmlsiskinsma=$_POST['jmlsiskinsma'];
+				$jmlsiskinpt=$_POST['jmlsiskinpt'];
+				$jmlskltik=$_POST['jmlskltik'];
+				$jmlsklinet=$_POST['jmlsklinet'];
+				$jmlorgviausia=$_POST['jmlorgviausia'];
+				$usiapaud=$_POST['usiapaud'];
+				$usiasd=$_POST['usiasd'];
+				$usiasmp=$_POST['usiasmp'];
+				$usiasma=$_POST['usiasma'];
+				$senbud=$_POST['senbud'];
+				$jmlgrupseni=$_POST['jmlgrupseni'];
+				$jmlgdseni=$_POST['jmlgdseni'];
+				$jmlmuseumseni=$_POST['jmlmuseumseni'];
+				$senipusbud=$_POST['senipusbud'];
+				$fessenbud=$_POST['fessenbud'];
+				$sarfessenbud=$_POST['sarfessenbud'];
+				$cabudtari=$_POST['cabudtari'];
+				$bencabud=$_POST['bencabud'];
+				$bangcabud=$_POST['bangcabud'];
+				$sitcabud=$_POST['sitcabud'];
+				$kawcabud=$_POST['kawcabud'];
+				$pora=$_POST['pora'];
+				$jmlklubora=$_POST['jmlklubora'];
+				$jmlgdora=$_POST['jmlgdora'];
+				$ormuda=$_POST['ormuda'];
+				$kegmuda=$_POST['kegmuda'];
+				$orgraga=$_POST['orgraga'];
+				$kegraga=$_POST['kegraga'];
+				$expotaun=$_POST['expotaun'];
+				$perpus=$_POST['perpus'];
+				$jmlperpus=$_POST['jmlperpus'];
+				$kunperpus1th=$_POST['kunperpus1th'];
+				$jmlorgpop=$_POST['jmlorgpop'];
+				$koljubukda=$_POST['koljubukda'];
+				$koljubukpus=$_POST['koljubukpus'];
+				$kpbps=$_POST['kpbps'];
+				$kpbpssd=$_POST['kpbpssd'];
+				$kpbpssmp=$_POST['kpbpssmp'];
+				$kpbpssma=$_POST['kpbpssma'];
+				$kpbpssmk=$_POST['kpbpssmk'];
+				$lulusanke=$_POST['lulusanke'];
+				$lulusankesmp=$_POST['lulusankesmp'];
+				$lulusankesma=$_POST['lulusankesma'];
+				$lulusankesmk=$_POST['lulusankesmk'];
+				$kualifikasiguru=$_POST['kualifikasiguru'];
+				$kualifikasigurusd=$_POST['kualifikasigurusd'];
+				$kualifikasigurusmp=$_POST['kualifikasigurusmp'];
+				$kualifikasigurusma=$_POST['kualifikasigurusma'];
+				$kualifikasigurusmk=$_POST['kualifikasigurusmk'];
+				$penuhguru=$_POST['penuhguru'];
+				$penuhgurusd=$_POST['penuhgurusd'];
+				$penuhgurusmp=$_POST['penuhgurusmp'];
+				$penuhgurusma=$_POST['penuhgurusma'];
+				$penuhgurusmk=$_POST['penuhgurusmk'];
+				$miliksekolah=$_POST['miliksekolah'];
+				$miliksekolahsd=$_POST['miliksekolahsd'];
+				$miliksekolahsmp=$_POST['miliksekolahsmp'];
+				$miliksekolahsma=$_POST['miliksekolahsma'];
+				$miliksekolahsmk=$_POST['miliksekolahsmk'];
+				$smkpt=$_POST['smkpt'];
+				$luluskerja=$_POST['luluskerja'];
+				$cabudda=$_POST['cabudda'];
+				$bencabudda=$_POST['bencabudda'];
+				$bangcabudda=$_POST['bangcabudda'];
+				$sitcabudda=$_POST['sitcabudda'];
+				$kawcabudda=$_POST['kawcabudda'];
+
+				$implod1=array($didikumum,$jmlskul,$skultk,$tknegeri,$tknbaik,$tkntbaik,$tkswas,$tksbaik,$tkstbaik,$skullb,$slbnegeri,$slbnbaik,$slbntbaik,$slbswas,$slbsbaik,$slbstbaik,$skuld,$sdnegeri,$sdnbaik,$sdntbaik,$sdswas,$sdsbaik,$sdstbaik,$skulmp,$smpnegeri,$smpnbaik,$smpntbaik,$smpswas,$smpsbaik,$smpstbaik,$skulma,$smanegeri,$smanbaik,$smantbaik,$smaswas,$smasbaik,$smastbaik,$skulmk,$smknegeri,$smknbaik,$smkntbaik,$smkswas,$smksbaik,$smkstbaik,$pting,$ptingnegeri,$ptingnbaik,$ptingntbaik,$ptingswas,$ptingsbaik,$ptingstbaik,$lpket,$sekmenjur,$akadiplo,$jmlskulag,$madib,$madibnegeri,$madibnbaik,$madibntbaik,$madibswas,$madibsbaik,$madibstbaik,$madts,$madtsnegeri,$madtsnbaik,$madtsntbaik,$madtsswas,$madtssbaik,$madtsstbaik,$madal,$madalnegeri,$madalnbaik,$madalntbaik,$madalswas,$madalsbaik,$madalstbaik,$ptai,$ptainegeri,$ptainbaik,$ptaintbaik,$ptaiswas,$ptaisbaik,$ptaistbaik,$ptaki,$ptakinegeri,$ptakinbaik,$ptakintbaik,$ptakiswas,$ptakisbaik,$ptakistbaik,$ptako,$ptakonegeri,$ptakonbaik,$ptakontbaik,$ptakoswas,$ptakosbaik,$ptakostbaik,$ptahin,$ptahinnegeri,$ptahinnbaik,$ptahinntbaik,$ptahinswas,$ptahinsbaik,$ptahinstbaik,$jmlkelas,$jmltksej,$jmlsdsej,$jmlsmpsej,$jmlsmasej,$jmlptsej,$jmllepeksej,$jmlsmksej,$jmlsismasiswa,$tksis,$tknsis,$tkssis,$tpasis,$tpansis,$tpassis,$slbsis,$slbnsis,$slbssis,$sdsis,$sdnsis,$sdssis,$smpsis,$smpnsis,$smpssis,$smksis,$smknsis,$smkssis,$smasis,$smansis,$smassis,$ptingsis,$ptingnsis,$ptingssis,$lempeksis,$jmlgurus1d4,$gurus1d4sd,$gurus1d4smp,$gurus1d4sma,$jmlgurudosen,$tkgurdos,$tkngurdos,$tksgurdos,$slbgurdos,$slbngurdos,$slbsgurdos,$sdgurdos,$sdngurdos,$sdsgurdos,$smpgurdos,$smpngurdos,$smpsgurdos,$smagurdos,$smangurdos,$smasgurdos,$smkgurdos,$smkngurdos,$smksgurdos,$ptinggurdos,$ptingngurdos,$ptingsgurdos,$lempekgurdos,$gurupkl,$tkgupkl,$tkngupkl,$tksgupkl,$slbgupkl,$slbngupkl,$slbsgupkl,$sdgupkl,$sdngupkl,$sdsgupkl,$smpgupkl,$smpngupkl,$smpsgupkl,$smagupkl,$smangupkl,$smasgupkl,$smkgupkl,$smkngupkl,$smksgupkl,$madibgupkl,$madibngupkl,$madibsgupkl,$madtsgupkl,$madtsngupkl,$madtssgupkl,$madalgupkl,$madalngupkl,$madalsgupkl,$jmlsisag,$rasisag,$ransisag,$rassisag,$madibsisag,$madibnsisag,$madibssisag,$madtssisag,$madtsnsisag,$madtsssisag,$madalsisag,$madalnsisag,$madalssisag,$ptaisisag,$ptainsisag,$ptaissisag,$ptakisisag,$ptakinsisag,$ptakissisag,$ptakosisag,$ptakonsisag,$ptakossisag,$ptahinsisag,$ptahinnsisag,$ptahinssisag,$jmlgusisag,$madibgusisag,$madibngusisag,$madibsgusisag,$madtsgusisag,$madtsngusisag,$madtsgussisag,$madalgusisag,$madalngusisag,$madalsgusisag,$ptaigusisag,$ptaingusisag,$ptaisgusisag,$ptakigusisag,$ptakingusisag,$ptakisgusisag,$ptakogusisag,$ptakongusisag,$ptakosgusisag,$ptabudgusisag,$ptabudngusisag,$ptabudsgusisag,$ptahingusisag,$ptahinngusisag,$ptahinsgusisag,$parsekol,$piturolas,$lulasmalas,$nemlaslulas,$parsekol7,$jenprasek,$jensdmised,$parkasar,$parkasarsd,$parkasarsmp,$parmur,$parmura,$parmurb,$parmurc,$parmurpt,$lamasekolavg,$pusekol,$pusekolsd,$pusekolsdcapai,$pusekolsdtot,$pusekolsmp,$pusekolsmpcapai,$pusekolsmptot,$pusekolsma,$pusekolsmacapai,$pusekolsmatot,$angkalulus,$jmllulussd,$jmllulussmp,$jmllulussma,$angkabh,$angkamh,$malasbacatulis,$capai15bacatulis,$prop15,$prop15tk,$prop15sd,$prop15smp,$prop15sma,$prop15pt,$proptasekol,$tasekol6,$tasekol7,$tasekol10,$tasekol15,$tasekol24,$tasekol25,$tasekol45,$angkanglanjut,$sisbarsmp,$sisbarsma,$sisbarpt,$jmlsiskin,$jmlsiskinsd,$jmlsiskinsmp,$jmlsiskinsma,$jmlsiskinpt,$jmlskltik,$jmlsklinet,$jmlorgviausia,$usiapaud,$usiasd,$usiasmp,$usiasma);
+				$implod2=array($senbud,$jmlgrupseni,$jmlgdseni,$jmlmuseumseni,$senipusbud,$fessenbud,$sarfessenbud);
+				$implod3=array($cabudtari,$bencabud,$bangcabud,$sitcabud,$kawcabud);
+				$implod4=array($pora,$jmlklubora,$jmlgdora,$ormuda,$kegmuda,$orgraga,$kegraga);
+				$implod5=array($expotaun);
+				$implod6=array($perpus,$jmlperpus,$kunperpus1th,$jmlorgpop,$koljubukda,$koljubukpus);
+				$implod7=array($kpbps,$kpbpssd,$kpbpssmp,$kpbpssma,$kpbpssmk);
+				$implod8=array($lulusanke,$lulusankesmp,$lulusankesma,$lulusankesmk);
+				$implod9=array($kualifikasiguru,$kualifikasigurusd,$kualifikasigurusmp,$kualifikasigurusma,$kualifikasigurusmk);
+				$implod10=array($penuhguru,$penuhgurusd,$penuhgurusmp,$penuhgurusma,$penuhgurusmk);
+				$implod11=array($miliksekolah,$miliksekolahsd,$miliksekolahsmp,$miliksekolahsma,$miliksekolahsmk);
+				$implod12=array($smkpt);$implod13=array($luluskerja);
+				$implod14=array($cabudda,$bencabudda,$bangcabudda,$sitcabudda,$kawcabudda);
+
+				$masukisi1=implode("#", $implod1);
+				$masukisi2=implode("#", $implod2);
+				$masukisi3=implode("#", $implod3);
+				$masukisi4=implode("#", $implod4);
+				$masukisi5=implode("#", $implod5);
+				$masukisi6=implode("#", $implod6);
+				$masukisi7=implode("#", $implod7);
+				$masukisi8=implode("#", $implod8);
+				$masukisi9=implode("#", $implod9);
+				$masukisi10=implode("#", $implod10);
+				$masukisi11=implode("#", $implod11);
+				$masukisi12=implode("#", $implod12);
+				$masukisi13=implode("#", $implod13);
+				$masukisi14=implode("#", $implod14);
+
+				$sql1="INSERT INTO log VALUES('','pknpo_didikumum','$user','$tahunini','$masukisi1','$waktuisi')";
+				$sql2="INSERT INTO log VALUES('','pknpo_senbud','$user','$tahunini','$masukisi2','$waktuisi')";
+				$sql3="INSERT INTO log VALUES('','pknpo_cabudtari','$user','$tahunini','$masukisi3','$waktuisi')";
+				$sql4="INSERT INTO log VALUES('','pknpo_pora','$user','$tahunini','$masukisi4','$waktuisi')";
+				$sql5="INSERT INTO log VALUES('','pknpo_expotaun','$user','$tahunini','$masukisi5','$waktuisi')";
+				$sql6="INSERT INTO log VALUES('','pknpo_perpus','$user','$tahunini','$masukisi6','$waktuisi')";
+				$sql7="INSERT INTO log VALUES('','pknpo_kpbps','$user','$tahunini','$masukisi7','$waktuisi')";
+				$sql8="INSERT INTO log VALUES('','pknpo_lulusanke','$user','$tahunini','$masukisi8','$waktuisi')";
+				$sql9="INSERT INTO log VALUES('','pknpo_kualifikasiguru','$user','$tahunini','$masukisi9','$waktuisi')";
+				$sql10="INSERT INTO log VALUES('','pknpo_penuhguru','$user','$tahunini','$masukisi10','$waktuisi')";
+				$sql11="INSERT INTO log VALUES('','pknpo_miliksekolah','$user','$tahunini','$masukisi11','$waktuisi')";
+				$sql12="INSERT INTO log VALUES('','pknpo_smkpt','$user','$tahunini','$masukisi12','$waktuisi')";
+				$sql13="INSERT INTO log VALUES('','pknpo_luluskerja','$user','$tahunini','$masukisi13','$waktuisi')";
+				$sql14="INSERT INTO log VALUES('','pknpo_cabudda','$user','$tahunini','$masukisi14','$waktuisi')";
+				$conn=Yii::app()->db;
+				$command1=$conn->createCommand($sql1);
+				$command2=$conn->createCommand($sql2);
+				$command3=$conn->createCommand($sql3);
+				$command4=$conn->createCommand($sql4);
+				$command5=$conn->createCommand($sql5);
+				$command6=$conn->createCommand($sql6);
+				$command7=$conn->createCommand($sql7);
+				$command8=$conn->createCommand($sql8);
+				$command9=$conn->createCommand($sql9);
+				$command10=$conn->createCommand($sql10);
+				$command11=$conn->createCommand($sql11);
+				$command12=$conn->createCommand($sql12);
+				$command13=$conn->createCommand($sql13);
+				$command14=$conn->createCommand($sql14);
+				$command1->execute();$command2->execute();$command3->execute();$command4->execute();$command5->execute();$command6->execute();$command7->execute();$command8->execute();$command9->execute();$command10->execute();$command11->execute();$command12->execute();$command13->execute();$command14->execute();
+				$this->redirect(array(
+					'sosbud'));
+			}
+		}
+
+		public function actionSimpanKesos()
+		{
+			if ($_POST) {
+				$tahunini=date("YYYY");
+				$waktuisi=date("Y-m-d");
+				$user=Yii::app()->user->username;
+				$ipm=$_POST['ipm'];
+				$jpm=$_POST['jpm'];
+				$jpmdesa=$_POST['jpmdesa'];
+				$jpmkota=$_POST['jpmkota'];
+				$p1=$_POST['p1'];
+				$p1desa=$_POST['p1desa'];
+				$p1kota=$_POST['p1kota'];
+				$p2=$_POST['p2'];
+				$p2desa=$_POST['p2desa'];
+				$p2kota=$_POST['p2kota'];
+				$jamkesmasda=$_POST['jamkesmasda'];
+				$jmljamkesmasda=$_POST['jmljamkesmasda'];
+				$jmlskm=$_POST['jmlskm'];
+				$kemiskinan=$_POST['kemiskinan'];
+				$garismiskin=$_POST['garismiskin'];
+				$garismiskindesa=$_POST['garismiskindesa'];
+				$garismiskinkota=$_POST['garismiskinkota'];
+				$bwhgarismiskin=$_POST['bwhgarismiskin'];
+				$raskin=$_POST['raskin'];
+				$KKraskin=$_POST['KKraskin'];
+				$rtraskin=$_POST['rtraskin'];
+				$realraskin=$_POST['realraskin'];
+				$rpraskin=$_POST['rpraskin'];
+				$kmtk=$_POST['kmtk'];
+				$kprasj=$_POST['kprasj'];
+				$ksjt1=$_POST['ksjt1'];
+				$ktjt2=$_POST['ktjt2'];
+				$ksjt3=$_POST['ksjt3'];
+				$ksjt3p=$_POST['ksjt3p'];
+				$jkplsm=$_POST['jkplsm'];
+				$kplsm=$_POST['kplsm'];
+				$kpormas=$_POST['kpormas'];
+				$kpokp=$_POST['kpokp'];
+				$psks=$_POST['psks'];
+				$kartar=$_POST['kartar'];
+				$tksm=$_POST['tksm'];
+				$orgsos=$_POST['orgsos'];
+				$lswamas=$_POST['lswamas'];
+				$pmks=$_POST['pmks'];
+				$pmkstangan=$_POST['pmkstangan'];
+				$pmkskudune=$_POST['pmkskudune'];
+				$pmksberi=$_POST['pmksberi'];
+				$masos=$_POST['masos'];
+				$rawsossar=$_POST['rawsossar'];
+				$anjal=$_POST['anjal'];
+				$psjiwa=$_POST['psjiwa'];
+				$gepdanpeng=$_POST['gepdanpeng'];
+				$jmlhivaids=$_POST['jmlhivaids'];
+				$jmlcandunar=$_POST['jmlcandunar'];
+				$sarrehab=$_POST['sarrehab'];
+				$fakirmiskin=$_POST['fakirmiskin'];
+				$bayilantar=$_POST['bayilantar'];
+				$anaklantar=$_POST['anaklantar'];
+				$lansialantar=$_POST['lansialantar'];
+				$komacil=$_POST['komacil'];
+				$ptunanetra=$_POST['ptunanetra'];
+				$ptunarungu=$_POST['ptunarungu'];
+				$ptunawicara=$_POST['ptunawicara'];
+				$ptunawicararungu=$_POST['ptunawicararungu'];
+				$ptunadaksa=$_POST['ptunadaksa'];
+				$ptunagrahita=$_POST['ptunagrahita'];
+				$pcacatjiwa=$_POST['pcacatjiwa'];
+				$pcacatganda=$_POST['pcacatganda'];
+				$tunasusila=$_POST['tunasusila'];
+				$exnapi=$_POST['exnapi'];
+				$idaphivaids=$_POST['idaphivaids'];
+				$knapza=$_POST['knapza'];
+				$jmlpansos=$_POST['jmlpansos'];
+				$pansosanak=$_POST['pansosanak'];
+				$pansosanaktirah=$_POST['pansosanaktirah'];
+				$pansosbija=$_POST['pansosbija'];
+				$pansostwir=$_POST['pansostwir'];
+				$pansosbnetra=$_POST['pansosbnetra'];
+				$pansosbdaksa=$_POST['pansosbdaksa'];
+				$pansosbgrahita=$_POST['pansosbgrahita'];
+				$pansosblaras=$_POST['pansosblaras'];
+				$pansosbruwi=$_POST['pansosbruwi'];
+				$pansosbplnis=$_POST['pansosbplnis'];
+				$pansosmput=$_POST['pansosmput'];
+				$pansospput=$_POST['pansospput'];
+				$pansoskw=$_POST['pansoskw'];
+				$pansosbk=$_POST['pansosbk'];
+				$pansosrehab=$_POST['pansosrehab'];
+				$prehabpusat=$_POST['prehabpusat'];
+				$rumahsinggah=$_POST['rumahsinggah'];
+				$pkk=$_POST['pkk'];
+				$jmlpkk=$_POST['jmlpkk'];
+				$jmlpkkaktif=$_POST['jmlpkkaktif'];
+				$pktk=$_POST['pktk'];
+				$balaker=$_POST['balaker'];
+				$ijintaker=$_POST['ijintaker'];
+				$pusinfotaker=$_POST['pusinfotaker'];
+				$indeksgini=$_POST['indeksgini'];
+				$ppvbd=$_POST['ppvbd'];
+				$williamson=$_POST['williamson'];
+
+				$implod1=array($ipm);
+				$implod2=array($jpm,$jpmdesa,$jpmkota);
+				$implod3=array($p1,$p1desa,$p1kota);$implod4=array($p2,$p2desa,$p2kota);
+				$implod5=array($jamkesmasda,$jmljamkesmasda,$jmlskm);
+				$implod6=array($kemiskinan,$garismiskin,$garismiskindesa,$garismiskinkota,$bwhgarismiskin,$raskin,$KKraskin,$rtraskin,$realraskin,$rpraskin);
+				$implod7=array($kmtk,$kprasj,$ksjt1,$ktjt2,$ksjt3,$ksjt3p);
+				$implod8=array($jkplsm,$kplsm,$kpormas,$kpokp);
+				$implod9=array($psks,$kartar,$tksm,$orgsos,$lswamas);
+				$implod10=array($pmks,$pmkstangan,$pmkskudune,$pmksberi);
+				$implod11=array($masos,$rawsossar,$anjal,$psjiwa,$gepdanpeng,$jmlhivaids,$jmlcandunar,$sarrehab,$fakirmiskin,$bayilantar,$anaklantar,$lansialantar,$komacil,$ptunanetra,$ptunarungu,$ptunawicara,$ptunawicararungu,$ptunadaksa,$ptunagrahita,$pcacatjiwa,$pcacatganda,$tunasusila,$exnapi,$idaphivaids,$knapza,$jmlpansos,$pansosanak,$pansosanaktirah,$pansosbija,$pansostwir,$pansosbnetra,$pansosbdaksa,$pansosbgrahita,$pansosblaras,$pansosbruwi,$pansosbplnis,$pansosmput,$pansospput,$pansoskw,$pansosbk,$pansosrehab,$prehabpusat,$rumahsinggah);
+				$implod12=array($pkk,$jmlpkk,$jmlpkkaktif);
+				$implod13=array($pktk,$balaker,$ijintaker,$pusinfotaker);
+				$implod14=array($indeksgini);$implod15=array($ppvbd);$implod16=array($williamson);
+
+				$masukisi1=implode("#", $implod1);$masukisi2=implode("#", $implod2);
+				$masukisi3=implode("#", $implod3);$masukisi4=implode("#", $implod4);
+				$masukisi5=implode("#", $implod5);$masukisi6=implode("#", $implod6);
+				$masukisi7=implode("#", $implod7);$masukisi8=implode("#", $implod8);
+				$masukisi9=implode("#", $implod9);$masukisi10=implode("#", $implod10);
+				$masukisi11=implode("#", $implod11);$masukisi12=implode("#", $implod12);
+				$masukisi13=implode("#", $implod13);$masukisi14=implode("#", $implod14);
+				$masukisi15=implode("#", $implod15);$masukisi16=implode("#", $implod16);
+
+				$sql1="INSERT INTO log VALUES('','kesos_ipm','$user','$tahunini','$masukisi1','$waktuisi')";
+				$sql2="INSERT INTO log VALUES('','kesos_jpm','$user','$tahunini','$masukisi2','$waktuisi')";
+				$sql3="INSERT INTO log VALUES('','kesos_p1','$user','$tahunini','$masukisi3','$waktuisi')";
+				$sql4="INSERT INTO log VALUES('','kesos_p2','$user','$tahunini','$masukisi4','$waktuisi')";
+				$sql5="INSERT INTO log VALUES('','kesos_jamkesmasda','$user','$tahunini','$masukisi5','$waktuisi')";
+				$sql6="INSERT INTO log VALUES('','kesos_kemiskinan','$user','$tahunini','$masukisi6','$waktuisi')";
+				$sql7="INSERT INTO log VALUES('','kesos_kmtk','$user','$tahunini','$masukisi7','$waktuisi')";
+				$sql8="INSERT INTO log VALUES('','kesos_jkplsm','$user','$tahunini','$masukisi8','$waktuisi')";
+				$sql9="INSERT INTO log VALUES('','kesos_psks','$user','$tahunini','$masukisi9','$waktuisi')";
+				$sql10="INSERT INTO log VALUES('','kesos_pmks','$user','$tahunini','$masukisi10','$waktuisi')";
+				$sql11="INSERT INTO log VALUES('','kesos_masos','$user','$tahunini','$masukisi11','$waktuisi')";
+				$sql12="INSERT INTO log VALUES('','kesos_pkk','$user','$tahunini','$masukisi12','$waktuisi')";
+				$sql13="INSERT INTO log VALUES('','kesos_pktk','$user','$tahunini','$masukisi13','$waktuisi')";
+				$sql14="INSERT INTO log VALUES('','kesos_indeksgini','$user','$tahunini','$masukisi14','$waktuisi')";
+				$sql15="INSERT INTO log VALUES('','kesos_ppvbd','$user','$tahunini','$masukisi15','$waktuisi')";
+				$sql16="INSERT INTO log VALUES('','kesos_williamson','$user','$tahunini','$masukisi16','$waktuisi')";
+				$conn=Yii::app()->db;
+				$command1=$conn->createCommand($sql1);$command2=$conn->createCommand($sql2);
+				$command3=$conn->createCommand($sql3);$command4=$conn->createCommand($sql4);
+				$command5=$conn->createCommand($sql5);$command6=$conn->createCommand($sql6);
+				$command7=$conn->createCommand($sql7);$command8=$conn->createCommand($sql8);
+				$command9=$conn->createCommand($sql9);$command10=$conn->createCommand($sql10);
+				$command11=$conn->createCommand($sql11);$command12=$conn->createCommand($sql12);
+				$command13=$conn->createCommand($sql13);$command14=$conn->createCommand($sql14);
+				$command15=$conn->createCommand($sql15);$command16=$conn->createCommand($sql16);
+				$command1->execute();$command2->execute();$command3->execute();$command4->execute();$command5->execute();$command6->execute();$command7->execute();$command8->execute();$command9->execute();$command10->execute();$command11->execute();$command12->execute();$command13->execute();$command14->execute();$command15->execute();$command16->execute();
+				$this->redirect(array(
+					'sosbud'));
+			}
+		}
+
+		public function actionSimpanAgama()
+		{
+			if ($_POST) {
+				$tahunini=date("YYYY");
+				$waktuisi=date("Y-m-d");
+				$user=Yii::app()->user->username;
+				$jmlpeluk=$_POST['jmlpeluk'];
+				$agislam=$_POST['agislam'];
+				$agkristen=$_POST['agkristen'];
+				$agkatholik=$_POST['agkatholik'];
+				$aghindu=$_POST['aghindu'];
+				$agbuddha=$_POST['agbuddha'];
+				$agkonghuchu=$_POST['agkonghuchu'];
+				$aglain=$_POST['aglain'];
+				$sarib=$_POST['sarib'];
+				$saribmas=$_POST['saribmas'];
+				$saribmus=$_POST['saribmus'];
+				$saribgk=$_POST['saribgk'];
+				$saribgkk=$_POST['saribgkk'];
+				$saribpura=$_POST['saribpura'];
+				$saribcet=$_POST['saribcet'];
+				$jmlhaji=$_POST['jmlhaji'];
+				$hajikuota=$_POST['hajikuota'];
+				$hajimangkat=$_POST['hajimangkat'];
+				$jmlkua=$_POST['jmlkua'];
+				$kuabaik=$_POST['kuabaik'];
+				$kuaberat=$_POST['kuaberat'];
+				$kuaringan=$_POST['kuaringan'];
+				$jmlnyuluh=$_POST['jmlnyuluh'];
+				$nyuluhhonorer=$_POST['nyuluhhonorer'];
+				$nyuluhpns=$_POST['nyuluhpns'];
+				$jmllembagadidik=$_POST['jmllembagadidik'];
+				$tpalquran=$_POST['tpalquran'];
+				$seming=$_POST['seming'];
+				$ponpes=$_POST['ponpes'];
+				$jmlponpes=$_POST['jmlponpes'];
+				$jmlsantri=$_POST['jmlsantri'];
+
+				$implod1=array($jmlpeluk,$agislam,$agkristen,$agkatholik,$aghindu,$agbuddha,$agkonghuchu,$aglain);
+				$implod2=array($sarib,$saribmas,$saribmus,$saribgk,$saribgk,$saribpura,$saribcet);
+				$implod3=array($jmlhaji,$hajikuota,$hajimangkat);
+				$implod4=array($kuabaik,$kuaberat,$kuaringan);
+				$implod5=array($jmlnyuluh,$nyuluhhonorer,$nyuluhpns);
+				$implod6=array($jmllembagadidik,$tpalquran,$seming,$ponpes,$jmlponpes,$jmlsantri);
+
+				$masukisi1=implode("#", $implod1);$masukisi2=implode("#", $implod2);
+				$masukisi3=implode("#", $implod3);$masukisi4=implode("#", $implod4);
+				$masukisi5=implode("#", $implod5);$masukisi6=implode("#", $implod6);
+
+				$sql1="INSERT INTO log VALUES('','ag_jmlpeluk','$user','$tahunini','$masukisi1','$waktuisi')";
+				$sql2="INSERT INTO log VALUES('','ag_sarib','$user','$tahunini','$masukisi2','$waktuisi')";
+				$sql3="INSERT INTO log VALUES('','ag_haji','$user','$tahunini','$masukisi3','$waktuisi')";
+				$sql4="INSERT INTO log VALUES('','ag_kua','$user','$tahunini','$masukisi4','$waktuisi')";
+				$sql5="INSERT INTO log VALUES('','ag_nyuluh','$user','$tahunini','$masukisi5','$waktuisi')";
+				$sql6="INSERT INTO log VALUES('','ag_lembagadidik','$user','$tahunini','$masukisi6','$waktuisi')";
+				$conn=Yii::app()->db;
+				$command1=$conn->createCommand($sql1);$command2=$conn->createCommand($sql2);
+				$command3=$conn->createCommand($sql3);$command4=$conn->createCommand($sql4);
+				$command5=$conn->createCommand($sql5);$command6=$conn->createCommand($sql6);
+				$command1->execute();$command2->execute();$command3->execute();$command4->execute();$command5->execute();$command6->execute();
+				$this->redirect(array(
+					'sosbud'));
+			}
+		}
+
+		public function actionSimpanPolitik()
+		{
+			if ($_POST) {
+				$tahunini=date("YYYY");
+				$waktuisi=date("Y-m-d");
+				$user=Yii::app()->user->username;
+				$jumangdpr=$_POST['jumangdpr'];
+				$kadbjk=$_POST['kadbjk'];
+				$mens21=$_POST['mens21'];
+				$womens21=$_POST['womens21'];
+				$parpolt=$_POST['parpolt'];
+				$jparpolda=$_POST['jparpolda'];
+				$jparpolpp=$_POST['jparpolpp'];
+				$karpolmas=$_POST['karpolmas'];
+				$jumpelpp=$_POST['jumpelpp'];
+				$tppem=$_POST['tppem'];
+				$jumpeltpp=$_POST['jumpeltpp'];
+				$ormas=$_POST['ormas'];
+				$jorbp=$_POST['jorbp'];
+				$jorbag=$_POST['jorbag'];
+				$jplmas=$_POST['jplmas'];
+				$kblpm=$_POST['kblpm'];
+				$jlpmb=$_POST['jlpmb'];
+				$jppmas=$_POST['jppmas'];
+				$jsmmppm=$_POST['jsmmppm'];
+				$jppmd=$_POST['jppmd'];
+				$lswam=$_POST['lswam'];
+				$jlsml=$_POST['jlsml'];
+				$lsmlt=$_POST['lsmlt'];
+				$lsmlta=$_POST['lsmlta'];
+				$jlsmn=$_POST['jlsmn'];
+				$lsmnt=$_POST['lsmnt'];
+				$lsmnta=$_POST['lsmnta'];
+				$jlsmai=$_POST['jlsmai'];
+				$lsmait=$_POST['lsmait'];
+				$lsmaita=$_POST['lsmaita'];
+				$jkppd=$_POST['jkppd'];
+
+				$implod1=array($jumangdpr);$implod2=array($kadbjk,$mens21,$womens21);
+				$implod3=array($parpolt,$jparpolda,$jparpolpp);$implod4=array($karpolmas,$jumpelpp);
+				$implod5=array($tppem,$jumpeltpp);$implod6=array($ormas,$jorbp,$jorbag);
+				$implod7=array($jplmas,$kblpm,$jlpmb);$implod8=array($jppmas);$implod9=array($jsmmppm);
+				$implod10=array($jppmd);
+				$implod11=array($lswam,$jlsml,$lsmlt,$lsmlta,$jlsmn,$lsmnt,$lsmnta,$jlsmai,$lsmait,$lsmaita);
+				$implod12=array($jkppd);
+
+				$masukisi1=implode("#", $implod1);$masukisi2=implode("#", $implod2);
+				$masukisi3=implode("#", $implod3);$masukisi4=implode("#", $implod4);
+				$masukisi5=implode("#", $implod5);$masukisi6=implode("#", $implod6);
+				$masukisi7=implode("#", $implod7);$masukisi8=implode("#", $implod8);
+				$masukisi9=implode("#", $implod9);$masukisi10=implode("#", $implod10);
+				$masukisi11=implode("#", $implod11);$masukisi12=implode("#", $implod12);
+
+				$sql1="INSERT INTO log VALUES('','pdnp_jad','$user','$tahunini','$masukisi1','$waktuisi')";
+				$sql2="INSERT INTO log VALUES('','pdnp_kadbjk','$user','$tahunini','$masukisi2','$waktuisi')";
+				$sql3="INSERT INTO log VALUES('','pdnp_parpol','$user','$tahunini','$masukisi3','$waktuisi')";
+				$sql4="INSERT INTO log VALUES('','pdnp_kpm','$user','$tahunini','$masukisi4','$waktuisi')";
+				$sql5="INSERT INTO log VALUES('','pdnp_tpp','$user','$tahunini','$masukisi5','$waktuisi')";
+				$sql6="INSERT INTO log VALUES('','pdnp_ormas','$user','$tahunini','$masukisi6','$waktuisi')";
+				$sql7="INSERT INTO log VALUES('','pdnp_jlpm','$user','$tahunini','$masukisi7','$waktuisi')";
+				$sql8="INSERT INTO log VALUES('','pdnp_jppm','$user','$tahunini','$masukisi8','$waktuisi')";
+				$sql9="INSERT INTO log VALUES('','pdnp_jsmm','$user','$tahunini','$masukisi9','$waktuisi')";
+				$sql10="INSERT INTO log VALUES('','pdnp_jppmd','$user','$tahunini','$masukisi10','$waktuisi')";
+				$sql11="INSERT INTO log VALUES('','pdnp_lswm','$user','$tahunini','$masukisi11','$waktuisi')";
+				$sql12="INSERT INTO log VALUES('','pdnp_jkppd','$user','$tahunini','$masukisi12','$waktuisi')";
+				$conn=Yii::app()->db;
+				$command1=$conn->createCommand($sql1);$command2=$conn->createCommand($sql2);
+				$command3=$conn->createCommand($sql3);$command4=$conn->createCommand($sql4);
+				$command5=$conn->createCommand($sql5);$command6=$conn->createCommand($sql6);
+				$command7=$conn->createCommand($sql7);$command8=$conn->createCommand($sql8);
+				$command9=$conn->createCommand($sql9);$command10=$conn->createCommand($sql10);
+				$command11=$conn->createCommand($sql11);$command12=$conn->createCommand($sql12);
+				$command1->execute();$command2->execute();$command3->execute();$command4->execute();$command5->execute();$command6->execute();$command7->execute();$command8->execute();$command9->execute();$command10->execute();$command11->execute();$command12->execute();
+				$this->redirect(array(
+					'polhukam'));
+			}
+		}
+
+		public function actionSimpanHukum()
+		{
+			if ($_POST) {
+				$tahunini=date("YYYY");
+				$waktuisi=date("Y-m-d");
+				$user=Yii::app()->user->username;
+				$perhuk=$_POST['perhuk'];
+				$jpdil=$_POST['jpdil'];
+				$pdna=$_POST['pdna'];
+				$perdat=$_POST['perdat'];
+				$poldham=$_POST['poldham'];
+				$lalin=$_POST['lalin'];
+				$jpter=$_POST['jpter'];
+				$pdnat=$_POST['pdnat'];
+				$perdatt=$_POST['perdatt'];
+				$poldhamt=$_POST['poldhamt'];
+				$lalint=$_POST['lalint'];
+				$perperdan=$_POST['perperdan'];
+				$jptter=$_POST['jptter'];
+				$pdnatt=$_POST['pdnatt'];
+				$perdattt=$_POST['perdattt'];
+				$poldhamtt=$_POST['poldhamtt'];
+				$lalintt=$_POST['lalintt'];
+				$perperdant=$_POST['perperdant'];
+				$jktdyd=$_POST['jktdyd'];
+				$jkytd=$_POST['jkytd'];
+				$kelembag=$_POST['kelembag'];
+				$jpengagam=$_POST['jpengagam'];
+				$jpengneg=$_POST['jpengneg'];
+				$jpengtun=$_POST['jpengtun'];
+				$lpemas=$_POST['lpemas'];
+				$kejakneg=$_POST['kejakneg'];
+				$jtkrim=$_POST['jtkrim'];
+				$jknar=$_POST['jknar'];
+				$jkpem=$_POST['jkpem'];
+				$jkseks=$_POST['jkseks'];
+				$jkaniaya=$_POST['jkaniaya'];
+				$jkcuri=$_POST['jkcuri'];
+				$jktipu=$_POST['jktipu'];
+				$jkpalsu=$_POST['jkpalsu'];
+				$jtkrimdit=$_POST['jtkrimdit'];
+				$jknard=$_POST['jknard'];
+				$jkpemd=$_POST['jkpemd'];
+				$jkseksd=$_POST['jkseksd'];
+				$jkaniayad=$_POST['jkaniayad'];
+				$jkcurid=$_POST['jkcurid'];
+				$jktipud=$_POST['jktipud'];
+				$jkpalsud=$_POST['jkpalsud'];
+
+
+				$implod1=array($perhuk,$jpdil,$pdna,$perdat,$poldham,$lalin,$jpter,$pdnat,$perdatt,$poldhamt,$lalint,$perperdan,$jptter,$pdnatt,$perdattt,$poldhamtt,$lalintt,$perperdant);
+				$implod2=array($jkytd);
+				$implod3=array($jkytd);$implod4=array($kelembag,$jpengagam,$jpengneg,$jpengtun,$lpemas,$kejakneg);
+				$implod5=array($jtkrim,$jknar,$jkpem,$jkseks,$jkaniaya,$jkcuri,$jktipu,$jkpalsu);
+				$implod6=array($jtkrimdit,$jknard,$jkpemd,$jkseksd,$jkaniayad,$jkcurid,$jktipud,$jkpalsud);
+
+				$masukisi1=implode("#", $implod1);$masukisi2=implode("#", $implod2);
+				$masukisi3=implode("#", $implod3);$masukisi4=implode("#", $implod4);
+				$masukisi5=implode("#", $implod5);$masukisi6=implode("#", $implod6);
+
+				$sql1="INSERT INTO log VALUES('','huk_ph','$user','$tahunini','$masukisi1','$waktuisi')";
+				$sql2="INSERT INTO log VALUES('','huk_jktd','$user','$tahunini','$masukisi2','$waktuisi')";
+				$sql3="INSERT INTO log VALUES('','huk_jkyt','$user','$tahunini','$masukisi3','$waktuisi')";
+				$sql4="INSERT INTO log VALUES('','huk_kel','$user','$tahunini','$masukisi4','$waktuisi')";
+				$sql5="INSERT INTO log VALUES('','huk_jtk','$user','$tahunini','$masukisi5','$waktuisi')";
+				$sql6="INSERT INTO log VALUES('','huk_jtkd','$user','$tahunini','$masukisi6','$waktuisi')";
+				$conn=Yii::app()->db;
+				$command1=$conn->createCommand($sql1);$command2=$conn->createCommand($sql2);
+				$command3=$conn->createCommand($sql3);$command4=$conn->createCommand($sql4);
+				$command5=$conn->createCommand($sql5);$command6=$conn->createCommand($sql6);
+				$command1->execute();$command2->execute();$command3->execute();$command4->execute();$command5->execute();$command6->execute();
+				$this->redirect(array(
+					'polhukam'));
+			}
+		}
+
+		public function actionSimpanAman()
+		{
+			if ($_POST) {
+				$tahunini=date("YYYY");
+				$waktuisi=date("Y-m-d");
+				$user=Yii::app()->user->username;
+				$kekemas=$_POST['kekemas'];
+				$jkrimkkm=$_POST['jkrimkkm'];
+				$kasperanwar=$_POST['kasperanwar'];
+				$anetkkm=$_POST['anetkkm'];
+				$anwildeskkm=$_POST['anwildeskkm'];
+				$anagmkkm=$_POST['anagmkkm'];
+				$ansimparkkm=$_POST['ansimparkkm'];
+				$anpelkkm=$_POST['anpelkkm'];
+				$unraskkm=$_POST['unraskkm'];
+				$bidpolkkm=$_POST['bidpolkkm'];
+				$bidekkkm=$_POST['bidekkkm'];
+				$bidalkkm=$_POST['bidalkkm'];
+				$jspdpkkm=$_POST['jspdpkkm'];
+				$jpbdptkpd=$_POST['jpbdptkpd'];
+				$jppbdpdkpkkm=$_POST['jppbdpdkpkkm'];
+				$kpkkkm=$_POST['kpkkkm'];
+				$kpawurkkm=$_POST['kpawurkkm'];
+				$kormenkkm=$_POST['kormenkkm'];
+				$korluk2kkm=$_POST['korluk2kkm'];
+				$jpapawurkkm=$_POST['jpapawurkkm'];
+				$kmapawurkkm=$_POST['kmapawurkkm'];
+				$adskkkm=$_POST['adskkkm'];
+				$jakpkkm=$_POST['jakpkkm'];
+				$jappkkm=$_POST['jappkkm'];
+				$jalinkkm=$_POST['jalinkkm'];
+				$jpkpkkm=$_POST['jpkpkkm'];
+				$jphkkm=$_POST['jphkkm'];
+				$jmpkkm3=$_POST['jmpkkm3'];
+				$jppkkkm=$_POST['jppkkkm'];
+				$jppskkm=$_POST['jppskkm'];
+				$jppsppppp=$_POST['jppsppppp'];
+				$jppmkkm=$_POST['jppmkkm'];
+				$jpk3=$_POST['jpk3'];
+				$jppk3=$_POST['jppk3'];
+				$jkejkebkkm=$_POST['jkejkebkkm'];
+				$jkwtpkkm=$_POST['jkwtpkkm'];
+				$anorkkm=$_POST['anorkkm'];
+
+				$implod1=array($kekemas,$jkrimkkm,$kasperanwar,$anetkkm,$anwildeskkm,$anagmkkm,$ansimparkkm,$anpelkkm,$unraskkm,$bidpolkkm,$bidekkkm,$bidalkkm,$jspdpkkm,$jpbdptkpd,$jppbdpdkpkkm,$kpkkkm,$kpawurkkm,$kormenkkm,$korluk2kkm,$jpapawurkkm,$kmapawurkkm,$adskkkm,$jakpkkm,$jappkkm,$jalinkkm,$jpkpkkm,$jphkkm,$jmpkkm3,$jppkkkm,$jppskkm,$jppsppppp,$jppmkkm,$jpk3,$jppk3,$jkejkebkkm,$jkwtpkkm,$anorkkm);
+
+				$masukisi1=implode("#", $implod1);
+				$sql1="INSERT INTO log VALUES('','kkm_kkm','$user','$tahunini','$masukisi1','$waktuisi')";
+				$conn=Yii::app()->db;
+				$command1=$conn->createCommand($sql1);
+				$command1->execute();
+				$this->redirect(array(
+					'polhukam'));
+			}
+		}
+
+		public function actionSimpanBencana()
+		{
+			if ($_POST) {
+				$tahunini=date("YYYY");
+				$waktuisi=date("Y-m-d");
+				$user=Yii::app()->user->username;
+				$jpa=$_POST['jpa'];
+				$banjir=$_POST['banjir'];
+				$gunmel=$_POST['gunmel'];
+				$lsr=$_POST['lsr'];
+				$gemp=$_POST['gemp'];
+				$tsnami=$_POST['tsnami'];
+				$burn=$_POST['burn'];
+				$other=$_POST['other'];
+				$jlp=$_POST['jlp'];
+				$jpkl=$_POST['jpkl'];
+				$jpd=$_POST['jpd'];
+				$jkba=$_POST['jkba'];
+				$jlb=$_POST['jlb'];
+				$jklb=$_POST['jklb'];
+				$jpkab=$_POST['jpkab'];
+				$keban=$_POST['keban'];
+				$dana=$_POST['dana'];
+				$rice=$_POST['rice'];
+				$indomie=$_POST['indomie'];
+				$friedoil=$_POST['friedoil'];
+				$medicine2=$_POST['medicine2'];
+				$wear=$_POST['wear'];
+				$buildmat=$_POST['buildmat'];
+				$ptdben=$_POST['ptdben'];
+				$aqua=$_POST['aqua'];
+				$laiinn=$_POST['laiinn'];
+
+				$implod1=array($jpa,$banjir,$gunmel,$lsr,$gemp,$tsnami,$burn,$other);$implod2=array($jlp);
+				$implod3=array($jpkl);$implod4=array($jpd);$implod5=array($jkba);$implod6=array($jlb);
+				$implod7=array($jklb);$implod8=array($jpkab);
+				$implod9=array($keban,$dana,$rice,$indomie,$friedoil,$medicine2,$wear,$buildmat,$ptdben,$aqua,$laiinn);
+
+				$masukisi1=implode("#", $implod1);$masukisi2=implode("#", $implod2);$masukisi3=implode("#", $implod3);
+				$masukisi4=implode("#", $implod4);$masukisi5=implode("#", $implod5);$masukisi6=implode("#", $implod6);
+				$masukisi7=implode("#", $implod7);$masukisi8=implode("#", $implod8);$masukisi9=implode("#", $implod9);				
+
+				$sql1="INSERT INTO log VALUES('','ben_jpa','$user','$tahunini','$masukisi1','$waktuisi')";
+				$sql2="INSERT INTO log VALUES('','ben_jpl','$user','$tahunini','$masukisi2','$waktuisi')";
+				$sql3="INSERT INTO log VALUES('','ben_jpkl','$user','$tahunini','$masukisi3','$waktuisi')";
+				$sql4="INSERT INTO log VALUES('','ben_jpd','$user','$tahunini','$masukisi4','$waktuisi')";
+				$sql5="INSERT INTO log VALUES('','ben_jkba','$user','$tahunini','$masukisi5','$waktuisi')";
+				$sql6="INSERT INTO log VALUES('','ben_jlb','$user','$tahunini','$masukisi6','$waktuisi')";
+				$sql7="INSERT INTO log VALUES('','ben_jklb','$user','$tahunini','$masukisi7','$waktuisi')";
+				$sql8="INSERT INTO log VALUES('','ben_jpkab','$user','$tahunini','$masukisi8','$waktuisi')";
+				$sql9="INSERT INTO log VALUES('','ben_kb','$user','$tahunini','$masukisi9','$waktuisi')";
+				$conn=Yii::app()->db;
+				$command1=$conn->createCommand($sql1);$command2=$conn->createCommand($sql2);
+				$command3=$conn->createCommand($sql3);$command4=$conn->createCommand($sql4);
+				$command5=$conn->createCommand($sql5);$command6=$conn->createCommand($sql6);
+				$command7=$conn->createCommand($sql7);$command8=$conn->createCommand($sql8);
+				$command9=$conn->createCommand($sql9);
+				$command1->execute();$command2->execute();$command3->execute();$command4->execute();$command5->execute();$command6->execute();$command7->execute();$command8->execute();$command9->execute();
+				$this->redirect(array(
+					'insidensial'));
+			}
+		}
+
+		public function actionSimpanPenyakit()
+		{
+			if ($_POST) {
+				$tahunini=date("YYYY");
+				$waktuisi=date("Y-m-d");
+				$user=Yii::app()->user->username;
+				$jkw=$_POST['jkw'];
+				$crazcow=$_POST['crazcow'];
+				$birdinflz=$_POST['birdinflz'];
+				$chikgy=$_POST['chikgy'];
+				$dember=$_POST['dember'];
+				$hepatss=$_POST['hepatss'];
+				$koler=$_POST['koler'];
+				$malwar=$_POST['malwar'];
+				$meningts=$_POST['meningts'];
+				$tbc=$_POST['tbc'];
+				$aidss=$_POST['aidss'];
+				$hivi=$_POST['hivi'];
+				$dktri=$_POST['dktri'];
+				$rbies=$_POST['rbies'];
+				$eph=$_POST['eph'];
+				$crazcow1=$_POST['crazcow1'];
+				$birdinflz1=$_POST['birdinflz1'];
+				$piginflz=$_POST['piginflz'];
+				$dogcraz=$_POST['dogcraz'];
+
+				$implod1=array($jkw,$crazcow,$birdinflz,$chikgy,$dember,$hepatss,$koler,$malwar,$meningts,$tbc,$aidss,$hivi,$dktri,$rbies);
+				$implod2=array($eph,$crazcow1,$birdinflz1,$piginflz,$dogcraz);
+
+				$masukisi1=implode("#", $implod1);$masukisi2=implode("#", $implod2);
+
+				$sql1="INSERT INTO log VALUES('','pm_jkw','$user','$tahunini','$masukisi1','$waktuisi')";
+				$sql2="INSERT INTO log VALUES('','pm_eph','$user','$tahunini','$masukisi2','$waktuisi')";
+				$conn=Yii::app()->db;
+				$command1=$conn->createCommand($sql1);$command2=$conn->createCommand($sql2);
+				$command1->execute();$command2->execute();
+				$this->redirect(array(
+					'insidensial'));
+			}
+		}
+
+		public function actionSimpanIkan()
+		{
+			if ($_POST) {
+				$tahunini=date("YYYY");
+				$waktuisi=date("Y-m-d");
+				$user=Yii::app()->user->username;
+				$jkpi=$_POST['jkpi'];
+				$jikap=$_POST['jikap'];
+				$jlpi=$_POST['jlpi'];
+
+				$implod1=array($jkpi);$implod2=array($jikap);$implod3=array($jlpi);
+
+				$masukisi1=implode("#", $implod1);$masukisi2=implode("#", $implod2);$masukisi3=implode("#", $implod3);
+
+				$sql1="INSERT INTO log VALUES('','pikan_jkpi','$user','$tahunini','$masukisi1','$waktuisi')";
+				$sql2="INSERT INTO log VALUES('','pikan_jikap','$user','$tahunini','$masukisi2','$waktuisi')";
+				$sql3="INSERT INTO log VALUES('','pikan_jlpi','$user','$tahunini','$masukisi3','$waktuisi')";
+				$conn=Yii::app()->db;
+				$command1=$conn->createCommand($sql1);$command2=$conn->createCommand($sql2);$command3=$conn->createCommand($sql3);
+				$command1->execute();$command2->execute();$command3->execute();
+				$this->redirect(array(
+					'insidensial'));
+			}
+		}
+
+		public function actionSimpanHutan()
+		{
+			if ($_POST) {
+				$tahunini=date("YYYY");
+				$waktuisi=date("Y-m-d");
+				$user=Yii::app()->user->username;
+				$lahyter=$_POST['lahyter'];
+				$jkjiw=$_POST['jkjiw'];
+				$jlkhut=$_POST['jlkhut'];
+
+				$implod1=array($lahyter);$implod2=array($jkjiw);$implod3=array($jlkhut);
+
+				$masukisi1=implode("#", $implod1);$masukisi2=implode("#", $implod2);$masukisi3=implode("#", $implod3);
+
+				$sql1="INSERT INTO log VALUES('','khut_lah','$user','$tahunini','$masukisi1','$waktuisi')";
+				$sql2="INSERT INTO log VALUES('','khut_jkj','$user','$tahunini','$masukisi2','$waktuisi')";
+				$sql3="INSERT INTO log VALUES('','khut_jlkh','$user','$tahunini','$masukisi3','$waktuisi')";
+				$conn=Yii::app()->db;
+				$command1=$conn->createCommand($sql1);$command2=$conn->createCommand($sql2);$command3=$conn->createCommand($sql3);
+				$command1->execute();$command2->execute();$command3->execute();
+				$this->redirect(array(
+					'insidensial'));
+			}
+		}
+
+		public function actionSimpanKayu()
+		{
+			if ($_POST) {
+				$tahunini=date("YYYY");
+				$waktuisi=date("Y-m-d");
+				$user=Yii::app()->user->username;
+				$Volkaycur=$_POST['Volkaycur'];
+				$jumkaskay=$_POST['jumkaskay'];
+				$jlppkay=$_POST['jlppkay'];
+
+				$implod1=array($Volkaycur);$implod2=array($jumkaskay);$implod3=array($jlppkay);
+
+				$masukisi1=implode("#", $implod1);$masukisi2=implode("#", $implod2);$masukisi3=implode("#", $implod3);
+
+				$sql1="INSERT INTO log VALUES('','ppk_vk','$user','$tahunini','$masukisi1','$waktuisi')";
+				$sql2="INSERT INTO log VALUES('','ppk_jk','$user','$tahunini','$masukisi2','$waktuisi')";
+				$sql3="INSERT INTO log VALUES('','ppk_jlpp','$user','$tahunini','$masukisi3','$waktuisi')";
+				$conn=Yii::app()->db;
+				$command1=$conn->createCommand($sql1);$command2=$conn->createCommand($sql2);$command3=$conn->createCommand($sql3);
+				$command1->execute();$command2->execute();$command3->execute();
+				$this->redirect(array(
+					'insidensial'));
+			}
+		}
+
 		//logout dan di redirect ke halaman awal
 		public function actionLogout()
 		{
@@ -1616,5 +2878,4 @@
 			$this->redirect(array('/'));
 		}
 	}
-
 ?>

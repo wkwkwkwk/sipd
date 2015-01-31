@@ -1,4 +1,4 @@
-<form role="form" method="post" action="simpan">
+
 <div class="row">
     <div class="col-lg-12">
         <h1 class="page-header">
@@ -10,6 +10,7 @@
 <div class="row">
 	<div class="col-lg-12 col-xs-12">
         <!-- Bencana Alam -->
+        <form role="form" method="post" action="simpanbencana">
 		<div class="box panel panel-primary">
 			<div class="panel-heading">
                 <h3 class="panel-title"> Bencana Alam</h3>
@@ -40,13 +41,8 @@
                                     </td>
                                     <td width="45%"><input type="text" class="form-control" 
                                         <?php
-                                            if($in['readonly']=='true' && $in['ketersediaan']=='Ada'){
-                                                echo "readonly='readonly' ";
-                                                echo "name='";
-                                                echo $in['nm_field'];
-                                                echo "'";
-                                            }else if($in['readonly']=='true' && $in['ketersediaan']=='Tidak Ada'){
-                                                echo "readonly='readonly' ";
+                                            if($in['ketersediaan']=='Tidak Ada'){
+                                                echo "readonly='readonly' ";echo "value='0' ";
                                                 echo "name='";
                                                 echo $in['nm_field'];
                                                 echo "'";
@@ -54,7 +50,7 @@
                                             }else{
                                                 echo "name='";
                                                 echo $in['nm_field'];
-                                                echo "'";
+                                                echo "'";echo "value='0' ";
                                             }
                                         ?> /></td>
                                     <td width="0.5%"><?php echo $in['satuan']; ?></td>
@@ -77,13 +73,8 @@
                                     </td>
                                     <td width="45%"><input type="text" class="form-control" 
                                         <?php
-                                            if($in['readonly']=='true' && $in['ketersediaan']=='Ada'){
-                                                echo "readonly='readonly' ";
-                                                echo "name='";
-                                                echo $in['nm_field'];
-                                                echo "'";
-                                            }else if($in['readonly']=='true' && $in['ketersediaan']=='Tidak Ada'){
-                                                echo "readonly='readonly' ";
+                                            if($in['ketersediaan']=='Tidak Ada'){
+                                                echo "readonly='readonly' ";echo "value='0' ";
                                                 echo "name='";
                                                 echo $in['nm_field'];
                                                 echo "'";
@@ -91,7 +82,7 @@
                                             }else{
                                                 echo "name='";
                                                 echo $in['nm_field'];
-                                                echo "'";
+                                                echo "'";echo "value='0' ";
                                             }
                                         ?> /></td>
                                     <td width="0.5%"><?php echo $in['satuan']; ?></td>
@@ -114,13 +105,8 @@
                                     </td>
                                     <td width="45%"><input type="text" class="form-control" 
                                         <?php
-                                            if($in['readonly']=='true' && $in['ketersediaan']=='Ada'){
-                                                echo "readonly='readonly' ";
-                                                echo "name='";
-                                                echo $in['nm_field'];
-                                                echo "'";
-                                            }else if($in['readonly']=='true' && $in['ketersediaan']=='Tidak Ada'){
-                                                echo "readonly='readonly' ";
+                                           if($in['ketersediaan']=='Tidak Ada'){
+                                                echo "readonly='readonly' ";echo "value='0' ";
                                                 echo "name='";
                                                 echo $in['nm_field'];
                                                 echo "'";
@@ -128,7 +114,7 @@
                                             }else{
                                                 echo "name='";
                                                 echo $in['nm_field'];
-                                                echo "'";
+                                                echo "'";echo "value='0' ";
                                             }
                                         ?> /></td>
                                     <td width="0.5%"><?php echo $in['satuan']; ?></td>
@@ -151,13 +137,8 @@
                                     </td>
                                     <td width="45%"><input type="text" class="form-control" 
                                         <?php
-                                            if($in['readonly']=='true' && $in['ketersediaan']=='Ada'){
-                                                echo "readonly='readonly' ";
-                                                echo "name='";
-                                                echo $in['nm_field'];
-                                                echo "'";
-                                            }else if($in['readonly']=='true' && $in['ketersediaan']=='Tidak Ada'){
-                                                echo "readonly='readonly' ";
+                                            if($in['ketersediaan']=='Tidak Ada'){
+                                                echo "readonly='readonly' ";echo "value='0' ";
                                                 echo "name='";
                                                 echo $in['nm_field'];
                                                 echo "'";
@@ -165,7 +146,7 @@
                                             }else{
                                                 echo "name='";
                                                 echo $in['nm_field'];
-                                                echo "'";
+                                                echo "'";echo "value='0' ";
                                             }
                                         ?> /></td>
                                     <td width="0.5%"><?php echo $in['satuan']; ?></td>
@@ -188,13 +169,8 @@
                                     </td>
                                     <td width="45%"><input type="text" class="form-control" 
                                         <?php
-                                            if($in['readonly']=='true' && $in['ketersediaan']=='Ada'){
-                                                echo "readonly='readonly' ";
-                                                echo "name='";
-                                                echo $in['nm_field'];
-                                                echo "'";
-                                            }else if($in['readonly']=='true' && $in['ketersediaan']=='Tidak Ada'){
-                                                echo "readonly='readonly' ";
+                                            if($in['ketersediaan']=='Tidak Ada'){
+                                                echo "readonly='readonly' ";echo "value='0' ";
                                                 echo "name='";
                                                 echo $in['nm_field'];
                                                 echo "'";
@@ -202,7 +178,7 @@
                                             }else{
                                                 echo "name='";
                                                 echo $in['nm_field'];
-                                                echo "'";
+                                                echo "'";echo "value='0' ";
                                             }
                                         ?> /></td>
                                     <td width="0.5%"><?php echo $in['satuan']; ?></td>
@@ -225,13 +201,8 @@
                                     </td>
                                     <td width="45%"><input type="text" class="form-control" 
                                         <?php
-                                            if($in['readonly']=='true' && $in['ketersediaan']=='Ada'){
-                                                echo "readonly='readonly' ";
-                                                echo "name='";
-                                                echo $in['nm_field'];
-                                                echo "'";
-                                            }else if($in['readonly']=='true' && $in['ketersediaan']=='Tidak Ada'){
-                                                echo "readonly='readonly' ";
+                                            if($in['ketersediaan']=='Tidak Ada'){
+                                                echo "readonly='readonly' ";echo "value='0' ";
                                                 echo "name='";
                                                 echo $in['nm_field'];
                                                 echo "'";
@@ -239,7 +210,7 @@
                                             }else{
                                                 echo "name='";
                                                 echo $in['nm_field'];
-                                                echo "'";
+                                                echo "'";echo "value='0' ";
                                             }
                                         ?> /></td>
                                     <td width="0.5%"><?php echo $in['satuan']; ?></td>
@@ -262,13 +233,8 @@
                                     </td>
                                     <td width="45%"><input type="text" class="form-control" 
                                         <?php
-                                            if($in['readonly']=='true' && $in['ketersediaan']=='Ada'){
-                                                echo "readonly='readonly' ";
-                                                echo "name='";
-                                                echo $in['nm_field'];
-                                                echo "'";
-                                            }else if($in['readonly']=='true' && $in['ketersediaan']=='Tidak Ada'){
-                                                echo "readonly='readonly' ";
+                                            if($in['ketersediaan']=='Tidak Ada'){
+                                                echo "readonly='readonly' ";echo "value='0' ";
                                                 echo "name='";
                                                 echo $in['nm_field'];
                                                 echo "'";
@@ -276,7 +242,7 @@
                                             }else{
                                                 echo "name='";
                                                 echo $in['nm_field'];
-                                                echo "'";
+                                                echo "'";echo "value='0' ";
                                             }
                                         ?> /></td>
                                     <td width="0.5%"><?php echo $in['satuan']; ?></td>
@@ -299,13 +265,8 @@
                                     </td>
                                     <td width="45%"><input type="text" class="form-control" 
                                         <?php
-                                            if($in['readonly']=='true' && $in['ketersediaan']=='Ada'){
-                                                echo "readonly='readonly' ";
-                                                echo "name='";
-                                                echo $in['nm_field'];
-                                                echo "'";
-                                            }else if($in['readonly']=='true' && $in['ketersediaan']=='Tidak Ada'){
-                                                echo "readonly='readonly' ";
+                                            if($in['ketersediaan']=='Tidak Ada'){
+                                                echo "readonly='readonly' ";echo "value='0' ";
                                                 echo "name='";
                                                 echo $in['nm_field'];
                                                 echo "'";
@@ -313,7 +274,7 @@
                                             }else{
                                                 echo "name='";
                                                 echo $in['nm_field'];
-                                                echo "'";
+                                                echo "'";echo "value='0' ";
                                             }
                                         ?> /></td>
                                     <td width="0.5%"><?php echo $in['satuan']; ?></td>
@@ -336,13 +297,8 @@
                                     </td>
                                     <td width="45%"><input type="text" class="form-control" 
                                         <?php
-                                            if($in['readonly']=='true' && $in['ketersediaan']=='Ada'){
-                                                echo "readonly='readonly' ";
-                                                echo "name='";
-                                                echo $in['nm_field'];
-                                                echo "'";
-                                            }else if($in['readonly']=='true' && $in['ketersediaan']=='Tidak Ada'){
-                                                echo "readonly='readonly' ";
+                                            if($in['ketersediaan']=='Tidak Ada'){
+                                                echo "readonly='readonly' ";echo "value='0' ";
                                                 echo "name='";
                                                 echo $in['nm_field'];
                                                 echo "'";
@@ -350,7 +306,7 @@
                                             }else{
                                                 echo "name='";
                                                 echo $in['nm_field'];
-                                                echo "'";
+                                                echo "'";echo "value='0' ";
                                             }
                                         ?> /></td>
                                     <td width="0.5%"><?php echo $in['satuan']; ?></td>
@@ -363,8 +319,13 @@
 
 		</div>
         <!-- End Bencana Alam -->
+        <br /><span class="pull-right">
+        <input type="reset" class="btn btn-danger" value="RESET" />
+        <input type="submit" class="btn btn-success" value="SIMPAN" />
+        </span>
+        </form>
 
-        <!-- Penyakit Menular -->
+        <!-- Penyakit Menular --><br /><br /><form role="form" method="post" action="simpanpenyakit">
         <div class="box panel panel-primary">
             <div class="panel-heading">
                 <h3 class="panel-title"> Penyakit Menular</h3>
@@ -395,13 +356,8 @@
                                     </td>
                                     <td width="45%"><input type="text" class="form-control" 
                                         <?php
-                                            if($in['readonly']=='true' && $in['ketersediaan']=='Ada'){
-                                                echo "readonly='readonly' ";
-                                                echo "name='";
-                                                echo $in['nm_field'];
-                                                echo "'";
-                                            }else if($in['readonly']=='true' && $in['ketersediaan']=='Tidak Ada'){
-                                                echo "readonly='readonly' ";
+                                            if($in['ketersediaan']=='Tidak Ada'){
+                                                echo "readonly='readonly' ";echo "value='0' ";
                                                 echo "name='";
                                                 echo $in['nm_field'];
                                                 echo "'";
@@ -409,7 +365,7 @@
                                             }else{
                                                 echo "name='";
                                                 echo $in['nm_field'];
-                                                echo "'";
+                                                echo "'";echo "value='0' ";
                                             }
                                         ?> /></td>
                                     <td width="0.5%"><?php echo $in['satuan']; ?></td>
@@ -432,13 +388,8 @@
                                     </td>
                                     <td width="45%"><input type="text" class="form-control" 
                                         <?php
-                                            if($in['readonly']=='true' && $in['ketersediaan']=='Ada'){
-                                                echo "readonly='readonly' ";
-                                                echo "name='";
-                                                echo $in['nm_field'];
-                                                echo "'";
-                                            }else if($in['readonly']=='true' && $in['ketersediaan']=='Tidak Ada'){
-                                                echo "readonly='readonly' ";
+                                            if($in['ketersediaan']=='Tidak Ada'){
+                                                echo "readonly='readonly' ";echo "value='0' ";
                                                 echo "name='";
                                                 echo $in['nm_field'];
                                                 echo "'";
@@ -446,7 +397,7 @@
                                             }else{
                                                 echo "name='";
                                                 echo $in['nm_field'];
-                                                echo "'";
+                                                echo "'";echo "value='0' ";
                                             }
                                         ?> /></td>
                                     <td width="0.5%"><?php echo $in['satuan']; ?></td>
@@ -459,8 +410,13 @@
 
         </div>
         <!-- End Penyakit Menular -->
+        <br /><span class="pull-right">
+        <input type="reset" class="btn btn-danger" value="RESET" />
+        <input type="submit" class="btn btn-success" value="SIMPAN" />
+        </span>
+        </form>
 
-        <!-- Pencurian Ikan -->
+        <!-- Pencurian Ikan --><br /><br /><form role="form" method="post" action="simpanikan">
         <div class="box panel panel-primary">
             <div class="panel-heading">
                 <h3 class="panel-title"> Pencurian Ikan</h3>
@@ -491,13 +447,8 @@
                                     </td>
                                     <td width="45%"><input type="text" class="form-control" 
                                         <?php
-                                            if($in['readonly']=='true' && $in['ketersediaan']=='Ada'){
-                                                echo "readonly='readonly' ";
-                                                echo "name='";
-                                                echo $in['nm_field'];
-                                                echo "'";
-                                            }else if($in['readonly']=='true' && $in['ketersediaan']=='Tidak Ada'){
-                                                echo "readonly='readonly' ";
+                                            if($in['ketersediaan']=='Tidak Ada'){
+                                                echo "readonly='readonly' ";echo "value='0' ";
                                                 echo "name='";
                                                 echo $in['nm_field'];
                                                 echo "'";
@@ -505,7 +456,7 @@
                                             }else{
                                                 echo "name='";
                                                 echo $in['nm_field'];
-                                                echo "'";
+                                                echo "'";echo "value='0' ";
                                             }
                                         ?> /></td>
                                     <td width="0.5%"><?php echo $in['satuan']; ?></td>
@@ -528,13 +479,8 @@
                                     </td>
                                     <td width="45%"><input type="text" class="form-control" 
                                         <?php
-                                            if($in['readonly']=='true' && $in['ketersediaan']=='Ada'){
-                                                echo "readonly='readonly' ";
-                                                echo "name='";
-                                                echo $in['nm_field'];
-                                                echo "'";
-                                            }else if($in['readonly']=='true' && $in['ketersediaan']=='Tidak Ada'){
-                                                echo "readonly='readonly' ";
+                                            if($in['ketersediaan']=='Tidak Ada'){
+                                                echo "readonly='readonly' ";echo "value='0' ";
                                                 echo "name='";
                                                 echo $in['nm_field'];
                                                 echo "'";
@@ -542,7 +488,7 @@
                                             }else{
                                                 echo "name='";
                                                 echo $in['nm_field'];
-                                                echo "'";
+                                                echo "'";echo "value='0' ";
                                             }
                                         ?> /></td>
                                     <td width="0.5%"><?php echo $in['satuan']; ?></td>
@@ -565,13 +511,8 @@
                                     </td>
                                     <td width="45%"><input type="text" class="form-control" 
                                         <?php
-                                            if($in['readonly']=='true' && $in['ketersediaan']=='Ada'){
-                                                echo "readonly='readonly' ";
-                                                echo "name='";
-                                                echo $in['nm_field'];
-                                                echo "'";
-                                            }else if($in['readonly']=='true' && $in['ketersediaan']=='Tidak Ada'){
-                                                echo "readonly='readonly' ";
+                                            if($in['ketersediaan']=='Tidak Ada'){
+                                                echo "readonly='readonly' ";echo "value='0' ";
                                                 echo "name='";
                                                 echo $in['nm_field'];
                                                 echo "'";
@@ -579,7 +520,7 @@
                                             }else{
                                                 echo "name='";
                                                 echo $in['nm_field'];
-                                                echo "'";
+                                                echo "'";echo "value='0' ";
                                             }
                                         ?> /></td>
                                     <td width="0.5%"><?php echo $in['satuan']; ?></td>
@@ -592,8 +533,13 @@
 
         </div>
         <!-- End Pencurian Ikan -->
+        <br /><span class="pull-right">
+        <input type="reset" class="btn btn-danger" value="RESET" />
+        <input type="submit" class="btn btn-success" value="SIMPAN" />
+        </span>
+        </form>
 
-        <!-- Kebakaran Hutan -->
+        <!-- Kebakaran Hutan --><br /><br /><form role="form" method="post" action="simpanhutan">
         <div class="box panel panel-primary">
             <div class="panel-heading">
                 <h3 class="panel-title"> Kebakaran Hutan</h3>
@@ -624,13 +570,8 @@
                                     </td>
                                     <td width="45%"><input type="text" class="form-control" 
                                         <?php
-                                            if($in['readonly']=='true' && $in['ketersediaan']=='Ada'){
-                                                echo "readonly='readonly' ";
-                                                echo "name='";
-                                                echo $in['nm_field'];
-                                                echo "'";
-                                            }else if($in['readonly']=='true' && $in['ketersediaan']=='Tidak Ada'){
-                                                echo "readonly='readonly' ";
+                                            if($in['ketersediaan']=='Tidak Ada'){
+                                                echo "readonly='readonly' ";echo "value='0' ";
                                                 echo "name='";
                                                 echo $in['nm_field'];
                                                 echo "'";
@@ -638,7 +579,7 @@
                                             }else{
                                                 echo "name='";
                                                 echo $in['nm_field'];
-                                                echo "'";
+                                                echo "'";echo "value='0' ";
                                             }
                                         ?> /></td>
                                     <td width="0.5%"><?php echo $in['satuan']; ?></td>
@@ -661,13 +602,8 @@
                                     </td>
                                     <td width="45%"><input type="text" class="form-control" 
                                         <?php
-                                            if($in['readonly']=='true' && $in['ketersediaan']=='Ada'){
-                                                echo "readonly='readonly' ";
-                                                echo "name='";
-                                                echo $in['nm_field'];
-                                                echo "'";
-                                            }else if($in['readonly']=='true' && $in['ketersediaan']=='Tidak Ada'){
-                                                echo "readonly='readonly' ";
+                                            if($in['ketersediaan']=='Tidak Ada'){
+                                                echo "readonly='readonly' ";echo "value='0' ";
                                                 echo "name='";
                                                 echo $in['nm_field'];
                                                 echo "'";
@@ -675,7 +611,7 @@
                                             }else{
                                                 echo "name='";
                                                 echo $in['nm_field'];
-                                                echo "'";
+                                                echo "'";echo "value='0' ";
                                             }
                                         ?> /></td>
                                     <td width="0.5%"><?php echo $in['satuan']; ?></td>
@@ -698,13 +634,8 @@
                                     </td>
                                     <td width="45%"><input type="text" class="form-control" 
                                         <?php
-                                            if($in['readonly']=='true' && $in['ketersediaan']=='Ada'){
-                                                echo "readonly='readonly' ";
-                                                echo "name='";
-                                                echo $in['nm_field'];
-                                                echo "'";
-                                            }else if($in['readonly']=='true' && $in['ketersediaan']=='Tidak Ada'){
-                                                echo "readonly='readonly' ";
+                                            if($in['ketersediaan']=='Tidak Ada'){
+                                                echo "readonly='readonly' ";echo "value='0' ";
                                                 echo "name='";
                                                 echo $in['nm_field'];
                                                 echo "'";
@@ -712,7 +643,7 @@
                                             }else{
                                                 echo "name='";
                                                 echo $in['nm_field'];
-                                                echo "'";
+                                                echo "'";echo "value='0' ";
                                             }
                                         ?> /></td>
                                     <td width="0.5%"><?php echo $in['satuan']; ?></td>
@@ -725,8 +656,13 @@
 
         </div>
         <!-- End Kebakaran Hutan -->
+        <br /><span class="pull-right">
+        <input type="reset" class="btn btn-danger" value="RESET" />
+        <input type="submit" class="btn btn-success" value="SIMPAN" />
+        </span>
+        </form>
 
-        <!-- Pencurian dan Penyelundupan Kayu -->
+        <!-- Pencurian dan Penyelundupan Kayu --><br /><br /><form role="form" method="post" action="simpankayu">
         <div class="box panel panel-primary">
             <div class="panel-heading">
                 <h3 class="panel-title"> Pencurian dan Penyelundupan Kayu</h3>
@@ -757,13 +693,8 @@
                                     </td>
                                     <td width="45%"><input type="text" class="form-control" 
                                         <?php
-                                            if($in['readonly']=='true' && $in['ketersediaan']=='Ada'){
-                                                echo "readonly='readonly' ";
-                                                echo "name='";
-                                                echo $in['nm_field'];
-                                                echo "'";
-                                            }else if($in['readonly']=='true' && $in['ketersediaan']=='Tidak Ada'){
-                                                echo "readonly='readonly' ";
+                                            if($in['ketersediaan']=='Tidak Ada'){
+                                                echo "readonly='readonly' ";echo "value='0' ";
                                                 echo "name='";
                                                 echo $in['nm_field'];
                                                 echo "'";
@@ -771,7 +702,7 @@
                                             }else{
                                                 echo "name='";
                                                 echo $in['nm_field'];
-                                                echo "'";
+                                                echo "'";echo "value='0' ";
                                             }
                                         ?> /></td>
                                     <td width="0.5%"><?php echo $in['satuan']; ?></td>
@@ -794,13 +725,8 @@
                                     </td>
                                     <td width="45%"><input type="text" class="form-control" 
                                         <?php
-                                            if($in['readonly']=='true' && $in['ketersediaan']=='Ada'){
-                                                echo "readonly='readonly' ";
-                                                echo "name='";
-                                                echo $in['nm_field'];
-                                                echo "'";
-                                            }else if($in['readonly']=='true' && $in['ketersediaan']=='Tidak Ada'){
-                                                echo "readonly='readonly' ";
+                                            if($in['ketersediaan']=='Tidak Ada'){
+                                                echo "readonly='readonly' ";echo "value='0' ";
                                                 echo "name='";
                                                 echo $in['nm_field'];
                                                 echo "'";
@@ -808,7 +734,7 @@
                                             }else{
                                                 echo "name='";
                                                 echo $in['nm_field'];
-                                                echo "'";
+                                                echo "'";echo "value='0' ";
                                             }
                                         ?> /></td>
                                     <td width="0.5%"><?php echo $in['satuan']; ?></td>
@@ -831,13 +757,8 @@
                                     </td>
                                     <td width="45%"><input type="text" class="form-control" 
                                         <?php
-                                            if($in['readonly']=='true' && $in['ketersediaan']=='Ada'){
-                                                echo "readonly='readonly' ";
-                                                echo "name='";
-                                                echo $in['nm_field'];
-                                                echo "'";
-                                            }else if($in['readonly']=='true' && $in['ketersediaan']=='Tidak Ada'){
-                                                echo "readonly='readonly' ";
+                                            if($in['ketersediaan']=='Tidak Ada'){
+                                                echo "readonly='readonly' ";echo "value='0' ";
                                                 echo "name='";
                                                 echo $in['nm_field'];
                                                 echo "'";
@@ -845,7 +766,7 @@
                                             }else{
                                                 echo "name='";
                                                 echo $in['nm_field'];
-                                                echo "'";
+                                                echo "'";echo "value='0' ";
                                             }
                                         ?> /></td>
                                     <td width="0.5%"><?php echo $in['satuan']; ?></td>
