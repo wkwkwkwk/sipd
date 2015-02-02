@@ -948,7 +948,7 @@
 				$danlam=$_POST['danlam'];
 				$ladlanbunput=$_POST['ladlanbunput'];
 				$kcampuran=$_POST['kcampuran'];
-				$perkebunan=$_POST['perkebunan'];
+				$perkebunan1=$_POST['perkebunan1'];
 				$hutan=$_POST['hutan'];
 				$rumahmukim=$_POST['rumahmukim'];
 				$industri=$_POST['industri'];
@@ -996,7 +996,7 @@
 				$llbpbtt=$_POST['llbpbtt'];
 				$jbttmercu=$_POST['jbttmercu'];
 				$pulthuni=$_POST['pulthuni'];
-				$pulthuni=$_POST['pulthuni'];
+				
 				$pulbnjmlpddk=$_POST['pulbnjmlpddk'];
 				$pulbnjmlkk=$_POST['pulbnjmlkk'];
 				$ldpbn=$_POST['ldpbn'];
@@ -1054,9 +1054,9 @@
 				
 				$implod1=array($luaswil,$daratan,$laut12mil,$zonalaut,$lteritori,$zee,$lkonti,$pgrpantai,$pgrpantai);
 				$implod2=array($topo,$ldarilereng,$datar,$bergelombang,$curam,$sgtcuram,$tinggidpl);
-				$implod3=array($lslahan,$luashutan,$htetap,$hterbatas,$hkonversi,$hbakau,$jml_lahansawah,$sirigasi,$stadahujan,$spasangsurut,$slainnya,$jml_lahankering,$rawa,$ladang,$perkebunan,$ulain,$busaha,$lhntambang,$danau,$waduk,$kolamtawar,$tbkikan,$padangalam,$tnhrusak,$tnhterlantar,$luas_lbsawah,$koembak,$danlam,$ladlanbunput,$kcampuran,$perkebunan,$hutan,$rumahmukim,$industri,$blain,$nonsawahtakusaha,$waduk1,$lainnya,$luas_ubahlahan,$rubahgunasawah,$jtanibukansawah,$jrumah,$jindustri,$jusahakantor,$jtanibukansawah1,$jlahanlain,$alihfgshutan,$hjsawah,$hjrumah,$hjindustri,$hjusahakantor,$hjbukansawah,$hjlahanlain,$landuse,$pertanian,$tambangdangali,$industriolah,$listrikair,$bangunan,$perdagangan,$angkutkomunikasi,$keuangan,$jasa);
+				$implod3=array($lslahan,$luashutan,$htetap,$hterbatas,$hkonversi,$hbakau,$jml_lahansawah,$sirigasi,$stadahujan,$spasangsurut,$slainnya,$jml_lahankering,$rawa,$ladang,$perkebunan,$ulain,$busaha,$lhntambang,$danau,$waduk,$kolamtawar,$tbkikan,$padangalam,$tnhrusak,$tnhterlantar,$luas_lbsawah,$koembak,$danlam,$ladlanbunput,$kcampuran,$perkebunan1,$hutan,$rumahmukim,$industri,$blain,$nonsawahtakusaha,$waduk1,$lainnya,$luas_ubahlahan,$rubahgunasawah,$jtanibukansawah,$jrumah,$jindustri,$jusahakantor,$jtanibukansawah1,$jlahanlain,$alihfgshutan,$hjsawah,$hjrumah,$hjindustri,$hjusahakantor,$hjbukansawah,$hjlahanlain,$landuse,$pertanian,$tambangdangali,$industriolah,$listrikair,$bangunan,$perdagangan,$angkutkomunikasi,$keuangan,$jasa);
 				$implod4=array($iklimavg,$suhu,$suhumin,$suhumax,$lembab,$lembabmin,$lembabmax,$curjan,$curjanmin,$curjanmax,$angin,$anginmin,$anginmax);
-				$implod5=array($jmlpulau,$pulbhuni,$pulbjmlpddk,$pulbjmlkk,$ldpb,$llppb,$llbpb,$jbmercu,$pulbtthuni,$pulbttjps,$pulbttdl,$lppbtt,$llbpbtt,$jbttmercu,$pulthuni,$pulthuni,$pulbnjmlpddk,$pulbnjmlkk,$ldpbn,$llppbn,$llbpbn,$jbnmercu,$pultnama,$pulbtnjmlpddk,$pulbtnjmlkk,$ldpbtn,$llppbtn,$llbpbtn,$jbtnmercu,$pulkecil,$pulkjmlpddk,$pulkjmlkk,$ldpk,$llpppk,$llbppk,$jkmercu,$pulluar,$pulljmlpddk,$pulljmlkk,$ldpl,$llppl,$llbpl,$jlmercu);
+				$implod5=array($jmlpulau,$pulbhuni,$pulbjmlpddk,$pulbjmlkk,$ldpb,$llppb,$llbpb,$jbmercu,$pulbtthuni,$pulbttjps,$pulbttdl,$lppbtt,$llbpbtt,$jbttmercu,$pulthuni,$pulbnjmlpddk,$pulbnjmlkk,$ldpbn,$llppbn,$llbpbn,$jbnmercu,$pultnama,$pulbtnjmlpddk,$pulbtnjmlkk,$ldpbtn,$llppbtn,$llbpbtn,$jbtnmercu,$pulkecil,$pulkjmlpddk,$pulkjmlkk,$ldpk,$llpppk,$llbppk,$jkmercu,$pulluar,$pulljmlpddk,$pulljmlkk,$ldpl,$llppl,$llbpl,$jlmercu);
 				$implod6=array($jmlgunung,$gaktif,$gnonaktif,$gvulkanik);
 				$implod7=array($batasnl,$papuanugini,$kalimalay,$nttimor);
 				$implod8=array($fisiografi,$lgunung,$lbukit,$ldataran,$lpesisir);
@@ -1157,7 +1157,7 @@
 				$ijininvesPMDN=$_POST['ijininvesPMDN'];
 				$RPJPDperda=$_POST['RPJPDperda'];
 				$RPJMDperda=$_POST['RPJMDperda'];
-				$perdaijin=$_POST['perdaijin'];
+				$RKPDtetap=$_POST['RKPDtetap'];
 				$RKPDtahunini=$_POST['RKPDtahunini'];
 				$RPJMDtahunini=$_POST['RPJMDtahunini'];
 				$ijinlokasi=$_POST['ijinlokasi'];
@@ -1266,7 +1266,7 @@
 				$exese22=$_POST['exese22'];
 				$exese32=$_POST['exese32'];
 				$exese42=$_POST['exese42'];
-				$kdin=$_POST['kdin'];
+				$kdin1=$_POST['kdin1'];
 				$jmlstaffdidik3=$_POST['jmlstaffdidik3'];
 				$prasd3=$_POST['prasd3'];
 				$tsd3=$_POST['tsd3'];
@@ -1290,7 +1290,7 @@
 				$exese23=$_POST['exese23'];
 				$exese33=$_POST['exese33'];
 				$exese43=$_POST['exese43'];
-				$kltek=$_POST['kltek'];
+				$kltek2=$_POST['kltek2'];
 				$jmlstaffdidik4=$_POST['jmlstaffdidik4'];
 				$prasd4=$_POST['prasd4'];
 				$tsd4=$_POST['tsd4'];
@@ -1342,8 +1342,8 @@
 				
 				$implod1=array($adminpmr,$jmlkec,$jmlkel,$jmldes,$klasdesa,$dswad,$dswak,$dswas,$dpes,$dhut,$indjas,$dkeb,$dlad,$dsaw,$dpertambang,$dpet,$dwis,$jmlrw,$jmlrt,$jmldusun);
 				$implod2=array($statusotonomi,$otobaru,$dinduk,$dmekar,$dnonmekar);
-				$implod3=array($perdaijin,$perdaterbit,$revisisjkterbit,$perdaout,$perdartrw,$imb,$ijinprinsip,$ijinusaha,$ijinusahakebun,$ijinusahahutan,$ijinusahatambang,$ijininvesPMA,$ijininvesPMDN,$RPJPDperda,$RPJMDperda,$perdaijin,$RKPDtahunini,$RPJMDtahunini,$ijinlokasi,$singmohonlokasi,$perdaiklimusaha,$langgarperda,$tegakperda,$jmlperdaijin,$perdalalin,$perdataker);
-				$implod4=array($sarpras,$kbup,$ksetda,$jmlstaffdidik,$prasd,$tsd,$tsmp,$tsma,$takad,$ts1,$jmlPNSgol,$gol1,$gol2,$gol3,$gol4,$jmlpjbtstrukt,$ese1,$ese2,$ese3,$ese4,$jmlpjbtfung,$jmlexPNS,$exese1,$exese2,$exese3,$exese4,$kdprd,$kinsp,$jmlstaffdidik1,$prasd1,$tsd1,$tsmp1,$tsma1,$takad1,$ts11,$jmlPNSgol1,$gol11,$gol21,$gol31,$gol41,$jmlpjbtstrukt1,$ese11,$ese21,$ese31,$ese41,$jmlpjbtfung1,$jmlexPNS1,$exese11,$exese21,$exese31,$exese41,$kbap,$jmlstaffdidik2,$prasd2,$tsd2,$tsmp2,$tsma2,$takad2,$ts12,$jmlPNSgol2,$gol12,$gol22,$gol32,$gol42,$jmlpjbtstrukt2,$ese12,$ese22,$ese32,$ese42,$jmlpjbtfung2,$jmlexPNS2,$exese12,$exese22,$exese32,$exese42,$kdin,$jmlstaffdidik3,$prasd3,$tsd3,$tsmp3,$tsma3,$takad3,$ts13,$jmlPNSgol3,$gol13,$gol23,$gol33,$gol43,$jmlpjbtstrukt3,$ese13,$ese23,$ese33,$ese43,$jmlpjbtfung3,$jmlexPNS3,$exese13,$exese23,$exese33,$exese43,$kltek,$jmlstaffdidik4,$prasd4,$tsd4,$tsmp4,$tsma4,$takad4,$ts14,$jmlPNSgol4,$gol14,$gol24,$gol34,$gol44,$jmlpjbtstrukt4,$ese14,$ese24,$ese34,$ese44,$jmlpjbtfung4,$jmlexPNS4,$exese14,$exese24,$exese34,$exese44,$kpdes,$jmlstaffdidik5,$prasd5,$tsd5,$tsmp5,$tsma5,$takad5,$ts15,$kcam,$jmlstaffdidik6,$tsd6,$tsmp6,$tsma6,$takad6,$ts16,$klur,$jmlstaffdidik7,$prasd7,$tsd7,$tsmp7,$tsma7,$takad7,$ts17);
+				$implod3=array($perdaijin,$perdaterbit,$revisisjkterbit,$perdaout,$perdartrw,$imb,$ijinprinsip,$ijinusaha,$ijinusahakebun,$ijinusahahutan,$ijinusahatambang,$ijininvesPMA,$ijininvesPMDN,$RPJPDperda,$RPJMDperda,$RKPDtetap,$RKPDtahunini,$RPJMDtahunini,$ijinlokasi,$singmohonlokasi,$perdaiklimusaha,$langgarperda,$tegakperda,$jmlperdaijin,$perdalalin,$perdataker);
+				$implod4=array($sarpras,$kbup,$ksetda,$jmlstaffdidik,$prasd,$tsd,$tsmp,$tsma,$takad,$ts1,$jmlPNSgol,$gol1,$gol2,$gol3,$gol4,$jmlpjbtstrukt,$ese1,$ese2,$ese3,$ese4,$jmlpjbtfung,$jmlexPNS,$exese1,$exese2,$exese3,$exese4,$kdprd,$kinsp,$jmlstaffdidik1,$prasd1,$tsd1,$tsmp1,$tsma1,$takad1,$ts11,$jmlPNSgol1,$gol11,$gol21,$gol31,$gol41,$jmlpjbtstrukt1,$ese11,$ese21,$ese31,$ese41,$jmlpjbtfung1,$jmlexPNS1,$exese11,$exese21,$exese31,$exese41,$kbap,$jmlstaffdidik2,$prasd2,$tsd2,$tsmp2,$tsma2,$takad2,$ts12,$jmlPNSgol2,$gol12,$gol22,$gol32,$gol42,$jmlpjbtstrukt2,$ese12,$ese22,$ese32,$ese42,$jmlpjbtfung2,$jmlexPNS2,$exese12,$exese22,$exese32,$exese42,$kdin1,$jmlstaffdidik3,$prasd3,$tsd3,$tsmp3,$tsma3,$takad3,$ts13,$jmlPNSgol3,$gol13,$gol23,$gol33,$gol43,$jmlpjbtstrukt3,$ese13,$ese23,$ese33,$ese43,$jmlpjbtfung3,$jmlexPNS3,$exese13,$exese23,$exese33,$exese43,$kltek2,$jmlstaffdidik4,$prasd4,$tsd4,$tsmp4,$tsma4,$takad4,$ts14,$jmlPNSgol4,$gol14,$gol24,$gol34,$gol44,$jmlpjbtstrukt4,$ese14,$ese24,$ese34,$ese44,$jmlpjbtfung4,$jmlexPNS4,$exese14,$exese24,$exese34,$exese44,$kpdes,$jmlstaffdidik5,$prasd5,$tsd5,$tsmp5,$tsma5,$takad5,$ts15,$kcam,$jmlstaffdidik6,$tsd6,$tsmp6,$tsma6,$takad6,$ts16,$klur,$jmlstaffdidik7,$prasd7,$tsd7,$tsmp7,$tsma7,$takad7,$ts17);
 				$implod5=array($konsarpras,$kdinrah,$ringan,$sedang,$berat,$kltek,$ringan1,$sedang1,$berat1,$kdes,$ringan2,$sedang2,$berat2,$kdin,$dewek,$sewa,$pinjam,$gabung,$kltek1,$dewek1,$sewa1,$pinjam1,$gabung1);
 
 				$masukisi1=implode("#", $implod1);
@@ -1743,6 +1743,7 @@
 				$ibugatan=$_POST['ibugatan'];
 				$totibusalin=$_POST['totibusalin'];
 				$uci=$_POST['uci'];
+				$desauci=$_POST['desauci'];
 				$pppp=$_POST['pppp'];
 				$tbcbta=$_POST['tbcbta'];
 				$tbctemuobat=$_POST['tbctemuobat'];
@@ -1771,7 +1772,7 @@
 				$implod4=array($dagkes,$apotek,$tobat);
 				$implod5=array($tenkes,$dokum,$dokspes,$dokgi,$nurse,$tkbidan,$apl,$sarfar,$ahzi,$anlab,$ahron,$bides,$asap,$pralk,$bides1,$epikes,$entokes,$sanit,$adkes,$pekemas,$pergi,$nutri,$rgraf,$kamdis,$tekek);
 				$implod6=array($kompbidan,$jmlbidtang,$bidtang,$ibukompbid,$salinbid,$ibugatan,$totibusalin);
-				$implod7=array($uci);
+				$implod7=array($uci,$desauci);
 				$implod8=array($pppp,$tbcbta,$tbctemuobat,$tbckira,$dbd,$dbdsop,$dbdtemu,$afp,$afptemuobat,$afpkira,$plain,$plaintemuobat,$plainkira);
 				$implod9=array($pkrpmm,$jmlpmsks);
 				$implod10=array($pkdpmm);

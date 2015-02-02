@@ -37,23 +37,12 @@
         h3{
             text-transform: capitalize;
         }
-        td{
-            padding-bottom: 10px;
-            text-transform: capitalize;
-        }
-        td.a{
-            padding-left: 30px;
-
-        }
-        td.b{
-            padding-left: 60px;
-        }
-        td.c{
-            padding-left: 45px;
-        }
-        td.d{
-            padding-left: 65px;
-        }
+        td{padding-bottom: 10px;text-transform: capitalize;}
+        td.a{padding-left: 30px;}
+        td.b{padding-left: 60px;}
+        td.c{padding-left: 45px;}
+        td.d{padding-left: 65px;}
+        td.e{font-size: 11px;}
     </style>
 
 </head>
