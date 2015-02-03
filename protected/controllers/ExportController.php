@@ -6,10 +6,7 @@
 		public $layout="adminpage1";
 
 		//untuk menampilkan data topografi
-		public function actionIndex(){
-			if(Yii::app()->user->isGuest){
-		        $this->redirect(array('/login'));
-			} else
+		public function actionIndex()
 		{
 			$luaswilayah=LuasWilayah::model()->findAll();
 			$topografi=Topografi::model()->findAll();
@@ -255,7 +252,7 @@
 				"dataLokasiCuriKayu"=>$ppkjlpp,
 				"tahunini"=>$tahunini
 				));
-			}
+			
 		}
 
 		//membuat function untuk export data ke excel
@@ -350,7 +347,7 @@
 			$tpp=PartisipasiPemilih::model()->findAll();
 			$ormas=OrMas::model()->findAll();
 			$jlpm=JumlahLPM::model()->findAll();
-			$jppm=PPM::model()->findAll;
+			$jppm=PPM::model()->findAll();
 			$jssm=SwadayaMasyarakat::model()->findAll();
 			$jppmd=PeliharaMasyarakat::model()->findAll();
 			$lswm=LSM::model()->findAll();
@@ -506,12 +503,13 @@
 				"dataVolumeKayu"=>$ppkvk,
 				"dataKasusCuriKayu"=>$ppkjk,
 				"dataLokasiCuriKayu"=>$ppkjlpp,
-				"tahunini"=>$tahunini,
+				"tahunini"=>$tahunini
 				));
 
 			//echo dataExcel dan akan mendownload file excel
 			echo $dataExcel;
 		}
 	}
+
 
 ?>

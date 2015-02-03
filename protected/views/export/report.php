@@ -1317,9 +1317,6 @@
                 <td class="e"><?php echo $x->sumber_data; ?></td>
             </tr><?php endforeach; ?>
 
-         <tr><td colspan="9"><strong>AULA</strong></td></tr>
-
-
          <tr><td colspan="9"><strong>POLITIK, HUKUM DAN KEAMANAN - Politik Dalam Negeri dan Pengawasan</strong></td></tr>
             <?php foreach ($dataDPRD as $x) :?>
             <tr>
@@ -1610,7 +1607,8 @@
                 <td class="e"><?php echo $x->satuan; ?></td>
                 <td class="e"><?php echo $x->ketersediaan; ?></td>
                 <td class="e"><?php echo $x->sumber_data; ?></td>
-            </tr><?php endforeach; ?><?php foreach ($dataKriminaltangan as $x) :?>
+            </tr><?php endforeach; ?>
+            <?php foreach ($dataKriminaltangan as $x) :?>
             <tr>
                 <td width="60%" class="e">
                     <?php

@@ -1317,9 +1317,6 @@
                 <td class="e"><?php echo $x->sumber_data; ?></td>
             </tr><?php endforeach; ?>
 
-         <tr><td colspan="9"><strong>AULA</strong></td></tr>
-
-
          <tr><td colspan="9"><strong>POLITIK, HUKUM DAN KEAMANAN - Politik Dalam Negeri dan Pengawasan</strong></td></tr>
             <?php foreach ($dataDPRD as $x) :?>
             <tr>
