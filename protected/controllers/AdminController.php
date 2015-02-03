@@ -879,13 +879,13 @@
 				$isiin6 = implode("#", $gabung6);
 				$isiin7 = implode("#", $gabung7);
 
-				$query1 = "INSERT INTO log VALUES(NULL, 'sda_pertanian', '$user', '$tahunini', '$gabung1', '$waktuisi')";
-				$query2 = "INSERT INTO log VALUES(NULL, 'sda_hortikultura', '$user', '$tahunini', '$gabung2', '$waktuisi')";
-				$query3 = "INSERT INTO log VALUES(NULL, 'sda_perkebunan', '$user', '$tahunini', '$gabung3', '$waktuisi')";
-				$query4 = "INSERT INTO log VALUES(NULL, 'sda_peternakan', '$user', '$tahunini', '$gabung4', '$waktuisi')";
-				$query5 = "INSERT INTO log VALUES(NULL, 'sda_laut_ikan', '$user', '$tahunini', '$gabung5', '$waktuisi')";
-				$query6 = "INSERT INTO log VALUES(NULL, 'sda_kehutanan', '$user', '$tahunini', '$gabung6', '$waktuisi')";
-				$query7 = "INSERT INTO log VALUES(NULL, 'sda_kel_sos', '$user', '$tahunini', '$gabung7', '$waktuisi')";
+				$query1 = "INSERT INTO log VALUES(NULL, 'sda_pertanian', '$user', '$tahunini', '$isiin1', '$waktuisi')";
+				$query2 = "INSERT INTO log VALUES(NULL, 'sda_hortikultura', '$user', '$tahunini', '$isiin2', '$waktuisi')";
+				$query3 = "INSERT INTO log VALUES(NULL, 'sda_perkebunan', '$user', '$tahunini', '$isiin3', '$waktuisi')";
+				$query4 = "INSERT INTO log VALUES(NULL, 'sda_peternakan', '$user', '$tahunini', '$isiin4', '$waktuisi')";
+				$query5 = "INSERT INTO log VALUES(NULL, 'sda_laut_ikan', '$user', '$tahunini', '$isiin5', '$waktuisi')";
+				$query6 = "INSERT INTO log VALUES(NULL, 'sda_kehutanan', '$user', '$tahunini', '$isiin6', '$waktuisi')";
+				$query7 = "INSERT INTO log VALUES(NULL, 'sda_kel_sos', '$user', '$tahunini', '$isiin7', '$waktuisi')";
 
 				$conn=Yii::app()->db;
 
@@ -1076,14 +1076,14 @@
 				$isiin7 = implode("#", $gabung7);
 				$isiin8 = implode("#", $gabung8);
 
-				$query1 = "INSERT INTO log VALUES(NULL, 'sda_linkhidup', '$user', '$tahunini', '$gabung1', '$waktuisi')";
-				$query2 = "INSERT INTO log VALUES(NULL, 'sda_rusaklinkhidup', '$user', '$tahunini', '$gabung2', '$waktuisi')";
-				$query3 = "INSERT INTO log VALUES(NULL, 'sda_pelestarianlink', '$user', '$tahunini', '$gabung3', '$waktuisi')";
-				$query4 = "INSERT INTO log VALUES(NULL, 'sda_tataruang', '$user', '$tahunini', '$gabung4', '$waktuisi')";
-				$query5 = "INSERT INTO log VALUES(NULL, 'sda_pertanahan', '$user', '$tahunini', '$gabung5', '$waktuisi')";
-				$query6 = "INSERT INTO log VALUES(NULL, 'sda_kendalilink', '$user', '$tahunini', '$gabung6', '$waktuisi')";
-				$query7 = "INSERT INTO log VALUES(NULL, 'sda_sampah', '$user', '$tahunini', '$gabung7', '$waktuisi')";
-				$query8 = "INSERT INTO log VALUES(NULL, 'sda_air_limbah', '$user', '$tahunini', '$gabung8', '$waktuisi')";
+				$query1 = "INSERT INTO log VALUES(NULL, 'sda_linkhidup', '$user', '$tahunini', '$isiin1', '$waktuisi')";
+				$query2 = "INSERT INTO log VALUES(NULL, 'sda_rusaklinkhidup', '$user', '$tahunini', '$isiin2', '$waktuisi')";
+				$query3 = "INSERT INTO log VALUES(NULL, 'sda_pelestarianlink', '$user', '$tahunini', '$isiin3', '$waktuisi')";
+				$query4 = "INSERT INTO log VALUES(NULL, 'sda_tataruang', '$user', '$tahunini', '$isiin4', '$waktuisi')";
+				$query5 = "INSERT INTO log VALUES(NULL, 'sda_pertanahan', '$user', '$tahunini', '$isiin5', '$waktuisi')";
+				$query6 = "INSERT INTO log VALUES(NULL, 'sda_kendalilink', '$user', '$tahunini', '$isiin6', '$waktuisi')";
+				$query7 = "INSERT INTO log VALUES(NULL, 'sda_sampah', '$user', '$tahunini', '$isiin7', '$waktuisi')";
+				$query8 = "INSERT INTO log VALUES(NULL, 'sda_air_limbah', '$user', '$tahunini', '$isiin8', '$waktuisi')";
 
 				$conn=Yii::app()->db;
 
@@ -1170,8 +1170,8 @@
 				$isiin1 = implode("#", $gabung1);
 				$isiin2 = implode("#", $gabung2);
 
-				$query1 = "INSERT INTO log VALUES(NULL, 'sda_pertambangan', '$user', '$tahunini', '$gabung1', '$waktuisi')";
-				$query2 = "INSERT INTO log VALUES(NULL, 'sda_energi', '$user', '$tahunini', '$gabung2', '$waktuisi')";
+				$query1 = "INSERT INTO log VALUES(NULL, 'sda_pertambangan', '$user', '$tahunini', '$isiin1', '$waktuisi')";
+				$query2 = "INSERT INTO log VALUES(NULL, 'sda_energi', '$user', '$tahunini', '$isiin2', '$waktuisi')";
 
 				$conn=Yii::app()->db;
 
@@ -1218,13 +1218,13 @@
 				$rmhtdesa=$_POST['rmhtdesa'];
 				$rmhtkota=$_POST['rmhtkota'];
 				/*Luas Rumah per Kapita*/
-				$lrmhkapita=$_POST[''];
-				$rkplayakhuni=$_POST[''];
-				$rkptdesa=$_POST[''];
-				$rkptkota=$_POST[''];
-				$rkptlayakhuni=$_POST[''];
-				$rkpttdesa=$_POST[''];
-				$rkpttkota=$_POST[''];
+				$lrmhkapita=$_POST['lrmhkapita'];
+				$rkplayakhuni=$_POST['rkplayakhuni'];
+				$rkptdesa=$_POST['rkptdesa'];
+				$rkptkota=$_POST['rkptkota'];
+				$rkptlayakhuni=$_POST['rkptlayakhuni'];
+				$rkpttdesa=$_POST['rkpttdesa'];
+				$rkpttkota=$_POST['rkpttkota'];
 				/*Luas Areal Pemukiman*/
 				$lmukim=$_POST['lmukim'];
 				$layakhuni=$_POST['layakhuni'];
@@ -1309,17 +1309,17 @@
 				$isiin10 = implode("#", $gabung10);
 				$isiin11 = implode("#", $gabung11);
 
-				$query1 = "INSERT INTO log VALUES(NULL, 'infra_perumahan', '$user', '$tahunini', '$gabung1', '$waktuisi')";
-				$query2 = "INSERT INTO log VALUES(NULL, 'infra_jmlrmh', '$user', '$tahunini', '$gabung2', '$waktuisi')";
-				$query3 = "INSERT INTO log VALUES(NULL, 'infra_lsrmh', '$user', '$tahunini', '$gabung3', '$waktuisi')";
-				$query4 = "INSERT INTO log VALUES(NULL, 'infra_arealmukim', '$user', '$tahunini', '$gabung4', '$waktuisi')";
-				$query5 = "INSERT INTO log VALUES(NULL, 'infra_jmlbangun', '$user', '$tahunini', '$gabung5', '$waktuisi')";
-				$query6 = "INSERT INTO log VALUES(NULL, 'infra_kumuh', '$user', '$tahunini', '$gabung6', '$waktuisi')";
-				$query7 = "INSERT INTO log VALUES(NULL, 'infra_ilegal', '$user', '$tahunini', '$gabung7', '$waktuisi')";
-				$query8 = "INSERT INTO log VALUES(NULL, 'infra_bantaran', '$user', '$tahunini', '$gabung8', '$waktuisi')";
-				$query9 = "INSERT INTO log VALUES(NULL, 'infra_sutet', '$user', '$tahunini', '$gabung9', '$waktuisi')";
-				$query10 = "INSERT INTO log VALUES(NULL, 'infra_rpublik', '$user', '$tahunini', '$gabung10', '$waktuisi')";
-				$query11 = "INSERT INTO log VALUES(NULL, 'infra_rmhsanitasi', '$user', '$tahunini', '$gabung11', '$waktuisi')";
+				$query1 = "INSERT INTO log VALUES(NULL, 'infra_perumahan', '$user', '$tahunini', '$isiin1', '$waktuisi')";
+				$query2 = "INSERT INTO log VALUES(NULL, 'infra_jmlrmh', '$user', '$tahunini', '$isiin2', '$waktuisi')";
+				$query3 = "INSERT INTO log VALUES(NULL, 'infra_lsrmh', '$user', '$tahunini', '$isiin3', '$waktuisi')";
+				$query4 = "INSERT INTO log VALUES(NULL, 'infra_arealmukim', '$user', '$tahunini', '$isiin4', '$waktuisi')";
+				$query5 = "INSERT INTO log VALUES(NULL, 'infra_jmlbangun', '$user', '$tahunini', '$isiin5', '$waktuisi')";
+				$query6 = "INSERT INTO log VALUES(NULL, 'infra_kumuh', '$user', '$tahunini', '$isiin6', '$waktuisi')";
+				$query7 = "INSERT INTO log VALUES(NULL, 'infra_ilegal', '$user', '$tahunini', '$isiin7', '$waktuisi')";
+				$query8 = "INSERT INTO log VALUES(NULL, 'infra_bantaran', '$user', '$tahunini', '$isiin8', '$waktuisi')";
+				$query9 = "INSERT INTO log VALUES(NULL, 'infra_sutet', '$user', '$tahunini', '$isiin9', '$waktuisi')";
+				$query10 = "INSERT INTO log VALUES(NULL, 'infra_rpublik', '$user', '$tahunini', '$isiin10', '$waktuisi')";
+				$query11 = "INSERT INTO log VALUES(NULL, 'infra_rmhsanitasi', '$user', '$tahunini', '$isiin11', '$waktuisi')";
 
 				$conn=Yii::app()->db;
 
@@ -1484,21 +1484,21 @@
 				$isiin14 = implode("#", $gabung14);
 				$isiin15 = implode("#", $gabung15);
 
-				$query1 = "INSERT INTO log VALUES(NULL, 'infra_pjjln', '$user', '$tahunini', '$gabung1', '$waktuisi')";
-				$query2 = "INSERT INTO log VALUES(NULL, 'infra_kondisijln', '$user', '$tahunini', '$gabung2', '$waktuisi')";
-				$query3 = "INSERT INTO log VALUES(NULL, 'infra_pjkondisi', '$user', '$tahunini', '$gabung3', '$waktuisi')";
-				$query4 = "INSERT INTO log VALUES(NULL, 'infra_penghubung', '$user', '$tahunini', '$gabung4', '$waktuisi')";
-				$query5 = "INSERT INTO log VALUES(NULL, 'infra_jembatan', '$user', '$tahunini', '$gabung5', '$waktuisi')";
-				$query6 = "INSERT INTO log VALUES(NULL, 'infra_pjfungsi', '$user', '$tahunini', '$gabung6', '$waktuisi')";
-				$query7 = "INSERT INTO log VALUES(NULL, 'infra_pemakaman', '$user', '$tahunini', '$gabung7', '$waktuisi')";
-				$query8 = "INSERT INTO log VALUES(NULL, 'infra_pengairan', '$user', '$tahunini', '$gabung8', '$waktuisi')";
-				$query9 = "INSERT INTO log VALUES(NULL, 'infra_pjmilik', '$user', '$tahunini', '$gabung9', '$waktuisi')";
-				$query10 = "INSERT INTO log VALUES(NULL, 'infra_sempadan', '$user', '$tahunini', '$gabung10', '$waktuisi')";
-				$query11 = "INSERT INTO log VALUES(NULL, 'infra_drainase', '$user', '$tahunini', '$gabung11', '$waktuisi')";
-				$query12 = "INSERT INTO log VALUES(NULL, 'infra_turap', '$user', '$tahunini', '$gabung12', '$waktuisi')";
-				$query13 = "INSERT INTO log VALUES(NULL, 'infra_sam', '$user', '$tahunini', '$gabung13', '$waktuisi')";
-				$query14 = "INSERT INTO log VALUES(NULL, 'infra_mutuair', '$user', '$tahunini', '$gabung14', '$waktuisi')";
-				$query15 = "INSERT INTO log VALUES(NULL, 'infra_dayamakam', '$user', '$tahunini', '$gabung15', '$waktuisi')";
+				$query1 = "INSERT INTO log VALUES(NULL, 'infra_pjjln', '$user', '$tahunini', '$isiin1', '$waktuisi')";
+				$query2 = "INSERT INTO log VALUES(NULL, 'infra_kondisijln', '$user', '$tahunini', '$isiin2', '$waktuisi')";
+				$query3 = "INSERT INTO log VALUES(NULL, 'infra_pjkondisi', '$user', '$tahunini', '$isiin3', '$waktuisi')";
+				$query4 = "INSERT INTO log VALUES(NULL, 'infra_penghubung', '$user', '$tahunini', '$isiin4', '$waktuisi')";
+				$query5 = "INSERT INTO log VALUES(NULL, 'infra_jembatan', '$user', '$tahunini', '$isiin5', '$waktuisi')";
+				$query6 = "INSERT INTO log VALUES(NULL, 'infra_pjfungsi', '$user', '$tahunini', '$isiin6', '$waktuisi')";
+				$query7 = "INSERT INTO log VALUES(NULL, 'infra_pemakaman', '$user', '$tahunini', '$isiin7', '$waktuisi')";
+				$query8 = "INSERT INTO log VALUES(NULL, 'infra_pengairan', '$user', '$tahunini', '$isiin8', '$waktuisi')";
+				$query9 = "INSERT INTO log VALUES(NULL, 'infra_pjmilik', '$user', '$tahunini', '$isiin9', '$waktuisi')";
+				$query10 = "INSERT INTO log VALUES(NULL, 'infra_sempadan', '$user', '$tahunini', '$isiin10', '$waktuisi')";
+				$query11 = "INSERT INTO log VALUES(NULL, 'infra_drainase', '$user', '$tahunini', '$isiin11', '$waktuisi')";
+				$query12 = "INSERT INTO log VALUES(NULL, 'infra_turap', '$user', '$tahunini', '$isiin12', '$waktuisi')";
+				$query13 = "INSERT INTO log VALUES(NULL, 'infra_sam', '$user', '$tahunini', '$isiin13', '$waktuisi')";
+				$query14 = "INSERT INTO log VALUES(NULL, 'infra_mutuair', '$user', '$tahunini', '$isiin14', '$waktuisi')";
+				$query15 = "INSERT INTO log VALUES(NULL, 'infra_dayamakam', '$user', '$tahunini', '$isiin15', '$waktuisi')";
 
 				$conn=Yii::app()->db;
 
@@ -1633,11 +1633,11 @@
 				$isiin4 = implode("#", $gabung4);
 				$isiin5 = implode("#", $gabung5);
 
-				$query1 = "INSERT INTO log VALUES(NULL, 'infra_pariwisata', '$user', '$tahunini', '$gabung1', '$waktuisi')";
-				$query2 = "INSERT INTO log VALUES(NULL, 'infra_telekomunikasi', '$user', '$tahunini', '$gabung2', '$waktuisi')";
-				$query3 = "INSERT INTO log VALUES(NULL, 'infra_srtkabar', '$user', '$tahunini', '$gabung3', '$waktuisi')";
-				$query4 = "INSERT INTO log VALUES(NULL, 'infra_penyiaran', '$user', '$tahunini', '$gabung4', '$waktuisi')";
-				$query5 = "INSERT INTO log VALUES(NULL, 'infra_sip', '$user', '$tahunini', '$gabung5', '$waktuisi')";
+				$query1 = "INSERT INTO log VALUES(NULL, 'infra_pariwisata', '$user', '$tahunini', '$isiin1', '$waktuisi')";
+				$query2 = "INSERT INTO log VALUES(NULL, 'infra_telekomunikasi', '$user', '$tahunini', '$isiin2', '$waktuisi')";
+				$query3 = "INSERT INTO log VALUES(NULL, 'infra_srtkabar', '$user', '$tahunini', '$isiin3', '$waktuisi')";
+				$query4 = "INSERT INTO log VALUES(NULL, 'infra_penyiaran', '$user', '$tahunini', '$isiin4', '$waktuisi')";
+				$query5 = "INSERT INTO log VALUES(NULL, 'infra_sip', '$user', '$tahunini', '$isiin5', '$waktuisi')";
 
 				$conn=Yii::app()->db;
 
@@ -1779,10 +1779,10 @@
 				$isiin3 = implode("#", $gabung3);
 				$isiin4 = implode("#", $gabung4);
 
-				$query1 = "INSERT INTO log VALUES(NULL, 'infra_perhubungan', '$user', '$tahunini', '$gabung1', '$waktuisi')";
-				$query2 = "INSERT INTO log VALUES(NULL, 'infra_angkum', '$user', '$tahunini', '$gabung2', '$waktuisi')";
-				$query3 = "INSERT INTO log VALUES(NULL, 'infra_transportasi', '$user', '$tahunini', '$gabung3', '$waktuisi')";
-				$query4 = "INSERT INTO log VALUES(NULL, 'infra_bermotor', '$user', '$tahunini', '$gabung4', '$waktuisi')";
+				$query1 = "INSERT INTO log VALUES(NULL, 'infra_perhubungan', '$user', '$tahunini', '$isiin1', '$waktuisi')";
+				$query2 = "INSERT INTO log VALUES(NULL, 'infra_angkum', '$user', '$tahunini', '$isiin2', '$waktuisi')";
+				$query3 = "INSERT INTO log VALUES(NULL, 'infra_transportasi', '$user', '$tahunini', '$isiin3', '$waktuisi')";
+				$query4 = "INSERT INTO log VALUES(NULL, 'infra_bermotor', '$user', '$tahunini', '$isiin4', '$waktuisi')";
 
 				$conn=Yii::app()->db;
 
@@ -1999,13 +1999,13 @@
 				$isiin6 = implode("#", $gabung6);
 				$isiin7 = implode("#", $gabung7);
 				
-				$query1 = "INSERT INTO log VALUES(NULL, 'eko_industri', '$user', '$tahunini', '$gabung1', '$waktuisi')";
-				$query2 = "INSERT INTO log VALUES(NULL, 'eko_perdagangan', '$user', '$tahunini', '$gabung2', '$waktuisi')";
-				$query3 = "INSERT INTO log VALUES(NULL, 'eko_usahanas', '$user', '$tahunini', '$gabung3', '$waktuisi')";
-				$query4 = "INSERT INTO log VALUES(NULL, 'eko_einonmigas', '$user', '$tahunini', '$gabung4', '$waktuisi')";
-				$query5 = "INSERT INTO log VALUES(NULL, 'eko_ioindustri', '$user', '$tahunini', '$gabung5', '$waktuisi')";
-				$query6 = "INSERT INTO log VALUES(NULL, 'eko_perijinan', '$user', '$tahunini', '$gabung6', '$waktuisi')";
-				$query7 = "INSERT INTO log VALUES(NULL, 'eko_indsubsektor', '$user', '$tahunini', '$gabung7', '$waktuisi')";
+				$query1 = "INSERT INTO log VALUES(NULL, 'eko_industri', '$user', '$tahunini', '$isiin1', '$waktuisi')";
+				$query2 = "INSERT INTO log VALUES(NULL, 'eko_perdagangan', '$user', '$tahunini', '$isiin2', '$waktuisi')";
+				$query3 = "INSERT INTO log VALUES(NULL, 'eko_usahanas', '$user', '$tahunini', '$isiin3', '$waktuisi')";
+				$query4 = "INSERT INTO log VALUES(NULL, 'eko_einonmigas', '$user', '$tahunini', '$isiin4', '$waktuisi')";
+				$query5 = "INSERT INTO log VALUES(NULL, 'eko_ioindustri', '$user', '$tahunini', '$isiin5', '$waktuisi')";
+				$query6 = "INSERT INTO log VALUES(NULL, 'eko_perijinan', '$user', '$tahunini', '$isiin6', '$waktuisi')";
+				$query7 = "INSERT INTO log VALUES(NULL, 'eko_indsubsektor', '$user', '$tahunini', '$isiin7', '$waktuisi')";
 
 				$conn=Yii::app()->db;
 
@@ -2114,8 +2114,8 @@
 
 				$user=Yii::app()->user->username;
 
-				$gabung1 = array($proyek_pma,$realisasi_pma,$p3k_pma,$tambang_gali,$pengolahan_pma,$ligasber_pma,$bangunan_pma,$dagang_pma,$angkom_pma,$estate_pma,$jasa_pma);
-				$gabung2 = array($proyek_pmdn,$realisasi_pmdn,$p3k,$tambang_gali,$ind_pengolahan,$ligas_aber,$realisasi_bangunan,$dagang_restohotel,$angkut_komunikasi,$real_estate,$jasa_jasa,$investasi_pmdn,$inv_pusat,$inv_pemda,$inv_swasta);
+				$gabung1 = array($proyek_pma,$realisasi_pma,$p3k_pma,$tambang_pma,$pengolahan_pma,$ligasber_pma,$bangunan_pma,$dagang_pma,$angkom_pma,$estate_pma,$jasa_pma);
+				$gabung2 = array($proyek_pmdn,$realisasi_pmdn,$p3k,$tambang_pmdn,$ind_pengolahan,$ligas_aber,$realisasi_bangunan,$dagang_restohotel,$angkut_komunikasi,$real_estate,$jasa_jasa,$investasi_pmdn,$inv_pusat,$inv_pemda,$inv_swasta);
 				$gabung3 = array($bank_pr,$bpr_konvensional,$bpr_syariah);
 				$gabung4 = array($bank_umum,$bkumum_konvensional,$bkumum_syariah);
 				$gabung5 = array($asuransi_rugi,$asrugi_konvensional,$asrugi_syariah);
@@ -2136,16 +2136,16 @@
 				$isiin9 = implode("#", $gabung9);
 				$isiin10 = implode("#", $gabung10);
 
-				$query1 = "INSERT INTO log VALUES(NULL, 'eko_pma', '$user', '$tahunini', '$gabung1', '$waktuisi')";
-				$query2 = "INSERT INTO log VALUES(NULL, 'eko_pmdn', '$user', '$tahunini', '$gabung2', '$waktuisi')";
-				$query3 = "INSERT INTO log VALUES(NULL, 'eko_bpr', '$user', '$tahunini', '$gabung3', '$waktuisi')";
-				$query4 = "INSERT INTO log VALUES(NULL, 'eko_bankumum', '$user', '$tahunini', '$gabung4', '$waktuisi')";
-				$query5 = "INSERT INTO log VALUES(NULL, 'eko_asrugi', '$user', '$tahunini', '$gabung5', '$waktuisi')";
-				$query6 = "INSERT INTO log VALUES(NULL, 'eko_asjiwa', '$user', '$tahunini', '$gabung6', '$waktuisi')";
-				$query7 = "INSERT INTO log VALUES(NULL, 'eko_invnas', '$user', '$tahunini', '$gabung7', '$waktuisi')";
-				$query8 = "INSERT INTO log VALUES(NULL, 'eko_jasauang', '$user', '$tahunini', '$gabung8', '$waktuisi')";
-				$query9 = "INSERT INTO log VALUES(NULL, 'eko_ukmnon', '$user', '$tahunini', '$gabung9', '$waktuisi')";
-				$query10 = "INSERT INTO log VALUES(NULL, 'eko_perbankan', '$user', '$tahunini', '$gabung10', '$waktuisi')";
+				$query1 = "INSERT INTO log VALUES(NULL, 'eko_pma', '$user', '$tahunini', '$isiin1', '$waktuisi')";
+				$query2 = "INSERT INTO log VALUES(NULL, 'eko_pmdn', '$user', '$tahunini', '$isiin2', '$waktuisi')";
+				$query3 = "INSERT INTO log VALUES(NULL, 'eko_bpr', '$user', '$tahunini', '$isiin3', '$waktuisi')";
+				$query4 = "INSERT INTO log VALUES(NULL, 'eko_bankumum', '$user', '$tahunini', '$isiin4', '$waktuisi')";
+				$query5 = "INSERT INTO log VALUES(NULL, 'eko_asrugi', '$user', '$tahunini', '$isiin5', '$waktuisi')";
+				$query6 = "INSERT INTO log VALUES(NULL, 'eko_asjiwa', '$user', '$tahunini', '$isiin6', '$waktuisi')";
+				$query7 = "INSERT INTO log VALUES(NULL, 'eko_invnas', '$user', '$tahunini', '$isiin7', '$waktuisi')";
+				$query8 = "INSERT INTO log VALUES(NULL, 'eko_jasauang', '$user', '$tahunini', '$isiin8', '$waktuisi')";
+				$query9 = "INSERT INTO log VALUES(NULL, 'eko_ukmnon', '$user', '$tahunini', '$isiin9', '$waktuisi')";
+				$query10 = "INSERT INTO log VALUES(NULL, 'eko_perbankan', '$user', '$tahunini', '$isiin10', '$waktuisi')";
 
 				$conn=Yii::app()->db;
 
