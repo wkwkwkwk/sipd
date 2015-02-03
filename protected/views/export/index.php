@@ -1316,6 +1316,1092 @@
                 <td class="e"><?php echo $x->ketersediaan; ?></td>
                 <td class="e"><?php echo $x->sumber_data; ?></td>
             </tr><?php endforeach; ?>
+            <!-- Data SDA -->
+            <tr><td colspan="9"><strong>SUMBER DAYA ALAM - Pertanian, Kehutanan, Kelautan, Perikanan, Peternakan, Perkebunan</strong></td></tr>
+            <?php foreach ($dataPertani as $x) :?>
+            <tr>
+                <td width="60%" class="e">
+                    <?php
+                        if($x->id==1){echo "<strong>";echo $x->properti;echo $x->nama;echo "</strong>";}else{echo $x->properti;echo $x->nama;}?>
+                </td>
+                <td class="e"><?php echo $x->$taun1; ?></td>
+                <td class="e"><?php echo $x->$taun2; ?></td>
+                <td class="e"><?php echo $x->$taun3; ?></td>
+                <td class="e"><?php echo $x->$taun4; ?></td>
+                <td class="e"><?php echo $x->$taun5; ?></td>
+                <!-- <td class="e"><?php /*echo $x->*/$tahunini; ?></td> -->
+                <td class="e"><?php echo $x->satuan; ?></td>
+                <td class="e"><?php echo $x->ketersediaan; ?></td>
+                <td class="e"><?php echo $x->sumber_data; ?></td>
+            </tr><?php endforeach; ?>
+            <?php foreach ($dataKultur as $x) :?>
+            <tr>
+                <td width="60%" class="e">
+                    <?php
+                        if($x->id==1){echo "<strong>";echo $x->properti;echo $x->nama;echo "</strong>";}else{echo $x->properti;echo $x->nama;}?>
+                </td>
+                <td class="e"><?php echo $x->$taun1; ?></td>
+                <td class="e"><?php echo $x->$taun2; ?></td>
+                <td class="e"><?php echo $x->$taun3; ?></td>
+                <td class="e"><?php echo $x->$taun4; ?></td>
+                <td class="e"><?php echo $x->$taun5; ?></td>
+                <!-- <td class="e"><?php /*echo $x->*/$tahunini; ?></td> -->
+                <td class="e"><?php echo $x->satuan; ?></td>
+                <td class="e"><?php echo $x->ketersediaan; ?></td>
+                <td class="e"><?php echo $x->sumber_data; ?></td>
+            </tr><?php endforeach; ?>
+            <?php foreach ($dataPerkebunan as $x) :?>
+            <tr>
+                <td width="60%" class="e">
+                    <?php
+                        if($x->id==1){echo "<strong>";echo $x->properti;echo $x->nama;echo "</strong>";}else{echo $x->properti;echo $x->nama;}?>
+                </td>
+                <td class="e"><?php echo $x->$taun1; ?></td>
+                <td class="e"><?php echo $x->$taun2; ?></td>
+                <td class="e"><?php echo $x->$taun3; ?></td>
+                <td class="e"><?php echo $x->$taun4; ?></td>
+                <td class="e"><?php echo $x->$taun5; ?></td>
+                <!-- <td class="e"><?php /*echo $x->*/$tahunini; ?></td> -->
+                <td class="e"><?php echo $x->satuan; ?></td>
+                <td class="e"><?php echo $x->ketersediaan; ?></td>
+                <td class="e"><?php echo $x->sumber_data; ?></td>
+            </tr><?php endforeach; ?>
+            <?php foreach ($dataPeternakan as $x) :?>
+            <tr>
+                <td width="60%" class="e">
+                    <?php
+                        if($x->id==1){echo "<strong>";echo $x->properti;echo $x->nama;echo "</strong>";}else{echo $x->properti;echo $x->nama;}?>
+                </td>
+                <td class="e"><?php echo $x->$taun1; ?></td>
+                <td class="e"><?php echo $x->$taun2; ?></td>
+                <td class="e"><?php echo $x->$taun3; ?></td>
+                <td class="e"><?php echo $x->$taun4; ?></td>
+                <td class="e"><?php echo $x->$taun5; ?></td>
+                <!-- <td class="e"><?php /*echo $x->*/$tahunini; ?></td> -->
+                <td class="e"><?php echo $x->satuan; ?></td>
+                <td class="e"><?php echo $x->ketersediaan; ?></td>
+                <td class="e"><?php echo $x->sumber_data; ?></td>
+            </tr><?php endforeach; ?>
+            <?php foreach ($dataIkanLaut as $x) :?>
+            <tr>
+                <td width="60%" class="e">
+                    <?php
+                        if($x->id==1){echo "<strong>";echo $x->properti;echo $x->nama;echo "</strong>";}else{echo $x->properti;echo $x->nama;}?>
+                </td>
+                <td class="e"><?php echo $x->$taun1; ?></td>
+                <td class="e"><?php echo $x->$taun2; ?></td>
+                <td class="e"><?php echo $x->$taun3; ?></td>
+                <td class="e"><?php echo $x->$taun4; ?></td>
+                <td class="e"><?php echo $x->$taun5; ?></td>
+                <!-- <td class="e"><?php /*echo $x->*/$tahunini; ?></td> -->
+                <td class="e"><?php echo $x->satuan; ?></td>
+                <td class="e"><?php echo $x->ketersediaan; ?></td>
+                <td class="e"><?php echo $x->sumber_data; ?></td>
+            </tr><?php endforeach; ?>
+            <?php foreach ($dataKeHutan as $x) :?>
+            <tr>
+                <td width="60%" class="e">
+                    <?php
+                        if($x->id==1){echo "<strong>";echo $x->properti;echo $x->nama;echo "</strong>";}else{echo $x->properti;echo $x->nama;}?>
+                </td>
+                <td class="e"><?php echo $x->$taun1; ?></td>
+                <td class="e"><?php echo $x->$taun2; ?></td>
+                <td class="e"><?php echo $x->$taun3; ?></td>
+                <td class="e"><?php echo $x->$taun4; ?></td>
+                <td class="e"><?php echo $x->$taun5; ?></td>
+                <!-- <td class="e"><?php /*echo $x->*/$tahunini; ?></td> -->
+                <td class="e"><?php echo $x->satuan; ?></td>
+                <td class="e"><?php echo $x->ketersediaan; ?></td>
+                <td class="e"><?php echo $x->sumber_data; ?></td>
+            </tr><?php endforeach; ?>
+            <?php foreach ($dataKeleday as $x) :?>
+            <tr>
+                <td width="60%" class="e">
+                    <?php
+                        if($x->id==1){echo "<strong>";echo $x->properti;echo $x->nama;echo "</strong>";}else{echo $x->properti;echo $x->nama;}?>
+                </td>
+                <td class="e"><?php echo $x->$taun1; ?></td>
+                <td class="e"><?php echo $x->$taun2; ?></td>
+                <td class="e"><?php echo $x->$taun3; ?></td>
+                <td class="e"><?php echo $x->$taun4; ?></td>
+                <td class="e"><?php echo $x->$taun5; ?></td>
+                <!-- <td class="e"><?php /*echo $x->*/$tahunini; ?></td> -->
+                <td class="e"><?php echo $x->satuan; ?></td>
+                <td class="e"><?php echo $x->ketersediaan; ?></td>
+                <td class="e"><?php echo $x->sumber_data; ?></td>
+            </tr><?php endforeach; ?>
+            <tr><td colspan="9"><strong>3.9. Pertambangan dan Energi</strong></td></tr>
+            <?php foreach ($dataKukuBima as $x) :?>
+            <tr>
+                <td width="60%" class="e">
+                    <?php
+                        if($x->id==1){echo "<strong>";echo $x->properti;echo $x->nama;echo "</strong>";}else{echo $x->properti;echo $x->nama;}?>
+                </td>
+                <td class="e"><?php echo $x->$taun1; ?></td>
+                <td class="e"><?php echo $x->$taun2; ?></td>
+                <td class="e"><?php echo $x->$taun3; ?></td>
+                <td class="e"><?php echo $x->$taun4; ?></td>
+                <td class="e"><?php echo $x->$taun5; ?></td>
+                <!-- <td class="e"><?php /*echo $x->*/$tahunini; ?></td> -->
+                <td class="e"><?php echo $x->satuan; ?></td>
+                <td class="e"><?php echo $x->ketersediaan; ?></td>
+                <td class="e"><?php echo $x->sumber_data; ?></td>
+            </tr><?php endforeach; ?>
+            <?php foreach ($dataTambang as $x) :?>
+            <tr>
+                <td width="60%" class="e">
+                    <?php
+                        if($x->id==1){echo "<strong>";echo $x->properti;echo $x->nama;echo "</strong>";}else{echo $x->properti;echo $x->nama;}?>
+                </td>
+                <td class="e"><?php echo $x->$taun1; ?></td>
+                <td class="e"><?php echo $x->$taun2; ?></td>
+                <td class="e"><?php echo $x->$taun3; ?></td>
+                <td class="e"><?php echo $x->$taun4; ?></td>
+                <td class="e"><?php echo $x->$taun5; ?></td>
+                <!-- <td class="e"><?php /*echo $x->*/$tahunini; ?></td> -->
+                <td class="e"><?php echo $x->satuan; ?></td>
+                <td class="e"><?php echo $x->ketersediaan; ?></td>
+                <td class="e"><?php echo $x->sumber_data; ?></td>
+            </tr><?php endforeach; ?>
+            <?php foreach ($dataLinkup as $x) :?>
+            <tr>
+                <td width="60%" class="e">
+                    <?php
+                        if($x->id==1){echo "<strong>";echo $x->properti;echo $x->nama;echo "</strong>";}else{echo $x->properti;echo $x->nama;}?>
+                </td>
+                <td class="e"><?php echo $x->$taun1; ?></td>
+                <td class="e"><?php echo $x->$taun2; ?></td>
+                <td class="e"><?php echo $x->$taun3; ?></td>
+                <td class="e"><?php echo $x->$taun4; ?></td>
+                <td class="e"><?php echo $x->$taun5; ?></td>
+                <!-- <td class="e"><?php /*echo $x->*/$tahunini; ?></td> -->
+                <td class="e"><?php echo $x->satuan; ?></td>
+                <td class="e"><?php echo $x->ketersediaan; ?></td>
+                <td class="e"><?php echo $x->sumber_data; ?></td>
+            </tr><?php endforeach; ?>
+            <?php foreach ($dataLinkupRusak as $x) :?>
+            <tr>
+                <td width="60%" class="e">
+                    <?php
+                        if($x->id==1){echo "<strong>";echo $x->properti;echo $x->nama;echo "</strong>";}else{echo $x->properti;echo $x->nama;}?>
+                </td>
+                <td class="e"><?php echo $x->$taun1; ?></td>
+                <td class="e"><?php echo $x->$taun2; ?></td>
+                <td class="e"><?php echo $x->$taun3; ?></td>
+                <td class="e"><?php echo $x->$taun4; ?></td>
+                <td class="e"><?php echo $x->$taun5; ?></td>
+                <!-- <td class="e"><?php /*echo $x->*/$tahunini; ?></td> -->
+                <td class="e"><?php echo $x->satuan; ?></td>
+                <td class="e"><?php echo $x->ketersediaan; ?></td>
+                <td class="e"><?php echo $x->sumber_data; ?></td>
+            </tr><?php endforeach; ?>
+            <?php foreach ($dataPelik as $x) :?>
+            <tr>
+                <td width="60%" class="e">
+                    <?php
+                        if($x->id==1){echo "<strong>";echo $x->properti;echo $x->nama;echo "</strong>";}else{echo $x->properti;echo $x->nama;}?>
+                </td>
+                <td class="e"><?php echo $x->$taun1; ?></td>
+                <td class="e"><?php echo $x->$taun2; ?></td>
+                <td class="e"><?php echo $x->$taun3; ?></td>
+                <td class="e"><?php echo $x->$taun4; ?></td>
+                <td class="e"><?php echo $x->$taun5; ?></td>
+                <!-- <td class="e"><?php /*echo $x->*/$tahunini; ?></td> -->
+                <td class="e"><?php echo $x->satuan; ?></td>
+                <td class="e"><?php echo $x->ketersediaan; ?></td>
+                <td class="e"><?php echo $x->sumber_data; ?></td>
+            </tr><?php endforeach; ?>
+            <?php foreach ($dataTarung as $x) :?>
+            <tr>
+                <td width="60%" class="e">
+                    <?php
+                        if($x->id==1){echo "<strong>";echo $x->properti;echo $x->nama;echo "</strong>";}else{echo $x->properti;echo $x->nama;}?>
+                </td>
+                <td class="e"><?php echo $x->$taun1; ?></td>
+                <td class="e"><?php echo $x->$taun2; ?></td>
+                <td class="e"><?php echo $x->$taun3; ?></td>
+                <td class="e"><?php echo $x->$taun4; ?></td>
+                <td class="e"><?php echo $x->$taun5; ?></td>
+                <!-- <td class="e"><?php /*echo $x->*/$tahunini; ?></td> -->
+                <td class="e"><?php echo $x->satuan; ?></td>
+                <td class="e"><?php echo $x->ketersediaan; ?></td>
+                <td class="e"><?php echo $x->sumber_data; ?></td>
+            </tr><?php endforeach; ?>
+            <?php foreach ($dataPerta as $x) :?>
+            <tr>
+                <td width="60%" class="e">
+                    <?php
+                        if($x->id==1){echo "<strong>";echo $x->properti;echo $x->nama;echo "</strong>";}else{echo $x->properti;echo $x->nama;}?>
+                </td>
+                <td class="e"><?php echo $x->$taun1; ?></td>
+                <td class="e"><?php echo $x->$taun2; ?></td>
+                <td class="e"><?php echo $x->$taun3; ?></td>
+                <td class="e"><?php echo $x->$taun4; ?></td>
+                <td class="e"><?php echo $x->$taun5; ?></td>
+                <!-- <td class="e"><?php /*echo $x->*/$tahunini; ?></td> -->
+                <td class="e"><?php echo $x->satuan; ?></td>
+                <td class="e"><?php echo $x->ketersediaan; ?></td>
+                <td class="e"><?php echo $x->sumber_data; ?></td>
+            </tr><?php endforeach; ?>
+            <?php foreach ($dataSalink as $x) :?>
+            <tr>
+                <td width="60%" class="e">
+                    <?php
+                        if($x->id==1){echo "<strong>";echo $x->properti;echo $x->nama;echo "</strong>";}else{echo $x->properti;echo $x->nama;}?>
+                </td>
+                <td class="e"><?php echo $x->$taun1; ?></td>
+                <td class="e"><?php echo $x->$taun2; ?></td>
+                <td class="e"><?php echo $x->$taun3; ?></td>
+                <td class="e"><?php echo $x->$taun4; ?></td>
+                <td class="e"><?php echo $x->$taun5; ?></td>
+                <!-- <td class="e"><?php /*echo $x->*/$tahunini; ?></td> -->
+                <td class="e"><?php echo $x->satuan; ?></td>
+                <td class="e"><?php echo $x->ketersediaan; ?></td>
+                <td class="e"><?php echo $x->sumber_data; ?></td>
+            </tr><?php endforeach; ?>
+            <?php foreach ($dataBuang as $x) :?>
+            <tr>
+                <td width="60%" class="e">
+                    <?php
+                        if($x->id==1){echo "<strong>";echo $x->properti;echo $x->nama;echo "</strong>";}else{echo $x->properti;echo $x->nama;}?>
+                </td>
+                <td class="e"><?php echo $x->$taun1; ?></td>
+                <td class="e"><?php echo $x->$taun2; ?></td>
+                <td class="e"><?php echo $x->$taun3; ?></td>
+                <td class="e"><?php echo $x->$taun4; ?></td>
+                <td class="e"><?php echo $x->$taun5; ?></td>
+                <!-- <td class="e"><?php /*echo $x->*/$tahunini; ?></td> -->
+                <td class="e"><?php echo $x->satuan; ?></td>
+                <td class="e"><?php echo $x->ketersediaan; ?></td>
+                <td class="e"><?php echo $x->sumber_data; ?></td>
+            </tr><?php endforeach; ?>
+            <?php foreach ($dataAlim as $x) :?>
+            <tr>
+                <td width="60%" class="e">
+                    <?php
+                        if($x->id==1){echo "<strong>";echo $x->properti;echo $x->nama;echo "</strong>";}else{echo $x->properti;echo $x->nama;}?>
+                </td>
+                <td class="e"><?php echo $x->$taun1; ?></td>
+                <td class="e"><?php echo $x->$taun2; ?></td>
+                <td class="e"><?php echo $x->$taun3; ?></td>
+                <td class="e"><?php echo $x->$taun4; ?></td>
+                <td class="e"><?php echo $x->$taun5; ?></td>
+                <!-- <td class="e"><?php /*echo $x->*/$tahunini; ?></td> -->
+                <td class="e"><?php echo $x->satuan; ?></td>
+                <td class="e"><?php echo $x->ketersediaan; ?></td>
+                <td class="e"><?php echo $x->sumber_data; ?></td>
+            </tr><?php endforeach; ?>
+            <!-- End SDA -->
+            <!-- Data Infrastruktur -->
+            <tr><td colspan="9"><strong>INFRASTRUKTUR - Perumahan dan Permukiman</strong></td></tr>
+            <?php foreach ($dataPerum as $x) :?>
+            <tr>
+                <td width="60%" class="e">
+                    <?php
+                        if($x->id==1){echo "<strong>";echo $x->properti;echo $x->nama;echo "</strong>";}else{echo $x->properti;echo $x->nama;}?>
+                </td>
+                <td class="e"><?php echo $x->$taun1; ?></td>
+                <td class="e"><?php echo $x->$taun2; ?></td>
+                <td class="e"><?php echo $x->$taun3; ?></td>
+                <td class="e"><?php echo $x->$taun4; ?></td>
+                <td class="e"><?php echo $x->$taun5; ?></td>
+                <!-- <td class="e"><?php /*echo $x->*/$tahunini; ?></td> -->
+                <td class="e"><?php echo $x->satuan; ?></td>
+                <td class="e"><?php echo $x->ketersediaan; ?></td>
+                <td class="e"><?php echo $x->sumber_data; ?></td>
+            </tr><?php endforeach; ?>
+            <?php foreach ($dataJumah as $x) :?>
+            <tr>
+                <td width="60%" class="e">
+                    <?php
+                        if($x->id==1){echo "<strong>";echo $x->properti;echo $x->nama;echo "</strong>";}else{echo $x->properti;echo $x->nama;}?>
+                </td>
+                <td class="e"><?php echo $x->$taun1; ?></td>
+                <td class="e"><?php echo $x->$taun2; ?></td>
+                <td class="e"><?php echo $x->$taun3; ?></td>
+                <td class="e"><?php echo $x->$taun4; ?></td>
+                <td class="e"><?php echo $x->$taun5; ?></td>
+                <!-- <td class="e"><?php /*echo $x->*/$tahunini; ?></td> -->
+                <td class="e"><?php echo $x->satuan; ?></td>
+                <td class="e"><?php echo $x->ketersediaan; ?></td>
+                <td class="e"><?php echo $x->sumber_data; ?></td>
+            </tr><?php endforeach; ?>
+            <?php foreach ($dataLumah as $x) :?>
+            <tr>
+                <td width="60%" class="e">
+                    <?php
+                        if($x->id==1){echo "<strong>";echo $x->properti;echo $x->nama;echo "</strong>";}else{echo $x->properti;echo $x->nama;}?>
+                </td>
+                <td class="e"><?php echo $x->$taun1; ?></td>
+                <td class="e"><?php echo $x->$taun2; ?></td>
+                <td class="e"><?php echo $x->$taun3; ?></td>
+                <td class="e"><?php echo $x->$taun4; ?></td>
+                <td class="e"><?php echo $x->$taun5; ?></td>
+                <!-- <td class="e"><?php /*echo $x->*/$tahunini; ?></td> -->
+                <td class="e"><?php echo $x->satuan; ?></td>
+                <td class="e"><?php echo $x->ketersediaan; ?></td>
+                <td class="e"><?php echo $x->sumber_data; ?></td>
+            </tr><?php endforeach; ?>
+            <?php foreach ($dataPmukiman as $x) :?>
+            <tr>
+                <td width="60%" class="e">
+                    <?php
+                        if($x->id==1){echo "<strong>";echo $x->properti;echo $x->nama;echo "</strong>";}else{echo $x->properti;echo $x->nama;}?>
+                </td>
+                <td class="e"><?php echo $x->$taun1; ?></td>
+                <td class="e"><?php echo $x->$taun2; ?></td>
+                <td class="e"><?php echo $x->$taun3; ?></td>
+                <td class="e"><?php echo $x->$taun4; ?></td>
+                <td class="e"><?php echo $x->$taun5; ?></td>
+                <!-- <td class="e"><?php /*echo $x->*/$tahunini; ?></td> -->
+                <td class="e"><?php echo $x->satuan; ?></td>
+                <td class="e"><?php echo $x->ketersediaan; ?></td>
+                <td class="e"><?php echo $x->sumber_data; ?></td>
+            </tr><?php endforeach; ?>
+            <?php foreach ($dataJumBang as $x) :?>
+            <tr>
+                <td width="60%" class="e">
+                    <?php
+                        if($x->id==1){echo "<strong>";echo $x->properti;echo $x->nama;echo "</strong>";}else{echo $x->properti;echo $x->nama;}?>
+                </td>
+                <td class="e"><?php echo $x->$taun1; ?></td>
+                <td class="e"><?php echo $x->$taun2; ?></td>
+                <td class="e"><?php echo $x->$taun3; ?></td>
+                <td class="e"><?php echo $x->$taun4; ?></td>
+                <td class="e"><?php echo $x->$taun5; ?></td>
+                <!-- <td class="e"><?php /*echo $x->*/$tahunini; ?></td> -->
+                <td class="e"><?php echo $x->satuan; ?></td>
+                <td class="e"><?php echo $x->ketersediaan; ?></td>
+                <td class="e"><?php echo $x->sumber_data; ?></td>
+            </tr><?php endforeach; ?>
+            <?php foreach ($dataTiKum as $x) :?>
+            <tr>
+                <td width="60%" class="e">
+                    <?php
+                        if($x->id==1){echo "<strong>";echo $x->properti;echo $x->nama;echo "</strong>";}else{echo $x->properti;echo $x->nama;}?>
+                </td>
+                <td class="e"><?php echo $x->$taun1; ?></td>
+                <td class="e"><?php echo $x->$taun2; ?></td>
+                <td class="e"><?php echo $x->$taun3; ?></td>
+                <td class="e"><?php echo $x->$taun4; ?></td>
+                <td class="e"><?php echo $x->$taun5; ?></td>
+                <!-- <td class="e"><?php /*echo $x->*/$tahunini; ?></td> -->
+                <td class="e"><?php echo $x->satuan; ?></td>
+                <td class="e"><?php echo $x->ketersediaan; ?></td>
+                <td class="e"><?php echo $x->sumber_data; ?></td>
+            </tr><?php endforeach; ?>
+            <?php foreach ($dataIlegal as $x) :?>
+            <tr>
+                <td width="60%" class="e">
+                    <?php
+                        if($x->id==1){echo "<strong>";echo $x->properti;echo $x->nama;echo "</strong>";}else{echo $x->properti;echo $x->nama;}?>
+                </td>
+                <td class="e"><?php echo $x->$taun1; ?></td>
+                <td class="e"><?php echo $x->$taun2; ?></td>
+                <td class="e"><?php echo $x->$taun3; ?></td>
+                <td class="e"><?php echo $x->$taun4; ?></td>
+                <td class="e"><?php echo $x->$taun5; ?></td>
+                <!-- <td class="e"><?php /*echo $x->*/$tahunini; ?></td> -->
+                <td class="e"><?php echo $x->satuan; ?></td>
+                <td class="e"><?php echo $x->ketersediaan; ?></td>
+                <td class="e"><?php echo $x->sumber_data; ?></td>
+            </tr><?php endforeach; ?>
+            <?php foreach ($dataBantaran as $x) :?>
+            <tr>
+                <td width="60%" class="e">
+                    <?php
+                        if($x->id==1){echo "<strong>";echo $x->properti;echo $x->nama;echo "</strong>";}else{echo $x->properti;echo $x->nama;}?>
+                </td>
+                <td class="e"><?php echo $x->$taun1; ?></td>
+                <td class="e"><?php echo $x->$taun2; ?></td>
+                <td class="e"><?php echo $x->$taun3; ?></td>
+                <td class="e"><?php echo $x->$taun4; ?></td>
+                <td class="e"><?php echo $x->$taun5; ?></td>
+                <!-- <td class="e"><?php /*echo $x->*/$tahunini; ?></td> -->
+                <td class="e"><?php echo $x->satuan; ?></td>
+                <td class="e"><?php echo $x->ketersediaan; ?></td>
+                <td class="e"><?php echo $x->sumber_data; ?></td>
+            </tr><?php endforeach; ?>
+            <?php foreach ($dataRusut as $x) :?>
+            <tr>
+                <td width="60%" class="e">
+                    <?php
+                        if($x->id==1){echo "<strong>";echo $x->properti;echo $x->nama;echo "</strong>";}else{echo $x->properti;echo $x->nama;}?>
+                </td>
+                <td class="e"><?php echo $x->$taun1; ?></td>
+                <td class="e"><?php echo $x->$taun2; ?></td>
+                <td class="e"><?php echo $x->$taun3; ?></td>
+                <td class="e"><?php echo $x->$taun4; ?></td>
+                <td class="e"><?php echo $x->$taun5; ?></td>
+                <!-- <td class="e"><?php /*echo $x->*/$tahunini; ?></td> -->
+                <td class="e"><?php echo $x->satuan; ?></td>
+                <td class="e"><?php echo $x->ketersediaan; ?></td>
+                <td class="e"><?php echo $x->sumber_data; ?></td>
+            </tr><?php endforeach; ?>
+            <?php foreach ($dataRuPublik as $x) :?>
+            <tr>
+                <td width="60%" class="e">
+                    <?php
+                        if($x->id==1){echo "<strong>";echo $x->properti;echo $x->nama;echo "</strong>";}else{echo $x->properti;echo $x->nama;}?>
+                </td>
+                <td class="e"><?php echo $x->$taun1; ?></td>
+                <td class="e"><?php echo $x->$taun2; ?></td>
+                <td class="e"><?php echo $x->$taun3; ?></td>
+                <td class="e"><?php echo $x->$taun4; ?></td>
+                <td class="e"><?php echo $x->$taun5; ?></td>
+                <!-- <td class="e"><?php /*echo $x->*/$tahunini; ?></td> -->
+                <td class="e"><?php echo $x->satuan; ?></td>
+                <td class="e"><?php echo $x->ketersediaan; ?></td>
+                <td class="e"><?php echo $x->sumber_data; ?></td>
+            </tr><?php endforeach; ?>
+            <?php foreach ($dataRutasi as $x) :?>
+            <tr>
+                <td width="60%" class="e">
+                    <?php
+                        if($x->id==1){echo "<strong>";echo $x->properti;echo $x->nama;echo "</strong>";}else{echo $x->properti;echo $x->nama;}?>
+                </td>
+                <td class="e"><?php echo $x->$taun1; ?></td>
+                <td class="e"><?php echo $x->$taun2; ?></td>
+                <td class="e"><?php echo $x->$taun3; ?></td>
+                <td class="e"><?php echo $x->$taun4; ?></td>
+                <td class="e"><?php echo $x->$taun5; ?></td>
+                <!-- <td class="e"><?php /*echo $x->*/$tahunini; ?></td> -->
+                <td class="e"><?php echo $x->satuan; ?></td>
+                <td class="e"><?php echo $x->ketersediaan; ?></td>
+                <td class="e"><?php echo $x->sumber_data; ?></td>
+            </tr><?php endforeach; ?>
+            <tr><td colspan="9"><strong>INFRASTRUKTUR - Pekerjaan Umum</strong></td></tr>
+            <?php foreach ($dataPJJLAN as $x) :?>
+            <tr>
+                <td width="60%" class="e">
+                    <?php
+                        if($x->id==1){echo "<strong>";echo $x->properti;echo $x->nama;echo "</strong>";}else{echo $x->properti;echo $x->nama;}?>
+                </td>
+                <td class="e"><?php echo $x->$taun1; ?></td>
+                <td class="e"><?php echo $x->$taun2; ?></td>
+                <td class="e"><?php echo $x->$taun3; ?></td>
+                <td class="e"><?php echo $x->$taun4; ?></td>
+                <td class="e"><?php echo $x->$taun5; ?></td>
+                <!-- <td class="e"><?php /*echo $x->*/$tahunini; ?></td> -->
+                <td class="e"><?php echo $x->satuan; ?></td>
+                <td class="e"><?php echo $x->ketersediaan; ?></td>
+                <td class="e"><?php echo $x->sumber_data; ?></td>
+            </tr><?php endforeach; ?>
+            <?php foreach ($dataKonJalan as $x) :?>
+            <tr>
+                <td width="60%" class="e">
+                    <?php
+                        if($x->id==1){echo "<strong>";echo $x->properti;echo $x->nama;echo "</strong>";}else{echo $x->properti;echo $x->nama;}?>
+                </td>
+                <td class="e"><?php echo $x->$taun1; ?></td>
+                <td class="e"><?php echo $x->$taun2; ?></td>
+                <td class="e"><?php echo $x->$taun3; ?></td>
+                <td class="e"><?php echo $x->$taun4; ?></td>
+                <td class="e"><?php echo $x->$taun5; ?></td>
+                <!-- <td class="e"><?php /*echo $x->*/$tahunini; ?></td> -->
+                <td class="e"><?php echo $x->satuan; ?></td>
+                <td class="e"><?php echo $x->ketersediaan; ?></td>
+                <td class="e"><?php echo $x->sumber_data; ?></td>
+            </tr><?php endforeach; ?>
+            <?php foreach ($dataPakon as $x) :?>
+            <tr>
+                <td width="60%" class="e">
+                    <?php
+                        if($x->id==1){echo "<strong>";echo $x->properti;echo $x->nama;echo "</strong>";}else{echo $x->properti;echo $x->nama;}?>
+                </td>
+                <td class="e"><?php echo $x->$taun1; ?></td>
+                <td class="e"><?php echo $x->$taun2; ?></td>
+                <td class="e"><?php echo $x->$taun3; ?></td>
+                <td class="e"><?php echo $x->$taun4; ?></td>
+                <td class="e"><?php echo $x->$taun5; ?></td>
+                <!-- <td class="e"><?php /*echo $x->*/$tahunini; ?></td> -->
+                <td class="e"><?php echo $x->satuan; ?></td>
+                <td class="e"><?php echo $x->ketersediaan; ?></td>
+                <td class="e"><?php echo $x->sumber_data; ?></td>
+            </tr><?php endforeach; ?>
+            <?php foreach ($dataJabung as $x) :?>
+            <tr>
+                <td width="60%" class="e">
+                    <?php
+                        if($x->id==1){echo "<strong>";echo $x->properti;echo $x->nama;echo "</strong>";}else{echo $x->properti;echo $x->nama;}?>
+                </td>
+                <td class="e"><?php echo $x->$taun1; ?></td>
+                <td class="e"><?php echo $x->$taun2; ?></td>
+                <td class="e"><?php echo $x->$taun3; ?></td>
+                <td class="e"><?php echo $x->$taun4; ?></td>
+                <td class="e"><?php echo $x->$taun5; ?></td>
+                <!-- <td class="e"><?php /*echo $x->*/$tahunini; ?></td> -->
+                <td class="e"><?php echo $x->satuan; ?></td>
+                <td class="e"><?php echo $x->ketersediaan; ?></td>
+                <td class="e"><?php echo $x->sumber_data; ?></td>
+            </tr><?php endforeach; ?>
+            <?php foreach ($dataJembatan as $x) :?>
+            <tr>
+                <td width="60%" class="e">
+                    <?php
+                        if($x->id==1){echo "<strong>";echo $x->properti;echo $x->nama;echo "</strong>";}else{echo $x->properti;echo $x->nama;}?>
+                </td>
+                <td class="e"><?php echo $x->$taun1; ?></td>
+                <td class="e"><?php echo $x->$taun2; ?></td>
+                <td class="e"><?php echo $x->$taun3; ?></td>
+                <td class="e"><?php echo $x->$taun4; ?></td>
+                <td class="e"><?php echo $x->$taun5; ?></td>
+                <!-- <td class="e"><?php /*echo $x->*/$tahunini; ?></td> -->
+                <td class="e"><?php echo $x->satuan; ?></td>
+                <td class="e"><?php echo $x->ketersediaan; ?></td>
+                <td class="e"><?php echo $x->sumber_data; ?></td>
+            </tr><?php endforeach; ?>
+            <?php foreach ($dataPFungsi as $x) :?>
+            <tr>
+                <td width="60%" class="e">
+                    <?php
+                        if($x->id==1){echo "<strong>";echo $x->properti;echo $x->nama;echo "</strong>";}else{echo $x->properti;echo $x->nama;}?>
+                </td>
+                <td class="e"><?php echo $x->$taun1; ?></td>
+                <td class="e"><?php echo $x->$taun2; ?></td>
+                <td class="e"><?php echo $x->$taun3; ?></td>
+                <td class="e"><?php echo $x->$taun4; ?></td>
+                <td class="e"><?php echo $x->$taun5; ?></td>
+                <!-- <td class="e"><?php /*echo $x->*/$tahunini; ?></td> -->
+                <td class="e"><?php echo $x->satuan; ?></td>
+                <td class="e"><?php echo $x->ketersediaan; ?></td>
+                <td class="e"><?php echo $x->sumber_data; ?></td>
+            </tr><?php endforeach; ?>
+            <?php foreach ($dataKuburan as $x) :?>
+            <tr>
+                <td width="60%" class="e">
+                    <?php
+                        if($x->id==1){echo "<strong>";echo $x->properti;echo $x->nama;echo "</strong>";}else{echo $x->properti;echo $x->nama;}?>
+                </td>
+                <td class="e"><?php echo $x->$taun1; ?></td>
+                <td class="e"><?php echo $x->$taun2; ?></td>
+                <td class="e"><?php echo $x->$taun3; ?></td>
+                <td class="e"><?php echo $x->$taun4; ?></td>
+                <td class="e"><?php echo $x->$taun5; ?></td>
+                <!-- <td class="e"><?php /*echo $x->*/$tahunini; ?></td> -->
+                <td class="e"><?php echo $x->satuan; ?></td>
+                <td class="e"><?php echo $x->ketersediaan; ?></td>
+                <td class="e"><?php echo $x->sumber_data; ?></td>
+            </tr><?php endforeach; ?>
+            <?php foreach ($dataAiri as $x) :?>
+            <tr>
+                <td width="60%" class="e">
+                    <?php
+                        if($x->id==1){echo "<strong>";echo $x->properti;echo $x->nama;echo "</strong>";}else{echo $x->properti;echo $x->nama;}?>
+                </td>
+                <td class="e"><?php echo $x->$taun1; ?></td>
+                <td class="e"><?php echo $x->$taun2; ?></td>
+                <td class="e"><?php echo $x->$taun3; ?></td>
+                <td class="e"><?php echo $x->$taun4; ?></td>
+                <td class="e"><?php echo $x->$taun5; ?></td>
+                <!-- <td class="e"><?php /*echo $x->*/$tahunini; ?></td> -->
+                <td class="e"><?php echo $x->satuan; ?></td>
+                <td class="e"><?php echo $x->ketersediaan; ?></td>
+                <td class="e"><?php echo $x->sumber_data; ?></td>
+            </tr><?php endforeach; ?>
+            <?php foreach ($dataPaLik as $x) :?>
+            <tr>
+                <td width="60%" class="e">
+                    <?php
+                        if($x->id==1){echo "<strong>";echo $x->properti;echo $x->nama;echo "</strong>";}else{echo $x->properti;echo $x->nama;}?>
+                </td>
+                <td class="e"><?php echo $x->$taun1; ?></td>
+                <td class="e"><?php echo $x->$taun2; ?></td>
+                <td class="e"><?php echo $x->$taun3; ?></td>
+                <td class="e"><?php echo $x->$taun4; ?></td>
+                <td class="e"><?php echo $x->$taun5; ?></td>
+                <!-- <td class="e"><?php /*echo $x->*/$tahunini; ?></td> -->
+                <td class="e"><?php echo $x->satuan; ?></td>
+                <td class="e"><?php echo $x->ketersediaan; ?></td>
+                <td class="e"><?php echo $x->sumber_data; ?></td>
+            </tr><?php endforeach; ?>
+            <?php foreach ($dataSempadan as $x) :?>
+            <tr>
+                <td width="60%" class="e">
+                    <?php
+                        if($x->id==1){echo "<strong>";echo $x->properti;echo $x->nama;echo "</strong>";}else{echo $x->properti;echo $x->nama;}?>
+                </td>
+                <td class="e"><?php echo $x->$taun1; ?></td>
+                <td class="e"><?php echo $x->$taun2; ?></td>
+                <td class="e"><?php echo $x->$taun3; ?></td>
+                <td class="e"><?php echo $x->$taun4; ?></td>
+                <td class="e"><?php echo $x->$taun5; ?></td>
+                <!-- <td class="e"><?php /*echo $x->*/$tahunini; ?></td> -->
+                <td class="e"><?php echo $x->satuan; ?></td>
+                <td class="e"><?php echo $x->ketersediaan; ?></td>
+                <td class="e"><?php echo $x->sumber_data; ?></td>
+            </tr><?php endforeach; ?>
+            <?php foreach ($dataDrainase as $x) :?>
+            <tr>
+                <td width="60%" class="e">
+                    <?php
+                        if($x->id==1){echo "<strong>";echo $x->properti;echo $x->nama;echo "</strong>";}else{echo $x->properti;echo $x->nama;}?>
+                </td>
+                <td class="e"><?php echo $x->$taun1; ?></td>
+                <td class="e"><?php echo $x->$taun2; ?></td>
+                <td class="e"><?php echo $x->$taun3; ?></td>
+                <td class="e"><?php echo $x->$taun4; ?></td>
+                <td class="e"><?php echo $x->$taun5; ?></td>
+                <!-- <td class="e"><?php /*echo $x->*/$tahunini; ?></td> -->
+                <td class="e"><?php echo $x->satuan; ?></td>
+                <td class="e"><?php echo $x->ketersediaan; ?></td>
+                <td class="e"><?php echo $x->sumber_data; ?></td>
+            </tr><?php endforeach; ?>
+            <?php foreach ($dataTurap as $x) :?>
+            <tr>
+                <td width="60%" class="e">
+                    <?php
+                        if($x->id==1){echo "<strong>";echo $x->properti;echo $x->nama;echo "</strong>";}else{echo $x->properti;echo $x->nama;}?>
+                </td>
+                <td class="e"><?php echo $x->$taun1; ?></td>
+                <td class="e"><?php echo $x->$taun2; ?></td>
+                <td class="e"><?php echo $x->$taun3; ?></td>
+                <td class="e"><?php echo $x->$taun4; ?></td>
+                <td class="e"><?php echo $x->$taun5; ?></td>
+                <!-- <td class="e"><?php /*echo $x->*/$tahunini; ?></td> -->
+                <td class="e"><?php echo $x->satuan; ?></td>
+                <td class="e"><?php echo $x->ketersediaan; ?></td>
+                <td class="e"><?php echo $x->sumber_data; ?></td>
+            </tr><?php endforeach; ?>
+            <?php foreach ($dataSuram as $x) :?>
+            <tr>
+                <td width="60%" class="e">
+                    <?php
+                        if($x->id==1){echo "<strong>";echo $x->properti;echo $x->nama;echo "</strong>";}else{echo $x->properti;echo $x->nama;}?>
+                </td>
+                <td class="e"><?php echo $x->$taun1; ?></td>
+                <td class="e"><?php echo $x->$taun2; ?></td>
+                <td class="e"><?php echo $x->$taun3; ?></td>
+                <td class="e"><?php echo $x->$taun4; ?></td>
+                <td class="e"><?php echo $x->$taun5; ?></td>
+                <!-- <td class="e"><?php /*echo $x->*/$tahunini; ?></td> -->
+                <td class="e"><?php echo $x->satuan; ?></td>
+                <td class="e"><?php echo $x->ketersediaan; ?></td>
+                <td class="e"><?php echo $x->sumber_data; ?></td>
+            </tr><?php endforeach; ?>
+            <tr><td colspan="9"><strong>INFRASTRUKTUR - Pariwisata, POS, Telekomunikasi dan Informatika</strong></td></tr>
+            <?php foreach ($dataParwis as $x) :?>
+            <tr>
+                <td width="60%" class="e">
+                    <?php
+                        if($x->id==1){echo "<strong>";echo $x->properti;echo $x->nama;echo "</strong>";}else{echo $x->properti;echo $x->nama;}?>
+                </td>
+                <td class="e"><?php echo $x->$taun1; ?></td>
+                <td class="e"><?php echo $x->$taun2; ?></td>
+                <td class="e"><?php echo $x->$taun3; ?></td>
+                <td class="e"><?php echo $x->$taun4; ?></td>
+                <td class="e"><?php echo $x->$taun5; ?></td>
+                <!-- <td class="e"><?php /*echo $x->*/$tahunini; ?></td> -->
+                <td class="e"><?php echo $x->satuan; ?></td>
+                <td class="e"><?php echo $x->ketersediaan; ?></td>
+                <td class="e"><?php echo $x->sumber_data; ?></td>
+            </tr><?php endforeach; ?>
+            <?php foreach ($dataTelkom as $x) :?>
+            <tr>
+                <td width="60%" class="e">
+                    <?php
+                        if($x->id==1){echo "<strong>";echo $x->properti;echo $x->nama;echo "</strong>";}else{echo $x->properti;echo $x->nama;}?>
+                </td>
+                <td class="e"><?php echo $x->$taun1; ?></td>
+                <td class="e"><?php echo $x->$taun2; ?></td>
+                <td class="e"><?php echo $x->$taun3; ?></td>
+                <td class="e"><?php echo $x->$taun4; ?></td>
+                <td class="e"><?php echo $x->$taun5; ?></td>
+                <!-- <td class="e"><?php /*echo $x->*/$tahunini; ?></td> -->
+                <td class="e"><?php echo $x->satuan; ?></td>
+                <td class="e"><?php echo $x->ketersediaan; ?></td>
+                <td class="e"><?php echo $x->sumber_data; ?></td>
+            </tr><?php endforeach; ?>
+            <?php foreach ($dataKoran as $x) :?>
+            <tr>
+                <td width="60%" class="e">
+                    <?php
+                        if($x->id==1){echo "<strong>";echo $x->properti;echo $x->nama;echo "</strong>";}else{echo $x->properti;echo $x->nama;}?>
+                </td>
+                <td class="e"><?php echo $x->$taun1; ?></td>
+                <td class="e"><?php echo $x->$taun2; ?></td>
+                <td class="e"><?php echo $x->$taun3; ?></td>
+                <td class="e"><?php echo $x->$taun4; ?></td>
+                <td class="e"><?php echo $x->$taun5; ?></td>
+                <!-- <td class="e"><?php /*echo $x->*/$tahunini; ?></td> -->
+                <td class="e"><?php echo $x->satuan; ?></td>
+                <td class="e"><?php echo $x->ketersediaan; ?></td>
+                <td class="e"><?php echo $x->sumber_data; ?></td>
+            </tr><?php endforeach; ?>
+            <?php foreach ($dataMedelek as $x) :?>
+            <tr>
+                <td width="60%" class="e">
+                    <?php
+                        if($x->id==1){echo "<strong>";echo $x->properti;echo $x->nama;echo "</strong>";}else{echo $x->properti;echo $x->nama;}?>
+                </td>
+                <td class="e"><?php echo $x->$taun1; ?></td>
+                <td class="e"><?php echo $x->$taun2; ?></td>
+                <td class="e"><?php echo $x->$taun3; ?></td>
+                <td class="e"><?php echo $x->$taun4; ?></td>
+                <td class="e"><?php echo $x->$taun5; ?></td>
+                <!-- <td class="e"><?php /*echo $x->*/$tahunini; ?></td> -->
+                <td class="e"><?php echo $x->satuan; ?></td>
+                <td class="e"><?php echo $x->ketersediaan; ?></td>
+                <td class="e"><?php echo $x->sumber_data; ?></td>
+            </tr><?php endforeach; ?>
+            <?php foreach ($dataSipeda as $x) :?>
+            <tr>
+                <td width="60%" class="e">
+                    <?php
+                        if($x->id==1){echo "<strong>";echo $x->properti;echo $x->nama;echo "</strong>";}else{echo $x->properti;echo $x->nama;}?>
+                </td>
+                <td class="e"><?php echo $x->$taun1; ?></td>
+                <td class="e"><?php echo $x->$taun2; ?></td>
+                <td class="e"><?php echo $x->$taun3; ?></td>
+                <td class="e"><?php echo $x->$taun4; ?></td>
+                <td class="e"><?php echo $x->$taun5; ?></td>
+                <!-- <td class="e"><?php /*echo $x->*/$tahunini; ?></td> -->
+                <td class="e"><?php echo $x->satuan; ?></td>
+                <td class="e"><?php echo $x->ketersediaan; ?></td>
+                <td class="e"><?php echo $x->sumber_data; ?></td>
+            </tr><?php endforeach; ?>
+            <tr><td colspan="9"><strong>INFRASTRUKTUR - Perhubungan dan Transportasi</strong></td></tr>
+            <?php foreach ($dataPerhub as $x) :?>
+            <tr>
+                <td width="60%" class="e">
+                    <?php
+                        if($x->id==1){echo "<strong>";echo $x->properti;echo $x->nama;echo "</strong>";}else{echo $x->properti;echo $x->nama;}?>
+                </td>
+                <td class="e"><?php echo $x->$taun1; ?></td>
+                <td class="e"><?php echo $x->$taun2; ?></td>
+                <td class="e"><?php echo $x->$taun3; ?></td>
+                <td class="e"><?php echo $x->$taun4; ?></td>
+                <td class="e"><?php echo $x->$taun5; ?></td>
+                <!-- <td class="e"><?php /*echo $x->*/$tahunini; ?></td> -->
+                <td class="e"><?php echo $x->satuan; ?></td>
+                <td class="e"><?php echo $x->ketersediaan; ?></td>
+                <td class="e"><?php echo $x->sumber_data; ?></td>
+            </tr><?php endforeach; ?>
+            <?php foreach ($dataAngkutUmum as $x) :?>
+            <tr>
+                <td width="60%" class="e">
+                    <?php
+                        if($x->id==1){echo "<strong>";echo $x->properti;echo $x->nama;echo "</strong>";}else{echo $x->properti;echo $x->nama;}?>
+                </td>
+                <td class="e"><?php echo $x->$taun1; ?></td>
+                <td class="e"><?php echo $x->$taun2; ?></td>
+                <td class="e"><?php echo $x->$taun3; ?></td>
+                <td class="e"><?php echo $x->$taun4; ?></td>
+                <td class="e"><?php echo $x->$taun5; ?></td>
+                <!-- <td class="e"><?php /*echo $x->*/$tahunini; ?></td> -->
+                <td class="e"><?php echo $x->satuan; ?></td>
+                <td class="e"><?php echo $x->ketersediaan; ?></td>
+                <td class="e"><?php echo $x->sumber_data; ?></td>
+            </tr><?php endforeach; ?>
+            <?php foreach ($dataTransprot as $x) :?>
+            <tr>
+                <td width="60%" class="e">
+                    <?php
+                        if($x->id==1){echo "<strong>";echo $x->properti;echo $x->nama;echo "</strong>";}else{echo $x->properti;echo $x->nama;}?>
+                </td>
+                <td class="e"><?php echo $x->$taun1; ?></td>
+                <td class="e"><?php echo $x->$taun2; ?></td>
+                <td class="e"><?php echo $x->$taun3; ?></td>
+                <td class="e"><?php echo $x->$taun4; ?></td>
+                <td class="e"><?php echo $x->$taun5; ?></td>
+                <!-- <td class="e"><?php /*echo $x->*/$tahunini; ?></td> -->
+                <td class="e"><?php echo $x->satuan; ?></td>
+                <td class="e"><?php echo $x->ketersediaan; ?></td>
+                <td class="e"><?php echo $x->sumber_data; ?></td>
+            </tr><?php endforeach; ?>
+            <?php foreach ($dataKendaraMotor as $x) :?>
+            <tr>
+                <td width="60%" class="e">
+                    <?php
+                        if($x->id==1){echo "<strong>";echo $x->properti;echo $x->nama;echo "</strong>";}else{echo $x->properti;echo $x->nama;}?>
+                </td>
+                <td class="e"><?php echo $x->$taun1; ?></td>
+                <td class="e"><?php echo $x->$taun2; ?></td>
+                <td class="e"><?php echo $x->$taun3; ?></td>
+                <td class="e"><?php echo $x->$taun4; ?></td>
+                <td class="e"><?php echo $x->$taun5; ?></td>
+                <!-- <td class="e"><?php /*echo $x->*/$tahunini; ?></td> -->
+                <td class="e"><?php echo $x->satuan; ?></td>
+                <td class="e"><?php echo $x->ketersediaan; ?></td>
+                <td class="e"><?php echo $x->sumber_data; ?></td>
+            </tr><?php endforeach; ?>
+            <!-- End Data Infrastruktur -->
+            <!-- Data Ekonomi -->
+            <tr><td colspan="9"><strong>EKONOMI - Industri, Perdagangan, Pengembangan Usaha Nasional, Lembaga Keuangan dan Koperasi</strong></td></tr>
+            <?php foreach ($dataIndustri as $x) :?>
+            <tr>
+                <td width="60%" class="e">
+                    <?php
+                        if($x->id==1){echo "<strong>";echo $x->properti;echo $x->nama;echo "</strong>";}else{echo $x->properti;echo $x->nama;}?>
+                </td>
+                <td class="e"><?php echo $x->$taun1; ?></td>
+                <td class="e"><?php echo $x->$taun2; ?></td>
+                <td class="e"><?php echo $x->$taun3; ?></td>
+                <td class="e"><?php echo $x->$taun4; ?></td>
+                <td class="e"><?php echo $x->$taun5; ?></td>
+                <!-- <td class="e"><?php /*echo $x->*/$tahunini; ?></td> -->
+                <td class="e"><?php echo $x->satuan; ?></td>
+                <td class="e"><?php echo $x->ketersediaan; ?></td>
+                <td class="e"><?php echo $x->sumber_data; ?></td>
+            </tr><?php endforeach; ?>
+            <?php foreach ($dataPerdagangan as $x) :?>
+            <tr>
+                <td width="60%" class="e">
+                    <?php
+                        if($x->id==1){echo "<strong>";echo $x->properti;echo $x->nama;echo "</strong>";}else{echo $x->properti;echo $x->nama;}?>
+                </td>
+                <td class="e"><?php echo $x->$taun1; ?></td>
+                <td class="e"><?php echo $x->$taun2; ?></td>
+                <td class="e"><?php echo $x->$taun3; ?></td>
+                <td class="e"><?php echo $x->$taun4; ?></td>
+                <td class="e"><?php echo $x->$taun5; ?></td>
+                <!-- <td class="e"><?php /*echo $x->*/$tahunini; ?></td> -->
+                <td class="e"><?php echo $x->satuan; ?></td>
+                <td class="e"><?php echo $x->ketersediaan; ?></td>
+                <td class="e"><?php echo $x->sumber_data; ?></td>
+            </tr><?php endforeach; ?>
+            <?php foreach ($dataUsahaNas as $x) :?>
+            <tr>
+                <td width="60%" class="e">
+                    <?php
+                        if($x->id==1){echo "<strong>";echo $x->properti;echo $x->nama;echo "</strong>";}else{echo $x->properti;echo $x->nama;}?>
+                </td>
+                <td class="e"><?php echo $x->$taun1; ?></td>
+                <td class="e"><?php echo $x->$taun2; ?></td>
+                <td class="e"><?php echo $x->$taun3; ?></td>
+                <td class="e"><?php echo $x->$taun4; ?></td>
+                <td class="e"><?php echo $x->$taun5; ?></td>
+                <!-- <td class="e"><?php /*echo $x->*/$tahunini; ?></td> -->
+                <td class="e"><?php echo $x->satuan; ?></td>
+                <td class="e"><?php echo $x->ketersediaan; ?></td>
+                <td class="e"><?php echo $x->sumber_data; ?></td>
+            </tr><?php endforeach; ?>
+            <?php foreach ($dataNonMigas as $x) :?>
+            <tr>
+                <td width="60%" class="e">
+                    <?php
+                        if($x->id==1){echo "<strong>";echo $x->properti;echo $x->nama;echo "</strong>";}else{echo $x->properti;echo $x->nama;}?>
+                </td>
+                <td class="e"><?php echo $x->$taun1; ?></td>
+                <td class="e"><?php echo $x->$taun2; ?></td>
+                <td class="e"><?php echo $x->$taun3; ?></td>
+                <td class="e"><?php echo $x->$taun4; ?></td>
+                <td class="e"><?php echo $x->$taun5; ?></td>
+                <!-- <td class="e"><?php /*echo $x->*/$tahunini; ?></td> -->
+                <td class="e"><?php echo $x->satuan; ?></td>
+                <td class="e"><?php echo $x->ketersediaan; ?></td>
+                <td class="e"><?php echo $x->sumber_data; ?></td>
+            </tr><?php endforeach; ?>
+            <?php foreach ($dataIOIndustri as $x) :?>
+            <tr>
+                <td width="60%" class="e">
+                    <?php
+                        if($x->id==1){echo "<strong>";echo $x->properti;echo $x->nama;echo "</strong>";}else{echo $x->properti;echo $x->nama;}?>
+                </td>
+                <td class="e"><?php echo $x->$taun1; ?></td>
+                <td class="e"><?php echo $x->$taun2; ?></td>
+                <td class="e"><?php echo $x->$taun3; ?></td>
+                <td class="e"><?php echo $x->$taun4; ?></td>
+                <td class="e"><?php echo $x->$taun5; ?></td>
+                <!-- <td class="e"><?php /*echo $x->*/$tahunini; ?></td> -->
+                <td class="e"><?php echo $x->satuan; ?></td>
+                <td class="e"><?php echo $x->ketersediaan; ?></td>
+                <td class="e"><?php echo $x->sumber_data; ?></td>
+            </tr><?php endforeach; ?>
+            <?php foreach ($dataPerijinan as $x) :?>
+            <tr>
+                <td width="60%" class="e">
+                    <?php
+                        if($x->id==1){echo "<strong>";echo $x->properti;echo $x->nama;echo "</strong>";}else{echo $x->properti;echo $x->nama;}?>
+                </td>
+                <td class="e"><?php echo $x->$taun1; ?></td>
+                <td class="e"><?php echo $x->$taun2; ?></td>
+                <td class="e"><?php echo $x->$taun3; ?></td>
+                <td class="e"><?php echo $x->$taun4; ?></td>
+                <td class="e"><?php echo $x->$taun5; ?></td>
+                <!-- <td class="e"><?php /*echo $x->*/$tahunini; ?></td> -->
+                <td class="e"><?php echo $x->satuan; ?></td>
+                <td class="e"><?php echo $x->ketersediaan; ?></td>
+                <td class="e"><?php echo $x->sumber_data; ?></td>
+            </tr><?php endforeach; ?>
+            <?php foreach ($dataSubSektor as $x) :?>
+            <tr>
+                <td width="60%" class="e">
+                    <?php
+                        if($x->id==1){echo "<strong>";echo $x->properti;echo $x->nama;echo "</strong>";}else{echo $x->properti;echo $x->nama;}?>
+                </td>
+                <td class="e"><?php echo $x->$taun1; ?></td>
+                <td class="e"><?php echo $x->$taun2; ?></td>
+                <td class="e"><?php echo $x->$taun3; ?></td>
+                <td class="e"><?php echo $x->$taun4; ?></td>
+                <td class="e"><?php echo $x->$taun5; ?></td>
+                <!-- <td class="e"><?php /*echo $x->*/$tahunini; ?></td> -->
+                <td class="e"><?php echo $x->satuan; ?></td>
+                <td class="e"><?php echo $x->ketersediaan; ?></td>
+                <td class="e"><?php echo $x->sumber_data; ?></td>
+            </tr><?php endforeach; ?>
+            <tr><td colspan="9"><strong>EKONOMI - BUMD, Perbankan Daerah dan Lembaga Keuangan Daerah</strong></td></tr>
+            <?php foreach ($dataPma as $x) :?>
+            <tr>
+                <td width="60%" class="e">
+                    <?php
+                        if($x->id==1){echo "<strong>";echo $x->properti;echo $x->nama;echo "</strong>";}else{echo $x->properti;echo $x->nama;}?>
+                </td>
+                <td class="e"><?php echo $x->$taun1; ?></td>
+                <td class="e"><?php echo $x->$taun2; ?></td>
+                <td class="e"><?php echo $x->$taun3; ?></td>
+                <td class="e"><?php echo $x->$taun4; ?></td>
+                <td class="e"><?php echo $x->$taun5; ?></td>
+                <!-- <td class="e"><?php /*echo $x->*/$tahunini; ?></td> -->
+                <td class="e"><?php echo $x->satuan; ?></td>
+                <td class="e"><?php echo $x->ketersediaan; ?></td>
+                <td class="e"><?php echo $x->sumber_data; ?></td>
+            </tr><?php endforeach; ?>
+            <?php foreach ($dataPmdn as $x) :?>
+            <tr>
+                <td width="60%" class="e">
+                    <?php
+                        if($x->id==1){echo "<strong>";echo $x->properti;echo $x->nama;echo "</strong>";}else{echo $x->properti;echo $x->nama;}?>
+                </td>
+                <td class="e"><?php echo $x->$taun1; ?></td>
+                <td class="e"><?php echo $x->$taun2; ?></td>
+                <td class="e"><?php echo $x->$taun3; ?></td>
+                <td class="e"><?php echo $x->$taun4; ?></td>
+                <td class="e"><?php echo $x->$taun5; ?></td>
+                <!-- <td class="e"><?php /*echo $x->*/$tahunini; ?></td> -->
+                <td class="e"><?php echo $x->satuan; ?></td>
+                <td class="e"><?php echo $x->ketersediaan; ?></td>
+                <td class="e"><?php echo $x->sumber_data; ?></td>
+            </tr><?php endforeach; ?>
+            <?php foreach ($dataBpr as $x) :?>
+            <tr>
+                <td width="60%" class="e">
+                    <?php
+                        if($x->id==1){echo "<strong>";echo $x->properti;echo $x->nama;echo "</strong>";}else{echo $x->properti;echo $x->nama;}?>
+                </td>
+                <td class="e"><?php echo $x->$taun1; ?></td>
+                <td class="e"><?php echo $x->$taun2; ?></td>
+                <td class="e"><?php echo $x->$taun3; ?></td>
+                <td class="e"><?php echo $x->$taun4; ?></td>
+                <td class="e"><?php echo $x->$taun5; ?></td>
+                <!-- <td class="e"><?php /*echo $x->*/$tahunini; ?></td> -->
+                <td class="e"><?php echo $x->satuan; ?></td>
+                <td class="e"><?php echo $x->ketersediaan; ?></td>
+                <td class="e"><?php echo $x->sumber_data; ?></td>
+            </tr><?php endforeach; ?>
+            <?php foreach ($dataBankUmum as $x) :?>
+            <tr>
+                <td width="60%" class="e">
+                    <?php
+                        if($x->id==1){echo "<strong>";echo $x->properti;echo $x->nama;echo "</strong>";}else{echo $x->properti;echo $x->nama;}?>
+                </td>
+                <td class="e"><?php echo $x->$taun1; ?></td>
+                <td class="e"><?php echo $x->$taun2; ?></td>
+                <td class="e"><?php echo $x->$taun3; ?></td>
+                <td class="e"><?php echo $x->$taun4; ?></td>
+                <td class="e"><?php echo $x->$taun5; ?></td>
+                <!-- <td class="e"><?php /*echo $x->*/$tahunini; ?></td> -->
+                <td class="e"><?php echo $x->satuan; ?></td>
+                <td class="e"><?php echo $x->ketersediaan; ?></td>
+                <td class="e"><?php echo $x->sumber_data; ?></td>
+            </tr><?php endforeach; ?>
+            <?php foreach ($dataAsuRugi as $x) :?>
+            <tr>
+                <td width="60%" class="e">
+                    <?php
+                        if($x->id==1){echo "<strong>";echo $x->properti;echo $x->nama;echo "</strong>";}else{echo $x->properti;echo $x->nama;}?>
+                </td>
+                <td class="e"><?php echo $x->$taun1; ?></td>
+                <td class="e"><?php echo $x->$taun2; ?></td>
+                <td class="e"><?php echo $x->$taun3; ?></td>
+                <td class="e"><?php echo $x->$taun4; ?></td>
+                <td class="e"><?php echo $x->$taun5; ?></td>
+                <!-- <td class="e"><?php /*echo $x->*/$tahunini; ?></td> -->
+                <td class="e"><?php echo $x->satuan; ?></td>
+                <td class="e"><?php echo $x->ketersediaan; ?></td>
+                <td class="e"><?php echo $x->sumber_data; ?></td>
+            </tr><?php endforeach; ?>
+            <?php foreach ($dataAsuJiwa as $x) :?>
+            <tr>
+                <td width="60%" class="e">
+                    <?php
+                        if($x->id==1){echo "<strong>";echo $x->properti;echo $x->nama;echo "</strong>";}else{echo $x->properti;echo $x->nama;}?>
+                </td>
+                <td class="e"><?php echo $x->$taun1; ?></td>
+                <td class="e"><?php echo $x->$taun2; ?></td>
+                <td class="e"><?php echo $x->$taun3; ?></td>
+                <td class="e"><?php echo $x->$taun4; ?></td>
+                <td class="e"><?php echo $x->$taun5; ?></td>
+                <!-- <td class="e"><?php /*echo $x->*/$tahunini; ?></td> -->
+                <td class="e"><?php echo $x->satuan; ?></td>
+                <td class="e"><?php echo $x->ketersediaan; ?></td>
+                <td class="e"><?php echo $x->sumber_data; ?></td>
+            </tr><?php endforeach; ?>
+            <?php foreach ($dataInvesNas as $x) :?>
+            <tr>
+                <td width="60%" class="e">
+                    <?php
+                        if($x->id==1){echo "<strong>";echo $x->properti;echo $x->nama;echo "</strong>";}else{echo $x->properti;echo $x->nama;}?>
+                </td>
+                <td class="e"><?php echo $x->$taun1; ?></td>
+                <td class="e"><?php echo $x->$taun2; ?></td>
+                <td class="e"><?php echo $x->$taun3; ?></td>
+                <td class="e"><?php echo $x->$taun4; ?></td>
+                <td class="e"><?php echo $x->$taun5; ?></td>
+                <!-- <td class="e"><?php /*echo $x->*/$tahunini; ?></td> -->
+                <td class="e"><?php echo $x->satuan; ?></td>
+                <td class="e"><?php echo $x->ketersediaan; ?></td>
+                <td class="e"><?php echo $x->sumber_data; ?></td>
+            </tr><?php endforeach; ?>
+            <?php foreach ($dataJasaUang as $x) :?>
+            <tr>
+                <td width="60%" class="e">
+                    <?php
+                        if($x->id==1){echo "<strong>";echo $x->properti;echo $x->nama;echo "</strong>";}else{echo $x->properti;echo $x->nama;}?>
+                </td>
+                <td class="e"><?php echo $x->$taun1; ?></td>
+                <td class="e"><?php echo $x->$taun2; ?></td>
+                <td class="e"><?php echo $x->$taun3; ?></td>
+                <td class="e"><?php echo $x->$taun4; ?></td>
+                <td class="e"><?php echo $x->$taun5; ?></td>
+                <!-- <td class="e"><?php /*echo $x->*/$tahunini; ?></td> -->
+                <td class="e"><?php echo $x->satuan; ?></td>
+                <td class="e"><?php echo $x->ketersediaan; ?></td>
+                <td class="e"><?php echo $x->sumber_data; ?></td>
+            </tr><?php endforeach; ?>
+            <?php foreach ($dataUkmNon as $x) :?>
+            <tr>
+                <td width="60%" class="e">
+                    <?php
+                        if($x->id==1){echo "<strong>";echo $x->properti;echo $x->nama;echo "</strong>";}else{echo $x->properti;echo $x->nama;}?>
+                </td>
+                <td class="e"><?php echo $x->$taun1; ?></td>
+                <td class="e"><?php echo $x->$taun2; ?></td>
+                <td class="e"><?php echo $x->$taun3; ?></td>
+                <td class="e"><?php echo $x->$taun4; ?></td>
+                <td class="e"><?php echo $x->$taun5; ?></td>
+                <!-- <td class="e"><?php /*echo $x->*/$tahunini; ?></td> -->
+                <td class="e"><?php echo $x->satuan; ?></td>
+                <td class="e"><?php echo $x->ketersediaan; ?></td>
+                <td class="e"><?php echo $x->sumber_data; ?></td>
+            </tr><?php endforeach; ?>
+            <?php foreach ($dataPerbankan as $x) :?>
+            <tr>
+                <td width="60%" class="e">
+                    <?php
+                        if($x->id==1){echo "<strong>";echo $x->properti;echo $x->nama;echo "</strong>";}else{echo $x->properti;echo $x->nama;}?>
+                </td>
+                <td class="e"><?php echo $x->$taun1; ?></td>
+                <td class="e"><?php echo $x->$taun2; ?></td>
+                <td class="e"><?php echo $x->$taun3; ?></td>
+                <td class="e"><?php echo $x->$taun4; ?></td>
+                <td class="e"><?php echo $x->$taun5; ?></td>
+                <!-- <td class="e"><?php /*echo $x->*/$tahunini; ?></td> -->
+                <td class="e"><?php echo $x->satuan; ?></td>
+                <td class="e"><?php echo $x->ketersediaan; ?></td>
+                <td class="e"><?php echo $x->sumber_data; ?></td>
+            </tr><?php endforeach; ?>
+            <!-- End Data Ekonomi -->
 
          <tr><td colspan="9"><strong>POLITIK, HUKUM DAN KEAMANAN - Politik Dalam Negeri dan Pengawasan</strong></td></tr>
             <?php foreach ($dataDPRD as $x) :?>
@@ -1972,6 +3058,7 @@
                 <td class="e"><?php echo $x->ketersediaan; ?></td>
                 <td class="e"><?php echo $x->sumber_data; ?></td>
             </tr><?php endforeach; ?>
+            
         </tbody>
         
 	    Export ke format :
