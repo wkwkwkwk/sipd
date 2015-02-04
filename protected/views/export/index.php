@@ -1430,7 +1430,23 @@
                 <td class="e"><?php echo $x->ketersediaan; ?></td>
                 <td class="e"><?php echo $x->sumber_data; ?></td>
             </tr><?php endforeach; ?>
-            <tr><td colspan="9"><strong>3.9. Pertambangan dan Energi</strong></td></tr>
+            <tr><td colspan="9"><strong>SUMBER DAYA ALAM - Pertambangan dan Energi</strong></td></tr>
+            <?php foreach ($dataTambang as $x) :?>
+            <tr>
+                <td width="60%" class="e">
+                    <?php
+                        if($x->id==1){echo "<strong>";echo $x->properti;echo $x->nama;echo "</strong>";}else{echo $x->properti;echo $x->nama;}?>
+                </td>
+                <td class="e"><?php echo $x->$taun1; ?></td>
+                <td class="e"><?php echo $x->$taun2; ?></td>
+                <td class="e"><?php echo $x->$taun3; ?></td>
+                <td class="e"><?php echo $x->$taun4; ?></td>
+                <td class="e"><?php echo $x->$taun5; ?></td>
+                <!-- <td class="e"><?php /*echo $x->*/$tahunini; ?></td> -->
+                <td class="e"><?php echo $x->satuan; ?></td>
+                <td class="e"><?php echo $x->ketersediaan; ?></td>
+                <td class="e"><?php echo $x->sumber_data; ?></td>
+            </tr><?php endforeach; ?>
             <?php foreach ($dataKukuBima as $x) :?>
             <tr>
                 <td width="60%" class="e">
@@ -3062,7 +3078,7 @@
         </tbody>
         
 	    Export ke format :
-	    <a href="<?php echo $this -> createUrl("export/toexcel/fileName/reportexcel"); ?>">
+	    <a href="<?php echo $this -> createUrl("export/toexcel/fileName/sipd"); ?>">
         <button type="button" class="btn btn-success">Ms. Excel</button></a> 
 	  	
     
