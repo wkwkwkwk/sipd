@@ -3,12 +3,23 @@
 	mysql_select_db("sipd");
 
 	if(isset($_POST['bukain'])){
-		$thn = date("Y");
-		$mm = $thn - 1;
-		$sql = "ALTER TABLE `sipd`.`sda_energi` ADD COLUMN `$thn` VARCHAR(25) NOT NULL AFTER `$mm`";
-		$kue = mysql_query($sql);
-		if($kue){
-			echo "berhasil";
+		$aa = date("m");
+		if($aa=="01" || $aa=="02" || $aa=="03" || $aa=="04" || $aa=="05" || $aa=="06" || $aa=="07"){
+			$thn = date("Y");
+			$mm = $thn - 1;
+			$sql = "SELECT `$thn` FROM `sipd`.`sda_energi`";
+			$kue = mysql_query($sql);
+			if($kue){
+				echo "Peringatan! Pengisian SIPD tahun ";
+				echo $thn;
+				echo " sudah terbuka.";
+			}else{
+				$sql1 = "ALTER TABLE `sipd`.`sda_energi` ADD COLUMN `$thn` VARCHAR(25) NOT NULL AFTER `$mm`";
+
+				$kue1 = mysql_query($sql1);
+			}
+		}else{
+			echo "Hapus Data";
 		}
 	}
 	
