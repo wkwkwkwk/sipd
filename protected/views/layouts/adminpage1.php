@@ -118,36 +118,49 @@
                             $ini = "";
                             $apa = "";
                             $ana = "";
+                            $iya = "";
                         }else if($belakang == "dataumum" || $belakang == "sosbud"){
                             $anu = "active";
                             $itu = "";
                             $ini = "";
                             $apa = "";
                             $ana = "";
+                            $iya = "";
                         }else if($belakang == "ekonomi" || $belakang == "infrastruktur" || $belakang == "sda"){
                             $ini = "active";
                             $anu = "";
                             $itu = "";
                             $apa = "";
                             $ana = "";
+                            $iya = "";
                         }else if($belakang == "polhukam" || $belakang == "insidensial"){
                             $apa = "active";
                             $anu = "";
                             $itu = "";
                             $ini = "";
                             $ana = "";
+                            $iya = "";
                         }else if($belakang == "tampilkandata" || $belakang == "export"){
                             $ana = "active";
                             $anu = "";
                             $itu = "";
                             $ini = "";
                             $apa = "";
+                            $iya = "";
                         }else if($belakang == "index" && $eks[2] == "export"){
                             $ana = "active";
                             $anu = "";
                             $itu = "";
                             $ini = "";
                             $apa = "";
+                            $iya = "";
+                        }else if($belakang == "show"){
+                            $iya = "active";
+                            $anu = "";
+                            $itu = "";
+                            $ini = "";
+                            $apa = "";
+                            $ana = "";
                         }                     
                     ?>
                     <li class="<?php echo $itu; ?>">
@@ -191,6 +204,9 @@
                         </ul>
                     </li>
                     <?php } ?>
+                    <li class="<?php echo $iya; ?>">
+                        <?php echo CHtml::link('Extra Menu',array('admin/show')); ?>
+                    </li>
                     <li class="<?php echo $ana; ?>">
                         <?php echo CHtml::link('Tampilkan Data',array('export/index')); ?>
                     </li>
