@@ -36,6 +36,7 @@
 			$keluarga=Keluarga::model()->findAll();
 			$rumtang=RumTang::model()->findAll();
 			$urumtang=Urumtang::model()->findAll();
+			$jmlrmhtgl=JmlRumahTinggal::model()->findAll();
 			$tanilayan=TaniLayan::model()->findAll();
 			$perempuananak=PerempuanAnak::model()->findAll();
 			$tkunder=TkUnder::model()->findAll();
@@ -292,6 +293,7 @@
 				"dataKeluarga"=>$keluarga,
 				"dataRumtang"=>$rumtang,
 				"dataUrumtang"=>$urumtang,
+				"dataRumTing"=>$jmlrmhtgl,
 				"dataTanilayan"=>$tanilayan,
 				"dataPAnak"=>$perempuananak,
 				"dataTkunder"=>$tkunder,
@@ -421,6 +423,7 @@
 			$keluarga=Keluarga::model()->findAll();
 			$rumtang=RumTang::model()->findAll();
 			$urumtang=Urumtang::model()->findAll();
+			$jmlrmhtgl=JmlRumahTinggal::model()->findAll();
 			$tanilayan=TaniLayan::model()->findAll();
 			$perempuananak=PerempuanAnak::model()->findAll();
 			$tkunder=TkUnder::model()->findAll();
@@ -679,6 +682,7 @@
 				"dataKeluarga"=>$keluarga,
 				"dataRumtang"=>$rumtang,
 				"dataUrumtang"=>$urumtang,
+				"dataRumTing"=>$jmlrmhtgl,
 				"dataTanilayan"=>$tanilayan,
 				"dataPAnak"=>$perempuananak,
 				"dataTkunder"=>$tkunder,

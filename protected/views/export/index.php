@@ -476,6 +476,22 @@
                 <td class="e"><?php echo $x->ketersediaan; ?></td>
                 <td class="e"><?php echo $x->sumber_data; ?></td>
             </tr><?php endforeach; ?>
+            <?php foreach ($dataRumTing as $x) :?>
+            <tr>
+                <td width="60%" class="e">
+                    <?php
+                        if($x->id==1){echo "<strong>";echo $x->properti;echo $x->nama;echo "</strong>";}else{echo $x->properti;echo $x->nama;}?>
+                </td>
+                <td class="e"><?php echo $x->$taun1; ?></td>
+                <td class="e"><?php echo $x->$taun2; ?></td>
+                <td class="e"><?php echo $x->$taun3; ?></td>
+                <td class="e"><?php echo $x->$taun4; ?></td>
+                <td class="e"><?php echo $x->$taun5; ?></td>
+                <!-- <td class="e"><?php /*echo $x->*/$tahunini; ?></td> -->
+                <td class="e"><?php echo $x->satuan; ?></td>
+                <td class="e"><?php echo $x->ketersediaan; ?></td>
+                <td class="e"><?php echo $x->sumber_data; ?></td>
+            </tr><?php endforeach; ?>
             <?php foreach ($dataTanilayan as $x) :?>
             <tr>
                 <td width="60%" class="e">
