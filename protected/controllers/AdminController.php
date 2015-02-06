@@ -1118,6 +1118,78 @@
 				$tahunini=date("YYYY");
 				$waktuisi=date("Y-m-d");
 				/*Pertambangan*/
+				$pertambangan=$_POST['pertambangan'];
+				$migasal=$_POST['migasal'];
+				$mitah=$_POST['mitah'];
+				$tot_mitah=$_POST['tot_mitah'];
+				$lift_mitah=$_POST['lift_mitah'];
+				$bumn_mitah=$_POST['bumn_mitah'];
+				$kilang_mitah=$_POST['kilang_mitah'];
+				$prod_mitah=$_POST['prod_mitah'];
+				$bumd_mitah=$_POST['bumd_mitah'];
+				$kil_mitah=$_POST['kil_mitah'];
+				$jml_mitah=$_POST['jml_mitah'];
+				$pma_mitah=$_POST['pma_mitah'];
+				$juki_mitah=$_POST['juki_mitah'];
+				$jupro_mitah=$_POST['jupro_mitah'];
+				$gasal=$_POST['gasal'];
+				$tot_gasal=$_POST['tot_gasal'];
+				$lift_gasal=$_POST['lift_gasal'];
+				$bumn_gasal=$_POST['bumn_gasal'];
+				$kilang_gasal=$_POST['kilang_gasal'];
+				$prod_gasal=$_POST['prod_gasal'];
+				$bumd_gasal=$_POST['bumd_gasal'];
+				$kil_gasal=$_POST['kil_gasal'];
+				$jml_gasal=$_POST['jml_gasal'];
+				$pma_gasal=$_POST['pma_gasal'];
+				$juki_gasal=$_POST['juki_gasal'];
+				$jupro_gasal=$_POST['jupro_gasal'];
+				$mintam=$_POST['mintam'];
+				$babar=$_POST['babar'];
+				$prod_babar=$_POST['prod_babar'];
+				$peru_babar=$_POST['peru_babar'];
+				$timah=$_POST['timah'];
+				$prod_timah=$_POST['prod_timah'];
+				$peru_timah=$_POST['peru_timah'];
+				$beja=$_POST['beja'];
+				$prod_beja=$_POST['prod_beja'];
+				$peru_beja=$_POST['peru_beja'];
+				$baga=$_POST['baga'];
+				$prod_baga=$_POST['prod_baga'];
+				$peru_baga=$_POST['peru_baga'];
+				$bini=$_POST['bini'];
+				$prod_bini=$_POST['prod_bini'];
+				$peru_bini=$_POST['peru_bini'];
+				$mas=$_POST['mas'];
+				$prod_mas=$_POST['prod_mas'];
+				$peru_mas=$_POST['peru_mas'];
+				$perak=$_POST['perak'];
+				$prod_perak=$_POST['prod_perak'];
+				$peru_perak=$_POST['peru_perak'];
+				$gem=$_POST['gem'];
+				$prod_gem=$_POST['prod_gem'];
+				$peru_gem=$_POST['peru_gem'];
+				$andes=$_POST['andes'];
+				$prod_andes=$_POST['prod_andes'];
+				$peru_andes=$_POST['peru_andes'];
+				$mame=$_POST['mame'];
+				$prod_mame=$_POST['prod_mame'];
+				$peru_mame=$_POST['peru_mame'];
+				$grant=$_POST['grant'];
+				$prod_grant=$_POST['prod_grant'];
+				$peru_grant=$_POST['peru_grant'];
+				$basalt=$_POST['basalt'];
+				$prod_basalt=$_POST['prod_basalt'];
+				$peru_basalt=$_POST['peru_basalt'];
+				$aspal=$_POST['aspal'];
+				$prod_aspal=$_POST['prod_aspal'];
+				$peru_aspal=$_POST['peru_aspal'];
+				$pasir=$_POST['pasir'];
+				$prod_pasir=$_POST['prod_pasir'];
+				$peru_pasir=$_POST['peru_pasir'];
+				$basil=$_POST['basil'];
+				$prod_basil=$_POST['prod_basil'];
+				$peru_basil=$_POST['peru_basil'];
 				/*Energi*/
 				$energi=$_POST['energi'];
 				$sumber_listrik=$_POST['sumber_listrik'];
@@ -1168,7 +1240,7 @@
 				$agen_lpg=$_POST['agen_lpg'];
 
 				$user=Yii::app()->user->username;
-				$gabung1 = array();
+				$gabung1 = array($pertambangan,$migasal,$mitah,$tot_mitah,$lift_mitah,$bumn_mitah,$kilang_mitah,$prod_mitah,$bumd_mitah,$kil_mitah,$jml_mitah,$pma_mitah,$juki_mitah,$jupro_mitah,$gasal,$tot_gasal,$lift_gasal,$bumn_gasal,$kilang_gasal,$prod_gasal,$bumd_gasal,$kil_gasal,$jml_gasal,$pma_gasal,$juki_gasal,$jupro_gasal,$mintam,$babar,$prod_babar,$peru_babar,$timah,$prod_timah,$peru_timah,$beja,$prod_beja,$peru_beja,$baga,$prod_baga,$peru_baga,$bini,$prod_bini,$peru_bini,$mas,$prod_mas,$peru_mas,$perak,$prod_perak,$peru_perak,$gem,$prod_gem,$peru_gem,$andes,$prod_andes,$peru_andes,$mame,$prod_mame,$peru_mame,$grant,$prod_grant,$peru_grant,$basalt,$prod_basalt,$peru_basalt,$aspal,$prod_aspal,$peru_aspal,$pasir,$prod_pasir,$peru_pasir,$basil,$prod_basil,$peru_basil);
 				$gabung2 = array($energi,$sumber_listrik,$plta,$jml_plta,$kapasitas_plta,$cakupan_plta,$pltg,$jml_pltg,$kapasitas_pltg,$cakupan_pltg,$pltu,$jml_pltu,$kapasitas_pltu,$cakupan_pltu,$pltd,$jml_pltd,$kapasitas_pltd,$cakupan_pltd,$plts,$jml_plts,$kapasitas_plts,$cakupan_plts,$pltmh,$jml_pltmh,$kapasitas_pltmh,$cakupan_pltmh,$pltp,$jml_pltp,$kapasitas_pltp,$cakupan_pltp,$jangkauan_listrik,$klrg_guna_pln,$klrg_guna_nonpln,$klrg_belum_pln,$rt_guna_pln,$rt_daya_450,$rt_daya_900,$rt_daya_1300,$rt_daya_2200,$rt_daya_lebih,$daya_terpasang,$kebutuhan_listrik,$sarana_bbm,$spbu,$depo_latung,$uppdn,$agen_lpg);
 
 				$isiin1 = implode("#", $gabung1);
@@ -2203,6 +2275,10 @@
 				$sql26 = "SELECT*FROM dmg_tanilayan";
 				$sql27 = "SELECT*FROM dmg_perempuananak";
 				$sql28 = "SELECT*FROM dmg_tkunder";
+				$sql29 = "SELECT*FROM geo_jmlpulau";
+				$sql30 = "SELECT*FROM geo_jmlgunung";
+				$sql31 = "SELECT*FROM geo_batasnl";
+				$sql32 = "SELECT*FROM dmg_jmlrmhtgl";
 				$connection = Yii::app()->db;
 				$command1 = $connection->createCommand($sql1);
 				$command2 = $connection->createCommand($sql2);
@@ -2232,6 +2308,10 @@
 				$command26 = $connection->createCommand($sql26);
 				$command27 = $connection->createCommand($sql27);
 				$command28 = $connection->createCommand($sql28);
+				$command29= $connection->createCommand($sql29);
+				$command30= $connection->createCommand($sql30);
+				$command31= $connection->createCommand($sql31);
+				$command32= $connection->createCommand($sql32);
 				$r1 = $command1->queryAll();
 				$r2 = $command2->queryAll();
 				$r3 = $command3->queryAll();
@@ -2260,6 +2340,10 @@
 				$r26 = $command26->queryAll();
 				$r27 = $command27->queryAll();
 				$r28 = $command28->queryAll();
+				$r29 = $command29->queryAll();
+				$r30 = $command30->queryAll();
+				$r31 = $command31->queryAll();
+				$r32 = $command32->queryAll();
 				$this->render('dataumum', array(
 					'dataProvider1' => $r1,
 					'dataProvider2' => $r2,
@@ -2288,7 +2372,11 @@
 					'dataProvider25' => $r25,
 					'dataProvider26' => $r26,
 					'dataProvider27' => $r27,
-					'dataProvider28' => $r28));
+					'dataProvider28' => $r28,
+					'dataProvider29' => $r29,
+					'dataProvider30' => $r30,
+					'dataProvider31' => $r31,
+					'dataProvider32' => $r32));
 			}
 		}
 
