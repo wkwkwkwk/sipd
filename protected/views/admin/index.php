@@ -1,3 +1,4 @@
+
 <!-- Page Heading -->
 <div class="row">
     <div class="col-lg-12">
@@ -31,7 +32,7 @@
                           </div>
                 </div>
             <div class="box-content row">
-                <div class="col-lg-12 col-xs-12 col-lg-offset-3">
+                <div class="col-lg-12 col-xs-12 col-lg-push-3">
                     <table width="100%">
                         <tr>
                             <td>Alamat</td>

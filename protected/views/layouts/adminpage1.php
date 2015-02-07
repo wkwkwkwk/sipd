@@ -55,20 +55,18 @@
     <!-- Bootstrap Core JavaScript -->
     <script src="<?php echo Yii::app()->request->baseUrl; ?>/assets/temaAdmin1/js/bootstrap.min.js"></script>
 
-    <!-- Jika tidak ada javascript atau fitur javascript disabled=true -->
-    <!-- <noscript>
-            <div class="alert alert-block col-md-12">
-                <h4 class="alert-heading">Peringatan!</h4>
-    
-                <p>Anda diwajibkan untuk mengaktifkan fitur<a href="http://en.wikipedia.org/wiki/JavaScript" target="_blank">JavaScript</a>
+    <div id="wrapper">
+        <!-- Jika pada browser tidak ada javascript atau fitur javascript disabled=true -->
+        <noscript>
+            <div class="alert alert-block alert-danger col-md-12">
+                <h4 class="alert-heading">Peringatan</h4>
+                <p>Anda diwajibkan untuk mengaktifkan fitur <a href="http://en.wikipedia.org/wiki/JavaScript" target="_blank">JavaScript</a>
                     di browser Anda agar dapat mengakses laman ini.</p>
             </div>
-    </noscript> -->
-
-    <div id="wrapper">
+        </noscript>
 
         <!-- Navigation -->
-        <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
@@ -117,44 +115,38 @@
                             $anu = "";
                             $ini = "";
                             $apa = "";
-                            $ana = "";
-                            $iya = "";
+                            $ana = "";$iya = "";
                         }else if($belakang == "dataumum" || $belakang == "sosbud"){
                             $anu = "active";
                             $itu = "";
                             $ini = "";
                             $apa = "";
-                            $ana = "";
-                            $iya = "";
+                            $ana = "";$iya = "";
                         }else if($belakang == "ekonomi" || $belakang == "infrastruktur" || $belakang == "sda"){
                             $ini = "active";
                             $anu = "";
                             $itu = "";
                             $apa = "";
-                            $ana = "";
-                            $iya = "";
+                            $ana = "";$iya = "";
                         }else if($belakang == "polhukam" || $belakang == "insidensial"){
                             $apa = "active";
                             $anu = "";
                             $itu = "";
                             $ini = "";
-                            $ana = "";
-                            $iya = "";
+                            $ana = "";$iya = "";
                         }else if($belakang == "tampilkandata" || $belakang == "export"){
                             $ana = "active";
                             $anu = "";
                             $itu = "";
                             $ini = "";
-                            $apa = "";
-                            $iya = "";
+                            $apa = "";$iya = "";
                         }else if($belakang == "index" && $eks[2] == "export"){
                             $ana = "active";
                             $anu = "";
                             $itu = "";
                             $ini = "";
-                            $apa = "";
-                            $iya = "";
-                        }else if($belakang == "show"){
+                            $apa = "";$iya = "";
+                         }else if($belakang == "show"){
                             $iya = "active";
                             $anu = "";
                             $itu = "";
@@ -203,13 +195,14 @@
                             </li>
                         </ul>
                     </li>
-                    <?php } ?>
+                    <?php }else{ ?>
                     <li class="<?php echo $iya; ?>">
                         <?php echo CHtml::link('Extra Menu',array('admin/show')); ?>
                     </li>
                     <li class="<?php echo $ana; ?>">
                         <?php echo CHtml::link('Tampilkan Data',array('export/index')); ?>
                     </li>
+                    <?php } ?>
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
