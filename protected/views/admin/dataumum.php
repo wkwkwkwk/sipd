@@ -1,11 +1,20 @@
 <?php 
 mysql_connect('localhost','root','');
 mysql_select_db("sipd");
+$orang=Yii::app()->user->username;
 
 $tahe = date("Y");
 $iya = date("m");
 $sqlin = "SELECT `$tahe` FROM `sipd`.`dmg_jmlrmhtgl`";
+$sqlin1 = "SELECT * FROM `sipd`.`log` WHERE `namatabel` = 'geo_fisiografi' AND `kecamatan` = '$orang' AND `tahun` = '$tahe'";
+$sqlin2 = "SELECT * FROM `sipd`.`log` WHERE `namatabel` = 'pmr_konsarpras' AND `kecamatan` = '$orang' AND `tahun` = '$tahe'";
+$sqlin3 = "SELECT * FROM `sipd`.`log` WHERE `namatabel` = 'dmg_tkunder' AND `kecamatan` = '$orang' AND `tahun` = '$tahe'";
+
 $kuein = mysql_query($sqlin);
+$kuein1 = mysql_query($sqlin1);
+$kuein2 = mysql_query($sqlin2);
+$kuein3 = mysql_query($sqlin3);
+
 if($kuein){
     if($iya=="01" || $iya=="02" || $iya=="03" || $iya=="04" || $iya=="05" || $iya=="06" || $iya=="07" || $iya=="12"){
 ?>
@@ -16,7 +25,9 @@ if($kuein){
         </h1>
     </div>
 </div>
-
+<?php 
+        if(!$kuein1){
+ ?>
 <div class="row">
   <div class="col-lg-12 col-xs-12">
     <!-- Geografi -->
@@ -304,7 +315,21 @@ if($kuein){
             <input type="submit" class="btn btn-success" value="SIMPAN" />
             </span>
             </form>
-
+<?php 
+        }else{
+ ?>
+<div class="row">
+    <div class="col-lg-12">
+        <div class="alert alert-info">
+            <button type="button" class="close" data-dismiss="alert" aria-hidden="true"></button>
+                <i class="fa fa-info-circle"></i>  Anda sudah melakukan pengisian data Geografi</strong>.
+        </div>
+    </div>
+</div>
+<?php 
+        }
+        if(!$kuein2){
+ ?>
             <!-- Pemerintahan -->
             <br /><br />
             <form role="form" method="post" action="simpanpemerintahan">
@@ -494,7 +519,21 @@ if($kuein){
             <input type="submit" class="btn btn-success" value="SIMPAN" />
             </span>
             </form>
-
+<?php 
+        }else{
+ ?>
+<div class="row">
+    <div class="col-lg-12">
+        <div class="alert alert-info">
+            <button type="button" class="close" data-dismiss="alert" aria-hidden="true"></button>
+                <i class="fa fa-info-circle"></i>  Anda sudah melakukan pengisian data Pemerintahan</strong>.
+        </div>
+    </div>
+</div>
+<?php 
+        }
+        if(!$kuein3){
+ ?>
             <!-- Demografi -->
             <br /><br />
             <form role="form" method="post" action="simpandemografi">
@@ -1142,8 +1181,19 @@ if($kuein){
     </span>
 
 </form>
-
 <?php 
+        }else{
+ ?>
+<div class="row">
+    <div class="col-lg-12">
+        <div class="alert alert-info">
+            <button type="button" class="close" data-dismiss="alert" aria-hidden="true"></button>
+                <i class="fa fa-info-circle"></i>  Anda sudah melakukan pengisian data Demografi</strong>.
+        </div>
+    </div>
+</div>
+<?php 
+        }
     }
 }else{
 ?>
@@ -1151,8 +1201,8 @@ if($kuein){
 
 <div class="row">
     <div class="col-lg-12">
-        <div class="alert alert-info alert-dismissable">
-            <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+        <div class="alert alert-info">
+            <button type="button" class="close" data-dismiss="alert" aria-hidden="true"></button>
                 <i class="fa fa-info-circle"></i>  Maaf, Pengisian Data SIPD <?php echo date("Y"); ?> Belum Dibuka</strong>. Tunggulah beberapa saat lagi.
         </div>
     </div>

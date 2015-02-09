@@ -1,11 +1,24 @@
 <?php 
 mysql_connect('localhost','root','');
 mysql_select_db("sipd");
+$orang=Yii::app()->user->username;
 
 $tahe = date("Y");
 $iya = date("m");
 $sqlin = "SELECT `$tahe` FROM `sipd`.`ppk_jlpp`";
+$sqlin1 = "SELECT * FROM `sipd`.`log` WHERE `namatabel` = 'ben_kb' AND `kecamatan` = '$orang' AND `tahun` = '$tahe'";
+$sqlin2 = "SELECT * FROM `sipd`.`log` WHERE `namatabel` = 'pm_eph' AND `kecamatan` = '$orang' AND `tahun` = '$tahe'";
+$sqlin3 = "SELECT * FROM `sipd`.`log` WHERE `namatabel` = 'pikan_jlpi' AND `kecamatan` = '$orang' AND `tahun` = '$tahe'";
+$sqlin4 = "SELECT * FROM `sipd`.`log` WHERE `namatabel` = 'khut_jlkh' AND `kecamatan` = '$orang' AND `tahun` = '$tahe'";
+$sqlin5 = "SELECT * FROM `sipd`.`log` WHERE `namatabel` = 'ppk_jlpp' AND `kecamatan` = '$orang' AND `tahun` = '$tahe'";
+
 $kuein = mysql_query($sqlin);
+$kuein1 = mysql_query($sqlin1);
+$kuein2 = mysql_query($sqlin2);
+$kuein3 = mysql_query($sqlin3);
+$kuein4 = mysql_query($sqlin4);
+$kuein5 = mysql_query($sqlin5);
+
 if($kuein){
     if($iya=="01" || $iya=="02" || $iya=="03" || $iya=="04" || $iya=="05" || $iya=="06" || $iya=="07" || $iya=="12"){
 ?>
@@ -16,7 +29,9 @@ if($kuein){
         </h1>
     </div>
 </div>
-
+<?php 
+        if(!$kuein1){
+ ?>
 <div class="row">
 	<div class="col-lg-12 col-xs-12">
         <!-- Bencana Alam -->
@@ -334,7 +349,21 @@ if($kuein){
         <input type="submit" class="btn btn-success" value="SIMPAN" />
         </span>
         </form>
-
+<?php 
+        }else{
+ ?>
+<div class="row">
+    <div class="col-lg-12">
+        <div class="alert alert-info">
+            <button type="button" class="close" data-dismiss="alert" aria-hidden="true"></button>
+                <i class="fa fa-info-circle"></i>  Anda sudah melakukan pengisian data Bencana Alam</strong>.
+        </div>
+    </div>
+</div>
+<?php 
+        }
+        if(!$kuein2){
+ ?>
         <!-- Penyakit Menular --><br /><br /><form role="form" method="post" action="simpanpenyakit">
         <div class="box panel panel-primary">
             <div class="panel-heading">
@@ -425,7 +454,21 @@ if($kuein){
         <input type="submit" class="btn btn-success" value="SIMPAN" />
         </span>
         </form>
-
+<?php 
+        }else{
+ ?>
+<div class="row">
+    <div class="col-lg-12">
+        <div class="alert alert-info">
+            <button type="button" class="close" data-dismiss="alert" aria-hidden="true"></button>
+                <i class="fa fa-info-circle"></i>  Anda sudah melakukan pengisian data Penyakit Menular</strong>.
+        </div>
+    </div>
+</div>
+<?php 
+        }
+        if(!$kuein3){
+ ?>
         <!-- Pencurian Ikan --><br /><br /><form role="form" method="post" action="simpanikan">
         <div class="box panel panel-primary">
             <div class="panel-heading">
@@ -548,7 +591,21 @@ if($kuein){
         <input type="submit" class="btn btn-success" value="SIMPAN" />
         </span>
         </form>
-
+<?php 
+        }else{
+ ?>
+<div class="row">
+    <div class="col-lg-12">
+        <div class="alert alert-info">
+            <button type="button" class="close" data-dismiss="alert" aria-hidden="true"></button>
+                <i class="fa fa-info-circle"></i>  Anda sudah melakukan pengisian data Pencurian Ikan</strong>.
+        </div>
+    </div>
+</div>
+<?php 
+        }
+        if(!$kuein4){
+ ?>
         <!-- Kebakaran Hutan --><br /><br /><form role="form" method="post" action="simpanhutan">
         <div class="box panel panel-primary">
             <div class="panel-heading">
@@ -671,7 +728,21 @@ if($kuein){
         <input type="submit" class="btn btn-success" value="SIMPAN" />
         </span>
         </form>
-
+<?php 
+        }else{
+ ?>
+<div class="row">
+    <div class="col-lg-12">
+        <div class="alert alert-info">
+            <button type="button" class="close" data-dismiss="alert" aria-hidden="true"></button>
+                <i class="fa fa-info-circle"></i>  Anda sudah melakukan pengisian data Kebakaran Hutan</strong>.
+        </div>
+    </div>
+</div>
+<?php 
+        }
+        if(!$kuein5){
+ ?>
         <!-- Pencurian dan Penyelundupan Kayu --><br /><br /><form role="form" method="post" action="simpankayu">
         <div class="box panel panel-primary">
             <div class="panel-heading">
@@ -797,15 +868,28 @@ if($kuein){
         </span>
 
 </form>
-
+<?php 
+        }else{
+ ?>
+<div class="row">
+    <div class="col-lg-12">
+        <div class="alert alert-info">
+            <button type="button" class="close" data-dismiss="alert" aria-hidden="true"></button>
+                <i class="fa fa-info-circle"></i>  Anda sudah melakukan pengisian data Pencurian dan Penyelundupan Kayu</strong>.
+        </div>
+    </div>
+</div>
+<?php
+        }
+    }
 }else{
 ?>
 <!-- /.row -->
 
 <div class="row">
     <div class="col-lg-12">
-        <div class="alert alert-info alert-dismissable">
-            <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+        <div class="alert alert-info">
+            <button type="button" class="close" data-dismiss="alert" aria-hidden="true"></button>
                 <i class="fa fa-info-circle"></i>  Maaf, Pengisian Data SIPD <?php echo date("Y"); ?> Belum Dibuka</strong>. Tunggulah beberapa saat lagi.
         </div>
     </div>

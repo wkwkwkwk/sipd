@@ -444,7 +444,7 @@
 		}else if($wkwk == "sbd"){
 			$hehe = array("kes_sarkes&50","kes_siif&8","kes_kesmas&34","kes_dagkes&3","kes_tenkes&25","kes_kompbidan&7",
 				"kes_uci&2","kes_pppp&13","kes_pkrpmm&2","kes_pkdpmm&1","kes_kunbay&3","kes_klb&1","kes_siagaaktif&1",
-				"pknpo_didikumum&307","pknpo_senbud&7","pknpo_cabudtari&5","pknpo_pora&7","pknpo_expotaun&1",
+				"pknpo_senbud&7","pknpo_cabudtari&5","pknpo_pora&7","pknpo_expotaun&1",
 				"pknpo_perpus&6","pknpo_kpbps&5","pknpo_lulusanke&4","pknpo_kualifikasiguru&5","pknpo_penuhguru&5",
 				"pknpo_miliksekolah&5","pknpo_smkpt&1","pknpo_luluskerja&1","pknpo_cabudda&5","kesos_ipm&1","kesos_jpm&3",
 				"kesos_p1&3","kesos_p2&3","kesos_jamkesmasda&3","kesos_kemiskinan&10","kesos_kmtk&6","kesos_jkplsm&4",
@@ -474,7 +474,7 @@
 		}else if($wkwk == "insiden"){
 			$hehe = array("ben_jpa&8","ben_jpl&1","ben_jpkl&1","ben_jpd&1","ben_jkba&4","ben_jlb&1","ben_jklb&1","ben_jpkab&1",
 				"ben_kb&11","pm_jkw&14","pm_eph&5","pikan_jkpi&1","pikan_jikap&1","pikan_jlpi&1","khut_lah&1","khut_jkj&1",
-				"khut_jlkh&1","ppk_vk&1","ppk_jk&1","ppk_jlpp&1");
+				"khut_jlkh&1","ppk_vk&1","ppk_jk&1","ppk_jlpp&1","pknpo_didikumum&307");
 		}
 
 		$z = 0;
@@ -485,7 +485,7 @@
 			$nata = $pegat[0];
 			$ufi = $pegat[1];
 			/*echo $nata."=".$ufi."<br>";*/
-			$lalu = "SELECT `isian` FROM `sipd`.`log` WHERE `namatabel` = '$nata'";
+			$lalu = "SELECT `isian` FROM `sipd`.`log` WHERE `namatabel` = 'kes_sarkes'";
 			$daun = mysql_query($lalu);
 			$rekam = array();
 			$tampung = array();
@@ -497,22 +497,23 @@
 				$rekam[$n] = $tampung[0];
 				$n++;
 			}
-			echo $n;
-			for ($i=0; $i < $ufi; $i++) {
+			for ($i=0; $i < 50; $i++) {
 				for ($x=1; $x < $n; $x++) { 
 					$rekam[0][$i] = $rekam[0][$i] + $rekam[$x][$i];				
 				}
 			}
 			$y = 1;
-			for ($m=0; $m < $ufi; $m++) { 
-				$simpan = number_format($rekam[0][$m],'3',',','.');
-				echo $simpan."<br>";
-				$kaki = "UPDATE `$nata` SET `$anu` = '$simpan' WHERE `id` = '$y'";
+			$xxx = "";
+			for ($m=0; $m < 50; $m++) { 
+				$xxx = $rekam[0][$m];
+				$simpan = number_format($xxx,3,",",".");
+				/*echo $simpan."<br>";*/
+				$kaki = "UPDATE `kes_sarkes` SET `$anu` = '$simpan' WHERE `id` = '$y'";
 				$tangan = mysql_query($kaki);
 				$y++;
 			}
 			$z++;
-		}		
+		}
 	}
 ?>
 
