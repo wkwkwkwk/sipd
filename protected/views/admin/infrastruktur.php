@@ -1,4 +1,14 @@
+<?php 
+mysql_connect('localhost','root','');
+mysql_select_db("sipd");
 
+$tahe = date("Y");
+$iya = date("m");
+$sqlin = "SELECT `$tahe` FROM `sipd`.`infra_turap`";
+$kuein = mysql_query($sqlin);
+if($kuein){
+    if($iya=="01" || $iya=="02" || $iya=="03" || $iya=="04" || $iya=="05" || $iya=="06" || $iya=="07" || $iya=="12"){
+?>
 <div class="row">
     <div class="col-lg-12">
         <h1 class="page-header">
@@ -1407,7 +1417,27 @@
             <span class="pull-right">
                 <input type="reset" class="btn btn-danger" value="RESET" />
                 <input type="submit" class="btn btn-success" value="SIMPAN" />
-            </span>
-        </form>
+            </span>        
     </div>
 </div>
+</form>
+
+<?php 
+    }
+}else{
+?>
+<!-- /.row -->
+
+<div class="row">
+    <div class="col-lg-12">
+        <div class="alert alert-info alert-dismissable">
+            <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+                <i class="fa fa-info-circle"></i>  Maaf, Pengisian Data SIPD <?php echo date("Y"); ?> Belum Dibuka</strong>. Tunggulah beberapa saat lagi.
+        </div>
+    </div>
+</div>
+
+<!-- /.row -->
+<?php 
+}
+?>
