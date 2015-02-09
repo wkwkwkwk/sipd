@@ -1,11 +1,22 @@
 <?php 
 mysql_connect('localhost','root','');
 mysql_select_db("sipd");
+$orang=Yii::app()->user->username;
 
 $tahe = date("Y");
 $iya = date("m");
 $sqlin = "SELECT `$tahe` FROM `sipd`.`infra_turap`";
+$sqlin1 = "SELECT * FROM `sipd`.`log` WHERE `namatabel` = 'infra_rmhsanitasi' AND `kecamatan` = '$orang' AND `tahun` = '$tahe'";
+$sqlin2 = "SELECT * FROM `sipd`.`log` WHERE `namatabel` = 'infra_dayamakam' AND `kecamatan` = '$orang' AND `tahun` = '$tahe'";
+$sqlin3 = "SELECT * FROM `sipd`.`log` WHERE `namatabel` = 'infra_sip' AND `kecamatan` = '$orang' AND `tahun` = '$tahe'";
+$sqlin4 = "SELECT * FROM `sipd`.`log` WHERE `namatabel` = 'infra_bermotor' AND `kecamatan` = '$orang' AND `tahun` = '$tahe'";
+
 $kuein = mysql_query($sqlin);
+$kuein1 = mysql_query($sqlin1);
+$kuein2 = mysql_query($sqlin2);
+$kuein3 = mysql_query($sqlin3);
+$kuein4 = mysql_query($sqlin4);
+
 if($kuein){
     if($iya=="01" || $iya=="02" || $iya=="03" || $iya=="04" || $iya=="05" || $iya=="06" || $iya=="07" || $iya=="12"){
 ?>
@@ -16,7 +27,9 @@ if($kuein){
         </h1>
     </div>
 </div>
-
+<?php 
+        if(!($hasil = mysql_fetch_array($kuein1))){
+ ?>
 <div class="row">
 	<div class="col-lg-12 col-xs-12">
         <!-- Perumahan dan Pemukiman -->
@@ -449,7 +462,21 @@ if($kuein){
             </span>
         </form>
             <!-- End Perumahan dan Pemukiman -->
-
+<?php 
+        }else{
+ ?>
+<div class="row">
+    <div class="col-lg-12">
+        <div class="alert alert-info">
+            <button type="button" class="close" data-dismiss="alert" aria-hidden="true"></button>
+                <i class="fa fa-info-circle"></i>  Anda sudah melakukan pengisian data Perumahan dan Pemukiman</strong>.
+        </div>
+    </div>
+</div>
+<?php 
+        }
+        if(!($hasil = mysql_fetch_array($kuein2))){
+ ?>
             <!-- Pekerjaan Umum -->
             <br />
             <br />
@@ -1031,7 +1058,21 @@ if($kuein){
             </span>
         </form>
             <!-- End Pekerjaan Umum -->
-
+<?php 
+        }else{
+ ?>
+<div class="row">
+    <div class="col-lg-12">
+        <div class="alert alert-info">
+            <button type="button" class="close" data-dismiss="alert" aria-hidden="true"></button>
+                <i class="fa fa-info-circle"></i>  Anda sudah melakukan pengisian data Pekerjaan Umum</strong>.
+        </div>
+    </div>
+</div>
+<?php 
+        }
+        if(!($hasil = mysql_fetch_array($kuein3))){
+ ?>
             <!-- Pariwisata, POS, Telekomunikasi dan Informatika -->
             <br />
             <br />
@@ -1243,7 +1284,21 @@ if($kuein){
             </span>
         </form>
             <!-- End Pariwisata, POS, Telekomunikasi dan Informatika -->
-
+<?php 
+        }else{
+ ?>
+<div class="row">
+    <div class="col-lg-12">
+        <div class="alert alert-info">
+            <button type="button" class="close" data-dismiss="alert" aria-hidden="true"></button>
+                <i class="fa fa-info-circle"></i>  Anda sudah melakukan pengisian data Pariwisata, POS, Telekomunikasi dan Informatika</strong>.
+        </div>
+    </div>
+</div>
+<?php 
+        }
+        if(!($hasil = mysql_fetch_array($kuein4))){
+ ?>
             <!-- Perhubungan dan Transportasi -->
         <br />
         <br />
@@ -1421,8 +1476,19 @@ if($kuein){
     </div>
 </div>
 </form>
-
 <?php 
+        }else{
+ ?>
+<div class="row">
+    <div class="col-lg-12">
+        <div class="alert alert-info">
+            <button type="button" class="close" data-dismiss="alert" aria-hidden="true"></button>
+                <i class="fa fa-info-circle"></i>  Anda sudah melakukan pengisian data Perhubungan dan Transportasi</strong>.
+        </div>
+    </div>
+</div>
+<?php 
+        }
     }
 }else{
 ?>
@@ -1430,8 +1496,8 @@ if($kuein){
 
 <div class="row">
     <div class="col-lg-12">
-        <div class="alert alert-info alert-dismissable">
-            <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+        <div class="alert alert-info">
+            <button type="button" class="close" data-dismiss="alert" aria-hidden="true"></button>
                 <i class="fa fa-info-circle"></i>  Maaf, Pengisian Data SIPD <?php echo date("Y"); ?> Belum Dibuka</strong>. Tunggulah beberapa saat lagi.
         </div>
     </div>

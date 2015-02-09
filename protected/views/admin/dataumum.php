@@ -26,7 +26,7 @@ if($kuein){
     </div>
 </div>
 <?php 
-        if(!$kuein1){
+        if(!($hasil = mysql_fetch_array($kuein1))){
  ?>
 <div class="row">
   <div class="col-lg-12 col-xs-12">
@@ -328,7 +328,7 @@ if($kuein){
 </div>
 <?php 
         }
-        if(!$kuein2){
+        if(!($hasil = mysql_fetch_array($kuein2))){
  ?>
             <!-- Pemerintahan -->
             <br /><br />
@@ -532,7 +532,7 @@ if($kuein){
 </div>
 <?php 
         }
-        if(!$kuein3){
+        if(!($hasil = mysql_fetch_array($kuein3))){
  ?>
             <!-- Demografi -->
             <br /><br />

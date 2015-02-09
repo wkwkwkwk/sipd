@@ -1,11 +1,20 @@
 <?php 
 mysql_connect('localhost','root','');
 mysql_select_db("sipd");
+$orang=Yii::app()->user->username;
 
 $tahe = date("Y");
 $iya = date("m");
 $sqlin = "SELECT `$tahe` FROM `sipd`.`sda_tataruang`";
+$sqlin1 = "SELECT * FROM `sipd`.`log` WHERE `namatabel` = 'sda_kel_sos' AND `kecamatan` = '$orang' AND `tahun` = '$tahe'";
+$sqlin2 = "SELECT * FROM `sipd`.`log` WHERE `namatabel` = 'sda_energi' AND `kecamatan` = '$orang' AND `tahun` = '$tahe'";
+$sqlin3 = "SELECT * FROM `sipd`.`log` WHERE `namatabel` = 'sda_air_limbah' AND `kecamatan` = '$orang' AND `tahun` = '$tahe'";
+
 $kuein = mysql_query($sqlin);
+$kuein1 = mysql_query($sqlin1);
+$kuein2 = mysql_query($sqlin2);
+$kuein3 = mysql_query($sqlin3);
+
 if($kuein){
     if($iya=="01" || $iya=="02" || $iya=="03" || $iya=="04" || $iya=="05" || $iya=="06" || $iya=="07" || $iya=="12"){
 ?>
@@ -17,7 +26,9 @@ if($kuein){
         </h1>
     </div>
 </div>
-
+<?php 
+        if(!($hasil = mysql_fetch_array($kuein1))){
+ ?>
 <div class="row">
 	<div class="col-lg-12 col-xs-12">
         <!-- Pertanian, Kehutanan, Kelautan, Perikanan, Peternakan, Perkebunan -->
@@ -279,7 +290,21 @@ if($kuein){
         </span>
         </form>
         <!-- End Pertanian, Kehutanan, Kelautan, Perikanan, Peternakan, Perkebunan -->
-
+<?php 
+        }else{
+ ?>
+<div class="row">
+    <div class="col-lg-12">
+        <div class="alert alert-info">
+            <button type="button" class="close" data-dismiss="alert" aria-hidden="true"></button>
+                <i class="fa fa-info-circle"></i>  Anda sudah melakukan pengisian data Pertanian, Kehutanan, Kelautan, Perikanan, Peternakan, Perkebunan</strong>.
+        </div>
+    </div>
+</div>
+<?php 
+        }
+        if(!($hasil = mysql_fetch_array($kuein2))){
+ ?>
         <!-- Pertambangan dan Energi -->
 <br />
 <br />
@@ -378,7 +403,21 @@ if($kuein){
         </span>
         </form>
         <!-- End Pertambangan dan Energi -->
-
+<?php 
+        }else{
+ ?>
+<div class="row">
+    <div class="col-lg-12">
+        <div class="alert alert-info">
+            <button type="button" class="close" data-dismiss="alert" aria-hidden="true"></button>
+                <i class="fa fa-info-circle"></i>  Anda sudah melakukan pengisian data Pertambangan dan Energi</strong>.
+        </div>
+    </div>
+</div>
+<?php 
+        }
+        if(!($hasil = mysql_fetch_array($kuein3))){
+ ?>
         <!-- Lingkungan Hidup, Tata Ruang dan Pertanahan -->
 <br />
 <br />
@@ -677,8 +716,19 @@ if($kuein){
         </span>
 
 </form>
-
 <?php 
+        }else{
+ ?>
+<div class="row">
+    <div class="col-lg-12">
+        <div class="alert alert-info">
+            <button type="button" class="close" data-dismiss="alert" aria-hidden="true"></button>
+                <i class="fa fa-info-circle"></i>  Anda sudah melakukan pengisian data Lingkungan Hidup, Tata Ruang dan Pertanahan</strong>.
+        </div>
+    </div>
+</div>
+<?php 
+        }
     }
 }else{
 ?>
@@ -686,8 +736,8 @@ if($kuein){
 
 <div class="row">
     <div class="col-lg-12">
-        <div class="alert alert-info alert-dismissable">
-            <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+        <div class="alert alert-info">
+            <button type="button" class="close" data-dismiss="alert" aria-hidden="true"></button>
                 <i class="fa fa-info-circle"></i>  Maaf, Pengisian Data SIPD <?php echo date("Y"); ?> Belum Dibuka</strong>. Tunggulah beberapa saat lagi.
         </div>
     </div>

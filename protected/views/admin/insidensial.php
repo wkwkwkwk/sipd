@@ -30,7 +30,7 @@ if($kuein){
     </div>
 </div>
 <?php 
-        if(!$kuein1){
+        if(!($hasil = mysql_fetch_array($kuein1))){
  ?>
 <div class="row">
 	<div class="col-lg-12 col-xs-12">
@@ -362,7 +362,7 @@ if($kuein){
 </div>
 <?php 
         }
-        if(!$kuein2){
+        if(!($hasil = mysql_fetch_array($kuein2))){
  ?>
         <!-- Penyakit Menular --><br /><br /><form role="form" method="post" action="simpanpenyakit">
         <div class="box panel panel-primary">
@@ -467,7 +467,7 @@ if($kuein){
 </div>
 <?php 
         }
-        if(!$kuein3){
+        if(!($hasil = mysql_fetch_array($kuein3))){
  ?>
         <!-- Pencurian Ikan --><br /><br /><form role="form" method="post" action="simpanikan">
         <div class="box panel panel-primary">
@@ -604,7 +604,7 @@ if($kuein){
 </div>
 <?php 
         }
-        if(!$kuein4){
+        if(!($hasil = mysql_fetch_array($kuein4))){
  ?>
         <!-- Kebakaran Hutan --><br /><br /><form role="form" method="post" action="simpanhutan">
         <div class="box panel panel-primary">
@@ -741,7 +741,7 @@ if($kuein){
 </div>
 <?php 
         }
-        if(!$kuein5){
+        if(!($hasil = mysql_fetch_array($kuein5))){
  ?>
         <!-- Pencurian dan Penyelundupan Kayu --><br /><br /><form role="form" method="post" action="simpankayu">
         <div class="box panel panel-primary">
