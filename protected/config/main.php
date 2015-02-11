@@ -19,19 +19,20 @@ return array(
 	'import'=>array(
 		'application.models.*',
 		'application.components.*',
-		'application.extensions.phpexcelreader.*',
+		/*'application.extensions.phpexcelreader.*',*/
+		'application.extensions.yiichat.*',
 	),
 
 	'modules'=>array(
 		// uncomment the following to enable the Gii tool
-		/*
+		
 		'gii'=>array(
 			'class'=>'system.gii.GiiModule',
-			'password'=>'Enter Your Password Here',
+			'password'=>'ganteng',
 			// If removed, Gii defaults to localhost only. Edit carefully to taste.
 			'ipFilters'=>array('127.0.0.1','::1'),
 		),
-		*/
+		
 	),
 
 	// application components
@@ -56,6 +57,9 @@ return array(
 			'urlFormat'=>'path',
 			'showScriptName'=>FALSE,
 			'rules'=>array(
+				'gii'=>'gii',
+	            'gii/<controller:\w+>'=>'gii/<controller>',
+	            'gii/<controller:\w+>/<action:\w+>'=>'gii/<controller>/<action>',
 				'<controller:\w+>/<id:\d+>'=>'<controller>/view',
 				'<controller:\w+>/<action:\w+>/<id:\d+>'=>'<controller>/<action>',
 				'<controller:\w+>/<action:\w+>'=>'<controller>/<action>',

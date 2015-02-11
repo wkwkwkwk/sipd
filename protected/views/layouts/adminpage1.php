@@ -105,7 +105,7 @@
                             $anu = "";
                             $ini = "";
                             $apa = "";
-                            $ana = "";
+                            $ana = "";$chat="";
                             $itu = "active";
                         }
                         
@@ -115,45 +115,59 @@
                             $anu = "";
                             $ini = "";
                             $apa = "";
-                            $ana = "";$iya = "";
+                            $ana = "";$iya = "";$mbuh="";$chat="";;
                         }else if($belakang == "dataumum" || $belakang == "sosbud"){
                             $anu = "active";
                             $itu = "";
                             $ini = "";
                             $apa = "";
-                            $ana = "";$iya = "";
+                            $ana = "";$iya = "";$mbuh="";$chat="";
                         }else if($belakang == "ekonomi" || $belakang == "infrastruktur" || $belakang == "sda"){
                             $ini = "active";
                             $anu = "";
                             $itu = "";
                             $apa = "";
-                            $ana = "";$iya = "";
+                            $ana = "";$iya = "";$mbuh="";$chat="";
                         }else if($belakang == "polhukam" || $belakang == "insidensial"){
                             $apa = "active";
                             $anu = "";
                             $itu = "";
                             $ini = "";
-                            $ana = "";$iya = "";
+                            $ana = "";$iya = "";$mbuh="";$chat="";
                         }else if($belakang == "tampilkandata" || $belakang == "export"){
                             $ana = "active";
                             $anu = "";
                             $itu = "";
                             $ini = "";
-                            $apa = "";$iya = "";
+                            $apa = "";$iya = "";$mbuh="";$chat="";
                         }else if($belakang == "index" && $eks[2] == "export"){
                             $ana = "active";
                             $anu = "";
                             $itu = "";
                             $ini = "";
-                            $apa = "";$iya = "";
+                            $apa = "";$iya = "";$mbuh="";$chat="";
                          }else if($belakang == "show"){
                             $iya = "active";
                             $anu = "";
                             $itu = "";
                             $ini = "";
                             $apa = "";
-                            $ana = "";
-                        }                     
+                            $ana = "";$mbuh="";$chat="";
+                        }else if ($belakang == "rekapcamat" && $eks[2] == "tampilcamat") {
+                            $mbuh="active";
+                            $anu = "";
+                            $itu = "";
+                            $ini = "";
+                            $apa = "";
+                            $ana = "";$iya = "";$chat="";
+                        }else if ($belakang == "chat") {
+                            $mbuh="";
+                            $anu = "";
+                            $itu = "";
+                            $ini = "";
+                            $apa = "";
+                            $ana = "";$iya = "";$chat="active";
+                        }
                     ?>
                     <li class="<?php echo $itu; ?>">
                         <a href="<?php echo Yii::app()->request->baseUrl; ?>/admin/index"><i class="fa fa-fw fa-dashboard"></i> Dashboard</a>
@@ -195,6 +209,9 @@
                             </li>
                         </ul>
                     </li>
+                    <li class="<?php echo $mbuh; ?>">
+                        <?php echo CHtml::link('Tampilkan Data',array('tampilcamat/rekapcamat')); ?>
+                    </li>
                     <?php }else{ ?>
                     <li class="<?php echo $iya; ?>">
                         <?php echo CHtml::link('Extra Menu',array('admin/show')); ?>
@@ -203,6 +220,10 @@
                         <?php echo CHtml::link('Tampilkan Data',array('export/index')); ?>
                     </li>
                     <?php } ?>
+                    <li class="<?php echo $chat; ?>">
+                        <a href="<?php echo Yii::app()->request->baseUrl; ?>/admin/chat"><i class="fa fa fa-comments"></i> Chat Room</a>
+                    </li>
+                    
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
