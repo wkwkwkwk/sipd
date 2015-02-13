@@ -1,3 +1,12 @@
+<?php
+mysql_connect('localhost','root','');
+mysql_select_db("sipd");
+
+Yii::app()->session['username'] = Yii::app()->user->username;
+$orang = Yii::app()->user->username;
+$sql = "SELECT `username` FROM `sipd`.`admin` WHERE `username` <> '$orang'";
+$kuwe = mysql_query($sql);
+ ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -43,8 +52,8 @@
         td.c{padding-left: 45px;}
         td.d{padding-left: 65px;}
         td.e{font-size: 11px;}
+        select{text-transform: capitalize;}
     </style>
-
 </head>
 
 <body>
@@ -93,7 +102,7 @@
             </ul>
             <!-- Sidebar Menu Items - These collapse to the responsive navigation menu on small screens -->
             <div class="collapse navbar-collapse navbar-ex1-collapse">
-                <ul class="nav navbar-nav side-nav">
+                <ul class="nav navbar-nav side-nav navbar-default">
                     <?php
                         //kalo yang diakses bukan halaman dashboard, li nggak active. tapi kalo pas di dashboard, li class=active
                         $URL_halaman_ini = apache_getenv("HTTP_HOST") . apache_getenv("REQUEST_URI");
@@ -107,6 +116,8 @@
                             $apa = "";
                             $ana = "";
                             $itu = "active";
+                            $mbuh = "";
+                            $bae = "";
                         }
                         
                         /*echo $belakang;*/
@@ -115,37 +126,55 @@
                             $anu = "";
                             $ini = "";
                             $apa = "";
-                            $ana = "";$iya = "";
+                            $ana = "";
+                            $iya = "";
+                            $mbuh = "";
+                            $bae = "";
                         }else if($belakang == "dataumum" || $belakang == "sosbud"){
                             $anu = "active";
                             $itu = "";
                             $ini = "";
                             $apa = "";
-                            $ana = "";$iya = "";
+                            $ana = "";
+                            $iya = "";
+                            $mbuh = "";
+                            $bae = "";
                         }else if($belakang == "ekonomi" || $belakang == "infrastruktur" || $belakang == "sda"){
                             $ini = "active";
                             $anu = "";
                             $itu = "";
                             $apa = "";
-                            $ana = "";$iya = "";
+                            $ana = "";
+                            $iya = "";
+                            $mbuh = "";
+                            $bae = "";
                         }else if($belakang == "polhukam" || $belakang == "insidensial"){
                             $apa = "active";
                             $anu = "";
                             $itu = "";
                             $ini = "";
-                            $ana = "";$iya = "";
+                            $ana = "";
+                            $iya = "";
+                            $mbuh = "";
+                            $bae = "";
                         }else if($belakang == "tampilkandata" || $belakang == "export"){
                             $ana = "active";
                             $anu = "";
                             $itu = "";
                             $ini = "";
-                            $apa = "";$iya = "";
+                            $apa = "";
+                            $iya = "";
+                            $mbuh = "";
+                            $bae = "";
                         }else if($belakang == "index" && $eks[2] == "export"){
                             $ana = "active";
                             $anu = "";
                             $itu = "";
                             $ini = "";
-                            $apa = "";$iya = "";
+                            $apa = "";
+                            $iya = "";
+                            $mbuh = "";
+                            $bae = "";
                          }else if($belakang == "show"){
                             $iya = "active";
                             $anu = "";
@@ -153,7 +182,27 @@
                             $ini = "";
                             $apa = "";
                             $ana = "";
-                        }                     
+                            $mbuh = "";
+                            $bae = "";
+                        }else if($belakang == "index" && $eks[2] == "examp"){
+                            $mbuh = "active";
+                            $iya = "";
+                            $anu = "";
+                            $itu = "";
+                            $ini = "";
+                            $apa = "";
+                            $ana = "";
+                            $bae = "";
+                        }else if($belakang == "edit"){
+                            $bae = "active";
+                            $iya = "";
+                            $anu = "";
+                            $itu = "";
+                            $ini = "";
+                            $apa = "";
+                            $ana = "";
+                            $mbuh = "";
+                        }
                     ?>
                     <li class="<?php echo $itu; ?>">
                         <a href="<?php echo Yii::app()->request->baseUrl; ?>/admin/index"><i class="fa fa-fw fa-dashboard"></i> Dashboard</a>
@@ -195,6 +244,12 @@
                             </li>
                         </ul>
                     </li>
+                    <li class="<?php echo $bae; ?>">
+                        <?php echo CHtml::link('Edit',array('admin/edit')); ?>
+                    </li>
+                    <li class="<?php echo $mbuh; ?>">
+                        <?php echo CHtml::link('Tampilkan Data',array('examp/index')); ?>
+                    </li>
                     <?php }else{ ?>
                     <li class="<?php echo $iya; ?>">
                         <?php echo CHtml::link('Extra Menu',array('admin/show')); ?>
@@ -219,7 +274,7 @@
 
         </div>
         <!-- /#page-wrapper -->
-
+                    
     </div>
     <!-- /#wrapper -->
 

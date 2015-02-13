@@ -514,6 +514,45 @@
 			}
 			$z++;
 		}
+	}else if(isset($_POST['eval'])){
+		$nakec = $_POST['pilkec'];
+		$skor = 0;
+		$ulang = 0;
+		$tahu = date("Y");
+		$isi = array();
+
+		$sql = "SELECT `isian` FROM `sipd`.`log` WHERE `kecamatan` = '$nakec' AND `tahun` = '$tahu'";
+		$kueri = mysql_query($sql);
+		if($kueri){
+			/*Eksekusi*/
+			while ($metu = mysql_fetch_array($kueri)) {
+				$sini = $metu[0];
+				$isi = explode("#", $sini);
+				$i = count($isi);
+				for ($n=0; $n < $i; $n++) { 
+					if($isi[$n] != 0){
+						$skor++;
+					}
+				}
+			}
+			$esq = "UPDATE `sipd`.`admin` set `thn` = '$tahu', `skor` = $skor WHERE `username` = '$nakec'";
+			$el = mysql_query($esq);
+			if($el){
+				echo "<script type='text/javascript'>alert('Evaluasi ketersian Data User ";
+				echo $nakec;
+				echo " Berhasil dilakukan";
+				echo "')</script>";
+				echo "<meta http-equiv='refresh' content=0;url='show'>";
+			}
+		}else{
+			/*Pesan*/
+			echo "<script type='text/javascript'>alert('User ";
+			echo $nakec;
+			echo " belum melakukan Pengisian Data SIPD Tahun ";
+			echo $tahu;
+			echo "')</script>";
+			echo "<meta http-equiv='refresh' content=0;url='show'>";
+		}
 	}
 ?>
 
@@ -550,7 +589,7 @@
                     <div class="panel-body">
                         <label>Pilih Sub Data &nbsp;&nbsp;</label>
                         <select name="repil">
-                        	<option value="datum">Data Umum</option>>
+                        	<option value="datum">Data Umum</option>
                         	<option value="sbd">Sosial Budaya</option>
                         	<option value="suda">Sumber Daya Alam</option>
                         	<option value="infras">Infrastruktur</option>
@@ -572,7 +611,18 @@
                         <h3 class="panel-title"><i class="fa fa-github fa-fw"></i> Evaluasi Keterisian Data SIPD Tahun <?php $w=date("Y");echo $w; ?></h3>
                     </div>
                     <div class="panel-body">
-                        <input type="submit" class="btn btn-success" name="eval" value="Evaluasi Keterisian Data" />
+                    	<select name="pilkec">
+	                    	<?php
+	                    		$nama = Yii::app()->user->username;
+	                    		$perintah = "SELECT `username` FROM `sipd`.`admin` WHERE `username` <> '$nama' AND `username` <> 'wedhatama' AND `username` <> 'test'";
+	                    		$eksekusi = mysql_query($perintah);
+	                    		$no = 1;
+	                    		while ($buh = mysql_fetch_array($eksekusi)) {
+	                    			echo "<option class='e' value='".$buh[0]."'>".$buh[0]."</option>";
+	                    		}
+	                    	?>
+	                    </select>
+	                    <input type="submit" class="btn btn-success" name="eval" value="Evaluasi Keterisian Data" />
                     </div>
                 </div>
             </div>

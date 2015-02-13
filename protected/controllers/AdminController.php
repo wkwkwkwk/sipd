@@ -25,6 +25,10 @@
 			}
 		}
 
+		public function actionEdit(){
+			$this->render('edit');
+		}
+
 		public function actionShow(){
 			$this->render('show');
 		}

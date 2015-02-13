@@ -774,14 +774,15 @@ if($kuein){
             </div>
 
         </div>
+        <br /><span class="pull-right">
+            <input type="reset" class="btn btn-danger" value="RESET" />
+            <input type="submit" class="btn btn-success" value="SIMPAN" />
+        </span>
         <!-- End Keamanan, Ketertiban Masyarakat -->
         
 	</div>
 </div>
-<br /><span class="pull-right">
-            <input type="reset" class="btn btn-danger" value="RESET" />
-            <input type="submit" class="btn btn-success" value="SIMPAN" />
-        </span>
+
 
 </form>
 <?php 

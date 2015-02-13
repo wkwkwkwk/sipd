@@ -16,7 +16,7 @@ $kuein2 = mysql_query($sqlin2);
 if($kuein){
     if($iya=="01" || $iya=="02" || $iya=="03" || $iya=="04" || $iya=="05" || $iya=="06" || $iya=="07" || $iya=="12"){
 ?>
-<form role="form" method="post" action="simpanindus">
+
 <div class="row">
     <div class="col-lg-12">
         <h1 class="page-header">
@@ -29,6 +29,7 @@ if($kuein){
  ?>
 <div class="row">
 	<div class="col-lg-12 col-xs-12">
+        <form role="form" method="post" action="simpanindus">
         <!-- Industri, Perdagangan, Pengembangan Usaha Nasional, Lembaga Keuangan dan Koperasi -->
 		<div class="box panel panel-primary">
 			<div class="panel-heading">
@@ -279,13 +280,13 @@ if($kuein){
 
                   </div>
             </div>
-
-		</div>
-        <br /><span class="pull-right">
+<br /><span class="pull-right">
             <input type="reset" class="btn btn-danger" value="RESET" />
             <input type="submit" class="btn btn-success" value="SIMPAN" />
         </span>
 </form>
+		</div>
+        
         <!-- End Industri, Perdagangan, Pengembangan Usaha Nasional, Lembaga Keuangan dan Koperasi -->
 <?php 
         }else{
@@ -653,17 +654,15 @@ if($kuein){
 
                   </div>
             </div>
-
-        </div>
-        <!-- End BUMD, Perbankan Daerah dan Lembaga Keuangan Daerah -->
-	</div>
-</div>
-<br /><span class="pull-right">
+            <br /><br />
+            <span class="pull-right">
             <input type="reset" class="btn btn-danger" value="RESET" />
             <input type="submit" class="btn btn-success" value="SIMPAN" />
-        </span>
+            </span>
+        </div>
+        </form>
+        <!-- End BUMD, Perbankan Daerah dan Lembaga Keuangan Daerah -->
 
-</form>
 <?php 
         }else{
  ?>
