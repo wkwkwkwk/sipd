@@ -13,9 +13,9 @@ while ($hasil=mysql_fetch_array($kueri)) {
 if($i==187){
 ?>
 <table class="table table-bordered table-hover" width="150%">
-	<caption class="text-center">8 KELOMPOK DATA SISTEM PEMBNGUNAN DAERAH<br/>KABUPATEN PURBALINGGA<br/>PARUH TAHUN <?php echo $initahun; ?> </caption>
-	
-		<thead>
+    <caption class="text-center">7 KELOMPOK DATA SISTEM PEMBNGUNAN DAERAH<br/>KABUPATEN PURBALINGGA<br/>PARUH TAHUN <?php echo $initahun; ?> </caption>
+    
+        <thead>
             <th class="text-center" style="font-size:10px;">NAMA</th>
             <th class="text-center" style="font-size:10px;"><?php echo $initahun; ?></th>
             <th class="text-center" style="font-size:10px;">SATUAN</th>
@@ -24,9 +24,9 @@ if($i==187){
         </thead>
         
         <tbody>
-            <!-- Start Data SDA -->
+            <!-- Start SDA -->
             <tr>
-                <td colspan="5"><strong>DATA SUMBER DAYA ALAM - Pertanian, Kehutanan, Kelautan, Perikanan, Peternakan, Perkebunan</strong></td>
+                <td colspan="5"><strong>SUMBER DAYA ALAM - Pertanian, Kehutanan, Kelautan, Perikanan, Peternakan, Perkebunan</strong></td>
             </tr>
             <!-- Mulai -->
             <?php 
@@ -162,7 +162,7 @@ if($i==187){
             <?php $i++; endforeach; ?>
             <!-- Akhir -->
             <tr>
-                <td colspan="5"><strong>DATA SUMBER DAYA ALAM - Pertambangan dan Energi</strong></td>
+                <td colspan="5"><strong>SUMBER DAYA ALAM - Pertambangan dan Energi</strong></td>
             </tr>
             <!-- Mulai -->
             <?php 
@@ -203,7 +203,7 @@ if($i==187){
             <?php $i++; endforeach; ?>
             <!-- Akhir -->
             <tr>
-                <td colspan="5"><strong>DATA SUMBER DAYA ALAM - Lingkungan Hidup, Tata Ruang dan Pertanahan</strong></td>
+                <td colspan="5"><strong>SUMBER DAYA ALAM - Lingkungan Hidup, Tata Ruang dan Pertanahan</strong></td>
             </tr>
             <!-- Mulai -->
             <?php 
@@ -357,10 +357,10 @@ if($i==187){
             </tr>
             <?php $i++; endforeach; ?>
             <!-- Akhir -->
-            <!-- End Data SDA -->
-            <!-- Start Data Infrastruktur -->
+            <!-- End SDA -->
+            <!-- Start Infrastruktur -->
             <tr>
-                <td colspan="5"><strong>DATA INFRASTRUKTUR - Perumahan dan Permukiman</strong></td>
+                <td colspan="5"><strong>INFRASTRUKTUR - Perumahan dan Permukiman</strong></td>
             </tr>
             <!-- Mulai -->
             <?php 
@@ -572,7 +572,7 @@ if($i==187){
             <?php $i++; endforeach; ?>
             <!-- Akhir -->
             <tr>
-                <td colspan="5"><strong>DATA INFRASTRUKTUR - Pekerjaan Umum</strong></td>
+                <td colspan="5"><strong>INFRASTRUKTUR - Pekerjaan Umum</strong></td>
             </tr>
             <!-- Mulai -->
             <?php 
@@ -860,7 +860,7 @@ if($i==187){
             <?php $i++; endforeach; ?>
             <!-- Akhir -->
             <tr>
-                <td colspan="5"><strong>DATA INFRASTRUKTUR - Pariwisata, POS, Telekomunikasi dan Informatika</strong></td>
+                <td colspan="5"><strong>INFRASTRUKTUR - Pariwisata, POS, Telekomunikasi dan Informatika</strong></td>
             </tr>
             <!-- Mulai -->
             <?php 
@@ -958,7 +958,7 @@ if($i==187){
             <?php $i++; endforeach; ?>
             <!-- Akhir -->
             <tr>
-                <td colspan="5"><strong>DATA INFRASTRUKTUR - Perhubungan dan Transportasi</strong></td>
+                <td colspan="5"><strong>INFRASTRUKTUR - Perhubungan dan Transportasi</strong></td>
             </tr>
             <!-- Mulai -->
             <?php 
@@ -1036,10 +1036,10 @@ if($i==187){
             </tr>
             <?php $i++; endforeach; ?>
             <!-- Akhir -->
-            <!-- End Data Infrastruktur -->
-            <!-- Start Data Ekonomi -->
+            <!-- End Infrastruktur -->
+            <!-- Start Ekonomi -->
             <tr>
-                <td colspan="5"><strong>DATA EKONOMI - Industri, Perdagangan, Pengembangan Usaha Nasional, Lembaga Keuangan dan Koperasi</strong></td>
+                <td colspan="5"><strong>EKONOMI - Industri, Perdagangan, Pengembangan Usaha Nasional, Lembaga Keuangan dan Koperasi</strong></td>
             </tr>
             <!-- Mulai -->
             <?php 
@@ -1175,7 +1175,7 @@ if($i==187){
             <?php $i++; endforeach; ?>
             <!-- Akhir -->
             <tr>
-                <td colspan="5"><strong>DATA EKONOMI - BUMD, Perbankan Daerah dan Lembaga Keuangan Daerah</strong></td>
+                <td colspan="5"><strong>EKONOMI - BUMD, Perbankan Daerah dan Lembaga Keuangan Daerah</strong></td>
             </tr>
             <!-- Mulai -->
             <?php 
@@ -1367,7 +1367,7 @@ if($i==187){
             </tr>
             <?php $i++; endforeach; ?>
             <!-- Akhir -->
-            <!-- End Data Ekonomi -->
+            <!-- End Ekonomi -->
         </tbody>
         Export ke format :
         <a href="<?php echo $this -> createUrl("examp/toexcel/fileName/sipd"); ?>">
@@ -1378,8 +1378,8 @@ if($i==187){
     <div class="col-lg-12">
         <div class="alert alert-info">
             <button type="button" class="close" data-dismiss="alert" aria-hidden="true"></button>
-                <i class="fa fa-info-circle"></i>  Anda belum melakukan pengisian Data SIPD Tahun <?php echo date("Y"); ?> secara lengkap</strong>.
-                Silahkan Anda melakukan pengisian Data SIPD terlebih dahulu.
+                <i class="fa fa-info-circle"></i>  Anda belum melakukan pengisian SIPD Tahun <?php echo date("Y"); ?> secara lengkap</strong>.
+                Silahkan Anda melakukan pengisian SIPD terlebih dahulu.
         </div>
     </div>
 </div>

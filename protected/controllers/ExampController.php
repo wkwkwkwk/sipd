@@ -998,7 +998,7 @@
 			$r137 = $command137->queryAll();
 			$r138 = $command138->queryAll();
 
-			$dataExcel=$this->renderPartial('report',array(
+			$dataExcel=$this->renderPartial("report",array(
 				"dataEkoIndustri"=>$r1,
 				"tblEkoIndustri"=>$r2,
 				"dataEsper"=>$r3,
@@ -1134,7 +1134,7 @@
 				"dataAlink"=>$r133,
 				"tblAlink"=>$r134,
 				"dataSampah"=>$r135,
-				"tblSampah"=>$r1036,
+				"tblSampah"=>$r136,
 				"dataAlim"=>$r137,
 				"tblAlim"=>$r138,
 				"initahun"=>$taini,

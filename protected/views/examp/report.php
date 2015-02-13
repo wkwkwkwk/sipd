@@ -1,5 +1,5 @@
-<table class="table table-bordered table-hover" width="150%">
-    <caption class="text-center">8 KELOMPOK DATA SISTEM PEMBNGUNAN DAERAH<br/>KABUPATEN PURBALINGGA<br/>PARUH TAHUN <?php echo $initahun; ?> </caption>
+<table border="1" width="150%">
+    <caption class="text-center">7 KELOMPOK DATA SISTEM PEMBNGUNAN DAERAH<br/>KABUPATEN PURBALINGGA<br/>PARUH TAHUN <?php echo $initahun; ?> </caption>
     
         <thead>
             <th class="text-center" style="font-size:10px;">NAMA</th>
@@ -10,9 +10,9 @@
         </thead>
         
         <tbody>
-            <!-- Start Data SDA -->
+            <!-- Start SDA -->
             <tr>
-                <td colspan="5"><strong>DATA SUMBER DAYA ALAM - Pertanian, Kehutanan, Kelautan, Perikanan, Peternakan, Perkebunan</strong></td>
+                <td colspan="5"><strong>SUMBER DAYA ALAM - Pertanian, Kehutanan, Kelautan, Perikanan, Peternakan, Perkebunan</strong></td>
             </tr>
             <!-- Mulai -->
             <?php 
@@ -148,7 +148,7 @@
             <?php $i++; endforeach; ?>
             <!-- Akhir -->
             <tr>
-                <td colspan="5"><strong>DATA SUMBER DAYA ALAM - Pertambangan dan Energi</strong></td>
+                <td colspan="5"><strong>SUMBER DAYA ALAM - Pertambangan dan Energi</strong></td>
             </tr>
             <!-- Mulai -->
             <?php 
@@ -189,7 +189,7 @@
             <?php $i++; endforeach; ?>
             <!-- Akhir -->
             <tr>
-                <td colspan="5"><strong>DATA SUMBER DAYA ALAM - Lingkungan Hidup, Tata Ruang dan Pertanahan</strong></td>
+                <td colspan="5"><strong>SUMBER DAYA ALAM - Lingkungan Hidup, Tata Ruang dan Pertanahan</strong></td>
             </tr>
             <!-- Mulai -->
             <?php 
@@ -343,10 +343,10 @@
             </tr>
             <?php $i++; endforeach; ?>
             <!-- Akhir -->
-            <!-- End Data SDA -->
-            <!-- Start Data Infrastruktur -->
+            <!-- End SDA -->
+            <!-- Start Infrastruktur -->
             <tr>
-                <td colspan="5"><strong>DATA INFRASTRUKTUR - Perumahan dan Permukiman</strong></td>
+                <td colspan="5"><strong>INFRASTRUKTUR - Perumahan dan Permukiman</strong></td>
             </tr>
             <!-- Mulai -->
             <?php 
@@ -558,7 +558,7 @@
             <?php $i++; endforeach; ?>
             <!-- Akhir -->
             <tr>
-                <td colspan="5"><strong>DATA INFRASTRUKTUR - Pekerjaan Umum</strong></td>
+                <td colspan="5"><strong>INFRASTRUKTUR - Pekerjaan Umum</strong></td>
             </tr>
             <!-- Mulai -->
             <?php 
@@ -846,7 +846,7 @@
             <?php $i++; endforeach; ?>
             <!-- Akhir -->
             <tr>
-                <td colspan="5"><strong>DATA INFRASTRUKTUR - Pariwisata, POS, Telekomunikasi dan Informatika</strong></td>
+                <td colspan="5"><strong>INFRASTRUKTUR - Pariwisata, POS, Telekomunikasi dan Informatika</strong></td>
             </tr>
             <!-- Mulai -->
             <?php 
@@ -944,7 +944,7 @@
             <?php $i++; endforeach; ?>
             <!-- Akhir -->
             <tr>
-                <td colspan="5"><strong>DATA INFRASTRUKTUR - Perhubungan dan Transportasi</strong></td>
+                <td colspan="5"><strong>INFRASTRUKTUR - Perhubungan dan Transportasi</strong></td>
             </tr>
             <!-- Mulai -->
             <?php 
@@ -1022,10 +1022,10 @@
             </tr>
             <?php $i++; endforeach; ?>
             <!-- Akhir -->
-            <!-- End Data Infrastruktur -->
-            <!-- Start Data Ekonomi -->
+            <!-- End Infrastruktur -->
+            <!-- Start Ekonomi -->
             <tr>
-                <td colspan="5"><strong>DATA EKONOMI - Industri, Perdagangan, Pengembangan Usaha Nasional, Lembaga Keuangan dan Koperasi</strong></td>
+                <td colspan="5"><strong>EKONOMI - Industri, Perdagangan, Pengembangan Usaha Nasional, Lembaga Keuangan dan Koperasi</strong></td>
             </tr>
             <!-- Mulai -->
             <?php 
@@ -1161,7 +1161,7 @@
             <?php $i++; endforeach; ?>
             <!-- Akhir -->
             <tr>
-                <td colspan="5"><strong>DATA EKONOMI - BUMD, Perbankan Daerah dan Lembaga Keuangan Daerah</strong></td>
+                <td colspan="5"><strong>EKONOMI - BUMD, Perbankan Daerah dan Lembaga Keuangan Daerah</strong></td>
             </tr>
             <!-- Mulai -->
             <?php 
@@ -1353,6 +1353,6 @@
             </tr>
             <?php $i++; endforeach; ?>
             <!-- Akhir -->
-            <!-- End Data Ekonomi -->
+            <!-- End Ekonomi -->
         </tbody>
 </table>
