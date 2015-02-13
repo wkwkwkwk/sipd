@@ -469,7 +469,7 @@ if($kuein){
     <div class="col-lg-12">
         <div class="alert alert-info">
             <button type="button" class="close" data-dismiss="alert" aria-hidden="true"></button>
-                <i class="fa fa-info-circle"></i>  Anda sudah melakukan pengisian data Perumahan dan Pemukiman</strong>.
+                <i class="fa fa-info-circle"></i>  Anda sudah melakukan pengisian data <strong>Perumahan dan Pemukiman</strong>.
         </div>
     </div>
 </div>
@@ -1065,7 +1065,7 @@ if($kuein){
     <div class="col-lg-12">
         <div class="alert alert-info">
             <button type="button" class="close" data-dismiss="alert" aria-hidden="true"></button>
-                <i class="fa fa-info-circle"></i>  Anda sudah melakukan pengisian data Pekerjaan Umum</strong>.
+                <i class="fa fa-info-circle"></i>  Anda sudah melakukan pengisian data <strong>Pekerjaan Umum</strong>.
         </div>
     </div>
 </div>
@@ -1291,7 +1291,7 @@ if($kuein){
     <div class="col-lg-12">
         <div class="alert alert-info">
             <button type="button" class="close" data-dismiss="alert" aria-hidden="true"></button>
-                <i class="fa fa-info-circle"></i>  Anda sudah melakukan pengisian data Pariwisata, POS, Telekomunikasi dan Informatika</strong>.
+                <i class="fa fa-info-circle"></i>  Anda sudah melakukan pengisian data <strong>Pariwisata, POS, Telekomunikasi dan Informatika</strong>.
         </div>
     </div>
 </div>
@@ -1473,8 +1473,7 @@ if($kuein){
                 <input type="reset" class="btn btn-danger" value="RESET" />
                 <input type="submit" class="btn btn-success" value="SIMPAN" />
             </span>        
-    </div>
-</div>
+    
 </form>
 <?php 
         }else{
@@ -1483,7 +1482,7 @@ if($kuein){
     <div class="col-lg-12">
         <div class="alert alert-info">
             <button type="button" class="close" data-dismiss="alert" aria-hidden="true"></button>
-                <i class="fa fa-info-circle"></i>  Anda sudah melakukan pengisian data Perhubungan dan Transportasi</strong>.
+                <i class="fa fa-info-circle"></i>  Anda sudah melakukan pengisian data <strong>Perhubungan dan Transportasi</strong>.
         </div>
     </div>
 </div>

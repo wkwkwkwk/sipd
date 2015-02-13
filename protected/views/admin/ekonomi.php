@@ -279,13 +279,13 @@ if($kuein){
                     </table>
 
                   </div>
-            </div>
+            </div></div>
 <br /><span class="pull-right">
             <input type="reset" class="btn btn-danger" value="RESET" />
             <input type="submit" class="btn btn-success" value="SIMPAN" />
         </span>
 </form>
-		</div>
+		
         
         <!-- End Industri, Perdagangan, Pengembangan Usaha Nasional, Lembaga Keuangan dan Koperasi -->
 <?php 
@@ -295,7 +295,7 @@ if($kuein){
     <div class="col-lg-12">
         <div class="alert alert-info">
             <button type="button" class="close" data-dismiss="alert" aria-hidden="true"></button>
-                <i class="fa fa-info-circle"></i>  Anda sudah melakukan pengisian data Industri, Perdagangan, Pengembangan Usaha Nasional, Lembaga Keuangan dan Koperasi</strong>.
+                <i class="fa fa-info-circle"></i>  Anda sudah melakukan pengisian data <strong>Industri, Perdagangan, Pengembangan Usaha Nasional, Lembaga Keuangan dan Koperasi</strong>.
         </div>
     </div>
 </div>
@@ -653,13 +653,13 @@ if($kuein){
                     </table>
 
                   </div>
-            </div>
+            </div></div>
             <br /><br />
             <span class="pull-right">
             <input type="reset" class="btn btn-danger" value="RESET" />
             <input type="submit" class="btn btn-success" value="SIMPAN" />
             </span>
-        </div>
+        
         </form>
         <!-- End BUMD, Perbankan Daerah dan Lembaga Keuangan Daerah -->
 
@@ -670,7 +670,7 @@ if($kuein){
     <div class="col-lg-12">
         <div class="alert alert-info">
             <button type="button" class="close" data-dismiss="alert" aria-hidden="true"></button>
-                <i class="fa fa-info-circle"></i>  Anda sudah melakukan pengisian data BUMD, Perbankan Daerah dan Lembaga Keuangan Daerah</strong>.
+                <i class="fa fa-info-circle"></i>  Anda sudah melakukan pengisian data <strong>BUMD, Perbankan Daerah dan Lembaga Keuangan Daerah</strong>.
         </div>
     </div>
 </div>

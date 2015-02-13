@@ -298,7 +298,7 @@ if($kuein){
     <div class="col-lg-12">
         <div class="alert alert-info">
             <button type="button" class="close" data-dismiss="alert" aria-hidden="true"></button>
-                <i class="fa fa-info-circle"></i>  Anda sudah melakukan pengisian data Pertanian, Kehutanan, Kelautan, Perikanan, Peternakan, Perkebunan</strong>.
+                <i class="fa fa-info-circle"></i>  Anda sudah melakukan pengisian data <strong>Pertanian, Kehutanan, Kelautan, Perikanan, Peternakan, Perkebunan</strong>.
         </div>
     </div>
 </div>
@@ -411,7 +411,7 @@ if($kuein){
     <div class="col-lg-12">
         <div class="alert alert-info">
             <button type="button" class="close" data-dismiss="alert" aria-hidden="true"></button>
-                <i class="fa fa-info-circle"></i>  Anda sudah melakukan pengisian data Pertambangan dan Energi</strong>.
+                <i class="fa fa-info-circle"></i>  Anda sudah melakukan pengisian data <strong>Pertambangan dan Energi</strong>.
         </div>
     </div>
 </div>
@@ -712,12 +712,7 @@ if($kuein){
             <input type="submit" class="btn btn-success" value="SIMPAN" />
         </span>
         <!-- End Lingkungan Hidup, Tata Ruang dan Pertanahan -->
-        
-	</div>
-
-</div>
-
-
+       
 </form>
 <?php 
         }else{
@@ -726,7 +721,7 @@ if($kuein){
     <div class="col-lg-12">
         <div class="alert alert-info">
             <button type="button" class="close" data-dismiss="alert" aria-hidden="true"></button>
-                <i class="fa fa-info-circle"></i>  Anda sudah melakukan pengisian data Lingkungan Hidup, Tata Ruang dan Pertanahan</strong>.
+                <i class="fa fa-info-circle"></i>  Anda sudah melakukan pengisian data <strong>Lingkungan Hidup, Tata Ruang dan Pertanahan</strong>.
         </div>
     </div>
 </div>

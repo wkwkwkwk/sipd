@@ -356,13 +356,12 @@ if($kuein){
     <div class="col-lg-12">
         <div class="alert alert-info">
             <button type="button" class="close" data-dismiss="alert" aria-hidden="true"></button>
-                <i class="fa fa-info-circle"></i>  Anda sudah melakukan pengisian data Bencana Alam</strong>.
+                <i class="fa fa-info-circle"></i>  Anda sudah melakukan pengisian data <strong>Bencana Alam</strong>.
         </div>
     </div>
 </div>
 <?php 
-        }
-        if(!($hasil = mysql_fetch_array($kuein2))){
+       } if(!($hasil = mysql_fetch_array($kuein2))){
  ?>
         <!-- Penyakit Menular --><br /><br /><form role="form" method="post" action="simpanpenyakit">
         <div class="box panel panel-primary">
@@ -461,13 +460,12 @@ if($kuein){
     <div class="col-lg-12">
         <div class="alert alert-info">
             <button type="button" class="close" data-dismiss="alert" aria-hidden="true"></button>
-                <i class="fa fa-info-circle"></i>  Anda sudah melakukan pengisian data Penyakit Menular</strong>.
+                <i class="fa fa-info-circle"></i>  Anda sudah melakukan pengisian data <strong>Penyakit Menular</strong>.
         </div>
     </div>
 </div>
 <?php 
-        }
-        if(!($hasil = mysql_fetch_array($kuein3))){
+        }if(!($hasil = mysql_fetch_array($kuein3))){
  ?>
         <!-- Pencurian Ikan --><br /><br /><form role="form" method="post" action="simpanikan">
         <div class="box panel panel-primary">
@@ -598,13 +596,12 @@ if($kuein){
     <div class="col-lg-12">
         <div class="alert alert-info">
             <button type="button" class="close" data-dismiss="alert" aria-hidden="true"></button>
-                <i class="fa fa-info-circle"></i>  Anda sudah melakukan pengisian data Pencurian Ikan</strong>.
+                <i class="fa fa-info-circle"></i>  Anda sudah melakukan pengisian data <strong>Pencurian Ikan</strong>.
         </div>
     </div>
 </div>
 <?php 
-        }
-        if(!($hasil = mysql_fetch_array($kuein4))){
+        }if(!($hasil = mysql_fetch_array($kuein4))){
  ?>
         <!-- Kebakaran Hutan --><br /><br /><form role="form" method="post" action="simpanhutan">
         <div class="box panel panel-primary">
@@ -735,13 +732,12 @@ if($kuein){
     <div class="col-lg-12">
         <div class="alert alert-info">
             <button type="button" class="close" data-dismiss="alert" aria-hidden="true"></button>
-                <i class="fa fa-info-circle"></i>  Anda sudah melakukan pengisian data Kebakaran Hutan</strong>.
+                <i class="fa fa-info-circle"></i>  Anda sudah melakukan pengisian data <strong>Kebakaran Hutan</strong>.
         </div>
     </div>
 </div>
 <?php 
-        }
-        if(!($hasil = mysql_fetch_array($kuein5))){
+        }if(!($hasil = mysql_fetch_array($kuein5))){
  ?>
         <!-- Pencurian dan Penyelundupan Kayu --><br /><br /><form role="form" method="post" action="simpankayu">
         <div class="box panel panel-primary">
@@ -860,8 +856,6 @@ if($kuein){
 
         </div>
         <!-- End Pencurian dan Penyelundupan Kayu -->
-	</div>
-</div>
 <br /><span class="pull-right">
             <input type="reset" class="btn btn-danger" value="RESET" />
             <input type="submit" class="btn btn-success" value="SIMPAN" />
@@ -875,7 +869,7 @@ if($kuein){
     <div class="col-lg-12">
         <div class="alert alert-info">
             <button type="button" class="close" data-dismiss="alert" aria-hidden="true"></button>
-                <i class="fa fa-info-circle"></i>  Anda sudah melakukan pengisian data Pencurian dan Penyelundupan Kayu</strong>.
+                <i class="fa fa-info-circle"></i>  Anda sudah melakukan pengisian data <strong>Pencurian dan Penyelundupan Kayu</strong>.
         </div>
     </div>
 </div>

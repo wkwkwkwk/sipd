@@ -9,12 +9,9 @@ $sqlin = "SELECT `$tahe` FROM `sipd`.`kkm_kkm`";
 $sqlin1 = "SELECT * FROM `sipd`.`log` WHERE `namatabel` = 'pdnp_jkppd' AND `kecamatan` = '$orang' AND `tahun` = '$tahe'";
 $sqlin2 = "SELECT * FROM `sipd`.`log` WHERE `namatabel` = 'huk_jtkd' AND `kecamatan` = '$orang' AND `tahun` = '$tahe'";
 $sqlin3 = "SELECT * FROM `sipd`.`log` WHERE `namatabel` = 'kkm_kkm' AND `kecamatan` = '$orang' AND `tahun` = '$tahe'";
-
-$kuein = mysql_query($sqlin);
-$kuein1 = mysql_query($sqlin1);
+$kuein = mysql_query($sqlin);$kuein1 = mysql_query($sqlin1);
 $kuein2 = mysql_query($sqlin2);
 $kuein3 = mysql_query($sqlin3);
-
 if($kuein){
     if($iya=="01" || $iya=="02" || $iya=="03" || $iya=="04" || $iya=="05" || $iya=="06" || $iya=="07" || $iya=="12"){
 ?>
@@ -480,7 +477,7 @@ if($kuein){
     <div class="col-lg-12">
         <div class="alert alert-info">
             <button type="button" class="close" data-dismiss="alert" aria-hidden="true"></button>
-                <i class="fa fa-info-circle"></i>  Anda sudah melakukan pengisian data Politik Dalam Negeri dan Pengawasan</strong>.
+                <i class="fa fa-info-circle"></i>  Anda sudah melakukan pengisian data <strong>Politik Dalam Negeri dan Pengawasan</strong>.
         </div>
     </div>
 </div>
@@ -714,7 +711,7 @@ if($kuein){
     <div class="col-lg-12">
         <div class="alert alert-info">
             <button type="button" class="close" data-dismiss="alert" aria-hidden="true"></button>
-                <i class="fa fa-info-circle"></i>  Anda sudah melakukan pengisian data Hukum</strong>.
+                <i class="fa fa-info-circle"></i>  Anda sudah melakukan pengisian data <strong>Hukum</strong>.
         </div>
     </div>
 </div>
@@ -774,15 +771,11 @@ if($kuein){
             </div>
 
         </div>
-        <br /><span class="pull-right">
+        <!-- End Keamanan, Ketertiban Masyarakat -->
+<br /><span class="pull-right">
             <input type="reset" class="btn btn-danger" value="RESET" />
             <input type="submit" class="btn btn-success" value="SIMPAN" />
         </span>
-        <!-- End Keamanan, Ketertiban Masyarakat -->
-        
-	</div>
-</div>
-
 
 </form>
 <?php 
@@ -792,14 +785,12 @@ if($kuein){
     <div class="col-lg-12">
         <div class="alert alert-info">
             <button type="button" class="close" data-dismiss="alert" aria-hidden="true"></button>
-                <i class="fa fa-info-circle"></i>  Anda sudah melakukan pengisian data Lingkungan Hidup, Tata Ruang dan Pertanahan</strong>.
+                <i class="fa fa-info-circle"></i>  Anda sudah melakukan pengisian data <strong>Keamanan, Ketertiban Masyarakat</strong>.
         </div>
     </div>
 </div>
-<?php 
-        }
-    }
-}else{
+<?php
+}}}else{
 ?>
 <!-- /.row -->
 

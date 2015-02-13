@@ -10,13 +10,9 @@ $sqlin1 = "SELECT * FROM `sipd`.`log` WHERE `namatabel` = 'kes_siagaaktif' AND `
 $sqlin2 = "SELECT * FROM `sipd`.`log` WHERE `namatabel` = 'pknpo_cabudda' AND `kecamatan` = '$orang' AND `tahun` = '$tahe'";
 $sqlin3 = "SELECT * FROM `sipd`.`log` WHERE `namatabel` = 'kesos_williamson' AND `kecamatan` = '$orang' AND `tahun` = '$tahe'";
 $sqlin4 = "SELECT * FROM `sipd`.`log` WHERE `namatabel` = 'ag_lembagadidik' AND `kecamatan` = '$orang' AND `tahun` = '$tahe'";
-
-$kuein = mysql_query($sqlin);
-$kuein1 = mysql_query($sqlin1);
+$kuein = mysql_query($sqlin);$kuein1 = mysql_query($sqlin1);
 $kuein2 = mysql_query($sqlin2);
-$kuein3 = mysql_query($sqlin3);
-$kuein4 = mysql_query($sqlin4);
-
+$kuein3 = mysql_query($sqlin3);$kuein4 = mysql_query($sqlin4);
 if($kuein){
     if($iya=="01" || $iya=="02" || $iya=="03" || $iya=="04" || $iya=="05" || $iya=="06" || $iya=="07" || $iya=="12"){
 ?>
@@ -478,11 +474,11 @@ if($kuein){
 <?php 
         }else{
  ?>
-<div class="row">
+ <div class="row">
     <div class="col-lg-12">
         <div class="alert alert-info">
             <button type="button" class="close" data-dismiss="alert" aria-hidden="true"></button>
-                <i class="fa fa-info-circle"></i>  Anda sudah melakukan pengisian data Kesehatan</strong>.
+                <i class="fa fa-info-circle"></i>  Anda sudah melakukan pengisian data <strong>Kesehatan</strong>.
         </div>
     </div>
 </div>
@@ -973,7 +969,7 @@ if($kuein){
     <div class="col-lg-12">
         <div class="alert alert-info">
             <button type="button" class="close" data-dismiss="alert" aria-hidden="true"></button>
-                <i class="fa fa-info-circle"></i>  Anda sudah melakukan pengisian data Pendidikan, Kebudayaan Nasional Pemuda dan Olahraga</strong>.
+                <i class="fa fa-info-circle"></i>  Anda sudah melakukan pengisian data <strong>Pendidikan, Kebudayaan Nasional Pemuda dan Olahraga</strong>.
         </div>
     </div>
 </div>
@@ -1528,7 +1524,7 @@ if($kuein){
     <div class="col-lg-12">
         <div class="alert alert-info">
             <button type="button" class="close" data-dismiss="alert" aria-hidden="true"></button>
-                <i class="fa fa-info-circle"></i>  Anda sudah melakukan pengisian data Kesejahteraan Sosial</strong>.
+                <i class="fa fa-info-circle"></i>  Anda sudah melakukan pengisian data <strong>Kesejahteraan Sosial</strong>.
         </div>
     </div>
 </div>
@@ -1751,8 +1747,6 @@ if($kuein){
 
         </div>
         <!-- End Agama -->
-    </div>
-</div>
 <br /><span class="pull-right">
             <input type="reset" class="btn btn-danger" value="RESET" />
             <input type="submit" class="btn btn-success" value="SIMPAN" />
@@ -1766,13 +1760,12 @@ if($kuein){
     <div class="col-lg-12">
         <div class="alert alert-info">
             <button type="button" class="close" data-dismiss="alert" aria-hidden="true"></button>
-                <i class="fa fa-info-circle"></i>  Anda sudah melakukan pengisian data Agama</strong>.
+                <i class="fa fa-info-circle"></i>  Anda sudah melakukan pengisian data <strong>Agama</strong>.
         </div>
     </div>
 </div>
 <?php 
-        }
-    }
+    }}
 }else{
 ?>
 <!-- /.row -->
