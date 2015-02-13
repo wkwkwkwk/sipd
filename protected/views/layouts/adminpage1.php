@@ -114,7 +114,7 @@ $kuwe = mysql_query($sql);
                             $anu = "";
                             $ini = "";
                             $apa = "";
-                            $ana = "";
+                            $ana = "";$chat="";
                             $itu = "active";
                             $mbuh = "";
                             $bae = "";
@@ -126,82 +126,122 @@ $kuwe = mysql_query($sql);
                             $anu = "";
                             $ini = "";
                             $apa = "";
+<<<<<<< HEAD
                             $ana = "";
                             $iya = "";
                             $mbuh = "";
                             $bae = "";
+=======
+                            $ana = "";$iya = "";$mbuh="";$chat="";;
+>>>>>>> origin/master
                         }else if($belakang == "dataumum" || $belakang == "sosbud"){
                             $anu = "active";
                             $itu = "";
                             $ini = "";
                             $apa = "";
+<<<<<<< HEAD
                             $ana = "";
                             $iya = "";
                             $mbuh = "";
                             $bae = "";
+=======
+                            $ana = "";$iya = "";$mbuh="";$chat="";
+>>>>>>> origin/master
                         }else if($belakang == "ekonomi" || $belakang == "infrastruktur" || $belakang == "sda"){
                             $ini = "active";
                             $anu = "";
                             $itu = "";
                             $apa = "";
+<<<<<<< HEAD
                             $ana = "";
                             $iya = "";
                             $mbuh = "";
                             $bae = "";
+=======
+                            $ana = "";$iya = "";$mbuh="";$chat="";
+>>>>>>> origin/master
                         }else if($belakang == "polhukam" || $belakang == "insidensial"){
                             $apa = "active";
                             $anu = "";
                             $itu = "";
                             $ini = "";
+<<<<<<< HEAD
                             $ana = "";
                             $iya = "";
                             $mbuh = "";
                             $bae = "";
+=======
+                            $ana = "";$iya = "";$mbuh="";$chat="";
+>>>>>>> origin/master
                         }else if($belakang == "tampilkandata" || $belakang == "export"){
                             $ana = "active";
                             $anu = "";
                             $itu = "";
                             $ini = "";
+<<<<<<< HEAD
                             $apa = "";
                             $iya = "";
                             $mbuh = "";
                             $bae = "";
+=======
+                            $apa = "";$iya = "";$mbuh="";$chat="";
+>>>>>>> origin/master
                         }else if($belakang == "index" && $eks[2] == "export"){
                             $ana = "active";
                             $anu = "";
                             $itu = "";
                             $ini = "";
+<<<<<<< HEAD
                             $apa = "";
                             $iya = "";
                             $mbuh = "";
                             $bae = "";
+=======
+                            $apa = "";$iya = "";$mbuh="";$chat="";
+>>>>>>> origin/master
                          }else if($belakang == "show"){
                             $iya = "active";
                             $anu = "";
                             $itu = "";
                             $ini = "";
                             $apa = "";
+<<<<<<< HEAD
                             $ana = "";
                             $mbuh = "";
                             $bae = "";
                         }else if($belakang == "index" && $eks[2] == "examp"){
                             $mbuh = "active";
                             $iya = "";
+=======
+                            $ana = "";$mbuh="";$chat="";
+                        }else if ($belakang == "rekapcamat" && $eks[2] == "tampilcamat") {
+                            $mbuh="active";
+>>>>>>> origin/master
                             $anu = "";
                             $itu = "";
                             $ini = "";
                             $apa = "";
+<<<<<<< HEAD
                             $ana = "";
                             $bae = "";
                         }else if($belakang == "edit"){
                             $bae = "active";
                             $iya = "";
+=======
+                            $ana = "";$iya = "";$chat="";
+                        }else if ($belakang == "chat") {
+                            $mbuh="";
+>>>>>>> origin/master
                             $anu = "";
                             $itu = "";
                             $ini = "";
                             $apa = "";
+<<<<<<< HEAD
                             $ana = "";
                             $mbuh = "";
+=======
+                            $ana = "";$iya = "";$chat="active";
+>>>>>>> origin/master
                         }
                     ?>
                     <li class="<?php echo $itu; ?>">
@@ -244,11 +284,16 @@ $kuwe = mysql_query($sql);
                             </li>
                         </ul>
                     </li>
+<<<<<<< HEAD
                     <li class="<?php echo $bae; ?>">
                         <?php echo CHtml::link('Edit',array('admin/edit')); ?>
                     </li>
                     <li class="<?php echo $mbuh; ?>">
                         <?php echo CHtml::link('Tampilkan Data',array('examp/index')); ?>
+=======
+                    <li class="<?php echo $mbuh; ?>">
+                        <?php echo CHtml::link('Tampilkan Data',array('tampilcamat/rekapcamat')); ?>
+>>>>>>> origin/master
                     </li>
                     <?php }else{ ?>
                     <li class="<?php echo $iya; ?>">
@@ -258,6 +303,10 @@ $kuwe = mysql_query($sql);
                         <?php echo CHtml::link('Tampilkan Data',array('export/index')); ?>
                     </li>
                     <?php } ?>
+                    <li class="<?php echo $chat; ?>">
+                        <a href="<?php echo Yii::app()->request->baseUrl; ?>/admin/chat"><i class="fa fa fa-comments"></i> Chat Room</a>
+                    </li>
+                    
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
