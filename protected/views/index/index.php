@@ -26,9 +26,10 @@
                           if (!Yii::app()->user->isGuest){
                             echo CHtml::link(/*Yii::app()->user->username*/'ADMIN',array('/admin/index'));
                           }
-                          else {
-                            echo CHtml::link('LOGIN',array('/login'));
-                          }
+                          else { ?>
+                            <a href="<?php echo Yii::app()->request->baseUrl;?>/login"><i class="fa fa-fw fa-sign-in"></i> LOGIN</a>
+                            
+                         <?php }
                         ?>
                     </li>
                 </ul>

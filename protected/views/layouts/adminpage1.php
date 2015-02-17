@@ -87,7 +87,7 @@
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i> <?php echo Yii::app()->user->username; ?> <b class="caret"></b></a>
                     <ul class="dropdown-menu">
                         <li>
-                            <a href="<?php echo $this->createUrl("admin/logout"); ?>"><i class="fa fa-fw fa-power-off"></i> Log Out</a>
+                            <a href="<?php echo $this->createUrl("admin/logout"); ?>"><i class="fa fa-fw fa-sign-out"></i> Log Out</a>
                         </li>
                     </ul>
                 </li>
@@ -106,7 +106,7 @@
                             $anu = "";
                             $ini = "";
                             $apa = "";
-                            $ana = "";$chat="";$chat2="";$examp="";
+                            $ana = "";$chat="";$examp="";
                             $itu = "active";
                         }
                         
@@ -116,65 +116,58 @@
                             $anu = "";
                             $ini = "";
                             $apa = "";
-                            $ana = "";$iya = "";$chat="";$chat2="";$examp="";
+                            $ana = "";$iya = "";$chat="";$examp="";
                         }else if($belakang == "dataumum" || $belakang == "sosbud"){
                             $anu = "active";
                             $itu = "";
                             $ini = "";
                             $apa = "";
-                            $ana = "";$iya = "";$chat="";$chat2="";$examp="";
+                            $ana = "";$iya = "";$chat="";$examp="";
                         }else if($belakang == "ekonomi" || $belakang == "infrastruktur" || $belakang == "sda"){
                             $ini = "active";
                             $anu = "";
                             $itu = "";
                             $apa = "";
-                            $ana = "";$iya = "";$chat="";$chat2="";$examp="";
+                            $ana = "";$iya = "";$chat="";$examp="";
                         }else if($belakang == "polhukam" || $belakang == "insidensial"){
                             $apa = "active";
                             $anu = "";
                             $itu = "";
                             $ini = "";
-                            $ana = "";$iya = "";$chat="";$chat2="";$examp="";
+                            $ana = "";$iya = "";$chat="";$examp="";
                         }else if($belakang == "tampilkandata" || $belakang == "export"){
                             $ana = "active";
                             $anu = "";
                             $itu = "";
                             $ini = "";
-                            $apa = "";$iya = "";$chat="";$chat2="";$examp="";
+                            $apa = "";$iya = "";$chat="";$examp="";
                         }else if($belakang == "index" && $eks[2] == "export"){
                             $ana = "active";
                             $anu = "";
                             $itu = "";
                             $ini = "";
-                            $apa = "";$iya = "";$chat="";$chat2="";$examp="";
+                            $apa = "";$iya = "";$chat="";$examp="";
                          }else if($belakang == "show"){
                             $iya = "active";
                             $anu = "";
                             $itu = "";
                             $ini = "";
                             $apa = "";
-                            $ana = "";$chat="";$chat2="";$examp="";
+                            $ana = "";$chat="";$examp="";
                         }else if ($belakang == "chat") {
                             
                             $anu = "";
                             $itu = "";
                             $ini = "";
                             $apa = "";
-                            $ana = "";$iya = "";$chat="active";$chat2="";$examp="";
-                        }else if ($belakang == "index" && $eks[2] == "chatroom") {
-                            
-                            $anu = "";
-                            $itu = "";
-                            $ini = "";
-                            $apa = "";
-                            $ana = "";$iya = "";$chat="";$chat2="active";$examp="";
+                            $ana = "";$iya = "";$chat="active";$examp="";
                         }else if ($belakang == "index" && $eks[2] == "examp") {
                             
                             $anu = "";
                             $itu = "";
                             $ini = "";
                             $apa = "";
-                            $ana = "";$iya = "";$chat="";$chat2="";$examp="active";
+                            $ana = "";$iya = "";$chat="";$examp="active";
                         }
                     ?>
                     <li class="<?php echo $itu; ?>">
@@ -232,9 +225,7 @@
                     <li class="<?php echo $chat; ?>">
                         <a href="<?php echo Yii::app()->request->baseUrl; ?>/admin/chat"><i class="fa fa fa-comments"></i> Chat Room</a>
                     </li>
-                    <li class="<?php echo $chat2; ?>">
-                        <a href="<?php echo Yii::app()->request->baseUrl; ?>/chatroom/index"><i class="fa fa fa-steam-square"></i> Chat Room v2</a>
-                    </li>
+                    
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
