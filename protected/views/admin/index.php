@@ -58,7 +58,7 @@
         <div class="col-lg-6">
         <div class="panel panel-default">
             <div class="panel-heading">
-                <h3 class="panel-title"><i class="fa fa-user fa-fw"></i> Daftar Kecamatan</h3>
+                <h3 class="panel-title"><i class="fa fa-users fa-fw"></i> Daftar Kecamatan</h3>
             </div>
             <div class="panel-body">
                 <!-- di looping dari database nama kecamatannya -->
@@ -108,6 +108,44 @@
                                             $tgl=explode("-", $pisah[0]);
                                             $hari = $tgl[2];
                                             $bulan = $tgl[1];
+                                            switch ($bulan) {
+                                                case "01":
+                                                    $bulan = "Jan";
+                                                    break;
+                                                case "02":
+                                                    $bulan = "Feb";
+                                                    break;
+                                                case "03":
+                                                    $bulan = "Mar";
+                                                    break;
+                                                case "04":
+                                                    $bulan = "Apr";
+                                                    break;
+                                                case "05":
+                                                    $bulan = "May";
+                                                    break;
+                                                case "06":
+                                                    $bulan = "Jun";
+                                                    break;
+                                                case "07":
+                                                    $bulan = "Jul";
+                                                    break;
+                                                case "08":
+                                                    $bulan = "Aug";
+                                                    break;
+                                                case "09":
+                                                    $bulan = "Sep";
+                                                    break;
+                                                case "10":
+                                                    $bulan = "Okt";
+                                                    break;
+                                                case "11":
+                                                    $bulan = "Nov";
+                                                    break;
+                                                case "12":
+                                                    $bulan = "Dec";
+                                                    break;
+                                            }
                                             $tahun = $tgl[0];
                                             $apalah = array($hari, $bulan, $tahun);
                                             $gabung = implode("-", $apalah);

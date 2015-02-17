@@ -1,12 +1,3 @@
-<?php
-mysql_connect('localhost','root','');
-mysql_select_db("sipd");
-
-Yii::app()->session['username'] = Yii::app()->user->username;
-$orang = Yii::app()->user->username;
-$sql = "SELECT `username` FROM `sipd`.`admin` WHERE `username` <> '$orang'";
-$kuwe = mysql_query($sql);
- ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -54,6 +45,7 @@ $kuwe = mysql_query($sql);
         td.e{font-size: 11px;}
         select{text-transform: capitalize;}
     </style>
+
 </head>
 
 <body>
@@ -102,7 +94,7 @@ $kuwe = mysql_query($sql);
             </ul>
             <!-- Sidebar Menu Items - These collapse to the responsive navigation menu on small screens -->
             <div class="collapse navbar-collapse navbar-ex1-collapse">
-                <ul class="nav navbar-nav side-nav navbar-default">
+                <ul class="nav navbar-nav side-nav">
                     <?php
                         //kalo yang diakses bukan halaman dashboard, li nggak active. tapi kalo pas di dashboard, li class=active
                         $URL_halaman_ini = apache_getenv("HTTP_HOST") . apache_getenv("REQUEST_URI");
@@ -114,10 +106,8 @@ $kuwe = mysql_query($sql);
                             $anu = "";
                             $ini = "";
                             $apa = "";
-                            $ana = "";$chat="";
+                            $ana = "";$chat="";$chat2="";$examp="";
                             $itu = "active";
-                            $mbuh = "";
-                            $bae = "";
                         }
                         
                         /*echo $belakang;*/
@@ -126,122 +116,65 @@ $kuwe = mysql_query($sql);
                             $anu = "";
                             $ini = "";
                             $apa = "";
-<<<<<<< HEAD
-                            $ana = "";
-                            $iya = "";
-                            $mbuh = "";
-                            $bae = "";
-=======
-                            $ana = "";$iya = "";$mbuh="";$chat="";;
->>>>>>> origin/master
+                            $ana = "";$iya = "";$chat="";$chat2="";$examp="";
                         }else if($belakang == "dataumum" || $belakang == "sosbud"){
                             $anu = "active";
                             $itu = "";
                             $ini = "";
                             $apa = "";
-<<<<<<< HEAD
-                            $ana = "";
-                            $iya = "";
-                            $mbuh = "";
-                            $bae = "";
-=======
-                            $ana = "";$iya = "";$mbuh="";$chat="";
->>>>>>> origin/master
+                            $ana = "";$iya = "";$chat="";$chat2="";$examp="";
                         }else if($belakang == "ekonomi" || $belakang == "infrastruktur" || $belakang == "sda"){
                             $ini = "active";
                             $anu = "";
                             $itu = "";
                             $apa = "";
-<<<<<<< HEAD
-                            $ana = "";
-                            $iya = "";
-                            $mbuh = "";
-                            $bae = "";
-=======
-                            $ana = "";$iya = "";$mbuh="";$chat="";
->>>>>>> origin/master
+                            $ana = "";$iya = "";$chat="";$chat2="";$examp="";
                         }else if($belakang == "polhukam" || $belakang == "insidensial"){
                             $apa = "active";
                             $anu = "";
                             $itu = "";
                             $ini = "";
-<<<<<<< HEAD
-                            $ana = "";
-                            $iya = "";
-                            $mbuh = "";
-                            $bae = "";
-=======
-                            $ana = "";$iya = "";$mbuh="";$chat="";
->>>>>>> origin/master
+                            $ana = "";$iya = "";$chat="";$chat2="";$examp="";
                         }else if($belakang == "tampilkandata" || $belakang == "export"){
                             $ana = "active";
                             $anu = "";
                             $itu = "";
                             $ini = "";
-<<<<<<< HEAD
-                            $apa = "";
-                            $iya = "";
-                            $mbuh = "";
-                            $bae = "";
-=======
-                            $apa = "";$iya = "";$mbuh="";$chat="";
->>>>>>> origin/master
+                            $apa = "";$iya = "";$chat="";$chat2="";$examp="";
                         }else if($belakang == "index" && $eks[2] == "export"){
                             $ana = "active";
                             $anu = "";
                             $itu = "";
                             $ini = "";
-<<<<<<< HEAD
-                            $apa = "";
-                            $iya = "";
-                            $mbuh = "";
-                            $bae = "";
-=======
-                            $apa = "";$iya = "";$mbuh="";$chat="";
->>>>>>> origin/master
+                            $apa = "";$iya = "";$chat="";$chat2="";$examp="";
                          }else if($belakang == "show"){
                             $iya = "active";
                             $anu = "";
                             $itu = "";
                             $ini = "";
                             $apa = "";
-<<<<<<< HEAD
-                            $ana = "";
-                            $mbuh = "";
-                            $bae = "";
-                        }else if($belakang == "index" && $eks[2] == "examp"){
-                            $mbuh = "active";
-                            $iya = "";
-=======
-                            $ana = "";$mbuh="";$chat="";
-                        }else if ($belakang == "rekapcamat" && $eks[2] == "tampilcamat") {
-                            $mbuh="active";
->>>>>>> origin/master
-                            $anu = "";
-                            $itu = "";
-                            $ini = "";
-                            $apa = "";
-<<<<<<< HEAD
-                            $ana = "";
-                            $bae = "";
-                        }else if($belakang == "edit"){
-                            $bae = "active";
-                            $iya = "";
-=======
-                            $ana = "";$iya = "";$chat="";
+                            $ana = "";$chat="";$chat2="";$examp="";
                         }else if ($belakang == "chat") {
-                            $mbuh="";
->>>>>>> origin/master
+                            
                             $anu = "";
                             $itu = "";
                             $ini = "";
                             $apa = "";
-<<<<<<< HEAD
-                            $ana = "";
-                            $mbuh = "";
-=======
-                            $ana = "";$iya = "";$chat="active";
->>>>>>> origin/master
+                            $ana = "";$iya = "";$chat="active";$chat2="";$examp="";
+                        }else if ($belakang == "index" && $eks[2] == "chatroom") {
+                            
+                            $anu = "";
+                            $itu = "";
+                            $ini = "";
+                            $apa = "";
+                            $ana = "";$iya = "";$chat="";$chat2="active";$examp="";
+                        }else if ($belakang == "index" && $eks[2] == "examp") {
+                            
+                            $anu = "";
+                            $itu = "";
+                            $ini = "";
+                            $apa = "";
+                            $ana = "";$iya = "";$chat="";$chat2="";$examp="active";
                         }
                     ?>
                     <li class="<?php echo $itu; ?>">
@@ -249,7 +182,7 @@ $kuwe = mysql_query($sql);
                     </li>
                     <?php if (Yii::app()->user->username!='bappeda') { ?>
                     <li class="<?php echo $anu; ?>">
-                        <a href="javascript:;" data-toggle="collapse" data-target="#demo"><i class="fa fa-fw fa-list-alt"></i> Sub Data Umum<i class="fa fa-fw fa-caret-down"></i></a>
+                        <a href="javascript:;" data-toggle="collapse" data-target="#demo"><i class="fa fa-fw fa-list"></i> Sub Data Umum<i class="fa fa-fw fa-caret-down"></i></a>
                         <ul id="demo" class="collapse">
                             <li>
                                 <?php echo CHtml::link('Data Umum',array('admin/dataumum')); ?>
@@ -260,7 +193,7 @@ $kuwe = mysql_query($sql);
                         </ul>
                     </li>
                     <li class="<?php echo $ini; ?>">
-                        <a href="javascript:;" data-toggle="collapse" data-target="#demo1"><i class="fa fa-fw fa-list-alt"></i> Sub Ekonomi<i class="fa fa-fw fa-caret-down"></i></a>
+                        <a href="javascript:;" data-toggle="collapse" data-target="#demo1"><i class="fa fa-fw fa-list"></i> Sub Ekonomi<i class="fa fa-fw fa-caret-down"></i></a>
                         <ul id="demo1" class="collapse">
                             <li>
                                 <?php echo CHtml::link('Ekonomi',array('admin/ekonomi')); ?>
@@ -274,7 +207,7 @@ $kuwe = mysql_query($sql);
                         </ul>
                     </li>
                     <li class="<?php echo $apa; ?>">
-                        <a href="javascript:;" data-toggle="collapse" data-target="#demo2"><i class="fa fa-fw fa-list-alt"></i> Sub Keamanan<i class="fa fa-fw fa-caret-down"></i></a>
+                        <a href="javascript:;" data-toggle="collapse" data-target="#demo2"><i class="fa fa-fw fa-list"></i> Sub Keamanan<i class="fa fa-fw fa-caret-down"></i></a>
                         <ul id="demo2" class="collapse">
                             <li>
                                 <?php echo CHtml::link('Polhukam',array('admin/polhukam')); ?>
@@ -284,29 +217,24 @@ $kuwe = mysql_query($sql);
                             </li>
                         </ul>
                     </li>
-<<<<<<< HEAD
-                    <li class="<?php echo $bae; ?>">
-                        <?php echo CHtml::link('Edit',array('admin/edit')); ?>
-                    </li>
-                    <li class="<?php echo $mbuh; ?>">
-                        <?php echo CHtml::link('Tampilkan Data',array('examp/index')); ?>
-=======
-                    <li class="<?php echo $mbuh; ?>">
-                        <?php echo CHtml::link('Tampilkan Data',array('tampilcamat/rekapcamat')); ?>
->>>>>>> origin/master
+                    <li class="<?php echo $examp; ?>">
+                        <a href="<?php echo Yii::app()->request->baseUrl; ?>/examp/index"><i class="fa fa-fw fa-list-alt"></i>Tampilkan Data</a>
                     </li>
                     <?php }else{ ?>
                     <li class="<?php echo $iya; ?>">
-                        <?php echo CHtml::link('Extra Menu',array('admin/show')); ?>
+                        <a href="<?php echo Yii::app()->request->baseUrl; ?>/admin/show"><i class="fa fa-fw fa-star"></i>Extra Menu</a>
                     </li>
                     <li class="<?php echo $ana; ?>">
-                        <?php echo CHtml::link('Tampilkan Data',array('export/index')); ?>
+                        <a href="<?php echo Yii::app()->request->baseUrl; ?>/export/index"><i class="fa fa-fw fa-list-alt"></i>Tampilkan Data</a>
+                        
                     </li>
                     <?php } ?>
                     <li class="<?php echo $chat; ?>">
                         <a href="<?php echo Yii::app()->request->baseUrl; ?>/admin/chat"><i class="fa fa fa-comments"></i> Chat Room</a>
                     </li>
-                    
+                    <li class="<?php echo $chat2; ?>">
+                        <a href="<?php echo Yii::app()->request->baseUrl; ?>/chatroom/index"><i class="fa fa fa-steam-square"></i> Chat Room v2</a>
+                    </li>
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
@@ -323,7 +251,7 @@ $kuwe = mysql_query($sql);
 
         </div>
         <!-- /#page-wrapper -->
-                    
+
     </div>
     <!-- /#wrapper -->
 

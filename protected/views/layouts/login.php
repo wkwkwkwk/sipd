@@ -50,7 +50,7 @@
                 </button>
                 
                     <a class="navbar-brand page-scroll">
-                        <i class="fa fa-home"></i>
+                        <i class="fa fa-institution"></i>
                         <?php echo CHtml::link('HOME',array('/index'),array('class'=>'navbar-brand page-scroll')); ?>
                     </a>
                 

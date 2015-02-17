@@ -43,7 +43,6 @@
 
     <!-- Bootstrap Core JavaScript -->
     <script src="<?php echo Yii::app()->request->baseUrl; ?>/assets/temaHome/js/bootstrap.min.js"></script>   
-            
     <?php echo $content; ?>
 
     <!-- Modal -->

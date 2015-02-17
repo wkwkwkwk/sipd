@@ -1,7 +1,7 @@
 <?php
-require_once(dirname(__FILE__).'/../extensions/yiichat/YiiChatDbHandlerBase.php');
+/*require_once(dirname(__FILE__).'/../extensions/yiichat/YiiChatDbHandlerBase.php');
 require_once(dirname(__FILE__).'/../extensions/yiichat/YiiChatWidget.php');
-require_once(dirname(__FILE__).'/../extensions/yiichat/IYiiChat.php');
+require_once(dirname(__FILE__).'/../extensions/yiichat/IYiiChat.php');*/
 class ChatHandler extends YiiChatDbHandlerBase {
     //
     // IMPORTANT:
@@ -12,6 +12,7 @@ class ChatHandler extends YiiChatDbHandlerBase {
         // the application database
         return Yii::app()->db;
     }
+
     protected function createPostUniqueId(){
         // generates a unique id. 40 char.
         return hash('sha1',$this->getChatId().time().rand(1000,9999));      
@@ -21,13 +22,14 @@ class ChatHandler extends YiiChatDbHandlerBase {
         // example: 
         //  $model = MyPeople::model()->findByPk($this->getIdentity());
         //  return $model->userFullName();
-        $pilihuser=Yii::app()->user->username/*"kalimanah"*/;
+        $pilihuser=Yii::app()->user->username;
         return "$pilihuser"; 
     }
     protected function getDateFormatted($value){
         // format the date numeric $value
         //return Yii::app()->format->formatDateTime($value);
-        $value=date("d-m-Y H:m:s A");
+        //$lihattabel=$this->db->createCommand()->select()->from('yiichat_post')->queryAll();
+        $value=date("Y-m-d H:i:s");
         $pecah=explode(" ", $value);
         $tanggal=explode("-", $pecah[0]);
         switch ($tanggal[1]) {
@@ -68,8 +70,9 @@ class ChatHandler extends YiiChatDbHandlerBase {
                 $tanggal[1] = "Desember";
                 break;
         }
-        $tampil = "$tanggal[0] $tanggal[1], $tanggal[2] - $pecah[1] $pecah[2]";
+        $tampil = "$tanggal[2] $tanggal[1], $tanggal[0] - $pecah[1]";
         return $tampil;
+        //return Yii::app()->format->formatDateTime($value);//($value);
     }
     protected function acceptMessage($message){
         // return true for accept this message. false reject it.

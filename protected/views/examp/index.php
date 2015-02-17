@@ -3238,7 +3238,7 @@ if($i==189){
             <?php $i++; endforeach; ?>
             <!-- Akhir -->
         </tbody>
-        Export ke format :
+        <i class="fa fa fa-file-excel-o"></i>&nbsp;Export ke format :
         <a href="<?php echo $this -> createUrl("examp/toexcel/fileName/sipd-$orang-$initahun"); ?>">
         <button type="button" class="btn btn-success">Ms. Excel</button></a>
 </table>

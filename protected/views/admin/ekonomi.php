@@ -62,11 +62,16 @@ if($kuein){
                                             <td width="45%"><input type="text" class="form-control" 
                                                 <?php
                                                       if($x['ketersediaan']=='Tidak Ada'){
-                                                            echo "value='0' ";
+                                                            echo "value='0' ";echo "readonly='readonly' ";
                                                             echo "name='";
                                                             echo $x['nm_field'];
                                                             echo "'";
-                                                            echo " placeholder=''";
+                                                            echo " placeholder='Tidak Ada'";
+                                                      }else if($x['satuan']=='%'){
+                                                            echo "value='0' ";echo "readonly='readonly' ";
+                                                            echo "name='";
+                                                            echo $x['nm_field'];
+                                                            echo "'";
                                                       }else{
                                                             echo "name='";
                                                             echo $x['nm_field'];
@@ -95,11 +100,16 @@ if($kuein){
                                             <td width="45%"><input type="text" class="form-control" 
                                                 <?php
                                                       if($x['ketersediaan']=='Tidak Ada'){
-                                                            echo "value='0' ";
+                                                            echo "value='0' ";echo "readonly='readonly' ";
                                                             echo "name='";
                                                             echo $x['nm_field'];
                                                             echo "'";
-                                                            echo " placeholder=''";
+                                                            echo " placeholder='Tidak Ada'";
+                                                      }else if($x['satuan']=='%'){
+                                                            echo "value='0' ";echo "readonly='readonly' ";
+                                                            echo "name='";
+                                                            echo $x['nm_field'];
+                                                            echo "'";
                                                       }else{
                                                             echo "name='";
                                                             echo $x['nm_field'];
@@ -128,11 +138,16 @@ if($kuein){
                                             <td width="45%"><input type="text" class="form-control" 
                                                 <?php
                                                       if($x['ketersediaan']=='Tidak Ada'){
-                                                            echo "value='0' ";
+                                                            echo "value='0' ";echo "readonly='readonly' ";
                                                             echo "name='";
                                                             echo $x['nm_field'];
                                                             echo "'";
-                                                            echo " placeholder=''";
+                                                            echo " placeholder='Tidak Ada'";
+                                                      }else if($x['satuan']=='%'){
+                                                            echo "value='0' ";echo "readonly='readonly' ";
+                                                            echo "name='";
+                                                            echo $x['nm_field'];
+                                                            echo "'";
                                                       }else{
                                                             echo "name='";
                                                             echo $x['nm_field'];
@@ -161,11 +176,16 @@ if($kuein){
                                             <td width="45%"><input type="text" class="form-control" 
                                                 <?php
                                                       if($x['ketersediaan']=='Tidak Ada'){
-                                                            echo "value='0' ";
+                                                            echo "value='0' ";echo "readonly='readonly' ";
                                                             echo "name='";
                                                             echo $x['nm_field'];
                                                             echo "'";
-                                                            echo " placeholder=''";
+                                                            echo " placeholder='Tidak Ada'";
+                                                      }else if($x['satuan']=='%'){
+                                                            echo "value='0' ";echo "readonly='readonly' ";
+                                                            echo "name='";
+                                                            echo $x['nm_field'];
+                                                            echo "'";
                                                       }else{
                                                             echo "name='";
                                                             echo $x['nm_field'];
@@ -194,11 +214,16 @@ if($kuein){
                                             <td width="45%"><input type="text" class="form-control" 
                                                 <?php
                                                       if($x['ketersediaan']=='Tidak Ada'){
-                                                            echo "value='0' ";
+                                                            echo "value='0' ";echo "readonly='readonly' ";
                                                             echo "name='";
                                                             echo $x['nm_field'];
                                                             echo "'";
-                                                            echo " placeholder=''";
+                                                            echo " placeholder='Tidak Ada'";
+                                                      }else if($x['satuan']=='%'){
+                                                            echo "value='0' ";echo "readonly='readonly' ";
+                                                            echo "name='";
+                                                            echo $x['nm_field'];
+                                                            echo "'";
                                                       }else{
                                                             echo "name='";
                                                             echo $x['nm_field'];
@@ -227,11 +252,16 @@ if($kuein){
                                             <td width="45%"><input type="text" class="form-control" 
                                                 <?php
                                                       if($x['ketersediaan']=='Tidak Ada'){
-                                                            echo "value='0' ";
+                                                            echo "value='0' ";echo "readonly='readonly' ";
                                                             echo "name='";
                                                             echo $x['nm_field'];
                                                             echo "'";
-                                                            echo " placeholder=''";
+                                                            echo " placeholder='Tidak Ada'";
+                                                      }else if($x['satuan']=='%'){
+                                                            echo "value='0' ";echo "readonly='readonly' ";
+                                                            echo "name='";
+                                                            echo $x['nm_field'];
+                                                            echo "'";
                                                       }else{
                                                             echo "name='";
                                                             echo $x['nm_field'];
@@ -260,11 +290,16 @@ if($kuein){
                                             <td width="45%"><input type="text" class="form-control" 
                                                 <?php
                                                       if($x['ketersediaan']=='Tidak Ada'){
-                                                            echo "value='0' ";
+                                                            echo "value='0' ";echo "readonly='readonly' ";
                                                             echo "name='";
                                                             echo $x['nm_field'];
                                                             echo "'";
-                                                            echo " placeholder=''";
+                                                            echo " placeholder='Tidak Ada'";
+                                                      }else if($x['satuan']=='%'){
+                                                            echo "value='0' ";echo "readonly='readonly' ";
+                                                            echo "name='";
+                                                            echo $x['nm_field'];
+                                                            echo "'";
                                                       }else{
                                                             echo "name='";
                                                             echo $x['nm_field'];
@@ -337,11 +372,16 @@ if($kuein){
                                             <td width="45%"><input type="text" class="form-control" 
                                                 <?php
                                                       if($x['ketersediaan']=='Tidak Ada'){
-                                                            echo "readonly='readonly' ";
+                                                            echo "value='0' ";echo "readonly='readonly' ";
                                                             echo "name='";
                                                             echo $x['nm_field'];
                                                             echo "'";
-                                                            echo " placeholder=''";
+                                                            echo " placeholder='Tidak Ada'";
+                                                      }else if($x['satuan']=='%'){
+                                                            echo "value='0' ";echo "readonly='readonly' ";
+                                                            echo "name='";
+                                                            echo $x['nm_field'];
+                                                            echo "'";
                                                       }else{
                                                             echo "name='";
                                                             echo $x['nm_field'];
@@ -370,11 +410,16 @@ if($kuein){
                                             <td width="45%"><input type="text" class="form-control" 
                                                 <?php
                                                       if($x['ketersediaan']=='Tidak Ada'){
-                                                            echo "readonly='readonly' ";
+                                                            echo "value='0' ";echo "readonly='readonly' ";
                                                             echo "name='";
                                                             echo $x['nm_field'];
                                                             echo "'";
-                                                            echo " placeholder=''";
+                                                            echo " placeholder='Tidak Ada'";
+                                                      }else if($x['satuan']=='%'){
+                                                            echo "value='0' ";echo "readonly='readonly' ";
+                                                            echo "name='";
+                                                            echo $x['nm_field'];
+                                                            echo "'";
                                                       }else{
                                                             echo "name='";
                                                             echo $x['nm_field'];
@@ -403,11 +448,16 @@ if($kuein){
                                             <td width="45%"><input type="text" class="form-control" 
                                                 <?php
                                                       if($x['ketersediaan']=='Tidak Ada'){
-                                                            echo "readonly='readonly' ";
+                                                            echo "value='0' ";echo "readonly='readonly' ";
                                                             echo "name='";
                                                             echo $x['nm_field'];
                                                             echo "'";
-                                                            echo " placeholder=''";
+                                                            echo " placeholder='Tidak Ada'";
+                                                      }else if($x['satuan']=='%'){
+                                                            echo "value='0' ";echo "readonly='readonly' ";
+                                                            echo "name='";
+                                                            echo $x['nm_field'];
+                                                            echo "'";
                                                       }else{
                                                             echo "name='";
                                                             echo $x['nm_field'];
@@ -436,11 +486,16 @@ if($kuein){
                                             <td width="45%"><input type="text" class="form-control" 
                                                 <?php
                                                       if($x['ketersediaan']=='Tidak Ada'){
-                                                            echo "readonly='readonly' ";
+                                                            echo "value='0' ";echo "readonly='readonly' ";
                                                             echo "name='";
                                                             echo $x['nm_field'];
                                                             echo "'";
-                                                            echo " placeholder=''";
+                                                            echo " placeholder='Tidak Ada'";
+                                                      }else if($x['satuan']=='%'){
+                                                            echo "value='0' ";echo "readonly='readonly' ";
+                                                            echo "name='";
+                                                            echo $x['nm_field'];
+                                                            echo "'";
                                                       }else{
                                                             echo "name='";
                                                             echo $x['nm_field'];
@@ -469,11 +524,16 @@ if($kuein){
                                             <td width="45%"><input type="text" class="form-control" 
                                                 <?php
                                                       if($x['ketersediaan']=='Tidak Ada'){
-                                                            echo "readonly='readonly' ";
+                                                            echo "value='0' ";echo "readonly='readonly' ";
                                                             echo "name='";
                                                             echo $x['nm_field'];
                                                             echo "'";
-                                                            echo " placeholder=''";
+                                                            echo " placeholder='Tidak Ada'";
+                                                      }else if($x['satuan']=='%'){
+                                                            echo "value='0' ";echo "readonly='readonly' ";
+                                                            echo "name='";
+                                                            echo $x['nm_field'];
+                                                            echo "'";
                                                       }else{
                                                             echo "name='";
                                                             echo $x['nm_field'];
@@ -502,11 +562,16 @@ if($kuein){
                                             <td width="45%"><input type="text" class="form-control" 
                                                 <?php
                                                       if($x['ketersediaan']=='Tidak Ada'){
-                                                            echo "readonly='readonly' ";
+                                                            echo "value='0' ";echo "readonly='readonly' ";
                                                             echo "name='";
                                                             echo $x['nm_field'];
                                                             echo "'";
-                                                            echo " placeholder=''";
+                                                            echo " placeholder='Tidak Ada'";
+                                                      }else if($x['satuan']=='%'){
+                                                            echo "value='0' ";echo "readonly='readonly' ";
+                                                            echo "name='";
+                                                            echo $x['nm_field'];
+                                                            echo "'";
                                                       }else{
                                                             echo "name='";
                                                             echo $x['nm_field'];
@@ -535,11 +600,16 @@ if($kuein){
                                             <td width="45%"><input type="text" class="form-control" 
                                                 <?php
                                                       if($x['ketersediaan']=='Tidak Ada'){
-                                                            echo "readonly='readonly' ";
+                                                            echo "value='0' ";echo "readonly='readonly' ";
                                                             echo "name='";
                                                             echo $x['nm_field'];
                                                             echo "'";
-                                                            echo " placeholder=''";
+                                                            echo " placeholder='Tidak Ada'";
+                                                      }else if($x['satuan']=='%'){
+                                                            echo "value='0' ";echo "readonly='readonly' ";
+                                                            echo "name='";
+                                                            echo $x['nm_field'];
+                                                            echo "'";
                                                       }else{
                                                             echo "name='";
                                                             echo $x['nm_field'];
@@ -568,11 +638,16 @@ if($kuein){
                                             <td width="45%"><input type="text" class="form-control" 
                                                 <?php
                                                       if($x['ketersediaan']=='Tidak Ada'){
-                                                            echo "readonly='readonly' ";
+                                                            echo "value='0' ";echo "readonly='readonly' ";
                                                             echo "name='";
                                                             echo $x['nm_field'];
                                                             echo "'";
-                                                            echo " placeholder=''";
+                                                            echo " placeholder='Tidak Ada'";
+                                                      }else if($x['satuan']=='%'){
+                                                            echo "value='0' ";echo "readonly='readonly' ";
+                                                            echo "name='";
+                                                            echo $x['nm_field'];
+                                                            echo "'";
                                                       }else{
                                                             echo "name='";
                                                             echo $x['nm_field'];
@@ -601,11 +676,16 @@ if($kuein){
                                             <td width="45%"><input type="text" class="form-control" 
                                                 <?php
                                                       if($x['ketersediaan']=='Tidak Ada'){
-                                                            echo "readonly='readonly' ";
+                                                            echo "value='0' ";echo "readonly='readonly' ";
                                                             echo "name='";
                                                             echo $x['nm_field'];
                                                             echo "'";
-                                                            echo " placeholder=''";
+                                                            echo " placeholder='Tidak Ada'";
+                                                      }else if($x['satuan']=='%'){
+                                                            echo "value='0' ";echo "readonly='readonly' ";
+                                                            echo "name='";
+                                                            echo $x['nm_field'];
+                                                            echo "'";
                                                       }else{
                                                             echo "name='";
                                                             echo $x['nm_field'];
@@ -634,11 +714,16 @@ if($kuein){
                                             <td width="45%"><input type="text" class="form-control" 
                                                 <?php
                                                       if($x['ketersediaan']=='Tidak Ada'){
-                                                            echo "readonly='readonly' ";
+                                                            echo "value='0' ";echo "readonly='readonly' ";
                                                             echo "name='";
                                                             echo $x['nm_field'];
                                                             echo "'";
-                                                            echo " placeholder=''";
+                                                            echo " placeholder='Tidak Ada'";
+                                                      }else if($x['satuan']=='%'){
+                                                            echo "value='0' ";echo "readonly='readonly' ";
+                                                            echo "name='";
+                                                            echo $x['nm_field'];
+                                                            echo "'";
                                                       }else{
                                                             echo "name='";
                                                             echo $x['nm_field'];

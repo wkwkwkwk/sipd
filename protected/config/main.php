@@ -83,9 +83,6 @@ return array(
 			// use 'site/error' action to display errors
 			'errorAction'=>'site/error',
 		),
-		'session' => array(
-			'autoStart' => true,
-        ),
 		'log'=>array(
 			'class'=>'CLogRouter',
 			'routes'=>array(

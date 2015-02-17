@@ -570,7 +570,7 @@
             <div class="col-lg-4">
                 <div class="panel panel-default">
                     <div class="panel-heading">
-                        <h3 class="panel-title"><i class="fa fa-github fa-fw"></i> Buka Pengisian Data SIPD Tahun <?php $tt=date("Y");echo $tt; ?></h3>
+                        <h3 class="panel-title"><i class="fa fa-unlock-alt fa-fw"></i> Buka Pengisian Data SIPD Tahun <?php $tt=date("Y");echo $tt; ?></h3>
                     </div>
                     <div class="panel-body">
                         <center><input type="submit" class="btn btn-success" name="bukain" value="Buka Pengisian Data SIPD" <?php echo $hiasin; ?> /></center>
@@ -584,7 +584,7 @@
             <div class="col-lg-8">
                 <div class="panel panel-default">
                     <div class="panel-heading">
-                        <h3 class="panel-title"><i class="fa fa-github fa-fw"></i> Rekap Data SIPD Tahun <?php $vv=date("Y");echo $vv; ?></h3>
+                        <h3 class="panel-title"><i class="fa fa-edit fa-fw"></i> Rekap Data SIPD Tahun <?php $vv=date("Y");echo $vv; ?></h3>
                     </div>
                     <div class="panel-body">
                         <label>Pilih Sub Data &nbsp;&nbsp;</label>
@@ -608,13 +608,13 @@
             <div class="col-lg-12">
                 <div class="panel panel-default">
                     <div class="panel-heading">
-                        <h3 class="panel-title"><i class="fa fa-github fa-fw"></i> Evaluasi Keterisian Data SIPD Tahun <?php $w=date("Y");echo $w; ?></h3>
+                        <h3 class="panel-title"><i class="fa fa-tasks fa-fw"></i> Evaluasi Keterisian Data SIPD Tahun <?php $w=date("Y");echo $w; ?></h3>
                     </div>
                     <div class="panel-body">
                     	<select name="pilkec">
 	                    	<?php
 	                    		$nama = Yii::app()->user->username;
-	                    		$perintah = "SELECT `username` FROM `sipd`.`admin` WHERE `username` <> '$nama' AND `username` <> 'wedhatama' AND `username` <> 'test'";
+	                    		$perintah = "SELECT `username` FROM `sipd`.`admin` WHERE `rule` = 'kecamatan'";
 	                    		$eksekusi = mysql_query($perintah);
 	                    		$no = 1;
 	                    		while ($buh = mysql_fetch_array($eksekusi)) {

@@ -6,7 +6,7 @@
                     <i class="fa fa-bars"></i>
                 </button>
                 <a class="navbar-brand page-scroll" href="/rencanaKP">
-                    <i class="fa fa-home"></i> HOME
+                    <i class="fa fa-institution"></i> HOME
                 </a>
             </div>
 

@@ -60,15 +60,21 @@ if($kuein){
                                     <td width="45%"><input type="text" class="form-control" 
                                         <?php
                                             if($huk['ketersediaan']=='Tidak Ada'){
-                                                echo "readonly='readonly' ";echo "value='0' ";
+                                                echo "value='0' ";echo "readonly='readonly' ";
                                                 echo "name='";
                                                 echo $huk['nm_field'];
                                                 echo "'";
                                                 echo " placeholder='Tidak Ada'";
+                                            }else if($huk['satuan']=='%'){
+                                                echo "value='0' ";echo "readonly='readonly' ";
+                                                echo "name='";
+                                                echo $huk['nm_field'];
+                                                echo "'";
                                             }else{
                                                 echo "name='";
                                                 echo $huk['nm_field'];
-                                                echo "'";echo "value='0' ";
+                                                echo "'";
+                                                echo "value='0' ";
                                             }
                                         ?> /></td>
                                     <td width="0.5%"><?php echo $huk['satuan']; ?></td>
@@ -92,15 +98,21 @@ if($kuein){
                                     <td width="45%"><input type="text" class="form-control" 
                                         <?php
                                             if($huk['ketersediaan']=='Tidak Ada'){
-                                                echo "readonly='readonly' ";echo "value='0' ";
+                                                echo "value='0' ";echo "readonly='readonly' ";
                                                 echo "name='";
                                                 echo $huk['nm_field'];
                                                 echo "'";
                                                 echo " placeholder='Tidak Ada'";
+                                            }else if($huk['satuan']=='%'){
+                                                echo "value='0' ";echo "readonly='readonly' ";
+                                                echo "name='";
+                                                echo $huk['nm_field'];
+                                                echo "'";
                                             }else{
                                                 echo "name='";
                                                 echo $huk['nm_field'];
-                                                echo "'";echo "value='0' ";
+                                                echo "'";
+                                                echo "value='0' ";
                                             }
                                         ?> /></td>
                                     <td width="0.5%"><?php echo $huk['satuan']; ?></td>
@@ -124,15 +136,21 @@ if($kuein){
                                     <td width="45%"><input type="text" class="form-control" 
                                         <?php
                                             if($huk['ketersediaan']=='Tidak Ada'){
-                                                echo "readonly='readonly' ";echo "value='0' ";
+                                                echo "value='0' ";echo "readonly='readonly' ";
                                                 echo "name='";
                                                 echo $huk['nm_field'];
                                                 echo "'";
                                                 echo " placeholder='Tidak Ada'";
+                                            }else if($huk['satuan']=='%'){
+                                                echo "value='0' ";echo "readonly='readonly' ";
+                                                echo "name='";
+                                                echo $huk['nm_field'];
+                                                echo "'";
                                             }else{
                                                 echo "name='";
                                                 echo $huk['nm_field'];
-                                                echo "'";echo "value='0' ";
+                                                echo "'";
+                                                echo "value='0' ";
                                             }
                                         ?> /></td>
                                     <td width="0.5%"><?php echo $huk['satuan']; ?></td>
@@ -156,15 +174,21 @@ if($kuein){
                                     <td width="45%"><input type="text" class="form-control" 
                                         <?php
                                             if($huk['ketersediaan']=='Tidak Ada'){
-                                                echo "readonly='readonly' ";echo "value='0' ";
+                                                echo "value='0' ";echo "readonly='readonly' ";
                                                 echo "name='";
                                                 echo $huk['nm_field'];
                                                 echo "'";
                                                 echo " placeholder='Tidak Ada'";
+                                            }else if($huk['satuan']=='%'){
+                                                echo "value='0' ";echo "readonly='readonly' ";
+                                                echo "name='";
+                                                echo $huk['nm_field'];
+                                                echo "'";
                                             }else{
                                                 echo "name='";
                                                 echo $huk['nm_field'];
-                                                echo "'";echo "value='0' ";
+                                                echo "'";
+                                                echo "value='0' ";
                                             }
                                         ?> /></td>
                                     <td width="0.5%"><?php echo $huk['satuan']; ?></td>
@@ -188,15 +212,21 @@ if($kuein){
                                     <td width="45%"><input type="text" class="form-control" 
                                         <?php
                                             if($huk['ketersediaan']=='Tidak Ada'){
-                                                echo "readonly='readonly' ";echo "value='0' ";
+                                                echo "value='0' ";echo "readonly='readonly' ";
                                                 echo "name='";
                                                 echo $huk['nm_field'];
                                                 echo "'";
                                                 echo " placeholder='Tidak Ada'";
+                                            }else if($huk['satuan']=='%'){
+                                                echo "value='0' ";echo "readonly='readonly' ";
+                                                echo "name='";
+                                                echo $huk['nm_field'];
+                                                echo "'";
                                             }else{
                                                 echo "name='";
                                                 echo $huk['nm_field'];
-                                                echo "'";echo "value='0' ";
+                                                echo "'";
+                                                echo "value='0' ";
                                             }
                                         ?> /></td>
                                     <td width="0.5%"><?php echo $huk['satuan']; ?></td>
@@ -220,15 +250,21 @@ if($kuein){
                                     <td width="45%"><input type="text" class="form-control" 
                                         <?php
                                             if($huk['ketersediaan']=='Tidak Ada'){
-                                                echo "readonly='readonly' ";echo "value='0' ";
+                                                echo "value='0' ";echo "readonly='readonly' ";
                                                 echo "name='";
                                                 echo $huk['nm_field'];
                                                 echo "'";
                                                 echo " placeholder='Tidak Ada'";
+                                            }else if($huk['satuan']=='%'){
+                                                echo "value='0' ";echo "readonly='readonly' ";
+                                                echo "name='";
+                                                echo $huk['nm_field'];
+                                                echo "'";
                                             }else{
                                                 echo "name='";
                                                 echo $huk['nm_field'];
-                                                echo "'";echo "value='0' ";
+                                                echo "'";
+                                                echo "value='0' ";
                                             }
                                         ?> /></td>
                                     <td width="0.5%"><?php echo $huk['satuan']; ?></td>
@@ -252,15 +288,21 @@ if($kuein){
                                     <td width="45%"><input type="text" class="form-control" 
                                         <?php
                                             if($huk['ketersediaan']=='Tidak Ada'){
-                                                echo "readonly='readonly' ";echo "value='0' ";
+                                                echo "value='0' ";echo "readonly='readonly' ";
                                                 echo "name='";
                                                 echo $huk['nm_field'];
                                                 echo "'";
                                                 echo " placeholder='Tidak Ada'";
+                                            }else if($huk['satuan']=='%'){
+                                                echo "value='0' ";echo "readonly='readonly' ";
+                                                echo "name='";
+                                                echo $huk['nm_field'];
+                                                echo "'";
                                             }else{
                                                 echo "name='";
                                                 echo $huk['nm_field'];
-                                                echo "'";echo "value='0' ";
+                                                echo "'";
+                                                echo "value='0' ";
                                             }
                                         ?> /></td>
                                     <td width="0.5%"><?php echo $huk['satuan']; ?></td>
@@ -284,15 +326,21 @@ if($kuein){
                                     <td width="45%"><input type="text" class="form-control" 
                                         <?php
                                             if($huk['ketersediaan']=='Tidak Ada'){
-                                                echo "readonly='readonly' ";echo "value='0' ";
+                                                echo "value='0' ";echo "readonly='readonly' ";
                                                 echo "name='";
                                                 echo $huk['nm_field'];
                                                 echo "'";
                                                 echo " placeholder='Tidak Ada'";
+                                            }else if($huk['satuan']=='%'){
+                                                echo "value='0' ";echo "readonly='readonly' ";
+                                                echo "name='";
+                                                echo $huk['nm_field'];
+                                                echo "'";
                                             }else{
                                                 echo "name='";
                                                 echo $huk['nm_field'];
-                                                echo "'";echo "value='0' ";
+                                                echo "'";
+                                                echo "value='0' ";
                                             }
                                         ?> /></td>
                                     <td width="0.5%"><?php echo $huk['satuan']; ?></td>
@@ -316,15 +364,21 @@ if($kuein){
                                     <td width="45%"><input type="text" class="form-control" 
                                         <?php
                                             if($huk['ketersediaan']=='Tidak Ada'){
-                                                echo "readonly='readonly' ";echo "value='0' ";
+                                                echo "value='0' ";echo "readonly='readonly' ";
                                                 echo "name='";
                                                 echo $huk['nm_field'];
                                                 echo "'";
                                                 echo " placeholder='Tidak Ada'";
+                                            }else if($huk['satuan']=='%'){
+                                                echo "value='0' ";echo "readonly='readonly' ";
+                                                echo "name='";
+                                                echo $huk['nm_field'];
+                                                echo "'";
                                             }else{
                                                 echo "name='";
                                                 echo $huk['nm_field'];
-                                                echo "'";echo "value='0' ";
+                                                echo "'";
+                                                echo "value='0' ";
                                             }
                                         ?> /></td>
                                     <td width="0.5%"><?php echo $huk['satuan']; ?></td>
@@ -348,15 +402,21 @@ if($kuein){
                                     <td width="45%"><input type="text" class="form-control" 
                                         <?php
                                             if($huk['ketersediaan']=='Tidak Ada'){
-                                                echo "readonly='readonly' ";echo "value='0' ";
+                                                echo "value='0' ";echo "readonly='readonly' ";
                                                 echo "name='";
                                                 echo $huk['nm_field'];
                                                 echo "'";
                                                 echo " placeholder='Tidak Ada'";
+                                            }else if($huk['satuan']=='%'){
+                                                echo "value='0' ";echo "readonly='readonly' ";
+                                                echo "name='";
+                                                echo $huk['nm_field'];
+                                                echo "'";
                                             }else{
                                                 echo "name='";
                                                 echo $huk['nm_field'];
-                                                echo "'";echo "value='0' ";
+                                                echo "'";
+                                                echo "value='0' ";
                                             }
                                         ?> /></td>
                                     <td width="0.5%"><?php echo $huk['satuan']; ?></td>
@@ -380,15 +440,21 @@ if($kuein){
                                     <td width="45%"><input type="text" class="form-control" 
                                         <?php
                                             if($huk['ketersediaan']=='Tidak Ada'){
-                                                echo "readonly='readonly' ";echo "value='0' ";
+                                                echo "value='0' ";echo "readonly='readonly' ";
                                                 echo "name='";
                                                 echo $huk['nm_field'];
                                                 echo "'";
                                                 echo " placeholder='Tidak Ada'";
+                                            }else if($huk['satuan']=='%'){
+                                                echo "value='0' ";echo "readonly='readonly' ";
+                                                echo "name='";
+                                                echo $huk['nm_field'];
+                                                echo "'";
                                             }else{
                                                 echo "name='";
                                                 echo $huk['nm_field'];
-                                                echo "'";echo "value='0' ";
+                                                echo "'";
+                                                echo "value='0' ";
                                             }
                                         ?> /></td>
                                     <td width="0.5%"><?php echo $huk['satuan']; ?></td>
@@ -412,15 +478,21 @@ if($kuein){
                                     <td width="45%"><input type="text" class="form-control" 
                                         <?php
                                             if($huk['ketersediaan']=='Tidak Ada'){
-                                                echo "readonly='readonly' ";echo "value='0' ";
+                                                echo "value='0' ";echo "readonly='readonly' ";
                                                 echo "name='";
                                                 echo $huk['nm_field'];
                                                 echo "'";
                                                 echo " placeholder='Tidak Ada'";
+                                            }else if($huk['satuan']=='%'){
+                                                echo "value='0' ";echo "readonly='readonly' ";
+                                                echo "name='";
+                                                echo $huk['nm_field'];
+                                                echo "'";
                                             }else{
                                                 echo "name='";
                                                 echo $huk['nm_field'];
-                                                echo "'";echo "value='0' ";
+                                                echo "'";
+                                                echo "value='0' ";
                                             }
                                         ?> /></td>
                                     <td width="0.5%"><?php echo $huk['satuan']; ?></td>
@@ -444,15 +516,21 @@ if($kuein){
                                     <td width="45%"><input type="text" class="form-control" 
                                         <?php
                                             if($huk['ketersediaan']=='Tidak Ada'){
-                                                echo "readonly='readonly' ";echo "value='0' ";
+                                                echo "value='0' ";echo "readonly='readonly' ";
                                                 echo "name='";
                                                 echo $huk['nm_field'];
                                                 echo "'";
                                                 echo " placeholder='Tidak Ada'";
+                                            }else if($huk['satuan']=='%'){
+                                                echo "value='0' ";echo "readonly='readonly' ";
+                                                echo "name='";
+                                                echo $huk['nm_field'];
+                                                echo "'";
                                             }else{
                                                 echo "name='";
                                                 echo $huk['nm_field'];
-                                                echo "'";echo "value='0' ";
+                                                echo "'";
+                                                echo "value='0' ";
                                             }
                                         ?> /></td>
                                     <td width="0.5%"><?php echo $huk['satuan']; ?></td>
@@ -517,15 +595,21 @@ if($kuein){
                                     <td width="45%"><input type="text" class="form-control" 
                                         <?php
                                             if($huk['ketersediaan']=='Tidak Ada'){
-                                                echo "readonly='readonly' ";echo "value='0' ";
+                                                echo "value='0' ";echo "readonly='readonly' ";
                                                 echo "name='";
                                                 echo $huk['nm_field'];
                                                 echo "'";
                                                 echo " placeholder='Tidak Ada'";
+                                            }else if($huk['satuan']=='%'){
+                                                echo "value='0' ";echo "readonly='readonly' ";
+                                                echo "name='";
+                                                echo $huk['nm_field'];
+                                                echo "'";
                                             }else{
                                                 echo "name='";
                                                 echo $huk['nm_field'];
-                                                echo "'";echo "value='0' ";
+                                                echo "'";
+                                                echo "value='0' ";
                                             }
                                         ?> /></td>
                                     <td width="0.5%"><?php echo $huk['satuan']; ?></td>
@@ -549,15 +633,21 @@ if($kuein){
                                     <td width="45%"><input type="text" class="form-control" 
                                         <?php
                                             if($huk['ketersediaan']=='Tidak Ada'){
-                                                echo "readonly='readonly' ";echo "value='0' ";
+                                                echo "value='0' ";echo "readonly='readonly' ";
                                                 echo "name='";
                                                 echo $huk['nm_field'];
                                                 echo "'";
                                                 echo " placeholder='Tidak Ada'";
+                                            }else if($huk['satuan']=='%'){
+                                                echo "value='0' ";echo "readonly='readonly' ";
+                                                echo "name='";
+                                                echo $huk['nm_field'];
+                                                echo "'";
                                             }else{
                                                 echo "name='";
                                                 echo $huk['nm_field'];
-                                                echo "'";echo "value='0' ";
+                                                echo "'";
+                                                echo "value='0' ";
                                             }
                                         ?> /></td>
                                     <td width="0.5%"><?php echo $huk['satuan']; ?></td>
@@ -582,15 +672,21 @@ if($kuein){
                                     <td width="45%"><input type="text" class="form-control" 
                                         <?php
                                             if($huk['ketersediaan']=='Tidak Ada'){
-                                                echo "readonly='readonly' ";echo "value='0' ";
+                                                echo "value='0' ";echo "readonly='readonly' ";
                                                 echo "name='";
                                                 echo $huk['nm_field'];
                                                 echo "'";
                                                 echo " placeholder='Tidak Ada'";
+                                            }else if($huk['satuan']=='%'){
+                                                echo "value='0' ";echo "readonly='readonly' ";
+                                                echo "name='";
+                                                echo $huk['nm_field'];
+                                                echo "'";
                                             }else{
                                                 echo "name='";
                                                 echo $huk['nm_field'];
-                                                echo "'";echo "value='0' ";
+                                                echo "'";
+                                                echo "value='0' ";
                                             }
                                         ?> /></td>
                                     <td width="0.5%"><?php echo $huk['satuan']; ?></td>
@@ -614,15 +710,21 @@ if($kuein){
                                     <td width="45%"><input type="text" class="form-control" 
                                         <?php
                                             if($huk['ketersediaan']=='Tidak Ada'){
-                                                echo "readonly='readonly' ";echo "value='0' ";
+                                                echo "value='0' ";echo "readonly='readonly' ";
                                                 echo "name='";
                                                 echo $huk['nm_field'];
                                                 echo "'";
                                                 echo " placeholder='Tidak Ada'";
+                                            }else if($huk['satuan']=='%'){
+                                                echo "value='0' ";echo "readonly='readonly' ";
+                                                echo "name='";
+                                                echo $huk['nm_field'];
+                                                echo "'";
                                             }else{
                                                 echo "name='";
                                                 echo $huk['nm_field'];
-                                                echo "'";echo "value='0' ";
+                                                echo "'";
+                                                echo "value='0' ";
                                             }
                                         ?> /></td>
                                     <td width="0.5%"><?php echo $huk['satuan']; ?></td>
@@ -646,15 +748,21 @@ if($kuein){
                                     <td width="45%"><input type="text" class="form-control" 
                                         <?php
                                             if($huk['ketersediaan']=='Tidak Ada'){
-                                                echo "readonly='readonly' ";echo "value='0' ";
+                                                echo "value='0' ";echo "readonly='readonly' ";
                                                 echo "name='";
                                                 echo $huk['nm_field'];
                                                 echo "'";
                                                 echo " placeholder='Tidak Ada'";
+                                            }else if($huk['satuan']=='%'){
+                                                echo "value='0' ";echo "readonly='readonly' ";
+                                                echo "name='";
+                                                echo $huk['nm_field'];
+                                                echo "'";
                                             }else{
                                                 echo "name='";
                                                 echo $huk['nm_field'];
-                                                echo "'";echo "value='0' ";
+                                                echo "'";
+                                                echo "value='0' ";
                                             }
                                         ?> /></td>
                                     <td width="0.5%"><?php echo $huk['satuan']; ?></td>
@@ -678,15 +786,21 @@ if($kuein){
                                     <td width="45%"><input type="text" class="form-control" 
                                         <?php
                                             if($huk['ketersediaan']=='Tidak Ada'){
-                                                echo "readonly='readonly' ";echo "value='0' ";echo "value='0' ";
+                                                echo "value='0' ";echo "readonly='readonly' ";
                                                 echo "name='";
                                                 echo $huk['nm_field'];
                                                 echo "'";
                                                 echo " placeholder='Tidak Ada'";
+                                            }else if($huk['satuan']=='%'){
+                                                echo "value='0' ";echo "readonly='readonly' ";
+                                                echo "name='";
+                                                echo $huk['nm_field'];
+                                                echo "'";
                                             }else{
                                                 echo "name='";
                                                 echo $huk['nm_field'];
-                                                echo "'";echo "value='0' ";echo "value='0' ";
+                                                echo "'";
+                                                echo "value='0' ";
                                             }
                                         ?> /></td>
                                     <td width="0.5%"><?php echo $huk['satuan']; ?></td>
@@ -751,15 +865,21 @@ if($kuein){
                                     <td width="45%"><input type="text" class="form-control" 
                                         <?php
                                             if($huk['ketersediaan']=='Tidak Ada'){
-                                                echo "readonly='readonly' ";echo "value='0' ";
+                                                echo "value='0' ";echo "readonly='readonly' ";
                                                 echo "name='";
                                                 echo $huk['nm_field'];
                                                 echo "'";
                                                 echo " placeholder='Tidak Ada'";
+                                            }else if($huk['satuan']=='%'){
+                                                echo "value='0' ";echo "readonly='readonly' ";
+                                                echo "name='";
+                                                echo $huk['nm_field'];
+                                                echo "'";
                                             }else{
                                                 echo "name='";
                                                 echo $huk['nm_field'];
-                                                echo "'";echo "value='0' ";
+                                                echo "'";
+                                                echo "value='0' ";
                                             }
                                         ?> /></td>
                                     <td width="0.5%"><?php echo $huk['satuan']; ?></td>

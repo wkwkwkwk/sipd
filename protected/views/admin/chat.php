@@ -1,10 +1,10 @@
-
+<?php $id_user=Yii::app()->user->id; ?>
 <h3>Chat Room SIPD</h3>
 		<div id='chat'></div>
 		<?php 
 		    $this->widget('YiiChatWidget',array(
 		        'chat_id'=>'123',                   // a chat identificator
-		        'identity'=>'1',                      // the user, Yii::app()->user->id ?
+		        'identity'=>$id_user,                      // the user, Yii::app()->user->id ?
 		        'selector'=>'#chat',                // were it will be inserted
 		        'minPostLen'=>2,                    // min and
 		        'maxPostLen'=>140,                   // max string size for post

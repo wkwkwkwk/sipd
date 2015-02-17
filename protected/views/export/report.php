@@ -1,33 +1,22 @@
 <?php
-    mysql_connect('localhost','root','');
-    mysql_select_db("sipd");
-
-    $tahe = date("Y");
-    $sqlin = "SELECT `$tahe` FROM `sipd`.`ppk_vk`";
-    $kuein = mysql_query($sqlin);
-    if($kuein){
-        $dulu=$tahunini-4;
-    }else{
-        $dulu=$tahunini-5;
-        $tahunini = $tahunini-1;
-    }
-    
+    $dulu=$tahunini-5;
     $taun1=$dulu;
     $taun2=$dulu+1;
     $taun3=$dulu+2;
     $taun4=$dulu+3;
     $taun5=$dulu+4;
+    
 ?>
 <table border="1" width="120%">
-    <caption class="text-center">8 KELOMPOK DATA SISTEM PEMBNGUNAN DAERAH<br/>KABUPATEN PURBALINGGA<br/>PARUH TAHUN <?php echo $tahunini; ?> </caption>
+    <caption>Uji Coba Laporan hingga tahun <?php echo $tahunini; ?> </caption>
     
         <thead>
             <th class="text-center" style="font-size:10px;">NAMA</th>
-            <th class="text-center" style="font-size:10px;"><?php echo $taun1; ?></th>
-            <th class="text-center" style="font-size:10px;"><?php echo $taun2; ?></th>
-            <th class="text-center" style="font-size:10px;"><?php echo $taun3; ?></th>
-            <th class="text-center" style="font-size:10px;"><?php echo $taun4; ?></th>
-            <th class="text-center" style="font-size:10px;"><?php echo $taun5; ?></th>
+            <th class="text-center" style="font-size:10px;">2010</th>
+            <th class="text-center" style="font-size:10px;">2011</th>
+            <th class="text-center" style="font-size:10px;">2012</th>
+            <th class="text-center" style="font-size:10px;">2013</th>
+            <th class="text-center" style="font-size:10px;">2014</th>
             <th class="text-center" style="font-size:10px;">SATUAN</th>
             <th class="text-center" style="font-size:10px;">KETERSEDIAAN</th>
             <th class="text-center" style="font-size:10px;">SUMBER DATA</th>

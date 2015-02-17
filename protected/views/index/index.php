@@ -1,4 +1,5 @@
   <!-- Navigation -->
+
     <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
         <div class="container">
             <div class="navbar-header">
@@ -6,7 +7,7 @@
                     <i class="fa fa-bars"></i>
                 </button>
                 <a class="navbar-brand page-scroll" href="#page-top">
-                    <i class="fa fa-home"></i> HOME
+                    <i class="fa fa-institution"></i> HOME
                 </a>
             </div>
 
@@ -39,7 +40,6 @@
     </nav>
 
     <!-- Intro Header -->
-
 
 <header class="intro">
         <div class="intro-body">
