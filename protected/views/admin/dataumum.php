@@ -356,7 +356,7 @@ if($kuein){
             </div>
             <!-- End Geografi -->
             <br /><span class="pull-right">
-            <input type="reset" class="btn btn-danger" value="RESET" />
+            
             <input type="submit" class="btn btn-success" value="SIMPAN" />
             </span>
             </form>
@@ -590,7 +590,7 @@ if($kuein){
             </div>
             <!-- End Pemerintahan -->
             <br /><span class="pull-right">
-            <input type="reset" class="btn btn-danger" value="RESET" />
+            
             <input type="submit" class="btn btn-success" value="SIMPAN" />
             </span>
             </form>
@@ -1364,7 +1364,7 @@ if($kuein){
             <!-- End Demografi -->
 
     <br /><span class="pull-right">
-      <input type="reset" class="btn btn-danger" value="RESET" />
+      
       <input type="submit" class="btn btn-success" value="SIMPAN" />
     </span>
 

@@ -545,7 +545,7 @@ if($kuein){
         </div>
         <!-- End Kesehatan -->
         <br /><span class="pull-right">
-        <input type="reset" class="btn btn-danger" value="RESET" />
+        
         <input type="submit" class="btn btn-success" value="SIMPAN" />
         </span>
         </form>
@@ -1120,7 +1120,7 @@ if($kuein){
         </div>
         <!-- End Pendidikan, KNPO -->
         <br /><span class="pull-right">
-        <input type="reset" class="btn btn-danger" value="RESET" />
+        
         <input type="submit" class="btn btn-success" value="SIMPAN" />
         </span>
         </form>
@@ -1787,7 +1787,7 @@ if($kuein){
         </div>
         <!-- End Kesejahteraan Sosial -->
         <br /><span class="pull-right">
-        <input type="reset" class="btn btn-danger" value="RESET" />
+        
         <input type="submit" class="btn btn-success" value="SIMPAN" />
         </span>
         </form>
@@ -2058,7 +2058,7 @@ if($kuein){
         </div>
         <!-- End Agama -->
 <br /><span class="pull-right">
-            <input type="reset" class="btn btn-danger" value="RESET" />
+            
             <input type="submit" class="btn btn-success" value="SIMPAN" />
         </span>
 

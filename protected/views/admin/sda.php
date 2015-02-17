@@ -320,7 +320,7 @@ if($kuein){
 
 		</div>
 <br /><span class="pull-right">
-            <input type="reset" class="btn btn-danger" value="RESET" />
+            
             <input type="submit" class="btn btn-success" value="SIMPAN" />
         </span>
         </form>
@@ -441,7 +441,7 @@ if($kuein){
 
         </div>
 <br /><span class="pull-right">
-            <input type="reset" class="btn btn-danger" value="RESET" />
+            
             <input type="submit" class="btn btn-success" value="SIMPAN" />
         </span>
         </form>
@@ -790,7 +790,7 @@ if($kuein){
 
         </div>
         <br /><span class="pull-right">
-            <input type="reset" class="btn btn-danger" value="RESET" />
+            
             <input type="submit" class="btn btn-success" value="SIMPAN" />
         </span>
         <!-- End Lingkungan Hidup, Tata Ruang dan Pertanahan -->

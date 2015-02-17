@@ -399,7 +399,7 @@ if($kuein){
 		</div>
         <!-- End Bencana Alam -->
         <br /><span class="pull-right">
-        <input type="reset" class="btn btn-danger" value="RESET" />
+        
         <input type="submit" class="btn btn-success" value="SIMPAN" />
         </span>
         </form>
@@ -515,7 +515,7 @@ if($kuein){
         </div>
         <!-- End Penyakit Menular -->
         <br /><span class="pull-right">
-        <input type="reset" class="btn btn-danger" value="RESET" />
+        
         <input type="submit" class="btn btn-success" value="SIMPAN" />
         </span>
         </form>
@@ -669,7 +669,7 @@ if($kuein){
         </div>
         <!-- End Pencurian Ikan -->
         <br /><span class="pull-right">
-        <input type="reset" class="btn btn-danger" value="RESET" />
+        
         <input type="submit" class="btn btn-success" value="SIMPAN" />
         </span>
         </form>
@@ -823,7 +823,7 @@ if($kuein){
         </div>
         <!-- End Kebakaran Hutan -->
         <br /><span class="pull-right">
-        <input type="reset" class="btn btn-danger" value="RESET" />
+        
         <input type="submit" class="btn btn-success" value="SIMPAN" />
         </span>
         </form>
@@ -977,7 +977,7 @@ if($kuein){
         </div>
         <!-- End Pencurian dan Penyelundupan Kayu -->
 <br /><span class="pull-right">
-            <input type="reset" class="btn btn-danger" value="RESET" />
+            
             <input type="submit" class="btn btn-success" value="SIMPAN" />
         </span>
 

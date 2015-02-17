@@ -544,7 +544,7 @@ if($kuein){
 		</div>
         <!-- End Politik Dalam Negeri dan Pengawasan -->
         <br /><span class="pull-right">
-        <input type="reset" class="btn btn-danger" value="RESET" />
+        
         <input type="submit" class="btn btn-success" value="SIMPAN" />
         </span>
         </form>
@@ -814,7 +814,7 @@ if($kuein){
         </div>
         <!-- End Hukum -->
         <br /><span class="pull-right">
-        <input type="reset" class="btn btn-danger" value="RESET" />
+        
         <input type="submit" class="btn btn-success" value="SIMPAN" />
         </span>
         </form>
@@ -893,7 +893,7 @@ if($kuein){
         </div>
         <!-- End Keamanan, Ketertiban Masyarakat -->
 <br /><span class="pull-right">
-            <input type="reset" class="btn btn-danger" value="RESET" />
+            
             <input type="submit" class="btn btn-success" value="SIMPAN" />
         </span>
 
